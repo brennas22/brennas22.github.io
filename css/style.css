@@ -1,0 +1,55 @@
+body{
+	font-family: 'Open Sans', 'Helvetica', sans-serif;
+}
+
+.background { 
+	background: #ddd;
+}
+
+.background2 {
+	background: #34b4e3;
+}
+
+.img-portfolio {
+        margin-bottom: 30px;
+    }
+    .img-hover:hover {
+        opacity: 0.8;
+    }
+
+.center {
+	text-align: center;
+}
+
+/* No media query since this is the default in bootstrap*/
+h1 {
+	font: 2rem;
+	font-family: 'Open Sans', 'Helvetica', sans-serif;
+	font-weight: bold;
+}
+
+
+/*Small devices (tablets, 768px and up)*/
+@media (min-width: 768px){
+	h1{
+		font: 4rem ;
+		
+	}
+}
+
+/* large devices (desktops 992 px and up)*/
+@media (min-width: 992px){
+	h1{
+		font:  6rem ;
+		
+	}
+}
+
+
+/* extra large devices (large desktops 1200 px and up)*/
+@media (min-width: 1200px){
+	h1{
+		font: 8rem ;
+		
+	}
+}
