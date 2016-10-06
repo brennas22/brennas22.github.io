@@ -21,6 +21,219 @@ body{
 	text-align: center;
 }
 
+.imgWrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+.work {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.work div {
+  position: absolute;
+  left: 0; top: 0;
+  height: 100%; width: 100%;
+  background: #34b4e3;
+  display: none;
+}
+
+.work h2 {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0; padding: 0;
+}
+.work:hover div {
+  display: block;
+}
+
+.test {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.test div {
+  position: absolute;
+  left: 0; top: 0;
+  height: 100%; width: 100%;
+  background: gold;
+  display: none;
+  opacity: 0.8;
+}
+
+.test h2 {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0; padding: 0;
+}
+.test:hover div {
+  display: block;
+}
+
+.gen {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  
+  position: relative;
+}
+
+.gen div {
+  position: absolute;
+  left: 0; top: 0;
+  height: 100%; width: 100%;
+  background: #27aae1;
+  display: none;
+  opacity: 0.8;
+}
+
+.gen h2 {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0; padding: 0;
+}
+.gen:hover div {
+  display: block;
+}
+
+.whee {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  
+  position: relative;
+}
+
+.whee div {
+  position: absolute;
+  left: 0; top: 0;
+  height: 100%; width: 100%;
+  background: #6d6e71;
+  display: none;
+  opacity: 0.8;
+}
+
+.whee h2 {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0; padding: 0;
+}
+.whee:hover div {
+  display: block;
+}
+
+.exp {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.exp div {
+  position: absolute;
+  left: 0; top: 0;
+  height: 100%; width: 100%;
+  background: #2bb673;
+  display: none;
+  opacity: 0.8;
+}
+
+.exp h2 {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0; padding: 0;
+}
+.exp:hover div {
+  display: block;
+}
+
+.graphic {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.graphic div {
+  position: absolute;
+  left: 0; top: 0;
+  height: 100%; width: 100%;
+  background: #a7a9ac;
+  display: none;
+  opacity: 0.8;
+}
+
+.graphic h2 {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0; padding: 0;
+}
+.graphic:hover div {
+  display: block;
+}
+
+.gc {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.gc div {
+  position: absolute;
+  left: 0; top: 0;
+  height: 100%; width: 100%;
+  background: red;
+  display: none;
+  opacity: 0.8;
+}
+
+.gc h2 {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0; padding: 0;
+}
+.gc:hover div {
+  display: block;
+}
+
 /* No media query since this is the default in bootstrap*/
 h1 {
 	font: 2rem;
