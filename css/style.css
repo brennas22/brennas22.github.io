@@ -62,8 +62,9 @@ body{
   position: absolute;
   left: 0; top: 0;
   height: 100%; width: 100%;
-  background: #34b4e3;
+  background: #6c8a9e;
   display: none;
+  opacity: 0.8;
 }
 
 .work h2 {
@@ -87,7 +88,7 @@ body{
   position: absolute;
   left: 0; top: 0;
   height: 100%; width: 100%;
-  background: gold;
+  background: #8c7382;
   display: none;
   opacity: 0.8;
 }
@@ -114,7 +115,7 @@ body{
   position: absolute;
   left: 0; top: 0;
   height: 100%; width: 100%;
-  background: #5ea4bc;
+  background: #58595b;
   display: none;
   opacity: 0.8;
 }
@@ -141,7 +142,7 @@ body{
   position: absolute;
   left: 0; top: 0;
   height: 100%; width: 100%;
-  background: #6d6e71;
+  background: #7c8099;
   display: none;
   opacity: 0.8;
 }
@@ -199,7 +200,7 @@ body{
   position: absolute;
   left: 0; top: 0;
   height: 100%; width: 100%;
-  background: #51587a;
+  background: #9b8083;
   display: none;
   opacity: 0.8;
 }
@@ -226,7 +227,7 @@ body{
   position: absolute;
   left: 0; top: 0;
   height: 100%; width: 100%;
-  background: #a7a9ac;
+  background: #6c8a9e;
   display: none;
   opacity: 0.8;
 }
