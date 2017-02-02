@@ -490,8 +490,9 @@ a.scroll {
 	position: absolute;
 	top: 50%;
 	height: 40px;
-	margin-top: -40px;
+	margin-bottom: 40px;
 	width: 100%;
+
 }
 .herowrapper h1 {
 	text-align: center;
@@ -502,6 +503,33 @@ a.scroll {
 .herowrapper b {
 	background-color: rgba(2, 2, 2, 0.6);
 	padding: 0px 5px;
+}
+
+.makeblack {
+	text-align: left;
+	margin-left: 200px;
+
+	color: black;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+.makeblack2 {
+	text-align: left;
+	margin-left: 0px;
+	
+	color: black;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+.makeblack3 {
+	text-align: left;
+	margin-left: -200px;
+	
+	color: black;
+	font-size: 17px;
+	font-weight: 300;
 }
 
 .herowrapper2 {
