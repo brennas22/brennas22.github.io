@@ -779,7 +779,7 @@ blockquote:after {
      .experienceline{
       width: 3px; /* Line width */
       background-color: black; /* Line color */
-      height: 435px; /* Override in-line if you want specific height. */
+      height: 460px; /* Override in-line if you want specific height. */
       float: left; /* Causes the line to float to left of content. 
         You can instead use position:absolute or display:inline-block
         if this fits better with your design */
