@@ -730,62 +730,9 @@ blockquote:after {
   width: 50px;
   height: 50px;
   border-radius: 200px;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
-#circle2 {
-  position: relative;
-  border: 3px solid black;
-  background-color: white;
-  margin-left: 25px;
-  width: 50px;
-  height: 50px;
-  border-radius: 200px;
-  margin-top: 450px;
-}
-
-
-#circle3 {
-  position: relative;
-  border: 3px solid black;
-  background-color: white;
-  margin-left: 25px;
-  width: 50px;
-  height: 50px;
-  border-radius: 200px;
-  margin-top: 295px;
-}
-
-#circle4 {
-  position: relative;
-  border: 3px solid black;
-  background-color: white;
-  margin-left: 25px;
-  width: 50px;
-  height: 50px;
-  border-radius: 200px;
-  margin-top: 400px;
-}
-
-#circle5 {
-  position: relative;
-  border: 3px solid black;
-  background-color: white;
-  margin-left: 25px;
-  width: 50px;
-  height: 50px;
-  border-radius: 200px;
-  margin-top: 270px;
-}
-
-.vertical-line{
-      width: 3px; /* Line width */
-      background-color: black; /* Line color */
-      height: 2800px; /* Override in-line if you want specific height. */
-      float: left; /* Causes the line to float to left of content. 
-        You can instead use position:absolute or display:inline-block
-        if this fits better with your design */
-    }
 
 
     .move{
@@ -823,7 +770,7 @@ blockquote:after {
      .educationline{
       width: 3px; /* Line width */
       background-color: black; /* Line color */
-      height: 230px; /* Override in-line if you want specific height. */
+      height: 500px; /* Override in-line if you want specific height. */
       float: left; /* Causes the line to float to left of content. 
         You can instead use position:absolute or display:inline-block
         if this fits better with your design */
@@ -832,7 +779,26 @@ blockquote:after {
      .experienceline{
       width: 3px; /* Line width */
       background-color: black; /* Line color */
+      height: 435px; /* Override in-line if you want specific height. */
+      float: left; /* Causes the line to float to left of content. 
+        You can instead use position:absolute or display:inline-block
+        if this fits better with your design */
+    }
+
+
+.skillsline{
+      width: 3px; /* Line width */
+      background-color: black; /* Line color */
       height: 330px; /* Override in-line if you want specific height. */
+      float: left; /* Causes the line to float to left of content. 
+        You can instead use position:absolute or display:inline-block
+        if this fits better with your design */
+    }
+
+    .mediumline{
+      width: 3px; /* Line width */
+      background-color: black; /* Line color */
+      height: 620px; /* Override in-line if you want specific height. */
       float: left; /* Causes the line to float to left of content. 
         You can instead use position:absolute or display:inline-block
         if this fits better with your design */
@@ -840,22 +806,26 @@ blockquote:after {
 
  .shift_text {
  	margin-top: 5px;
- 	margin-left: 126px;
+ 	margin-left: 41px;
  }
 
 
-	#circl {
- 		position: relative;
-  		border: 3px solid black;
-  		margin-left: 120px;
-  		width: 35px;
-  		height: 35px;
-  		border-radius: 200px;
-  		margin-top: 32px;
-  		background-color: white;
-	}
 
 /* THIS IS THE END OF A TEST */
+
+/* second test */
+.row_try { 
+ 
+   text-align: left;
+   padding-top: 0px;	
+   padding-left: 30px; 
+   margin-top: 0px;
+   width: 100%; 
+   font-family: 'Raleway', sans-serif;
+   font-weight: 200;
+   padding-right: 50px;
+}
+/* end second test */
 
 
 /*Small devices (tablets, 768px and up)*/
@@ -868,66 +838,66 @@ blockquote:after {
 	#circle {
  		position: relative;
   		border: 3px solid black;
-  		margin-left: 105px;
-  		width: 65px;
-  		height: 65px;
+  		margin-left: 120px;
+  		width: 35px;
+  		height: 35px;
   		border-radius: 200px;
-  		margin-top: 145px;
+  		margin-top: 50px;
   		background-color: white;
 	}
 
-	#circle2 {
-  position: relative;
-  border: 3px solid black;
-  background-color: white;
-  margin-left: 105px;
-  width: 65px;
-  height: 65px;
-  border-radius: 200px;
-  margin-top: 230px;
-}
+	 .shift_text {
+ 	margin-top: 5px;
+ 	margin-left: 126px;
+ }
 
-	#circle3 {
-  position: relative;
-  border: 3px solid black;
-  background-color: white;
-  margin-left: 105px;
-  width: 65px;
-  height: 65px;
-  border-radius: 200px;
-  margin-top: 120px;
-}
-
-	#circle4 {
-  position: relative;
-  border: 3px solid black;
-  background-color: white;
-  margin-left: 105px;
-  width: 65px;
-  height: 65px;
-  border-radius: 200px;
-  margin-top: 150px;
-}
-
-	#circle5 {
-  position: relative;
-  border: 3px solid black;
-  background-color: white;
-  margin-left: 105px;
-  width: 65px;
-  height: 65px;
-  border-radius: 200px;
-  margin-top: 70px;
-}
-
+	
 	.move{
     	margin-left: 135px;
     }
 
-    .vertical-line{
+
+    .topline{
       width: 3px; /* Line width */
       background-color: black; /* Line color */
-      height: 2200px; /* Override in-line if you want specific height. */
+      height: 100px; /* Override in-line if you want specific height. */
+      float: left; /* Causes the line to float to left of content. 
+        You can instead use position:absolute or display:inline-block
+        if this fits better with your design */
+    }
+
+     .educationline{
+      width: 3px; /* Line width */
+      background-color: black; /* Line color */
+      height: 280px; /* Override in-line if you want specific height. */
+      float: left; /* Causes the line to float to left of content. 
+        You can instead use position:absolute or display:inline-block
+        if this fits better with your design */
+    }
+
+     .experienceline{
+      width: 3px; /* Line width */
+      background-color: black; /* Line color */
+      height: 225px; /* Override in-line if you want specific height. */
+      float: left; /* Causes the line to float to left of content. 
+        You can instead use position:absolute or display:inline-block
+        if this fits better with your design */
+    }
+
+    .skillsline{
+      width: 3px; /* Line width */
+      background-color: black; /* Line color */
+      height: 225px; /* Override in-line if you want specific height. */
+      float: left; /* Causes the line to float to left of content. 
+        You can instead use position:absolute or display:inline-block
+        if this fits better with your design */
+    }
+
+
+    .mediumline{
+      width: 3px; /* Line width */
+      background-color: black; /* Line color */
+      height: 250px; /* Override in-line if you want specific height. */
       float: left; /* Causes the line to float to left of content. 
         You can instead use position:absolute or display:inline-block
         if this fits better with your design */
