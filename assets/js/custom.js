@@ -67,11 +67,25 @@
 		$('html,body').animate({scrollTop: targetOffset}, 1000);
 	});
 
-        // Scroll Down Link3
-  $('.scrolldown3').click(function() {
-    var targetOffset = $('#div_resume').offset().top-80;
+        // Scroll Down education
+  $('.education').click(function() {
+    var targetOffset = $('#div_education').offset().top-80;
     $('html,body').animate({scrollTop: targetOffset}, 1000);
   });
+
+          // Scroll Down experience
+  $('.experience').click(function() {
+    var targetOffset = $('#div_experience').offset().top-80;
+    $('html,body').animate({scrollTop: targetOffset}, 1000);
+  });
+
+
+        // Scroll Down skills
+  $('.skills').click(function() {
+    var targetOffset = $('#div_skill').offset().top-80;
+    $('html,body').animate({scrollTop: targetOffset}, 1000);
+  });
+ 
 
 	// Instantiate the Bootstrap carousel
 $('.multi-item-carousel').carousel({

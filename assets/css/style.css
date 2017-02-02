@@ -488,9 +488,9 @@ a.scroll {
 
 .herowrapper {
 	position: absolute;
-	top: 50%;
-	height: 40px;
-	margin-bottom: 40px;
+	top: 30%;
+	height: 30px;
+	margin-bottom: 80px;
 	width: 100%;
 
 }
@@ -508,16 +508,17 @@ a.scroll {
 .makeblack {
 	text-align: left;
 	margin-left: 200px;
-
+	margin-top: 0px;
 	color: black;
 	font-size: 17px;
 	font-weight: 300;
+
 }
 
 .makeblack2 {
 	text-align: left;
 	margin-left: 0px;
-	
+	margin-top: 20px;
 	color: black;
 	font-size: 17px;
 	font-weight: 300;
@@ -526,11 +527,74 @@ a.scroll {
 .makeblack3 {
 	text-align: left;
 	margin-left: -200px;
-	
+	margin-top: 40px;
 	color: black;
 	font-size: 17px;
 	font-weight: 300;
+
+
 }
+
+a.education {
+	display: block;
+	width: 100%;
+	height: 50px;
+	padding-top: 130px;
+	cursor: pointer;
+}
+.education .icon {
+	font-size: 20px;
+	text-align: center;
+}
+.education h3 {
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: 300;
+}
+
+a.experience {
+	display: block;
+	width: 100%;
+	height: 50px;
+	margin-top: 40px;
+	cursor: pointer;
+		
+}
+.experience .icon {
+	font-size: 20px;
+	text-align: center;
+}
+.experience h3 {
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: 300;
+}
+
+a.skills {
+	display: block;
+	width: 100%;
+	height: 50px;
+	margin-top: -50px;
+	cursor: pointer;
+}
+.skills .icon {
+	font-size: 20px;
+	text-align: center;
+}
+.skills h3 {
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: 300;
+
+}
+
+
 
 .herowrapper2 {
 	position: absolute;
