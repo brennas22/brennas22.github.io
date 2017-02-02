@@ -67,6 +67,12 @@
 		$('html,body').animate({scrollTop: targetOffset}, 1000);
 	});
 
+        // Scroll Down Link3
+  $('.scrolldown3').click(function() {
+    var targetOffset = $('#div_resume').offset().top-80;
+    $('html,body').animate({scrollTop: targetOffset}, 1000);
+  });
+
 	// Instantiate the Bootstrap carousel
 $('.multi-item-carousel').carousel({
   interval: false
