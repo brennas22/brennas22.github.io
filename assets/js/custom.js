@@ -87,6 +87,33 @@
   });
  
 
+
+        // Scroll Down involvement
+  $('.involvement').click(function() {
+    var targetOffset = $('#div_involvement').offset().top-80;
+    $('html,body').animate({scrollTop: targetOffset}, 1000);
+  });
+
+
+//start scroll to top
+var amountScrolled = 300;
+
+$(window).scroll(function() {
+  if ( $(window).scrollTop() > amountScrolled ) {
+    $('a.back-to-top').fadeIn('slow');
+  } else {
+    $('a.back-to-top').fadeOut('slow');
+  }
+});
+
+$('a.back-to-top').click(function() {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 700);
+  return false;
+});
+//end scroll to top
+
 	// Instantiate the Bootstrap carousel
 $('.multi-item-carousel').carousel({
   interval: false

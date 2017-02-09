@@ -1,159 +1,391 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Information Design - Brenna Sorkin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
 
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Brenna Sorkin Portfolio Website</title>
-	<link rel="stylesheet" href="css/Usebootstrap.css">
-	<link rel="stylesheet" href="css/style.css"> <!-- this one is second so it overwrites-->
-	<!--Bootstrap Jquery-->
-	<script src=js/jquery.js></script> <!--this must go first-->
-	<!--Bootstrap Javascript-->
-	<script src=js/bootstrap.js></script>
-</head>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="assets/js/modernizr.js"></script>
+  </head>
 
-<body>
-<nav class="navbar navbar-simple navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Brenna Sorkin</a>
+  <body>
+
+        <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">BRENNA SORKIN.</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li ><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li  class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PORTFOLIO<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="single-post.html">SINGLE POST</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                
+                <li><a href="generate.html">GENERATE MARKETING</a></li>
+                <li><a href="Fountaine.html">PROSTHETICS LAB</a></li>
+                <li class="active"><a href="experienceandsystems.html">INFORMATION DESIGN</a></li>
+                <li><a href="graphicdesign.html">GRAPHIC DESIGN</a></li>
+                <li><a href="whee.html">APP DESIGN</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="Sorkin_Brenna_Resume.pdf">Resume <span class="sr-only">(current)</span></a></li>
-        <li><a href="about.html">About <span class="sr-only">(current)</span></a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="generate.html">Generate</a></li>
-            <li><a href="whee.html">Whee</a></li>
-            <li><a href="experienceandsystems.html">Information Design</a></li>
-            <li><a href="graphicdesign.html">Graphic Design</a></li>
-            <li><a href="grabCADPrint.html">GrabCAD/Stratasys</a></li>
-            <li><a href="nusearch.html">Course Selection Planning</a></li>
-            <li><a href="Fountaine.html">Fontaine Lab for Innovative Prosthetics</a></li>
-            <li><a href="Sabinemade.html">SABINEMADE</a></li>
-            <li><a href="cadmodels.html">CAD Models</a></li>
-            <li><a href="fineart.html">Fine Art</a></li>
-            <li><a href="techsketch.html">Technical Sketching</a></li>
-          </ul>
-        </li>
-      </ul>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<div class="container">
-	<div class="row">
-			<div class="col-lg-12">
-				<h1 class="page-header">Information Design</h1>
-			</div>
-		</div>
-	<div class="row">
-		<div class="col-md-12">
-                <img class="img-responsive img-portfolio" src="experiencemap.png" alt="">
-		</div>
+
+
+	<!-- *****************************************************************************************************************
+	 BLUE WRAP
+	 ***************************************************************************************************************** -->
+
+	<div id="blue">
+	    <div class="container">
+			<div class="row">
+				<h3>Information Design</h3>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /blue -->
+
+	<!-- *****************************************************************************************************************
+	 TITLE & CONTENT
+	 ***************************************************************************************************************** -->
+
+	 <div class="container mt">
+	 	
+
+	 	<div class="row top-marg">
+		 	<div class="col-md-8  centered">
+			 	<img src="experiencemap.png" alt="">
+		 	</div>
 		
-	</div>
-	<div class="row" style="margin-bottom: 20px">
-		<div class="col-sm-1 col-lg-2"></div>
-		<div class="col-sm-10 col-lg-8">
-			<h3>This project was an examination of Boston's Emerald Necklace through information design. The experience map is a cheeky analysis of the Back Bay Fens and the potential experience of a patron there. </h3>
-		</div> <!--want some padding below this-->
-		<div class="col-sm-1 col-lg-2"></div>
-	</div>
-	<div class="row">
-		<h2>Process Book</h2>
-	</div>
-	<div class="row">
-			<div class="col-sm-6 col-md-6">
-                    <img class="img-responsive img-portfolio " src="exprocess1.png" alt="">
-			</div>
-			<div class="col-sm-6 col-md-6">
-	
-                    <img class="img-responsive img-portfolio " src="exprocess2.png" alt="">
-               
-			</div>
-	</div>
-	<div class="row">
-			<div class="col-sm-6 col-md-6">	
-                <img class="img-responsive img-portfolio" src="exprocess3.png" alt="">
-			</div>
-			<div class="col-sm-6 col-md-6">
+
+		 	<div class="col-md-4">
+			 	<div class="spacing"></div>
+		 		<h4>Information Design</h4>
+		 		<p>This project was an examination of Boston's Emerald Necklace through information design. The experience map is a cheeky analysis of the Back Bay Fens and the potential experience of a patron there. </p>
+		 		
+		 		
+		 	</div>
+
+		</div>
+
+		<div class="row">
+
+		 	<div class="col-lg-4 col-lg-offset-1">
+			 	<div class="spacing"></div>
+		 		<h4>Process Book</h4>
+		 		<div class="hline"></div>
+		 		
+		 		
+		 	</div>
+		 	
+	 	</div><! --/row -->
+
+		<div class="row top-marg">
+		<div class="col-sm-4 col-md-4 img-pad">             
+      
+				      <img src="techsketch16.jpg" alt="">
+				   
+    </div>
+   
+    <div class="col-sm-8 col-md-8">
+                	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+
+				  </ol>
 				
-                    <img class="img-responsive img-portfolio" src="exprocess4.png" alt="">
-               
-			</div>
-			
-	</div>
-	<div class="row">
-		<div class="col-sm-6 col-md-6">
-				
-                    <img class="img-responsive img-portfolio" src="exprocess5.png" alt="">
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+				    <div class="item active">
+				      <img src="exprocess1.png" alt="">
+				    </div>
+				    <div class="item">
+				      <img src="exprocess2.png" alt="">
+				    </div>
+				    <div class="item">
+				      <img src="exprocess3.png" alt="">
+				    </div>
+				    <div class="item">
+				      <img src="exprocess4.png" alt="">
+				    </div>
+				    <div class="item">
+				      <img src="exprocess5.png" alt="">
+				    </div>
+				  </div>
+				</div><! --/Carousel -->
                 
-			</div>
-			<div class="col-sm-6 col-md-6">
-				
-                    <img class="img-responsive img-portfolio" src="experiencemap.png" alt="">
-                
-			</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6 col-md-6">
-				
-                    <img class="img-responsive img-portfolio" src="techsketch15.jpg" alt="">
-                
-			</div>
-			<div class="col-sm-6 col-md-6">
-				
-                    <img class="img-responsive img-portfolio" src="techsketch16.jpg" alt="">
-                
-			</div>
-	</div>
-	
-	<div class="row">
-		<h2>Related Projects</h2>
-	</div>
-	<div class="row">
-		<div class="col-sm-6 col-md-4">
-				<a href="graphicdesign.html">
-					<div class="test">
-                    	<img class="portfolio-image img-responsive" src="graphic4.jpg" />
-                    <div><h2>Graphic Design</h2></div>
-           			</div>
-                  
-                </a>
-                
-			</div>
-			<div class="col-sm-6 col-md-8">
-				<a href="whee.html">
-					<div class="gc">
-                    	<img class="portfolio-image img-responsive" src="wheeslide4.png" />
-                    <div><h2>App Design</h2></div>
-                    </div>
-                </a>
-               
-			</div>
-			
-	</div>
-</div>
-	
-</body>
+    </div>
+     
+  </div>
+
+		<div class="row">
+
+		 	<div class="col-lg-4 col-lg-offset-1">
+			 	<div class="spacing"></div>
+		 		<h4>Project Details</h4>
+		 		<div class="hline"></div>
+		 		<p><b>Date:</b> Spring 2016</p>
+		 		<p><b>Contributors:</b> Brenna Sorkin</p>
+		 		<p><b>Categories:</b> Graphic Design, Information Design</p>
+		 		
+		 		<p><b>Client:</b> Class Assignment</p>
+		 		
+		 	</div>
+		 	
+	 	</div><! --/row -->
+	 </div><! --/container -->
+	 
+	<!-- *****************************************************************************************************************
+	 PORTFOLIO SECTION
+	 ***************************************************************************************************************** -->
+	 <div id="portfoliowrap">
+        <div class="portfolio-centered">
+        	<h3>Related Works.</h3>
+            <div class="recentitems portfolio">
+				<div class="portfolio-item graphic-design">
+					<div class="he-wrap tpl6">
+					<img src="assets/img/portfolio/portfolio_09.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_09.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                            
+                <div class="portfolio-item web-design">
+                    <div class="he-wrap tpl6">
+					<img src="assets/img/portfolio/portfolio_02.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">A Web Design Item</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_02.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+        
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="assets/img/portfolio/portfolio_03.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_03.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+        
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="assets/img/portfolio/portfolio_04.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_04.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+					<img src="assets/img/portfolio/portfolio_05.jpg" alt="">
+						<div class="he-view">
+							<div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">A Graphic Design Item</h3>
+                                <a data-rel="prettyPhoto" href="assets/img/portfolio/portfolio_04.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="single-project.html" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                        	</div><!-- he bg -->
+						</div><!-- he view -->		
+					</div><!-- he wrap -->
+				</div><!-- end col-12 -->
+                                        
+                    
+            </div><!-- portfolio -->
+        </div><!-- portfolio container -->
+	 </div><!--/Portfoliowrap -->
+	 
+	 	 
+
+	<!-- *****************************************************************************************************************
+	 FOOTER
+	 ***************************************************************************************************************** -->
+	 <div id="footerwrap">
+	 	<div class="container">
+		 	<div class="row">
+		 		<div class="col-lg-4">
+		 			<h4>About</h4>
+		 			<div class="hline-w"></div>
+		 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>Social Links</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				<a href="#"><i class="fa fa-dribbble"></i></a>
+		 				<a href="#"><i class="fa fa-facebook"></i></a>
+		 				<a href="#"><i class="fa fa-twitter"></i></a>
+		 				<a href="#"><i class="fa fa-instagram"></i></a>
+		 				<a href="#"><i class="fa fa-tumblr"></i></a>
+		 			</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>Our Bunker</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				Some Ave, 987,<br/>
+		 				23890, New York,<br/>
+		 				United States.<br/>
+		 			</p>
+		 		</div>
+		 	
+		 	</div><! --/row -->
+	 	</div><! --/container -->
+	 </div><! --/footerwrap -->
+	 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/retina-1.1.0.js"></script>
+	<script src="assets/js/jquery.hoverdir.js"></script>
+	<script src="assets/js/jquery.hoverex.min.js"></script>
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+  	<script src="assets/js/jquery.isotope.min.js"></script>
+  	<script src="assets/js/custom.js"></script>
 
 
+    <script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+  </body>
 </html>
