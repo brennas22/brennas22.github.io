@@ -1041,6 +1041,16 @@ blockquote:after {
 
 }
 
+.no-marg {
+	margin-top: 0px;
+	margin-bottom: -30px;
+
+}
+
+.port {
+	padding: 5px;
+}
+
 .top-marg {
 	margin-top: 20px;
 }
@@ -1049,6 +1059,9 @@ blockquote:after {
 	padding: 10px;
 }
 
+.img-bord {
+	border: 1px solid black;
+}
 
 
 a.back-to-top {

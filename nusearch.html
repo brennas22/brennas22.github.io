@@ -1,137 +1,278 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>PlanEDU - Brenna Sorkin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
 
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Brenna Sorkin Portfolio Website</title>
-	<link rel="stylesheet" href="css/Usebootstrap.css">
-	<link rel="stylesheet" href="css/style.css"> <!-- this one is second so it overwrites-->
-	<!--Bootstrap Jquery-->
-	<script src=js/jquery.js></script> <!--this must go first-->
-	<!--Bootstrap Javascript-->
-	<script src=js/bootstrap.js></script>
-</head>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="assets/js/modernizr.js"></script>
+  </head>
 
-<body>
-<nav class="navbar navbar-simple navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Brenna Sorkin</a>
+  <body>
+
+        <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">BRENNA SORKIN.</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li ><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          
+            <li  class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PORTFOLIO<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="generate.html">GENERATE MARKETING</a></li>
+                <li><a href="Fountaine.html">PROSTHETICS LAB</a></li>
+                <li><a href="experienceandsystems.html">INFORMATION DESIGN</a></li>
+                <li><a href="graphicdesign.html">GRAPHIC DESIGN</a></li>
+                <li><a href="whee.html">APP DESIGN</a></li>
+                <li class="active"><a href="nusearch.html">PLANEDU</a></li>
+                <li><a href="grabCADPrint.html">GRABCAD PRINT</a></li>
+                <li><a href="techsketch.html">TECHNICAL SKETCHES</a></li>
+                <li><a href="uncommonfoods.html">UNCOMMON FOODS</a></li>
+                 <li><a href="clip.html">CLIP</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="Sorkin_Brenna_Resume.pdf">Resume <span class="sr-only">(current)</span></a></li>
-        <li><a href="about.html">About <span class="sr-only">(current)</span></a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="generate.html">Generate</a></li>
-            <li><a href="whee.html">Whee</a></li>
-            <li><a href="experienceandsystems.html">Information Design</a></li>
-            <li><a href="graphicdesign.html">Graphic Design</a></li>
-            <li><a href="grabCADPrint.html">GrabCAD/Stratasys</a></li>
-            <li><a href="nusearch.html">Course Selection Planning</a></li>
-            <li><a href="Fountaine.html">Fontaine Lab for Innovative Prosthetics</a></li>
-            <li><a href="Sabinemade.html">SABINEMADE</a></li>
-            <li><a href="cadmodels.html">CAD Models</a></li>
-            <li><a href="fineart.html">Fine Art</a></li>
-            <li><a href="techsketch.html">Technical Sketching</a></li>
-          </ul>
-        </li>
-      </ul>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<div class="container">
-	<div class="row" >
-			<div class="col-lg-12">
-				<h1 class="page-header">Co-op Search and Class Planning</h1>
-			</div>
+
+
+	<!-- *****************************************************************************************************************
+	 BLUE WRAP
+	 ***************************************************************************************************************** -->
+
+	<div id="blue">
+	    <div class="container">
+			<div class="row">
+				<h3>PlanEDU</h3>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /blue -->
+
+	<!-- *****************************************************************************************************************
+	 TITLE & CONTENT
+	 ***************************************************************************************************************** -->
+
+	 <div class="container mt">
+	 	
+
+	 	<div class="row top-marg">
+		 	<div class="col-md-8  centered">
+			 	<img src="majorperson.png" alt="">
+		 	</div>
+		
+
+		 	<div class="col-md-4">
+			 	<div class="spacing"></div>
+		 		<h4>PlanEDU</h4>
+		 		<p>These mockups are of a co-op search and class planning website that is an in progress self-directed project. I often find myself looking for information on students who've co-op'd at companies I'm interest in to identify what they studied and what courses they took. Additionally, I want to use that information to plan my classes for the next foreseable number of semesters. Northeastern has very customizable major requirements, which makes knowing which classes one needs to take a complicated process.</p>
+		 		
+		 		
+		 	</div>
+
 		</div>
-	<div class="row">
+
+	<div class="row top-marg">
 		<div class="col-md-6">
-                <img class="img-responsive img-portfolio" src="majorperson.png" alt="">
+			<img src="majorcropped.png" alt="">
 		</div>
 		<div class="col-md-6">
-			 <img class="img-responsive img-portfolio" src="majorcropped.png" alt="">
+			<img src="majorsearch.png" alt="">
 		</div>
-	</div>
-	<div class="row" style="margin-bottom: 40px">
-		<div class="col-sm-1 col-lg-2"></div>
-		<div class="col-sm-10 col-lg-8">
-			<h3>These mockups are of a co-op search and class planning website are part of a project that I did on my own during the summer of 2016. I often found myself looking for information on students who've co-op'd at companies I'm interest in to identify what they studied and what courses they took. Additionally, I want to use that information to plan my classes for the next foreseable number of semesters. Northeastern has very customizable major requirements, which makes knowing which classes one needs to take a complicated process. </h3>
-		</div> <!--want some padding below this-->
-		<div class="col-sm-1 col-lg-2"></div>
-	</div>
-	<div class="row">
-			<div class="col-sm-6 col-md-6">
-                    <img class="img-responsive img-portfolio " src="majorsearch.png" alt="">
-			</div>
-			<div class="col-sm-6 col-md-6">
+
+	</div>	
+
+	<div class="row top-marg">
+		<div class="col-md-6">
+			<img src="major_classpath2.png" alt="">
+		</div>
+		<div class="col-md-6">
+			<img src="MajorApp2.png" alt="">
+		</div>
+		
+	</div>	
+
 	
-                    <img class="img-responsive img-portfolio " src="majorperson.png" alt="">
-               
-			</div>
-	</div>
-	<div class="row">
-			<div class="col-sm-6 col-md-6">	
-                <img class="img-responsive img-portfolio" src="MajorApp.png" alt="">
-			</div>
-			<div class="col-sm-6 col-md-6">
+
+		
+   
+   
+
+
+		<div class="row">
+
+		 	<div class="col-lg-4 col-lg-offset-1">
+			 	<div class="spacing"></div>
+		 		<h4>Project Details</h4>
+		 		<div class="hline"></div>
+		 		<p><b>Date:</b> Ongoing</p>
+		 		<p><b>Contributors:</b> Brenna Sorkin</p>
+		 		<p><b>Categories:</b> Visual Design, App Design, Experience Design</p>
+		 		
+		 		<p><b>Client:</b> Self-directed project</p>
+		 		
+		 	</div>
+		 	
+	 	</div><! --/row -->
+	 </div><! --/container -->
+	 
+	 <!-- *****************************************************************************************************************
+   FOOTER
+   ***************************************************************************************************************** -->
+   <div id="footerwrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>About</h4>
+          <div class="hline-w"></div>
+          <p>Brenna Sorkin built this website by modifying and combining a number of templates and learning HTML & CSS along the way!
+          <a href="about.html">more about Brenna</a></p>
+        </div>
+        
+        <div class="col-lg-4">
+          <h4>Reach me at:</h4>
+          <div class="hline-w"></div>
+          <p>
+
+            brenna.sorkin@gmail.com<br/>
+            sorkin.b@husky.neu.edu<br/>
+            617.543.0996<br/>
+            <a href="http://www.linkedin.com/in/brennasorkin"><i class="fa fa-linkedin"></i></a>
+          </p>
+        </div>
+      
+      </div><! --/row -->
+    </div><! --/container -->
+   </div><! --/footerwrap -->
+   
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/retina-1.1.0.js"></script>
+	<script src="assets/js/jquery.hoverdir.js"></script>
+	<script src="assets/js/jquery.hoverex.min.js"></script>
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+  	<script src="assets/js/jquery.isotope.min.js"></script>
+  	<script src="assets/js/custom.js"></script>
+
+
+    <script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
 				
-                    <img class="img-responsive img-portfolio" src="majorcropped.png" alt="">
-               
-			</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6 col-md-6">
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
 				
-                    <img class="img-responsive img-portfolio" src="MajorApp2.png" alt="">
-                
-			</div>
-			<div class="col-sm-6 col-md-6">
-				
-                    <img class="img-responsive img-portfolio" src="major_classpath2.png" alt="">
-               
-			</div>
-	</div>
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
 			
-	
-	<div class="row">
-		<h2>Related Projects</h2>
-	</div>
-	<div class="row">
-		<div class="col-sm-6 col-md-4">
-				<a href="graphicdesign.html">
-                    <img class="img-responsive img-portfolio img-hover" src="graphic.png" alt="">
-                </a>
-                
-			</div>
-			<div class="col-sm-6 col-md-8">
-				<a href="grabCADPrint.html">
-                    <img class="img-responsive img-portfolio img-hover" src="gcp13.png" alt="">
-                </a>
-			</div>
-	</div>
-</div>
-	
-</body>
-
-
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+  </body>
 </html>
