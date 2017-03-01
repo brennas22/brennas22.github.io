@@ -85,6 +85,10 @@ a:focus {
 	text-align: center
 }
 
+.thin {
+	font-weight: normal;
+}
+
 
 /*	################################################################
 	BOOTSTRAP MODIFICATIONS & TWEAKS
@@ -1056,7 +1060,12 @@ blockquote:after {
 }
 
 .img-pad {
-	padding: 10px;
+	margin-top: 60px;
+}
+
+.port-pad {
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .img-bord {
