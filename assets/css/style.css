@@ -9,6 +9,7 @@
 	
 ################################################################# */ 
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:200,400,500,700,900);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 @import url("prettyPhoto.css") screen;
 @import url("hoverex-all.css") screen;
@@ -26,21 +27,25 @@ body {
 	margin: 0; 
 	height: 100%; 
 	color: #384452;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 100%;
 	}
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 
+}
+
+.blackh5 {
+	color: black;
 }
 
 p { 
 	padding: 0; 
 	margin-bottom: 12px; 
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
  	font-size: 1em;
 	line-height: 24px;
@@ -86,7 +91,11 @@ a:focus {
 }
 
 .thin {
-	font-weight: normal;
+	font-weight: 200;
+}
+
+.semi {
+	font-weight: 500;
 }
 
 
@@ -766,7 +775,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 blockquote {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 26px;
 	line-height: 60px;
 	text-align: center;
@@ -792,7 +801,7 @@ blockquote:after {
 }
 
 .seeprojects {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
 	line-height: 60px;
 	text-align: center;
@@ -813,7 +822,7 @@ blockquote:after {
    padding-top: 85px;	
    padding-left: 30px; 
    width: 100%; 
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Montserrat', sans-serif;
    font-weight: 200;
    padding-right: 50px;
 }
@@ -823,7 +832,7 @@ blockquote:after {
    padding-top: 40px;	
    padding-left: 40px; 
    width: 100%; 
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Montserrat', sans-serif;
    font-weight: 200;
    padding-right: 50px;
 }
@@ -832,7 +841,7 @@ blockquote:after {
    text-align: left;
    padding-top: 0px;	 
    width: 100%; 
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Montserrat', sans-serif;
    font-weight: 200;
    padding-right: 50px;
 }
@@ -937,7 +946,7 @@ blockquote:after {
    padding-left: 30px; 
    margin-top: 0px;
    width: 100%; 
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Montserrat', sans-serif;
    font-weight: 200;
    padding-right: 50px;
 }
