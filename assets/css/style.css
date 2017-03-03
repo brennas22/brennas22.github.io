@@ -380,11 +380,11 @@ a:focus {
 /* General Tweaks */
 
 #blue {
-	background: #00b3fe;
+	background: #1785AD;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 #blue h3 {
