@@ -340,44 +340,10 @@ video {
 
 
 
-.divtext {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  padding-top:6%; 
-  padding-left: 15%; 
-  text-align:left;
-  color: white;
-  
-
-}
-.divtext h1 {
-	text-align: left;
-	
-	color: white;
-	font-size: 40px;
-	font-weight: 800;
-}
-
-.divtext h5 {
-	text-align: left;
-	
-	color: white;
-	font-size: 17px;
-	font-weight: 300;
-}
 
 
 
 
-.divtext p {
-	text-align: left;
-	
-	color: white;
-	font-size: 14px;
-	font-weight: 300;
-}
 
 .wrapper2 {
   position:relative;
@@ -397,46 +363,7 @@ video {
   background-size:100% auto;
 }
 
-.divtext2 {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  padding-top:1%; 
-  padding-left: 15%; 
-  text-align:left;
-  color: black;
-  
 
-}
-
-
-.divtext2 h1 {
-	text-align: left;
-	
-	color: black;
-	font-size: 40px;
-	font-weight: 800;
-}
-
-.divtext2 h5 {
-	text-align: left;
-	
-	color: black;
-	font-size: 17px;
-	font-weight: 300;
-}
-
-
-
-
-.divtext2 p {
-	text-align: left;
-	
-	color: black;
-	font-size: 14px;
-	font-weight: 300;
-}
 
 
 
@@ -455,7 +382,7 @@ video {
   top:0;
   left:0;
   width:100%;
-  padding-top:8%; 
+  padding-top:1%; 
   padding-left: 15%; 
   text-align:left;
   color: #34b4e3;
@@ -509,38 +436,18 @@ video {
 }
 
 @media (min-width: 768px) {
-  .divtext {
-    color: black;
-  }
+  .divtext3 {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  padding-top:8%; 
+  padding-left: 15%; 
+  text-align:left;
+  color: #34b4e3;
+  
 
-  .divtext h1{
-    color: black;
-  }
-  .divtext h5{
-    color: black;
-  }
-
-
-  .divtext p{
-    color: black;
-  }
-
-  .divtext2 {
-  	padding-top: 6%;
-    color: black;
-  }
-
-  .divtext2 h1{
-    color: black;
-  }
-  .divtext2 h5{
-    color: black;
-  }
-
-
-  .divtext2 p{
-    color: black;
-  }
+}
 
   .wrapper2 {
   position:relative;
