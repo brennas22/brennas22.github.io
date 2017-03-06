@@ -379,12 +379,15 @@ video {
 	font-weight: 300;
 }
 
+
+
+
 .wrapper2 {
   position:relative;
   width:100%;
   max-width: 1500px;
   height:100%;
-  min-height:250px
+  min-height:150px
 }
 
 .divimage2 {  position:absolute;
