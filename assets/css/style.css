@@ -337,21 +337,37 @@ video {
   background-repeat:no-repeat;
   background-size:100% auto;
 }
+
+.wrapper2 {
+  position:relative;
+  width:100%;
+  max-width: 1500px;
+  height:100%;
+  min-height:290px
+}
+
+.divimage2 {  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:url(http://i64.tinypic.com/ekm2q8.png);
+  background-repeat:no-repeat;
+  background-size:100% auto;
+}
+
 .divtext {
   position:absolute;
   top:0;
   left:0;
   width:100%;
-  padding-top:8%; 
+  padding-top:6%; 
   padding-left: 15%; 
   text-align:left;
-  
-  
   color: white;
   
 
 }
-
 .divtext h1 {
 	text-align: left;
 	
@@ -379,7 +395,48 @@ video {
 	font-weight: 300;
 }
 
-@media (min-width: 600px) {
+.divtext2 {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  padding-top:6%; 
+  padding-left: 15%; 
+  text-align:left;
+  color: black;
+  
+
+}
+
+
+.divtext2 h1 {
+	text-align: left;
+	
+	color: black;
+	font-size: 40px;
+	font-weight: 800;
+}
+
+.divtext2 h5 {
+	text-align: left;
+	
+	color: black;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+
+
+
+.divtext2 p {
+	text-align: left;
+	
+	color: black;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+@media (min-width: 768px) {
   .divtext {
     color: black;
   }
@@ -395,7 +452,44 @@ video {
   .divtext p{
     color: black;
   }
+
+  .divtext2 {
+    color: black;
+  }
+
+  .divtext2 h1{
+    color: black;
+  }
+  .divtext2 h5{
+    color: black;
+  }
+
+
+  .divtext2 p{
+    color: black;
+  }
+
+  .wrapper2 {
+  position:relative;
+  width:100%;
+  max-width: 1500px;
+  height:100%;
+  min-height:450px
 }
+}
+
+@media (min-width: 992px){
+	.wrapper2 {
+  position:relative;
+  width:100%;
+  max-width: 1500px;
+  height:100%;
+  min-height:580px
+}
+
+}
+
+
 
 /* Testimonials Wrap */
 #twrap {
