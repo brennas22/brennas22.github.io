@@ -379,9 +379,6 @@ video {
 	font-weight: 300;
 }
 
-
-
-
 .wrapper2 {
   position:relative;
   width:100%;
@@ -500,6 +497,16 @@ video {
 	font-weight: 300;
 }
 
+@media (min-width: 300px){
+	.wrapper2 {
+  position:relative;
+  width:100%;
+  max-width: 1500px;
+  height:100%;
+  min-height:290px
+}
+
+}
 
 @media (min-width: 768px) {
   .divtext {
@@ -555,16 +562,7 @@ video {
 
 }
 
-@media (min-width: 400px){
-	.wrapper2 {
-  position:relative;
-  width:100%;
-  max-width: 1500px;
-  height:100%;
-  min-height:290px
-}
 
-}
 
 
 
