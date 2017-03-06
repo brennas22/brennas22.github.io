@@ -368,13 +368,7 @@ video {
 	font-weight: 300;
 }
 
-.divtext h4 {
-	text-align: left;
-	
-	color: white;
-	font-size: 17px;
-	font-weight: 300;
-}
+
 
 
 .divtext p {
@@ -396,9 +390,7 @@ video {
   .divtext h5{
     color: black;
   }
-  .divtext h4{
-    color: black;
-  }
+
 
   .divtext p{
     color: black;
