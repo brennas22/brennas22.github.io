@@ -424,7 +424,7 @@ video {
 	font-weight: 300;
 }
 
-@media (min-width: 300px){
+@media (min-width: 500px){
 	.wrapper2 {
   position:relative;
   width:100%;
