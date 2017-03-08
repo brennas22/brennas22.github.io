@@ -9,7 +9,7 @@
 	
 ################################################################# */ 
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:200,400,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:200,300, 400,500,700,900);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 @import url("prettyPhoto.css") screen;
 @import url("hoverex-all.css") screen;
@@ -62,6 +62,7 @@ a {
 	padding: 0;
 	margin: 0;
 	text-decoration: none; 
+	color: #01b2fe;
 	-webkit-transition: background-color .4s linear, color .4s linear;
 	-moz-transition: background-color .4s linear, color .4s linear;
 	-o-transition: background-color .4s linear, color .4s linear;
@@ -71,7 +72,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color:#01b2fe;
+  color:#1785AD;
 }
 
 
@@ -92,6 +93,10 @@ a:focus {
 
 .thin {
 	font-weight: 200;
+}
+
+.semi-thin {
+	font-weight: 300;
 }
 
 .thin-black {
@@ -257,7 +262,7 @@ a:focus {
 /* Services Wrap */
 #service {
 	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-bottom: 0px;
 }
 
 #service i {
@@ -470,7 +475,11 @@ video {
 }
 
 
-
+.white {
+	color: white;
+	padding-left: 20px;
+	font-weight: 200;
+}
 
 
 /* Testimonials Wrap */
@@ -1065,7 +1074,16 @@ blockquote:after {
      .educationline{
       width: 3px; /* Line width */
       background-color: black; /* Line color */
-      height: 500px; /* Override in-line if you want specific height. */
+      height: 530px; /* Override in-line if you want specific height. */
+      float: left; /* Causes the line to float to left of content. 
+        You can instead use position:absolute or display:inline-block
+        if this fits better with your design */
+    }
+
+    .mentorline {
+      width: 3px; /* Line width */
+      background-color: black; /* Line color */
+      height: 960px; /* Override in-line if you want specific height. */
       float: left; /* Causes the line to float to left of content. 
         You can instead use position:absolute or display:inline-block
         if this fits better with your design */
@@ -1074,7 +1092,16 @@ blockquote:after {
      .experienceline{
       width: 3px; /* Line width */
       background-color: black; /* Line color */
-      height: 460px; /* Override in-line if you want specific height. */
+      height: 1110px; /* Override in-line if you want specific height. */
+      float: left; /* Causes the line to float to left of content. 
+        You can instead use position:absolute or display:inline-block
+        if this fits better with your design */
+    }
+
+    .livedataline{
+      width: 3px; /* Line width */
+      background-color: black; /* Line color */
+      height: 1320px; /* Override in-line if you want specific height. */
       float: left; /* Causes the line to float to left of content. 
         You can instead use position:absolute or display:inline-block
         if this fits better with your design */
@@ -1117,7 +1144,7 @@ blockquote:after {
    margin-top: 0px;
    width: 100%; 
    font-family: 'Montserrat', sans-serif;
-   font-weight: 200;
+   font-weight: 300;
    padding-right: 50px;
 }
 /* end second test */
@@ -1170,10 +1197,28 @@ blockquote:after {
         if this fits better with your design */
     }
 
+     .mentorline {
+      width: 3px; /* Line width */
+      background-color: black; /* Line color */
+      height: 380px; /* Override in-line if you want specific height. */
+      float: left; /* Causes the line to float to left of content. 
+        You can instead use position:absolute or display:inline-block
+        if this fits better with your design */
+    }
+
      .experienceline{
       width: 3px; /* Line width */
       background-color: black; /* Line color */
-      height: 225px; /* Override in-line if you want specific height. */
+      height: 550px; /* Override in-line if you want specific height. */
+      float: left; /* Causes the line to float to left of content. 
+        You can instead use position:absolute or display:inline-block
+        if this fits better with your design */
+    }
+
+     .livedataline{
+      width: 3px; /* Line width */
+      background-color: black; /* Line color */
+      height: 550px; /* Override in-line if you want specific height. */
       float: left; /* Causes the line to float to left of content. 
         You can instead use position:absolute or display:inline-block
         if this fits better with your design */
@@ -1182,7 +1227,7 @@ blockquote:after {
     .skillsline{
       width: 3px; /* Line width */
       background-color: black; /* Line color */
-      height: 225px; /* Override in-line if you want specific height. */
+      height: 275px; /* Override in-line if you want specific height. */
       float: left; /* Causes the line to float to left of content. 
         You can instead use position:absolute or display:inline-block
         if this fits better with your design */
