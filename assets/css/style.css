@@ -325,8 +325,31 @@ video {
 }
 
 
+.imagebehind {
+	 position: relative; 
+   width: 100%; /* for IE 6 */
+}
 
+.floattext {
+	
+   position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  padding-top:10%; 
+  padding-left: 15%; 
+  text-align:left;
+  color: #34b4e3;
+}
 
+.floattext span {
+	color: white; 
+   
+   
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 3px; 
+}
 
 .wrapper {
   position:relative;
@@ -367,7 +390,13 @@ video {
 }
 
 
-
+.wrapperhalf {
+  position:relative;
+  width:100%;
+  max-width: 1500px;
+  height:100%;
+  min-height:225px
+}
 
 
 .wrapper2 {
@@ -423,12 +452,10 @@ video {
 
 
 
-.divimage3 {  position:absolute;
-  top:0;
-  left:0;
+.divimage3 {  
   width:100%;
-  height:100%;
-  background:url(http://i65.tinypic.com/20rjvra.png);
+  height:500px;
+  background:url(http://i63.tinypic.com/20gznyd.png);
   background-repeat:no-repeat;
   background-size:100% auto;
 }
@@ -439,6 +466,16 @@ video {
   width:100%;
   height:100%;
   background:url(http://i64.tinypic.com/21njt77.jpg);
+  background-repeat:no-repeat;
+  background-size:100% auto;
+}
+
+.divimage5 {  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+ 
   background-repeat:no-repeat;
   background-size:100% auto;
 }
@@ -509,6 +546,14 @@ video {
   min-height:250px
 }
 
+.wrapperhalf {
+  position:relative;
+  width:100%;
+  max-width: 1500px;
+  height:100%;
+  min-height:225px
+}
+
 }
 
 @media (min-width: 768px) {
@@ -531,6 +576,14 @@ video {
   max-width: 1500px;
   height:100%;
   min-height:450px
+}
+
+.wrapperhalf {
+  position:relative;
+  width:100%;
+  max-width: 1500px;
+  height:100%;
+  min-height:30px
 }
 
 .divtextsizeu {
@@ -581,6 +634,14 @@ video {
   min-height:625px
 }
 
+.wrapperhalf {
+  position:relative;
+  width:100%;
+  max-width: 1500px;
+  height:100%;
+  min-height: 434px;
+}
+
 }
 
 
@@ -588,6 +649,11 @@ video {
 	color: white;
 	padding-left: 20px;
 	font-weight: 200;
+}
+
+.no-margin {
+	margin: 0px !important;
+	padding-left: 0px !important;
 }
 
 
@@ -1385,7 +1451,7 @@ blockquote:after {
 }
 
 .port {
-	padding: 5px;
+	padding: 0px;
 }
 
 .top-marg {
