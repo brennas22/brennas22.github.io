@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+	<title>LiveData: Planner - Brenna Sorkin</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
+
+	<!-- Just for debugging purposes. Don't actually copy this line! -->
+	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+  </head>
+
+  <body>
+
+  	<!-- Fixed navbar -->
+  	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  		<div class="container">
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  					<span class="sr-only">Toggle navigation</span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+  				<a class="navbar-brand" href="index.html">BRENNA SORKIN.</a>
+  			</div>
+  			<div class="navbar-collapse collapse navbar-right">
+  				<ul class="nav navbar-nav">
+  					<li ><a href="index.html">HOME</a></li>
+  					<li><a href="about.html">RESUME</a></li>
+
+  					<li class="dropdown">
+  						<a href="#" class="dropdown-toggle" data-toggle="dropdown">PORTFOLIO<b class="caret"></b></a>
+  						<ul class="dropdown-menu">
+  							<li><h5 class="white">featured projects</h5></li>
+
+  							<li><a href="uncommonfoods.html">UX DESIGN</a></li>
+  							<li class="active"><a href="clip.html">UI DESIGN</a></li>
+  							<li><a href="generate.html">GRAPHIC DESIGN</a></li>
+  							<li><a href="sizeu.html">PRODUCT DESIGN</a></li>
+  							<li><a href="microinteractions.html">INTERACTION DESIGN</a></li>
+
+
+  						</ul>
+  					</li>
+  				</ul>
+  			</div><!--/.nav-collapse -->
+  		</div>
+  	</div>
+
+
+
+	<!-- *****************************************************************************************************************
+	 BLUE WRAP
+	 ***************************************************************************************************************** -->
+
+	 <div id="blue">
+	 	<div class="container">
+	 		<div class="row">
+	 			<h3>LiveData: Planner - Case Study</h3>
+	 		</div><!-- /row -->
+	 	</div> <!-- /container -->
+	 </div><!-- /blue -->
+
+	<!-- *****************************************************************************************************************
+	 TITLE & CONTENT
+	 ***************************************************************************************************************** -->
+
+	 <div class="container mt">
+	 	
+	 	<div class="row">
+	 		<div class="col-md-8 ">
+	 			<video width="650" height="460" controls>
+	 				<source src="planner/planner_demo.mov" type="video/mp4">
+	 					<source src="movie.ogg" type="video/ogg">
+	 						Your browser does not support the video tag.
+	 					</video>
+	 				</div>
+
+
+	 				<div class="col-md-4">
+
+	 					<h2>PeriOp Planner</h2>
+	 					<h4 class="thin">LiveData PeriOp Planner improves scheduling workflow by visually coordinating the patient’s steps from first referral through preparation to scheduling. PeriOp Planner patients will be better prepared for surgery and hospitals and surgical teams can confidently schedule surgical cases.
+	 						View more at <a href="http://www.livedata.com/periop-planner">LiveData.</a><br><br>
+	 						<strong class="semi">The main design problem I worked on was the Case Detail Form, which consisted for a number of sub-problems:</strong><br>
+	 						+ Concurrent cases <br>
+	 						+ Main form structure<br>
+	 						+ Error states <br>
+	 						+ Preop workup / cards <br>
+	 						+ Return to surgery
+
+	 					</h4>
+
+
+	 				</div>
+
+	 			</div>
+
+
+	 			<div class="row top-marg">
+
+
+
+	 				<div class="col-lg-7">
+	 					<div class="spacing"></div>
+	 					<div class="spacing"></div>
+	 					<h2>Problem</h2>
+	 					<h4 class="thin">LiveData was looking to redesign a clunky and inefficient form used to collect patient information, schedule procedures, mark preop workup items, assign surgeons and more. Some of the main problems that needed to be addressed were: <br> <br>
+
+	 						+ <strong>Organization of information</strong> <br>
+	 						- How do people filling out the form quickly know what section information goes in?<br>
+	 						- Can people scan the form and understand it?<br>
+	 						- Is there a way to only complete the required sections?<br><br>
+	 						+ <strong>Keyboard Navigation / 508 Compliance</strong>  <br>
+	 						- Can the entire form be navigated in an intuitive way via keyboard only?<br>
+	 						- Can a user who is colorblind, low vision, etc. understanding and interact with the form?<br><br>
+	 						+ <strong>Error States</strong> <br>
+	 						- How do users know that an error has been made? <br>
+	 						- How do users know if an error has been corrected?<br>
+	 						<br>
+
+	 						+ <strong>Skills Utilized:</strong> <br>
+	 						- Adobe XD <br>
+	 						- Hand Sketching <br>
+	 						- User Testing <br>
+	 						- Principle <br>
+	 						- Design Research <br>
+	 						- Wireframing
+
+
+	 					</h4>
+	 				</div>
+
+	 				<div class="col-lg-4 col-lg-offset-1">
+	 					<video width="250" height="500" controls>
+	 						<source src="clipmobilewalkthrough.mov" type="video/mp4">
+	 							<source src="movie.ogg" type="video/ogg">
+	 								Your browser does not support the video tag.
+	 							</video>
+	 						</div>
+
+	 					</div>
+
+	 					<div class="row">
+
+	 						<div class="col-lg-12 ">
+	 							<div class="spacing"></div>
+	 							<h2>Process Book</h2>
+	 							<div class="hline"></div>
+	 							<h4 class=" thin">Below is a closer look at my process for reaching the final products above.
+	 							</h4>
+
+	 						</div>
+
+	 					</div>
+
+	 						 							<div class="row top-marg">
+	 											<div class="col-md-12">
+	 												
+	 												<h3>Cards Metaphor</h3>
+	 												
+	 												
+	 												<h4 class="thin">The first project I worked on was a metaphor for "Lists UI," which was necessary in multiple places throughout the Case Detail Form.  <br><br>
+	 													1. Preop Workup items need to be distinguished from one another, need to be easily added/removed, need to be easily checked/unchecked <br>
+	 													2. Other lists such as pharmacy items, special supplies etc. have additional secondary ifnromation that needs to be displayed. They also need to be easily distinguished, easily added/removed, and easily have their quantity adjusted <br><br>
+	 													This was an ongoing design problem, which started before the implementation the entirely new form structure.<br><br></h4>
+	 													
+	 													<h4><strong class="semi">Iteration 1: </strong></h4>
+	 													<h4 class="thin">This iteration occurred before the redesign of the form</h4>
+	 													
+	 														</div>
+	 													</div>
+
+	 														<div class="row top-marg">
+
+	 															<div class="col-md-6">
+	 																<video width="650" height="460" controls>
+	 																	<source src="planner/cards/old/cards_draft1.mov" type="video/mp4">
+	 																		<source src="movie.ogg" type="video/ogg">
+							 												Your browser does not support the video tag.
+							 											</video>
+	 															</div>
+	 															<div class="col-md-6">
+	 																<h4 class="thin">My first design attempt was built into the existing form at the time. There needed to be a way to input different pieces of data for one item (it later turned out this was all linked in the backend). <br><br>
+	 																My initial thought was to just enter each piece of data, one at a time, and they would appear as a line in the form. <br><br>
+	 																This design was flawed though because there was no way of knowing what the next information you needed to know would be, and what if you didn't know a portion? How would you leave it blank and go to the next section? It is also very unclear which element has focus.</h4>
+	 															</div>
+	 															
+
+	 														</div>
+
+	 										<div class="row top-marg">
+	 											<div class="col-md-12">
+
+	 													<h4><strong class="semi">Iteration 2: </strong></h4>
+	 													<h4 class="thin">This iteration occurred before the redesign of the form</h4>
+	 													
+	 														</div>
+	 													</div>
+
+	 														<div class="row top-marg">
+
+	 															<div class="col-md-6">
+	 																<video width="650" height="460" controls>
+	 																	<source src="planner/cards/old/draft2/inline_edit_keys.mov" type="video/mp4">
+	 																		<source src="movie.ogg" type="video/ogg">
+							 												Your browser does not support the video tag.
+							 											</video>
+	 															</div>
+	 															<div class="col-md-6">
+	 																<h4 class="thin">My second design included an add button so that keyboard nav wouldn't have to tab through all the sections if they weren't going to add anything. It also had all the sections visible so that some could be skipped if desired and so that all information was visible initially. Additionally, I added the ability to edit, not just remove, entries.<br><br>
+	 																In the video here I also included the hierarchy that would be followed by keyboard navigation (second half of video)<br><br>
+	 																This design was flawed also because of its clunkiness - in particular the fact that keyboard nav went up to reach edit, which doesn't follow the flow of the rest of the form. It also took far to many clicks / tab presses to reach the save button.</h4>
+	 															</div>
+	 															
+
+	 														</div>
+
+	 															 										<div class="row top-marg">
+	 											<div class="col-md-12">
+
+	 													<h4><strong class="semi">Iteration 3: </strong></h4>
+	 													<h4 class="thin">This iteration occurred before the redesign of the form</h4>
+	 													
+	 														</div>
+	 													</div>
+
+	 														<div class="row top-marg">
+
+	 															<div class="col-md-6">
+	 																<video width="650" height="460" controls>
+	 																	<source src="planner/cards/old/pop_up/pop_up.mov" type="video/mp4">
+	 																		<source src="movie.ogg" type="video/ogg">
+							 												Your browser does not support the video tag.
+							 											</video>
+	 															</div>
+	 															<div class="col-md-6">
+	 																<h4 class="thin">My third design mimicked the existing metaphor that was being used for pre-op workup items (a similar style of items), which consisted of a popup modal dialog where the information is input. I set it up as a grid to most easily accomodate the different sections. <br><br>
+	 																The grid set up also allows for simple keyboard navigation and, as in iteration 2, the add button negates the need to tab through the whole thing if it's not necessary to access it.</h4>
+	 															</div>
+	 															
+
+	 														</div>
+
+	 														<div class="row top-marg">
+	 											<div class="col-md-12">
+
+	 													<h4><strong class="semi">Iteration 4 (Final Iteration): </strong></h4>
+	 													<h4 class="thin">Between iteration 3 and 4 it was determined that the entire form should be redesigned for efficency and ease of use. This iteration occurred during that redesign.</h4>
+	 													
+	 														</div>
+	 													</div>
+
+	 													<div class="row top-marg">
+
+	 															<div class="col-md-6">
+	 																<img src="planner/cards/cards_partial.png" alt="">
+	 															</div>
+	 															<div class="col-md-6">
+	 																<img src="planner/cards/preop_workup_check.png" alt="">
+	 															</div>
+	 															
+
+	 														</div>
+
+	 														<div class="row top-marg">
+
+	 															<div class="col-md-6">
+	 																<img src="planner/cards/multiple_cards.png" alt="">
+	 															</div>
+	 															<div class="col-md-6">
+	 																<video width="650" height="460" controls>
+	 																	<source src="planner/cards/cards.mov" type="video/mp4">
+	 																		<source src="movie.ogg" type="video/ogg">
+							 												Your browser does not support the video tag.
+							 											</video>
+	 															</div>
+	 															
+
+	 														</div>
+
+	 														<div class="row top-marg">
+	 											<div class="col-md-12">
+
+	 													<h4 class="thin">Once the form was streamlined, it became clear that a card metaphor would be the best option. (Also at this point we had learned that we didn't need separate input fields, instead inputs that differ only slightly are still listed as completely separate options in the dropdown menu). <br><br>
+	 													The card has many benefits in this case: easily keyboard navigable (and easy to skip over), cards can highlight key title information, but also provide a cohesive option for items with more details. They can be easily altered in terms of quantity, checkboxes, and removal. </h4>
+	 													
+	 														</div>
+	 													</div>
+
+	 					<div class="row">
+	 						<div class="col-md-12">
+	 							<h3>Research</h3>
+	 							<h4 class="thin">When we decided to redesign the entire form, the next thing I did was begin researching best practices for forms, which I did primarily via medium and other design resources. <br><br>
+
+	 							</div>
+	 						</div>
+
+	 						<div class="row">
+	 							<div class="col-md-4">
+
+	 								<a href="https://uxplanet.org/designing-more-efficient-forms-structure-inputs-labels-and-actions-e3a47007114f"><img src="planner/efficient_forms_babich.png"></a>
+	 							</div>
+	 							<div class="col-md-8">
+
+	 								<h4 class="thin">
+	 									<strong class="semi">Designing More Efficient Forms: Structure, Inputs, Labels and Actions </strong><br>by Nick Babich - <a href="https://uxplanet.org/designing-more-efficient-forms-structure-inputs-labels-and-actions-e3a47007114f">read more</a><br><br>
+	 									<strong class="semi">Key Takeaways:</strong><br> 
+	 									+ Group related information<br>
+	 									+ Forms should never consist of more than one column<br>
+	 									+ Clearly distinguish required and not required fields<br>
+	 									+ Sentence case is more readable than Title Case (and never use ALL CAPS)<br>
+	 									+ Top labels are better than side labels <br>
+	 									+ If using inline labels (placeholder text), move label to top when user begins typing
+	 								</h4> 
+
+	 							</div>
+	 						</div>
+
+	 						<div class="row"> 	
+	 							<div class="col-md-4">
+	 								<div class="spacing"></div>
+	 								<a href="https://uxplanet.org/designing-more-efficient-forms-assistance-and-validation-f26a5241199d"><img src="planner/assistive_babich.png"></a>
+	 							</div>
+	 							<div class="col-md-8">
+	 								<div class="spacing"></div>
+	 								<h4 class="thin"> 
+	 									<strong class="semi">Designing More Efficient Forms: Assistance and Validation </strong><br>by Nick Babich - <a href="https://uxplanet.org/designing-more-efficient-forms-assistance-and-validation-f26a5241199d">read more</a><br><br>
+	 									<strong class="semi">Key Takeaways:</strong><br> 
+	 									+ Make sure to have inline validation (inform the user right away)<br>
+	 									+ User color to indicate success/failure<br>
+	 									+ Provide a clear error message<br>
+
+	 								</h4> 
+	 							</div>
+	 						</div>
+
+
+	 						<div class="row">
+	 							<div class="col-md-12">
+	 								<div class="spacing"></div>
+	 								<h3>Sketches</h3>
+	 								<h4 class="thin">I began my process of identifying and solving a problem by examining existing products. My initial
+	 									idea was a job search board that would allow you to store documents, etc.. I was inspired by a combination of the job
+	 									search engine Monster.com and social media site Pinterest.com. I then began to tweak and expand my idea of storing imporant information
+	 									on a variety of boards.</h4>
+	 								</div>
+	 							</div>
+
+	 							<div class="row top-marg">
+
+	 								<div class="col-md-12">
+	 									<div class="owl-carousel owl-theme">
+	 										<div class="item"><img src="clip/initialsketch6.png" alt=""></div>
+	 										<div class="item"><img src="clip/combosketch.png" alt=""></div>
+	 										<div class="item"><img src="clip/initialsketch7.png" alt=""></div>
+	 										<div class="item"><img src="clip/initialsketch8.png" alt=""></div>
+	 										<div class="item"><img src="clip/initialsketch9.png" alt=""></div>
+	 										<div class="item"><img src="clip/initialsketch10.png" alt=""></div>
+
+	 									</div>
+	 								</div>
+
+	 							</div>
+
+
+
+	 							<div class="row">
+	 								<div class="col-md-12">
+	 									<div class="spacing"></div>
+	 									<h3>Design Iteration 1</h3>
+	 									<h4 class="thin">The first iteration focused on the overall structure of the interaction the user has with the form. The first thing I focused on was labels - specifically how to handle inline versus top navigation, and switching the form to be single column only.</h4>
+	 								</div>
+	 							</div>
+
+	 							<div class="row top-marg">
+
+	 								<div class="col-md-6">
+	 									<img src="planner/field_focus.png">
+	 								</div>
+	 								<div class="col-md-6">
+	 									<img src="planner/create_complete.png">
+	 								</div>
+
+	 							</div>
+
+
+	 							<div class="row">
+	 								<div class="col-md-5 ">
+	 									<div class="spacing"></div>
+	 									<video width="650" height="460" controls>
+	 										<source src="planner/label_popup.mov" type="video/mp4">
+	 											<source src="movie.ogg" type="video/ogg">
+	 												Your browser does not support the video tag.
+	 											</video>
+	 										</div>
+
+										<div class="col-md-2 ">
+	 									<div class="spacing"></div>
+	 									<video width="650" height="460" controls>
+	 										<source src="planner/next_button.mov" type="video/mp4">
+	 											<source src="movie.ogg" type="video/ogg">
+	 												Your browser does not support the video tag.
+	 											</video>
+	 										</div>
+
+	 										<div class="col-md-5">
+	 											<div class="spacing"></div>
+	 											<h4>Animation</h4>
+	 											<h4 class="thin">I used the software Principle to mock up the animations. Initially, there is an inline label in each textbox, but when focus is directed there the label pop up to the top and shows focus in blue. When a textbox has been filled but is not in focus the label appears on top, in black. <br><br>
+	 											I also did the animation for the next button (although this is not it's final state). The animation shows the transition from unfocused/hover state, to focused, to clicked.
+	 											</h4>
+
+
+	 										</div>
+
+	 									</div>
+
+
+	 									<div class="row top-marg">
+	 										<div class="col-md-12">
+	 											<div class="spacing"></div>
+	 											<h3>Error Handling</h3>
+	 											<h4 class="thin">The next problem I tackled was error handling, considering inline validation, final valiation, and error correction</h4>
+	 												
+	 											</div>
+	 										</div>
+
+	 										<div class="row top-marg">
+
+	 											<div class="col-md-6">
+	 												<img src="planner/errors/inline_error.png">
+	 											</div>
+	 											<div class="col-md-6">
+	 												<img src="planner/errors/error_state.png">
+	 											</div>
+	 										</div>
+
+	 										<div class="row top-marg">
+	 											
+	 											<div class="col-md-6">
+	 												<img src="planner/errors/save_error.png">
+	 											</div>
+	 											<div class="col-md-6">
+	 												<img src="planner/errors/errors_multiple_fixed.png">
+	 											</div>
+	 										</div>
+
+	 										<div class="row top-marg">
+	 										<div class="col-md-12">
+	 											<h4 class="thin">The error handling I designed uses both color and other means to effectively communicate errors. 508 accesibility compliance standards require that color not be the only means of indication. 
+	 											A subtle alert indicates an error as soon as it's been made, allowing the user to rapidly correct before they've made multiple errors that can become overwhleming. <br><br>
+	 											If a user tries to move on to another section before correcting errors they will recieve a stronger indication at the top with a specific diagnosis of the error, as well as an indicator in the lefthand menu. <br><br>
+	 											Something that had been discovered in the course of LiveData's development was that some users click save at the very beginning in order to see what fields are required and then only fill those in. The third image indicates this view - all sections with errors are indicated on the left and errors can be navigated one by one with the arrows at the top. <br><br>
+	 											The same arrow metaphor applies when users are fixing errors. When an error is remedied the status bar turns green, provides a fix message, and the arrows can be used to navigate to the next error that requires fixing.</h4>
+	 												
+	 											</div>
+	 										</div>
+
+
+	 										
+
+	 													<div class="row top-marg">
+	 														<div class="col-md-12">
+	 															<div class="spacing"></div>
+	 															<h3>Concurrent Cases</h3>
+	 															<h4 class="thin">Concurrent cases were difficult to display and navigate because between cases there is some information that overlaps and a lot that doesn't. The main challenge was clearly and efficiently switching between cases. </h4>
+
+	 															</div>
+	 														</div>
+
+
+	 											<div class="row top-marg">
+	 											<div class="col-md-12">
+
+	 													<h4><strong class="semi">Iteration 1: </strong></h4>
+	 													
+	 													
+	 														</div>
+	 													</div>
+
+
+	 														<div class="row top-marg">
+
+	 															<div class="col-md-6">
+	 																<video width="650" height="460" controls>
+	 																	<source src="planner/conc/conc_draft1.mov" type="video/mp4">
+	 																		<source src="movie.ogg" type="video/ogg">
+							 												Your browser does not support the video tag.
+							 											</video>
+	 															</div>
+	 															<div class="col-md-6">
+	 																<h4 class="thin">My first design attempted to continue the metaphor of the bubbles on the left by giving sub bubbles for each individual case, with an overhead "concurrent" bubble that covers the data consistent across the two cases. However, this design takes up too much space on the left side and also does not appear visually coherent.</h4>
+	 															</div>
+	 															
+
+	 														</div>
+
+	 														<div class="row top-marg">
+	 											<div class="col-md-12">
+
+	 													<h4><strong class="semi">Iteration 2: </strong></h4>
+	 														</div>
+	 													</div>
+
+	 														<div class="row top-marg">
+
+	 															<div class="col-md-6">
+	 																<video width="650" height="460" controls>
+	 																	<source src="planner/conc/conc_draft3.mov" type="video/mp4">
+	 																		<source src="movie.ogg" type="video/ogg">
+							 												Your browser does not support the video tag.
+							 											</video>
+	 															</div>
+	 															<div class="col-md-6">
+	 																<h4 class="thin">My second iteration attempted to simplify the design by switching to only "indvidual" and "all cases" and then navigating between the cases at the top. However, this design was awkward to use, especially when considering keyboard navigation because a user would need to change things in both the x and y directions.</h4>
+	 															</div>
+	 															
+
+	 														</div>
+
+	 														<div class="row top-marg">
+	 											<div class="col-md-12">
+
+	 													<h4><strong class="semi">Iteration 3: </strong></h4>
+	 												
+	 													
+	 														</div>
+	 													</div>
+
+	 														<div class="row top-marg">
+
+	 															<div class="col-md-6">
+	 																<video width="650" height="460" controls>
+	 																	<source src="planner/conc/conc_draft2.mov" type="video/mp4">
+	 																		<source src="movie.ogg" type="video/ogg">
+							 												Your browser does not support the video tag.
+							 											</video>
+	 															</div>
+	 															<div class="col-md-6">
+	 																<h4 class="thin">Because of the confusion of making changes in both the x and y directions, I moved everything to the top, giving the "all cases" hierarchy above the individual cases. However, this takes up an uneccessary amount of vertical space, and the distinction between all cases and the invidual cases is already clear enough from the text.</h4>
+	 															</div>
+	 															
+
+	 														</div>
+
+	 														<div class="row top-marg">
+	 											<div class="col-md-12">
+
+	 													<h4><strong class="semi">Iteration 4 (Final Iteration): </strong></h4>
+	 														</div>
+	 													</div>
+
+	 															<div class="row top-marg">
+
+	 															<div class="col-md-6">
+	 																<video width="650" height="460" controls>
+	 																	<source src="planner/conc/conc_final.mov" type="video/mp4">
+	 																		<source src="movie.ogg" type="video/ogg">
+							 												Your browser does not support the video tag.
+							 											</video>
+	 															</div>
+	 															<div class="col-md-6">
+	 																<h4 class="thin">The iteration that we ended up selecting turned out to be the most simple. The text provides enough distinction between the 3 sections so that they can remain on one line, with a save mechanism between sections. Each case has the individual sections to be completed and the all cases consists of just one page, with the rest greyed out.</h4>
+	 															</div>
+	 															
+
+	 														</div>
+
+	 														<div class="row top-marg">
+	 														<div class="col-md-12">
+	 															<div class="spacing"></div>
+	 															<h3>Return to Surgery</h3>
+	 															<h4 class="thin">My next task was to redesign the specific module for return to surgery. This is used to indicate whether the procedure being currently planned is the result of a previous surgery (of which there could be multiple) and also to indicate whether this return is planned (i.e. second hip replacement) or unplanned (i.e. complications), which the previous version could not do.</h4>
+
+	 															</div>
+	 														</div>
+
+	 														<div class="row top-marg">
+
+	 															<div class="col-md-6">
+	 																<img src="planner/return_to_surgery/return_to_surgery_old.png">
+	 																<div class="spacing"></div>
+	 																<h4 class="thin">Original return to surgery design</h4>
+	 															</div>
+	 															<div class="col-md-6">
+	 																<video width="650" height="460" controls>
+	 																	<source src="planner/return_to_surgery/return_to_surgery.mp4" type="video/mp4">
+	 																		<source src="movie.ogg" type="video/ogg">
+							 												Your browser does not support the video tag.
+							 											</video>
+	 															</div>
+	 															
+
+	 														</div>
+
+	 														
+
+	 														<div class="row top-marg">
+	 															<div class="col-md-12">
+	 																<div class="spacing"></div>
+	 																<h3>Clickable Prototype</h3>
+	 																<h4 class="thin">I used Adobe XD to create a fully clickable prototype of the first 3 sections of the case detail form in order to demonstrate the design effectively, and allow developers to use it and understand the interactions. </h4>
+
+	 																</div>
+	 															</div>
+
+	 															<div class="row">
+	 																<div class="col-lg-12">
+	 																	<img src="planner/click_lines.png">
+	 																	<h4 class="thin"><br>A portion of the screens and connections used in the final prototype (I couldn't zoom out far enough to capture them all!)</h4>
+	 																	</div>
+	 																	
+	 																</div>
+
+	 																
+	 																		<div class="row top-marg">
+	 																			<div class="col-md-12">
+	 																				
+	 																				<h3>Key Takeaways</h3>
+	 																				<h4 class="thin">This project was the first that I completed end to end, from problem identification all the way through a
+	 																					complete design. I learned a lot about interacting with users and the design thinking process as well as some technical skills such as Balsamiq, Adobe XD, InVision and user testing. I was also able to strengthen preexisting skills such as sketching and taking feedback in order to effectively iterate. If I were to change an aspect of my process or final product I would do more extensive user testing after my first round of visual design because I made a significant number of organizational changes.</h4>
+	 																					<div class="spacing"></div>
+
+	 																				</div>
+	 																			</div>
+
+
+	 																			<div class="row">
+
+	 																				<div class="col-lg-12">
+	 																					<div class="spacing"></div>
+	 																					<h4>Project Details</h4>
+	 																					<div class="hline"></div>
+	 																					<h6 class="thin"><b class="semi">Date:</b> January - March 2017</h6>
+	 																					<h6 class="thin"><b class="semi">Contributors:</b> Brenna Sorkin</h6>
+	 																					<h6 class="thin"><b class="semi">Categories:</b> Web Design, Interaction Design</h6>
+
+	 																					<h6 class="thin"><b class="semi">Client:</b> LiveData Inc.</h6>
+	 																					<div class="spacing"></div>
+	 																				</div>
+
+	 																			</div><! --/row -->
+	 																		</div><! --/container -->
+
+	 <!-- *****************************************************************************************************************
+   FOOTER
+   ***************************************************************************************************************** -->
+   <div id="footerwrap">
+   	<div class="container">
+   		<div class="row">
+   			<div class="col-lg-4">
+   				<h4>About</h4>
+   				<div class="hline-w"></div>
+   				<p>Brenna Sorkin built this website by modifying and combining a number of templates and learning HTML & CSS along the way!
+   					<a href="about.html">more about Brenna</a></p>
+   				</div>
+
+   				<div class="col-lg-4">
+   					<h4>Reach me at:</h4>
+   					<div class="hline-w"></div>
+   					<p>
+
+   						brenna.sorkin@gmail.com<br/>
+   						sorkin.b@husky.neu.edu<br/>
+   						617.543.0996<br/>
+   						<a href="http://www.linkedin.com/in/brennasorkin"><i class="fa fa-linkedin"></i></a>
+   					</p>
+   				</div>
+
+   			</div><! --/row -->
+   		</div><! --/container -->
+   	</div><! --/footerwrap -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina-1.1.0.js"></script>
+    <script src="assets/js/jquery.hoverdir.js"></script>
+    <script src="assets/js/jquery.hoverex.min.js"></script>
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="assets/js/jquery.isotope.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <script type="text/javascript">
+
+    	$(document).ready(function(){
+    		$(".owl-carousel").owlCarousel({
+    			loop:true,
+    			margin:10,
+    			nav:true,
+
+    		});
+    	});
+
+
+
+    </script>
+
+
+
+</body>
+</html>
