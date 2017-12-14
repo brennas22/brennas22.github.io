@@ -98,24 +98,128 @@
 	 						Your browser does not support the video tag.
 	 					</video>
 	 				</div>
+	 				<div class="col-md-6 ">
+	 					<h2>Java Maze</h2>
+	 					<h4 class="thin">
+	 						This maze was the final assignment in the object oriented based java programming class I took this fall called Fundamentals of Computer Science 2. I worked with a partner, Mark Savage.<br><br>
+
+	 						Left: Maze being randomly constructed
+	 					</h4>
+	 				</div>
+
+	 				
+
+	 			</div>
+
+	 			<div class="row top-marg">
+	 				<div class="col-md-12">
+
+	 					<h2>Instructions</h2>
+	 					<h3 class="thin"><strong class="semi">Your program should support the following features:</strong><br>
++ Construct random mazes using Kruskal’s algorithm and Union/Find<br>
+
++ Display the maze graphically and animate the search.<br>
+
++ Allow the user to choose one of two algorithms for finding the path: Breadth-First Search or Depth-First Search.<br>
+
++ Provide an option for designing a new random maze.<br>
+
++ Allow the user to traverse the maze manually - using the keys to select the next move, preventing illegal moves and notifying the user of completion of the game.<br>
+
++ Display the solution path connecting the start and end, once it’s found (either automatically or by the user).<br><br>
+
+<strong class="semi">Additionally, you may attempt bells and whistles for extra credit:</strong><br>
+
+Whistles:<br>
++ Provide an option to toggle the viewing of the visited paths.<br>
+
++ Allow the user the ability to start a new maze without restarting the program.<br>
+
++ Keep the score of wrong moves — for either the automatic solutions or manual ones — and maybe keep statistics on which one of the two algorithms had fewer steps for each maze.<br><br>
+
+Bells:<br>
++ In addition to animating the solution of the maze, also animate the construction of the maze: on each tick, show a single wall being knocked down.<br>
+
++ (Tricky) Construct mazes with a bias in a particular direction — a preference for horizontal or vertical corridors. (Hint: you might wish to play tricks with the edge weights here.)<br>
+
+
++ Tricky Construct two intertwined mazes, and allow two players to race from their starting points to their ending points. <br>
+
+
+	 						
+
+	 					</h3>
+
+
+	 				</div>
+	 			</div>
+
+
+	 				<div class="row top-marg">
+		 	<div class="col-lg-6">
+			 	<div class="spacing"></div>
+			 	<div class="spacing"></div>
+		 		<h2>Depth First Search</h2>
+		 		<h4 class="thin">
+		 		Depth-first search (DFS) is an algorithm for traversing or searching graph data structures. It starts at the root and explores as far as possible along each branch before backtracking.<br><br>
+		 		In the code, this means that the worklist is a stack (last in, first out) where neighboring nodes are added to the front of the list. 
+		 		</h4>
+		 		<pre>
+if (dfs) {
+	if (e.to.equals(current)) {
+		worklist.addAtHead(e.from);
+	} else {
+		worklist.addAtHead(e.to);
+	}
+}	</pre>
+		 	</div>
+
+		 	<div class="col-lg-6">
+		 		<div class="spacing"></div>
+		 		<video width="250" height="500" controls>
+  					<source src="maze/depth_first.mov" type="video/mp4">
+  					<source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+				</video>
+		 	</div>
+
+		</div>
+		 	
+
+
+	 	 	<div class="row top-marg">
+	 		<div class="col-md-6 ">
+	 			<video width="650" height="460" controls>
+	 				<source src="maze/breadth_first.mov" type="video/mp4">
+	 					<source src="movie.ogg" type="video/ogg">
+	 						Your browser does not support the video tag.
+	 					</video>
+	 				</div>
 
 
 	 				<div class="col-md-6">
 
-	 					<h2>Java Maze</h2>
-	 					<h4 class="thin">This pop up desk was the final prototype that I worked on in a team of three as part of a class called Product Design Methodology throughout the fall semester of 2017. 
-	 						
+	 					<h2>Breadth First Search</h2>
+	 					<h4 class="thin">
+		 		Breadth-first search (BFS) is an algorithm for traversing or searching graph data structures. It starts at theroot and explores the neighbor nodes first, before the next level neighbors.<br><br>
+		 		In the code, this means that the worklist is a queue (first in, first out) where neighboring nodes are added to the end of the list. 
+		 		</h4>
 
-	 					</h4>
+	 					<pre>
+ else {
+	if (e.to.equals(current)) {
+		worklist.addAtTail(e.from);
+	} else {
+		worklist.addAtTail(e.to);
+	}
+} 		 						</pre>
 
 
 	 				</div>
 
 	 			</div>
 
-
-
-		 	<div class="row top-marg">
+	 			<div class="row top-marg">
 		 	<div class="col-lg-6">
 			 	<div class="spacing"></div>
 			 	<div class="spacing"></div>
@@ -136,50 +240,7 @@
 
 		</div>
 
-
-	 	 	<div class="row">
-	 		<div class="col-md-6 ">
-	 			<video width="650" height="460" controls>
-	 				<source src="maze/breadth_first.mov" type="video/mp4">
-	 					<source src="movie.ogg" type="video/ogg">
-	 						Your browser does not support the video tag.
-	 					</video>
-	 				</div>
-
-
-	 				<div class="col-md-6">
-
-	 					<h2>Breadth First Search</h2>
-	 					<h4 class="thin">This pop up desk was the final prototype that I worked on in a team of three as part of a class called Product Design Methodology throughout the fall semester of 2017. 
-	 						
-
-	 					</h4>
-
-
-	 				</div>
-
-	 			</div>
-
-	 					 	<div class="row top-marg">
-		 	<div class="col-lg-6">
-			 	<div class="spacing"></div>
-			 	<div class="spacing"></div>
-		 		<h2>Depth First Search</h2>
-		 		<h4 class="thin">The pop up desk is meant to be a portable, easy and intuitive to use, and lightweight desk for students on the go. <br><br>
-		 		It is highly modular and, though not demonstrated in the protoype, many additional features, such as a light, a USB bank, and more could be easily added. The prototype does demonstrate a slide out mouse pad, a slide out cupholder and additional space (perhaps for a cellphone), a pencil case space and a general workspace. The height is also adjustable, as well as the angle of the desk.
-		 		</h4>
-		 	</div>
-
-		 	<div class="col-lg-6">
-		 		<div class="spacing"></div>
-		 		<video width="250" height="500" controls>
-  					<source src="maze/depth_first.mov" type="video/mp4">
-  					<source src="movie.ogg" type="video/ogg">
-					Your browser does not support the video tag.
-				</video>
-		 	</div>
-
-		</div>
+	 					 
 
 			 	 	<div class="row">
 	 		<div class="col-md-6 ">
@@ -255,7 +316,6 @@
 	 																				
 	 																				<h3>Code</h3>
 	 																				<pre>
-	 																					
 // Assignment 10 - Problem 1
 // Sorkin Brenna
 // brennasorkin
