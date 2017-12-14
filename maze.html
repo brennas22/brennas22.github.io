@@ -224,9 +224,9 @@ if (dfs) {
 			 	<div class="spacing"></div>
 			 	<div class="spacing"></div>
 		 		<h2>Single Player Mode</h2>
-		 		<h4 class="thin">The pop up desk is meant to be a portable, easy and intuitive to use, and lightweight desk for students on the go. <br><br>
-		 		It is highly modular and, though not demonstrated in the protoype, many additional features, such as a light, a USB bank, and more could be easily added. The prototype does demonstrate a slide out mouse pad, a slide out cupholder and additional space (perhaps for a cellphone), a pencil case space and a general workspace. The height is also adjustable, as well as the angle of the desk.
+		 		<h4 class="thin">Single player mode allows the user to navigate the maze using the arrow keys. <br><br>
 		 		</h4>
+
 		 	</div>
 
 		 	<div class="col-lg-6">
@@ -255,7 +255,7 @@ if (dfs) {
 	 				<div class="col-md-6">
 
 	 					<h2>2 Player Mode</h2>
-	 					<h4 class="thin">This pop up desk was the final prototype that I worked on in a team of three as part of a class called Product Design Methodology throughout the fall semester of 2017. 
+	 					<h4 class="thin">2 player mode allows 2 users to navigate the maze, racing to opposite corners.
 	 						
 
 	 					</h4>
@@ -271,9 +271,24 @@ if (dfs) {
 			 	<div class="spacing"></div>
 			 	<div class="spacing"></div>
 		 		<h2>Horizontal Bias</h2>
-		 		<h4 class="thin">The pop up desk is meant to be a portable, easy and intuitive to use, and lightweight desk for students on the go. <br><br>
-		 		It is highly modular and, though not demonstrated in the protoype, many additional features, such as a light, a USB bank, and more could be easily added. The prototype does demonstrate a slide out mouse pad, a slide out cupholder and additional space (perhaps for a cellphone), a pencil case space and a general workspace. The height is also adjustable, as well as the angle of the desk.
+		 		<h4 class="thin">Adding a horitzontal bias creates a maze more likely to have rows than columns. 
+		 	
 		 		</h4>
+		 		<pre>
+if (horizontalBias) {
+    bias = 70;
+} else if (verticalBias) {
+    bias = -70;
+}
+
+// give this cell right pointing edges and down pointing edges
+randomWeight = rand.nextInt(100) + bias;
+Edge edgeD = new Edge(c, this.idMap.get(c.id + WIDTH), 
+		  randomWeight);
+randomWeight = rand.nextInt(100);
+Edge edgeR = new Edge(c, this.idMap.get(c.id + 1), randomWeight);
+edges.add(edgeD);
+edges.add(edgeR);		</pre>
 		 	</div>
 
 		 	<div class="col-lg-6">
@@ -300,7 +315,7 @@ if (dfs) {
 	 				<div class="col-md-6">
 
 	 					<h2>Vertical Bias</h2>
-	 					<h4 class="thin">This pop up desk was the final prototype that I worked on in a team of three as part of a class called Product Design Methodology throughout the fall semester of 2017. 
+	 					<h4 class="thin">Adding a vertical bias creates a maze more likely to have columns than rows. 
 	 						
 
 	 					</h4>
@@ -316,12 +331,6 @@ if (dfs) {
 	 																				
 	 																				<h3>Code</h3>
 	 																				<pre>
-// Assignment 10 - Problem 1
-// Sorkin Brenna
-// brennasorkin
-// Savage Mark
-// marksavage
-
 /* +---------------------------------------------------------------+
  * +---------------------------------------------------------------+
  * | HOW TO PLAY:                                                  |
@@ -340,20 +349,22 @@ if (dfs) {
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-
 import tester.*;
 import javalib.impworld.*;
 import java.awt.Color;
 import javalib.worldimages.*;
 import java.util.HashMap;
-import java.util.Random;
+import java.util.Random;</pre>
 
+<h4 class="thin">Represents each indvidual cell, which is comprised of its x and y position, as well as its ID number, the list of edges attached to it, and the cell that is its "leader" in the union span tree. Contains methods to find the leader of the entire span, as well as render methods for different types of cells.</h4>
+
+<pre>
 //a class to represent Cells
 class Cell {
   int x;
   int y;
   int id;
-  ArrayList<Edge> edges;
+  ArrayList< Edge > edges;
   Cell leader;
 
   Cell(int x, int y, int id, ArrayList<Edge> e) {
@@ -421,9 +432,13 @@ class Cell {
         this.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2);
   }
 }
+</pre>
 
+<h4 class="thin">Represents each indvidual edge, which contains the cell it extends from and the one it goes to, as well as a weight. Contains methods to compare the weight of one cell to another and render methods.</h4>
+
+<pre>
 // a class to represent edges
-class Edge implements Comparable<Edge> {
+class Edge implements Comparable< Edge > {
   Cell from;
   Cell to;
   int weight;
@@ -463,8 +478,11 @@ class Edge implements Comparable<Edge> {
     bg.placeImageXY(image, midpointX, midpointY);
 
   }
-}
+}</pre>
 
+<h4 class="thin">Represents everything that happens in the mazeworld</h4>
+
+<pre>
 // a class to represent the maze in a world image
 class MazeWorld extends World {
   // defines a width constant
@@ -476,21 +494,21 @@ class MazeWorld extends World {
   // world scene
   WorldScene background;
   // represents a list of all edges in the world
-  ArrayList<Edge> edges = new ArrayList<Edge>();
+  ArrayList< Edge > edges = new ArrayList< Edge >();
   // represents a list of all Cells in the world
-  ArrayList<Cell> cells = new ArrayList<Cell>();
+  ArrayList< Cell > cells = new ArrayList< Cell >();
   // HashMap to represent ids and nodes
-  HashMap<Integer, Cell> idMap = new HashMap<Integer, Cell>();
+  HashMap< Integer, Cell > idMap = new HashMap< Integer, Cell >();
   // random object
   Random rand = new Random();
   // represents all good edges
-  ArrayList<Edge> goodEdges = new ArrayList<Edge>();
+  ArrayList< Edge > goodEdges = new ArrayList< Edge >();
   // is this depth first search?
   boolean dfs = true;
   // cells yet to be searched
-  Deque<Cell> worklist = new Deque<Cell>();
+  Deque< Cell > worklist = new Deque< Cell >();
   // cells already seen
-  ArrayList<Cell> seen = new ArrayList<Cell>();
+  ArrayList< Cell > seen = new ArrayList< Cell >();
   // is the path complete?
   Boolean complete = false;
   // Represents the final cell in the maze
@@ -498,13 +516,13 @@ class MazeWorld extends World {
   // Represents the starting cell in the maze
   Cell start;
   // a HashMap to represent the relationship between child and parent nodes
-  HashMap<Cell, Cell> childParent = new HashMap<Cell, Cell>();
+  HashMap< Cell, Cell > childParent = new HashMap< Cell, Cell >();
   // Represents the cells along the completed maze path
-  ArrayList<Cell> path = new ArrayList<Cell>();
+  ArrayList< Cell > path = new ArrayList< Cell >();
   // have the edges been initialized?
   boolean edgesDone = false;
   // Represents all good edges - for animation purposes
-  ArrayList<Edge> animateEdges = new ArrayList<Edge>();
+  ArrayList< Edge > animateEdges = new ArrayList< Edge >();
   // for the purpose of counting indices in on tick
   int i = 0;
   // has the maze been rendered?
@@ -526,7 +544,7 @@ class MazeWorld extends World {
   // Represents the Cell that the second player is currently on
   Cell player2;
   // Represents the cells that the player has visited
-  ArrayList<Cell> visited = new ArrayList<Cell>();
+  ArrayList< Cell > visited = new ArrayList< Cell >();
   // is the start method done drawing everything?
   boolean search = false;
   // should the search path be drawn?
@@ -542,19 +560,18 @@ class MazeWorld extends World {
     kruskal();
 
     end = cells.get(cells.size() - 1);
-
     // worklist starts with starting cell in it
     start = cells.get(0);
     worklist.addAtHead(start);
     this.player = start;
 
-  }
+  }</pre>
 
+<pre>
   // Advances any changes in the maze on tick
   // EFFECT: adds items to animateEdges, adds items to seen, adds items to
   // childParent
   public void onTick() {
-
     if (edgesDone) {
       if (animateEdges.size() != goodEdges.size()) {
         animateEdges.add(goodEdges.get(i));
@@ -580,7 +597,6 @@ class MazeWorld extends World {
           findPath();
         }
         else if (!seen.contains(current) && !complete) {
-
           for (Edge e : current.edges) {
             if (dfs) {
               if (e.to.equals(current)) {
@@ -613,14 +629,16 @@ class MazeWorld extends World {
         }
       }
     }
-  }
+  } </pre>
 
+
+<pre>
   // traverses the maze from start to finish
   // EFFECT: populate childParent
   public void solveMaze() {
-    Deque<Cell> noDrawWorklist = new Deque<Cell>();
+    Deque< Cell > noDrawWorklist = new Deque< Cell >();
     noDrawWorklist.addAtHead(start);
-    ArrayList<Cell> noDrawSeen = new ArrayList<Cell>();
+    ArrayList< Cell > noDrawSeen = new ArrayList< Cell >();
     boolean noDrawComplete = false;
 
     while (noDrawWorklist.size() > 0) {
@@ -667,26 +685,25 @@ class MazeWorld extends World {
       Cell next = childParent.get(current);
       path.add(current);
       current = next;
-
     }
+  }</pre>
 
-  }
-
+<pre>
   // initializes Cells
   // EFFECT: Cells contains all Cells in the maze
   void initCells() {
     int idVal = 100;
     for (int i = 0; i < HEIGHT; i += 1) {
       for (int j = 0; j < WIDTH; j += 1) {
-        Cell newCell = new Cell(j, i, idVal, new ArrayList<Edge>());
+        Cell newCell = new Cell(j, i, idVal, new ArrayList< Edge >());
         cells.add(newCell);
         idMap.put(idVal, newCell);
         idVal = idVal + 1;
       }
-
     }
-  }
+  }</pre>
 
+<pre>
   // initializes edges
   // EFFECT: edges contains all edges in the maze
   void initEdges() {
@@ -728,10 +745,10 @@ class MazeWorld extends World {
         edges.add(edgeD);
         edges.add(edgeR);
       }
-
     }
-  }
+  }</pre>
 
+  <pre>
   // makes random path
   // EFFECT: removes edges that create bad loops
   void kruskal() {
@@ -754,11 +771,11 @@ class MazeWorld extends World {
       i = i + 1;
     }
     edgesDone = true;
-  }
+  }</pre>
 
+<pre>
   // draw the scene
   public WorldScene makeScene() {
-
     this.background = new WorldScene(WIDTH * CELLSIZE, HEIGHT * CELLSIZE);
     this.background.placeImageXY(
         new RectangleImage(WIDTH * CELLSIZE, HEIGHT * CELLSIZE, "solid", Color.LIGHT_GRAY),
@@ -795,16 +812,12 @@ class MazeWorld extends World {
           c.renderPath(this.background);
         }
       }
-
       this.player.renderPlayer(this.background);
     }
-
-   
-
     return this.background;
+  }</pre>
 
-  }
-
+<pre>
   public void onKeyEvent(String key) {
     if (key.equals("v")) {
       reset();
@@ -870,9 +883,9 @@ class MazeWorld extends World {
       movePlayer(key);
       movePlayer2(key);
     }
+  }</pre>
 
-  }
-
+<pre>
   // Determines how to move the character in the maze given depending Key Presses
   // EFFECT: moves the player, changes which cell it occupies
   void movePlayer(String key) {
@@ -905,13 +918,11 @@ class MazeWorld extends World {
       else if (other.id == this.player.id - 1) {
         canMoveLeft = true;
       }
-
     }
     visited.add(player);
 
     if (!path.contains(player)) {
       score = score + 1;
-
     }
 
     if (key.equals("up") && canMoveUp) {
@@ -926,7 +937,6 @@ class MazeWorld extends World {
     if (key.equals("left") && canMoveLeft) {
       this.player = this.idMap.get(this.player.id - 1);
     }
-
   }
 
   // Determines how to move the character in the maze given depending Key Presses
@@ -957,13 +967,11 @@ class MazeWorld extends World {
       else if (other.id == this.player2.id - 1) {
         canMoveLeft = true;
       }
-
     }
     visited.add(player2);
 
     if (!path.contains(player2)) {
       score = score + 1;
-
     }
 
     if (key.equals("i") && canMoveUp) {
@@ -978,9 +986,7 @@ class MazeWorld extends World {
     if (key.equals("j") && canMoveLeft) {
       this.player2 = this.idMap.get(this.player2.id - 1);
     }
-
   }
-
   // allows two players to navigate the maze at the same time
   // Effect: sets up the maze for two player racing
   void twoPlayer() {
@@ -991,23 +997,23 @@ class MazeWorld extends World {
     this.end2 = this.cells.get(cells.size() - WIDTH);
     this.start2 = this.cells.get(WIDTH - 1);
     this.player2 = this.start2;
+  }</pre>
 
-  }
-
+<pre>
   // reset the maze
   // Effect: Resets the maze entirely
   void reset() {
-    this.cells = new ArrayList<Cell>();
-    this.edges = new ArrayList<Edge>();
-    this.goodEdges = new ArrayList<Edge>();
-    this.animateEdges = new ArrayList<Edge>();
-    this.childParent = new HashMap<Cell, Cell>();
-    this.seen = new ArrayList<Cell>();
+    this.cells = new ArrayList< Cell >();
+    this.edges = new ArrayList< Edge >();
+    this.goodEdges = new ArrayList< Edge >();
+    this.animateEdges = new ArrayList< Edge >();
+    this.childParent = new HashMap< Cell, Cell >();
+    this.seen = new ArrayList< Cell >();
     this.complete = false;
     this.edgesDone = false;
-    this.idMap = new HashMap<Integer, Cell>();
-    this.worklist = new Deque<Cell>();
-    this.path = new ArrayList<Cell>();
+    this.idMap = new HashMap< Integer, Cell >();
+    this.worklist = new Deque< Cell >();
+    this.path = new ArrayList< Cell >();
     this.i = 0;
     this.mazeDrawn = false;
     this.verticalBias = false;
@@ -1015,7 +1021,7 @@ class MazeWorld extends World {
     this.twoPlayer = false;
     this.playerControl = false;
     this.search = false;
-    this.visited = new ArrayList<Cell>();
+    this.visited = new ArrayList< Cell >();
     this.draw = false;
     this.score = 0;
   }
@@ -1030,7 +1036,6 @@ class MazeWorld extends World {
     if (playerControl) {
       this.player = this.cells.get(0);
     }
-
   }
 
   // begin searching through the maze
@@ -1042,16 +1047,13 @@ class MazeWorld extends World {
     end = cells.get(cells.size() - 1);
     start = cells.get(0);
     worklist.addAtHead(start);
-
   }
+}</pre>
 
-
-}
-
+<pre>
 // a Utils class
 class Utils {
-  boolean hasItem(ArrayList<Integer> containsList, int number) {
-
+  boolean hasItem(ArrayList< Integer > containsList, int number) {
     for (int i = 0; i < containsList.size(); i++) {
       if (containsList.get(i) == number) {
         return true;
@@ -1059,287 +1061,7 @@ class Utils {
     }
     return false;
   }
-}
-
-// a class to represent examples
-class ExamplesMaze {
-  MazeWorld mazeworld = new MazeWorld();
-  Utils utils = new Utils();
-
-  Cell a = new Cell(0, 0, 100, new ArrayList<Edge>());
-  Cell b = new Cell(1, 0, 101, new ArrayList<Edge>());
-  Cell c = new Cell(2, 0, 102, new ArrayList<Edge>());
-  Cell d = new Cell(0, 1, 103, new ArrayList<Edge>());
-  Cell e = new Cell(1, 1, 104, new ArrayList<Edge>());
-  Cell f = new Cell(2, 1, 105, new ArrayList<Edge>());
-
-  Edge e_c = new Edge(this.e, this.c, 15);
-  Edge c_d = new Edge(this.c, this.d, 25);
-  Edge a_b = new Edge(this.a, this.b, 30);
-  Edge b_e = new Edge(this.b, this.e, 35);
-  Edge b_c = new Edge(this.b, this.c, 40);
-  Edge f_d = new Edge(this.f, this.d, 50);
-  Edge a_e = new Edge(this.a, this.e, 50);
-  Edge b_f = new Edge(this.b, this.f, 50);
-
-  ArrayList<Cell> exCellList = new ArrayList<Cell>(
-      Arrays.asList(this.a, this.b, this.c, this.d, this.e, this.f));
-  ArrayList<Edge> exEdgeList = new ArrayList<Edge>(Arrays.asList(this.e_c, this.c_d, this.a_b,
-      this.b_e, this.b_c, this.f_d, this.a_e, this.b_f));
-  ArrayList<Edge> exGoodEdgeList = new ArrayList<Edge>(
-      Arrays.asList(this.e_c, this.c_d, this.a_b, this.b_e, this.f_d));
-
-  void initData() {
-    this.mazeworld = new MazeWorld();
-
-    this.a = new Cell(0, 0, 100, new ArrayList<Edge>());
-    this.b = new Cell(1, 0, 101, new ArrayList<Edge>());
-    this.c = new Cell(2, 0, 102, new ArrayList<Edge>());
-    this.d = new Cell(0, 1, 103, new ArrayList<Edge>());
-    this.e = new Cell(MazeWorld.WIDTH, 1, 104, new ArrayList<Edge>());
-    this.f = new Cell(2, 1, 105, new ArrayList<Edge>());
-
-    this.e_c = new Edge(this.e, this.c, 15);
-    this.c_d = new Edge(this.c, this.d, 25);
-    this.a_b = new Edge(this.a, this.b, 30);
-    this.b_e = new Edge(this.b, this.e, 35);
-    this.b_c = new Edge(this.b, this.c, 40);
-    this.f_d = new Edge(this.f, this.d, 50);
-    this.a_e = new Edge(this.a, this.e, 50);
-    this.b_f = new Edge(this.b, this.f, 50);
-
-    this.exCellList = new ArrayList<Cell>(
-        Arrays.asList(this.a, this.b, this.c, this.d, this.e, this.f));
-    this.exEdgeList = new ArrayList<Edge>(Arrays.asList(this.e_c, this.c_d, this.a_b, this.b_e,
-        this.b_c, this.f_d, this.a_e, this.b_f));
-    this.exGoodEdgeList = new ArrayList<Edge>(
-        Arrays.asList(this.e_c, this.c_d, this.a_b, this.b_e, this.f_d));
-
-  }
-
-  // Tests the Game
-  void testGame(Tester t) {
-    int frameWidth = MazeWorld.WIDTH * MazeWorld.CELLSIZE;
-    int frameHeight = MazeWorld.HEIGHT * MazeWorld.CELLSIZE;
-    mazeworld.bigBang(frameWidth, frameHeight, 0.01);
-  }
-
-  // test init cells
-  void testInitCells(Tester t) {
-    initData();
-    this.mazeworld.cells = new ArrayList<Cell>();
-    this.mazeworld.initCells();
-    t.checkExpect(this.mazeworld.cells.size(), MazeWorld.HEIGHT * MazeWorld.WIDTH);
-
-  }
-
-  // test initEdge
-  void testInitEdge(Tester t) {
-    initData();
-    ArrayList<Integer> containsAll = new ArrayList<Integer>();
-    for (int k = 0; k < this.mazeworld.edges.size(); k++) {
-      containsAll.add(this.mazeworld.edges.get(k).from.id);
-      containsAll.add(this.mazeworld.edges.get(k).to.id);
-    }
-
-    for (Cell c : this.mazeworld.cells) {
-      t.checkExpect(this.utils.hasItem(containsAll, c.id), true);
-    }
-
-  }
-
-  // test kruskals
-  void testKrustyCow(Tester t) {
-    initData();
-    t.checkExpect(this.mazeworld.goodEdges.size(), this.mazeworld.cells.size() - 1);
-
-    ArrayList<Integer> containsAllGood = new ArrayList<Integer>();
-    for (int k = 0; k < this.mazeworld.goodEdges.size(); k++) {
-      containsAllGood.add(this.mazeworld.goodEdges.get(k).from.id);
-      containsAllGood.add(this.mazeworld.goodEdges.get(k).to.id);
-    }
-
-    for (Cell c : this.mazeworld.cells) {
-      t.checkExpect(this.utils.hasItem(containsAllGood, c.id), true);
-    }
-
-    initData();
-    this.mazeworld.cells = this.exCellList;
-    this.mazeworld.edges = this.exEdgeList;
-    this.mazeworld.goodEdges = new ArrayList<Edge>();
-    this.mazeworld.kruskal();
-    int count = 0;
-    for (Edge e : this.mazeworld.goodEdges) {
-      t.checkExpect(e.to.id, this.exGoodEdgeList.get(count).to.id);
-      t.checkExpect(e.from.id, this.exGoodEdgeList.get(count).from.id);
-      count++;
-    }
-  }
-
-  // test render
-  void testRender(Tester t) {
-    initData();
-    WorldScene bg1 = new WorldScene(200, 200);
-    WorldScene bg2 = new WorldScene(200, 200);
-    this.a.render(bg1);
-    bg2.placeImageXY(
-        new RectangleImage(MazeWorld.CELLSIZE, MazeWorld.CELLSIZE, "outline", Color.black),
-        this.a.x * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2,
-        this.a.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2);
-    t.checkExpect(bg1, bg2);
-
-    this.a_b.render(bg1);
-    WorldImage image = new LineImage(new Posn(0, MazeWorld.CELLSIZE - 2), Color.LIGHT_GRAY);
-    bg2.placeImageXY(image, MazeWorld.CELLSIZE, MazeWorld.CELLSIZE / 2);
-
-    t.checkExpect(bg1, bg2);
-
-    this.a.renderExplore(bg1);
-    bg2.placeImageXY(
-        new RectangleImage(MazeWorld.CELLSIZE - 2, MazeWorld.CELLSIZE - 2, "solid",
-            new Color(181, 119, 243)),
-        this.a.x * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2,
-        this.a.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2);
-
-    t.checkExpect(bg1, bg2);
-
-    this.a.renderEnd(bg1);
-    bg2.placeImageXY(
-        new RectangleImage(MazeWorld.CELLSIZE - 1, MazeWorld.CELLSIZE - 1, "solid", Color.green),
-        this.a.x * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2,
-        this.a.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2);
-
-    t.checkExpect(bg1, bg2);
-
-    this.a.renderStart(bg1);
-    bg2.placeImageXY(
-        new RectangleImage(MazeWorld.CELLSIZE - 1, MazeWorld.CELLSIZE - 1, "solid", Color.red),
-        this.a.x * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2,
-        this.a.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2);
-
-    t.checkExpect(bg1, bg2);
-
-    this.a.renderPath(bg1);
-    bg2.placeImageXY(
-        new RectangleImage(MazeWorld.CELLSIZE - 1, MazeWorld.CELLSIZE - 1, "solid",
-            new Color(24, 59, 129)),
-        this.a.x * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2,
-        this.a.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2);
-
-    t.checkExpect(bg1, bg2);
-
-    this.a.renderPlayer(bg1);
-    bg2.placeImageXY(
-        new RectangleImage(MazeWorld.CELLSIZE - 1, MazeWorld.CELLSIZE - 1, "solid",
-            new Color(107, 202, 226)),
-        this.a.x * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2,
-        this.a.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2);
-
-    t.checkExpect(bg1, bg2);
-  }
-
-  // test find leader
-  void testFindLeader(Tester t) {
-    initData();
-    this.a.leader = this.b;
-    this.b.leader = this.c;
-    this.c.leader = this.d;
-    t.checkExpect(this.a.findLeader(), this.d);
-    t.checkExpect(this.d.findLeader(), this.d);
-  }
-
-  // test compare
-  void testCompare(Tester t) {
-    initData();
-    t.checkExpect(this.a_b.compareTo(this.a_e), -20);
-
-    ArrayList<Edge> outOfOrder = new ArrayList<Edge>(
-        Arrays.asList(this.a_b, this.a_e, this.b_c, this.b_e, this.e_c));
-    ArrayList<Edge> inOrder = new ArrayList<Edge>(
-        Arrays.asList(this.e_c, this.a_b, this.b_e, this.b_c, this.a_e));
-    Collections.sort(outOfOrder);
-
-    t.checkExpect(outOfOrder, inOrder);
-  }
-
-  // test solveMaze
-  void testSolveMaze(Tester t) {
-    initData();
-    this.mazeworld.childParent.clear();
-    this.mazeworld.solveMaze();
-    t.checkExpect(this.mazeworld.childParent.size() > 0, true);
-  }
-
-  // test findPath
-  void testFindPath(Tester t) {
-    initData();
-    this.mazeworld.path = new ArrayList<Cell>();
-    this.mazeworld.solveMaze();
-    this.mazeworld.findPath();
-    t.checkExpect(this.mazeworld.path.size() > 0, true);
-  }
-
-  // tests movePlayer
-  void testMovePlayer(Tester t) {
-    initData();
-    this.mazeworld.cells = this.exCellList;
-    this.mazeworld.goodEdges = this.exGoodEdgeList;
-    this.mazeworld.player = this.a;
-    this.mazeworld.idMap.clear();
-    this.mazeworld.movePlayer("up");
-    t.checkExpect(this.mazeworld.player, this.a);
-    this.mazeworld.idMap.put(100 + MazeWorld.WIDTH, e);
-  }
-
-  // tests movePlayer2
-  void testMovePlayer2(Tester t) {
-    initData();
-    this.mazeworld.cells = this.exCellList;
-    this.mazeworld.goodEdges = this.exGoodEdgeList;
-    this.mazeworld.player2 = this.a;
-    this.mazeworld.idMap.clear();
-    this.mazeworld.movePlayer2("i");
-    t.checkExpect(this.mazeworld.player2, this.a);
-    this.mazeworld.idMap.put(100 + MazeWorld.WIDTH, e);
-  }
-
-  // Tests twoPlayer
-  void testTwoPlayer(Tester t) {
-    initData();
-    this.mazeworld.twoPlayer();
-    t.checkExpect(this.mazeworld.end2,
-        this.mazeworld.cells.get(this.mazeworld.cells.size() - MazeWorld.WIDTH));
-    t.checkExpect(this.mazeworld.start2, this.mazeworld.cells.get(MazeWorld.WIDTH - 1));
-  }
-
-  // tests reset
-  void testReset(Tester t) {
-    initData();
-    this.mazeworld.reset();
-    t.checkExpect(this.mazeworld.cells.size(), 0);
-    t.checkExpect(this.mazeworld.edges.size(), 0);
-    t.checkExpect(this.mazeworld.goodEdges.size(), 0);
-    t.checkExpect(this.mazeworld.animateEdges.size(), 0);
-    t.checkExpect(this.mazeworld.childParent.size(), 0);
-    t.checkExpect(this.mazeworld.seen.size(), 0);
-    t.checkExpect(this.mazeworld.edgesDone, false);
-    t.checkExpect(this.mazeworld.idMap.size(), 0);
-    t.checkExpect(this.mazeworld.worklist.size(), 0);
-    t.checkExpect(this.mazeworld.path.size(), 0);
-    t.checkExpect(this.mazeworld.i, 0);
-    t.checkExpect(this.mazeworld.verticalBias, false);
-    t.checkExpect(this.mazeworld.horizontalBias, false);
-    t.checkExpect(this.mazeworld.twoPlayer, false);
-    t.checkExpect(this.mazeworld.search, false);
-    t.checkExpect(this.mazeworld.visited.size(), 0);
-    t.checkExpect(this.mazeworld.draw, false);
-    t.checkExpect(this.mazeworld.score, 0);
-
-  }
-
-}
-
-	 																				</pre>
+}</pre>
 
 	 																				</div>
 	 																			</div>
@@ -1362,10 +1084,10 @@ class ExamplesMaze {
 	 																					<h4>Project Details</h4>
 	 																					<div class="hline"></div>
 	 																					<h6 class="thin"><b class="semi">Date:</b> Fall 2017</h6>
-	 																					<h6 class="thin"><b class="semi">Contributors:</b> Brenna Sorkin, Teni Odumakinde, Daniel Castle</h6>
-	 																					<h6 class="thin"><b class="semi">Categories: </b>Engineering, product design</h6>
+	 																					<h6 class="thin"><b class="semi">Contributors:</b> Brenna Sorkin, Mark Savage</h6>
+	 																					<h6 class="thin"><b class="semi">Categories: </b>Programming, Java</h6>
 
-	 																					<h6 class="thin"><b class="semi">Client:</b> LiveData Inc.</h6>
+	 																					<h6 class="thin"><b class="semi">Client:</b> Class, Fundamentals of Computer Science 2</h6>
 	 																					<div class="spacing"></div>
 	 																				</div>
 
