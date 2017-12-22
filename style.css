@@ -54,9 +54,7 @@ i {
   margin-left: 5px;
 }
 
-.down-i {
-  margin: 0;
-}
+
 
 .small-link {
   font-size: 0.8em;
@@ -107,6 +105,16 @@ i {
 .small-spacing {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+
+.light-caption {
+  color: grey;
+  text-align: center;
+}
+
+.img-responsive {
+  margin-bottom: 10px;
 }
 
 /*+---------------------------------------------------------+
@@ -185,10 +193,6 @@ table th {
     text-align: right;
   }
   .resize-table table td:before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
     content: attr(data-label);
     float: left;
     font-weight: bold;
@@ -198,7 +202,7 @@ table th {
     border-bottom: 0;
   }
 }
-/**/
+
 
 
 
@@ -484,7 +488,10 @@ table th {
 .btn-down:focus {
   border: 2px dotted #105EB2;
   outline: none;
+}
 
+.down-i {
+  margin: 0;
 }
 
 
@@ -652,6 +659,13 @@ table th {
 
 }
 
+#maze_image {
+  height: 450px;
+  background-size: cover;
+  margin-bottom: 30px;
+  background-image: url(maze/maze_crop.png);
+}
+
 /*+---------------------------------------------------------+
   | MODAL                                                   |
   +---------------------------------------------------------+  */
@@ -708,9 +722,7 @@ table th {
 #footer img {
   height: 190px;
   width: 160px;
-
 }
-
 
 #footer a {
   color: white;
