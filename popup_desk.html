@@ -1,718 +1,591 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Pop Up Desk</title>
-	<script src="https://use.fontawesome.com/7c0217a7a4.js"></script>
-	<link rel="stylesheet" type="text/css" href="bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" href="logo.png">
-</head>
-<body class="menu-top">
-	<!-- nav -->
-	<nav class="navbar navbar-inverse navbar-fixed-top" id="menu">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a href="index.html" class="logo-link">
-					<img class="logo logo-view" src="logo2.svg">
-					<img class="logo logo-hide" src="logo_yellow.svg">
-				</a>	
-			</div>
-			<div class="collapse navbar-collapse" id="bs-nav-demo">
-				<ul class="nav navbar-nav">
-					<li><a id="brand" href="index.html">Brenna Sorkin.</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="resume.html">Resume</a></li>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="assets/ico/favicon.ico">
 
-					<li><div class="dropdown">
-						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Portfolio
-							<span class="caret"></span></button>
-							<ul class="dropdown-menu">
-								<li class="dropdown-header">featured projects</li>
-								<li><a href="generate_labs.html">Generate Labs</a></li>
-								<li><a href="popup_desk.html">Pop-Up Desk</a></li>
-								<li><a href="#">Java Maze</a></li>
-							</ul>
-						</div></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- title -->
-		<div class="row" id="popup_image">
-			
+	<title>Pop Up Desk - Brenna Sorkin</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
+
+	<!-- Just for debugging purposes. Don't actually copy this line! -->
+	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+  </head>
+
+  <body>
+
+  	<!-- Fixed navbar -->
+  	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  		<div class="container">
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  					<span class="sr-only">Toggle navigation</span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+  				<a class="navbar-brand" href="index.html">BRENNA SORKIN.</a>
+  			</div>
+  			<div class="navbar-collapse collapse navbar-right">
+  				<ul class="nav navbar-nav">
+  					<li ><a href="index.html">HOME</a></li>
+  					<li><a href="about.html">RESUME</a></li>
+
+  					<li class="dropdown">
+  						<a href="#" class="dropdown-toggle" data-toggle="dropdown">PORTFOLIO<b class="caret"></b></a>
+  						<ul class="dropdown-menu">
+  							<li><h5 class="white">featured projects</h5></li>
+
+  							<li><a href="uncommonfoods.html">UX DESIGN</a></li>
+  							<li class="active"><a href="clip.html">UI DESIGN</a></li>
+  							<li><a href="generate.html">GRAPHIC DESIGN</a></li>
+  							<li><a href="sizeu.html">PRODUCT DESIGN</a></li>
+  							<li><a href="microinteractions.html">INTERACTION DESIGN</a></li>
+
+
+  						</ul>
+  					</li>
+  				</ul>
+  			</div><!--/.nav-collapse -->
+  		</div>
+  	</div>
+
+
+
+	<!-- *****************************************************************************************************************
+	 BLUE WRAP
+	 ***************************************************************************************************************** -->
+
+	 <div id="blue">
+	 	<div class="container">
+	 		<div class="row">
+	 			<h3>Pop Up Desk</h3>
+	 		</div><!-- /row -->
+	 	</div> <!-- /container -->
+	 </div><!-- /blue -->
+
+	<!-- *****************************************************************************************************************
+	 TITLE & CONTENT
+	 ***************************************************************************************************************** -->
+
+	 <div class="container mt">
+	 	
+	 	 	<div class="row">
+	 		<div class="col-md-8 ">
+	 			<video width="650" height="460" controls>
+	 				<source src="ge5020/slide_out_tilt.MOV" type="video/mp4">
+	 					<source src="movie.ogg" type="video/ogg">
+	 						Your browser does not support the video tag.
+	 					</video>
+	 				</div>
+
+
+	 				<div class="col-md-4">
+
+	 					<h2>Pop Up Desk</h2>
+	 					<h4 class="thin">This pop up desk was the final prototype that I worked on in a team of three as part of a class called Product Design Methodology throughout the fall semester of 2017. 
+	 						
+
+	 					</h4>
+
+
+	 				</div>
+
+	 			</div>
+
+
+
+		 	<div class="row top-marg">
+		 	
+		
+
+		 	<div class="col-lg-7">
+			 	<div class="spacing"></div>
+			 	<div class="spacing"></div>
+		 		<h2>Features</h2>
+		 		<h4 class="thin">The pop up desk is meant to be a portable, easy and intuitive to use, and lightweight desk for students on the go. <br><br>
+		 		It is highly modular and, though not demonstrated in the protoype, many additional features, such as a light, a USB bank, and more could be easily added. The prototype does demonstrate a slide out mouse pad, a slide out cupholder and additional space (perhaps for a cellphone), a pencil case space and a general workspace. The height is also adjustable, as well as the angle of the desk.
+		 		</h4>
+		 	</div>
+
+		 	<div class="col-lg-4 col-lg-offset-1">
+		 		<div class="spacing"></div>
+		 		<video width="250" height="500" controls>
+  					<source src="ge5020/slide_out.MOV" type="video/mp4">
+  					<source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+				</video>
+		 	</div>
+
 		</div>
-		<div class="row">
-			<div class="container">
-				<div class="col-sm-12">
-					<h1>Pop-Up<br>
-					Desk</h1>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="container">
-				<div class="col-sm-6">
-					<p class="description">This pop up desk was the final prototype that I worked on in a team of three as part of a class called Product Design Methodology throughout the fall semester of 2017. My teammates were Daniel Castle and Teni Odumakinde. The pop up desk is meant to be a portable, easy and intuitive to use, and lightweight desk for students on the go.</p>
-				</div>
-				<div class="col-sm-6">
-					<p class="description">It is highly modular and, though not demonstrated in the protoype, many additional features, such as a light, a USB bank, and more could be easily added. The prototype does demonstrate a slide out mouse pad, a slide out cupholder and additional space (perhaps for a cellphone), a pencil case space and a general workspace. The height is also adjustable, as well as the angle of the desk.</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="spacing"></div>
-			<div class="container">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
-					<video width="100%" title="Sides of desk being pulled out and tilt adjusted" controls>
-						<source src="ge5020/slide_out_tilt.MOV" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
-					</div>
-					<div class="col-md-2"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="spacing"></div>
-				<div class="container">
-					<div class="col-sm-12">
-						<h2 class="uppercase ideation">Ideation<br>
-						Process</h2>
-					</div>
-				</div>	
-			</div>
+	 				
 
-			<!-- Problem Statement -->
-			<div class="row">
-				<div class="spacing"></div>
-				<div class="container">
-					<div class="col-sm-12">
-						<h3 class="uppercase thin-line">Problem Statement</h3>
-						<p>Our first step was to define the scope of the problem area</p>
-					</div>
-				</div>	
-			</div>
-			<div class="row">
-				<div class="container">
-					<div class="col-sm-12">
-						<h2 class="thin center">How might we create an efficient, productive and portable space that is adaptable for users between the ages 14 to 22 years old to do schoolwork on and off campus?</h2>
-					</div>
-				</div>
-			</div>
+	 					<div class="row">
 
-			<!-- Competitive Product Research -->
-			<div class="row">
-				<div class="spacing"></div>
-				<div class="container">
-					<div class="col-sm-12">
-						<h3 class="uppercase thin-line">Competitive Product Research / IP Search</h3>
-						<p>Our next step was to research similar products and patent filings</p>
-					</div>
-				</div>	
-			</div>
+	 						<div class="col-lg-12 ">
+	 							<div class="spacing"></div>
+	 							<h2>Process Book</h2>
+	 							<div class="hline"></div>
+	 							<h4 class=" thin">Below is a closer look at the important steps of the product design process we followed in order to create this prototype
+	 							</h4>
 
-			<div class="row">
-				<div class="container">
-					<div class="col-md-12">
-						<h3>1. Satchelboard 3-in-1: Desk, Chair, and Bag</h3>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-spacing"></div>
-				<div class="container">
-					<div class="col-md-6">
-						<img alt="Woman sitting in satchelboard portable desk and chair" class="img-responsive" src="ge5020/satchelboard.jpeg">
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<h4><strong>Strengths</strong></h4>
-						<ul>
-							<li>Increased Productivity</li>
-							<li>Portable and Lightweight</li>
-							<li>Compact</li>
-							<li>Multipurpose</li>
-							<li>Caters to Various Lifestyles</li>
-							<li>Water Resistant</li>
-							<li>Slots for Cord Management</li>
-							<li>Laptop Ventilation Holes</li>
-						</ul>
-					</div>		
-					<div class="col-sm-6 col-md-3">
-						<h4><strong>Weaknesses</strong></h4>
-						<ul>
-							<li>Size Limitations (17 in)</li>
-							<li>Weight Limitations (230 lbs)</li>
-							<li>Expensive ($193)</li>
-							<li>Not Stylish</li>
-							<li>No Portable Charging</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+	 						</div>
 
-			<div class="row">
-				<div class="spacing"></div>
-				<div class="container">
-					<div class="col-md-12">
-						<h3>2. Songmics: Multifunctional Laptop Desk</h3>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-spacing"></div>
-				<div class="container">
-					<div class="col-md-6">
-						<img alt="Songmics bamboo laptop desk" class="img-responsive" src="ge5020/songmics.png">
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<h4><strong>Strengths</strong></h4>
-						<ul>
-							<li>Adjustable Angle</li>
-							<li>Additional Storage Available</li>
-							<li>Sturdy Material</li>
-							<li>Sits Above Lap</li>
-							<li>Cup Holder</li>
-							<li>Decent Price ($33)</li>
-							<li>Fan for Laptop Cooling</li>
-						</ul>
-					</div>		
+	 					</div>
+
+	 						 							<div class="row top-marg">
+	 											<div class="col-md-12">
+	 												
+	 												<h3>Problem Statement</h3>
+	 												
+	 												
+	 											
+	 													
+	 														</div>
+	 													</div>
+
+	 														<div class="row top-marg">
+
+	 															
+	 															<div class="col-md-12">
+	 																<h2 class="thin centered">How might we create an efficient, productive and portable space that is adaptable for users between the ages 14 to 22 years old to do schoolwork on and off campus? 
+
+																	</h2>
+	 															</div>
+	 															
+
+	 														</div>
+
+	 														<div class="row top-marg">
 
 
-					<div class="col-sm-6 col-md-3">
-						<h4><strong>Weaknesses</strong></h4>
-						<ul>
-							<li>Heavy (5.5 lbs)</li>
-							<li>Clunky</li>
-							<li>Poorly Constructed (according to reviews)</li>
-							<li>Difficult to Maneuver</li>
-							<li>Height Not Adjustable</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+	 							</div>
 
-			<div class="row">
-				<div class="spacing"></div>
-				<div class="container">
-					<div class="col-md-12">
-						<h3>3. Etable Folding adjustable lap desk</h3>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-spacing"></div>
-				<div class="container">
-					<div class="col-md-6">
-						<img alt="Etable plastic folding laptop desk" class="img-responsive" src="ge5020/etable2.jpeg">
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<h4><strong>Strengths</strong></h4>
-						<ul>
-							<li>Built-in Battery (10,000 mAh)</li>
-							<li>Has LED Light</li>
-							<li>Can Carry 25 lbs</li>
-							<li>Fits 17" Laptop</li>
-							<li>Foldable Legs</li>
-							<li>Can Rest Tablets and Phones</li>
-						</ul>
-					</div>		
-
-					<div class="col-sm-6 col-md-3">
-						<h4><strong>Weaknesses</strong></h4>
-						<ul>
-							<li>Somewhat Heavy (4.8 lbs)</li>
-							<li>Not Very Stable</li>
-							<li>No Locks for Leg Height</li>
-							<li>Nothing to Hold Phone in Place</li>
-							<li>Nothing Stops Tablets from Falling Over</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="spacing"></div>
-				<div class="container">
-					<div class="col-md-12">
-						<h3>Patent: US20100116860A1 - Backpack Laptop Tray </h3>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-spacing"></div>
-				<div class="container">
-					<div class="col-md-6">
-						<img alt="Patent of backpack laptop tray" class="img-responsive" src="ge5020/backpack_workstation.png">
-					</div>
-					<div class="col-md-6">
-						<h4><strong>Claim</strong></h4>
-						<p>"An enclosure having a front side, a back side, and at least one peripheral edge, the sides and edges together defining an internal volume, the front side including a laptop compartment flap selectively closable to seal a laptop compartment comprising at least a portion of the volume of the enclosure, the laptop compartment flap hinged across a horizontal fold line and pivotable between a closed and an open position, the laptop compartment flap including a stop means preventing the laptop compartment flap from extending past the open position."</p>
-					</div>		
-				</div>
-			</div>
-
-			<!-- User Research -->
-			<div class="row">
-				<div class="spacing"></div>
-				<div class="container">
-					<div class="col-sm-12">
-						<h3 class="uppercase thin-line">User Research</h3>
-						<p class="bord-left">We asked a variety of users questions to ascertain the root cause of their problems and discover what aspects of their study routine are most important to them </p>
-					</div>
-				</div>	
-			</div>
-			<div class="row">
-				<div class="container">
-					<div class="col-md-2"></div>
-					<div class="col-md-8">
-						<h3>Questions Asked</h3>
-						<p>
-							<li>Tell me about your typical study materials...</li>
-							<li>What would you say is the most important factor in your study success?</li>
-							<li>What sort of distractions have the most negative impact on your studying?</li>
-							<li>How important is it to you to have access to charged electronic devices?</li>
-							<li>Which devices are most important?</li>
-							<li>What items do you carry daily in your backpack?</li>
-							<li>How do you feel about a backpack versus a messenger bag?</li>
-							<li>What sort of environment do you conduct your studying in?</li>
-						</p>
-						<div class="spacing"></div>
-						<h3>Results</h3>
-						<div class="row">
-							<div class="col-sm-6">
-								<h4><strong>Study Materials</strong></h4>
-								<ul>
-									<li>Laptop (Mac/PC)</li>
-									<li>Tablet</li>
-									<li>Notebook</li>
-									<li>Writing Utensils</li>
-								</ul>
-								<h4>Conclusion: A wide variety of study materials are necessary and many take up large amounts of space</h4>
-							</div>
-							<div class="col-sm-6">
-								<h4><strong>Study Spaces</strong></h4>
-								<ul>
-									<li>Library</li>
-									<li>Classrooms</li>
-									<li>Desk at Home</li>
-									<li>Public Areas (e.g. Coffee Shop)</li>
-								</ul>
-								<h4>Conclusion: A useful study desk must be adaptable and easily transportable and packable</h4>
-							</div>
-							<div class="col-sm-6">
-								<h4><strong>Distractions</strong></h4>
-								<ul>
-									<li>Phone</li>
-									<li>Clutter</li>
-								</ul>
-								<h4>Conclusion: Easy access to cell phone is a major distraction</h4>
-							</div>
-							<div class="col-sm-6">
-								<h4><strong>Success Factors</strong></h4>
-								<ul>
-									<li>Quiet</li>
-									<li>Organization</li>
-									<li>Solitude</li>
-								</ul>
-								<h4>Conclusion: Organization is the most important factor in studying</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2"></div>
-				</div>
-				<div class="spacing"></div>
-			</div>
-
-			<!-- Requirements and Specs -->
-			<div class="row">
-				<div class="spacing"></div>
-				<div class="container">
-					<div class="col-sm-12">
-						<h3 class="uppercase thin-line">Requirements and Specifications</h3>
-						<p class="bord-left">We then defined the requirements for our product and the specifications that define the acceptance criteria</p>
-					</div>
-				</div>	
-			</div>
-			<div class="row">
-				<div class="small-spacing"></div>
-				<div class="container">
-					<div class="col-md-2"></div>
-					<div class="col-md-4 col-sm-6">
-						<div class="yellow-border">
-							<h4><strong>Requirements</strong></h4>
-							<ul>
-								<li>Charger</li>
-								<li>USB Port</li>
-								<li>Light</li>
-								<li>Space for Laptop</li>
-								<li>Space for Notebook</li>
-								<li>Space for Pens/Pencils</li>
-								<li>Lightweight</li>
-								<li>Sturdy</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="yellow-border">
-							<h4><strong>Specifications</strong></h4>
-							<ul>
-								<li>Under 3 lbs</li>
-								<li>Stands, Sticks, or Rests on Ground</li>
-								<li>Able to Hold 10 lbs</li>
-								<li>Have up to 5 Compartments for Important Study Materials</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-2"></div>
-				</div>
-			</div>
-
-			<!-- Sketches -->
-			<div class="row">
-				<div class="spacing"></div>
-				<div class="container">
-					<div class="col-sm-12">
-						<h3 class="uppercase thin-line">Sketching</h3>
-						<p class="bord-left">We sketched a number of ideas, experimenting with different configurations that would allow us to fulfill our design requirements</p>
-					</div>
-				</div>	
-			</div>
-			<div class="row">
-				<div class="small-spacing"></div>
-				<div class="container">
-					<div class="col-sm-12">
-						<img alt="Sketches of portable desks" class="img-responsive" src="ge5020/semi_modular.png">
-					</div>	
-				</div>
-			</div>
-
-			<!-- Decision Matrix -->
-			<div class="row">
-				<div class="spacing"></div>
-				<div class="container">
-					<div class="col-sm-12">
-						<h3 class="uppercase thin-line">Decision Matrix</h3>
-						<p class="bord-left">After sketching, our next step was to create a decision matrix to narrow down the options. We rated our requirements based on importances as either a 1, 3, or 7 and then did the same with how well each solution option fulfils the criteria. The scores are then multiplied by the weights and added to determine which one was the best fit.</p>
-					</div>
-				</div>	
-			</div>
-
-			<div class="row">
-				<div class="small-spacing"></div>
-				<div class="container">
-					<div class="col-md-3  col-sm-2"></div>
-					<div class="col-md-6 col-sm-8">
-						<table>
-							<caption>Criteria and Weight</caption>
-							<tr>
-								<th>Criteria</th>
-								<th>Weight</th>
-							</tr>
-							<tr>
-								<td>Main Workspace Available</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Large Storage Space</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>Sturdy</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Visually Pleasing</td>
-								<td>1</td>
-							</tr>
-							<tr>
-								<td>Easy Transport</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Adjustable</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>Intuitive & Easy Setup</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<td>Water Resistant</td>
-								<td>3</td>
-							</tr>
-						</table>
-					</div>
-					<div class="col-md-3 col-sm-2"></div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="container">
-					<div class="col-sm-1"></div>
-					<div class="col-md-12 col-sm-10 resize-table">
-						<div class="spacing"></div>
-						<table>
-							<caption>Decision Matrix</caption>
-							<thead>
-								<tr>
-									<th scope="col">Criteria</th>
-									<th scope="col">Mod Attach</th>
-									<th scope="col">Pop Up</th>
-									<th scope="col">Full Collapse</th>
-									<th scope="col">Flippable</th>
-									<th scope="col">Slide Out</th>
-									<th scope="col">Cube</th>
-									<th scope="col">Removable Legs</th>
-									<th scope="col">Fully Modular</th>
-									<th scope="col">Identical Pieces</th>
-									<th scope="col">Solid</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="criteria" data-label="criteria">Main Space Available</td>
-									<td data-label="Mod Attach">7</td>
-									<td data-label="Pop Up">7</td>
-									<td data-label="Full Collapse">7</td>
-									<td data-label="Flippable">7</td>
-									<td data-label="Slide Out">7</td>
-									<td data-label="Cube">7</td>
-									<td data-label="Removable Legs">7</td>
-									<td data-label="Fully Modular">7</td>
-									<td data-label="Identical Pieces">7</td>
-									<td data-label="Solid">7</td>
-								</tr>
-								<tr>
-									<td class="criteria" data-label="Requirement">Large Storage Space</td>
-									<td data-label="Mod Attach">7</td>
-									<td data-label="Pop Up">7</td>
-									<td data-label="Full Collapse">3</td>
-									<td data-label="Flippable">1</td>
-									<td data-label="Slide Out">1</td>
-									<td data-label="Cube">7</td>
-									<td data-label="Removable Legs">1</td>
-									<td data-label="Fully Modular">7</td>
-									<td data-label="Identical Pieces">1</td>
-									<td data-label="Solid">7</td>
-								</tr>
-
-								<tr>
-									<td class="criteria" data-label="Requirement">Sturdy</td>
-									<td data-label="Mod Attach">3</td>
-									<td data-label="Pop Up">1</td>
-									<td data-label="Full Collapse">7</td>
-									<td data-label="Flippable">1</td>
-									<td data-label="Slide Out">7</td>
-									<td data-label="Cube">7</td>
-									<td data-label="Removable Legs">3</td>
-									<td data-label="Fully Modular">3</td>
-									<td data-label="Identical Pieces">1</td>
-									<td data-label="Solid">3</td>
+	 										
+	 					<div class="row">
+	 						<div class="col-md-12">
+	 							<h3>Competitive Product Research / IP Search</h3>
+	 							<div class="spacing"></div>
+	 						</div>
+	 						</div>
 
 
-								</tr>
-								<tr>
-									<td class="criteria" data-label="Requirement">Visually Pleasing</td>
-									<td data-label="Mod Attach">7</td>
-									<td data-label="Pop Up">7</td>
-									<td data-label="Full Collapse">1</td>
-									<td data-label="Flippable">7</td>
-									<td data-label="Slide Out">1</td>
-									<td data-label="Cube">1</td>
-									<td data-label="Removable Legs">1</td>
-									<td data-label="Fully Modular">1</td>
-									<td data-label="Identical Pieces">3</td>
-									<td data-label="Solid">7</td>
-								</tr>
-								<tr>
-									<td class="criteria" data-label="Requirement">Easy Transport</td>
-									<td data-label="Mod Attach">3</td>
-									<td data-label="Pop Up">7</td>
-									<td data-label="Full Collapse">7</td>
-									<td data-label="Flippable">7</td>
-									<td data-label="Slide Out">7</td>
-									<td data-label="Cube">7</td>
-									<td data-label="Removable Legs">7</td>
-									<td data-label="Fully Modular">1</td>
-									<td data-label="Identical Pieces">1</td>
-									<td data-label="Solid">7</td>
-								</tr>
-								<tr>
-									<td class="criteria" data-label="Requirement">Adjustable</td>
-									<td data-label="Mod Attach">1</td>
-									<td data-label="Pop Up">1</td>
-									<td data-label="Full Collapse">1</td>
-									<td data-label="Flippable">1</td>
-									<td data-label="Slide Out">7</td>
-									<td data-label="Cube">3</td>
-									<td data-label="Removable Legs">1</td>
-									<td data-label="Fully Modular">3</td>
-									<td data-label="Identical Pieces">7</td>
-									<td data-label="Solid">1</td>
-								</tr>
-								<tr>
-									<td class="criteria" data-label="Requirement">Intuitive & Easy Setup</td>
-									<td data-label="Mod Attach">148</td>
-									<td data-label="Pop Up">178</td>
-									<td data-label="Full Collapse">156</td>
-									<td data-label="Flippable">160</td>
-									<td data-label="Slide Out">170</td>
-									<td data-label="Cube">176</td>
-									<td data-label="Removable Legs">124</td>
-									<td data-label="Fully Modular">128</td>
-									<td data-label="Identical Pieces">102</td>
-									<td data-label="Solid">192</td>		
-								</tr>
-								<tr>
-									<td class="criteria" data-label="Requirement">Water Resistant</td>
-									<td data-label="Mod Attach">148</td>
-									<td data-label="Pop Up">178</td>
-									<td data-label="Full Collapse">156</td>
-									<td data-label="Flippable">160</td>
-									<td data-label="Slide Out">170</td>
-									<td data-label="Cube">176</td>
-									<td data-label="Removable Legs">124</td>
-									<td data-label="Fully Modular">128</td>
-									<td data-label="Identical Pieces">102</td>
-									<td data-label="Solid">192</td>		
-								</tr>
-								<tr class="total">
-									<td data-label="Requirement">Total</td>
-									<td data-label="Mod Attach">148</td>
-									<td data-label="Pop Up">178</td>
-									<td data-label="Full Collapse">156</td>
-									<td data-label="Flippable">160</td>
-									<td data-label="Slide Out">170</td>
-									<td data-label="Cube">176</td>
-									<td data-label="Removable Legs">124</td>
-									<td data-label="Fully Modular">128</td>
-									<td data-label="Identical Pieces">102</td>
-									<td data-label="Solid">192</td>		
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="col-sm-1"></div>
+	 							 						<div class="row top-marg">
 
-				</div>
-			</div>
-
-			<!-- Makestorm -->
-			<div class="row">
-				<div class="spacing"></div>
-				<div class="container">
-					<div class="col-sm-12">
-						<h3 class="uppercase thin-line">Makestorm</h3>
-						<p>Next we used cardboard (and a lot of tape!) to prototype our "pop up" idea, which we decided was the best idea to pursue after our decision matrix and additional conversation</p>
-					</div>
-				</div>	
-			</div>
-
-			<div class="row">
-				<div class="container">
-					<div class="col-md-2"></div>
-					<div class="col-md-8">
-						<div class="row">
-							<div class="col-md-6">
-								<img alt="Sideview of cardboard prototype" class="img-responsive" src="ge5020/first_prototype.jpeg">
-							</div>
-							<div class="col-md-6">
-								<img alt="Frontview of cardboard prototype" class="img-responsive" src="ge5020/first_prototype2.jpeg">
-							</div>
-						</div>
-					</div>
-					<div class="col-md-2"></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-spacing"></div>
-				<div class="container">
-					<div class="col-md-6">
-						<img class="img-responsive" src="ge5020/satchelboard.jpeg">
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<h4><strong>Strengths</strong></h4>
-						<ul>
-							<li>Increased Productivity</li>
-							<li>Portable and Lightweight</li>
-							<li>Compact</li>
-							<li>Multipurpose</li>
-							<li>Caters to Various Lifestyles</li>
-							<li>Water Resistant</li>
-							<li>Slots for Cord Management</li>
-							<li>Laptop Ventilation Holes</li>
-						</ul>
-					</div>		
-					<div class="col-sm-6 col-md-3">
-						<h4><strong>Weaknesses</strong></h4>
-						<ul>
-							<li>Size Limitations (17 in)</li>
-							<li>Weight Limitations (230 lbs)</li>
-							<li>Expensive ($193)</li>
-							<li>Not Stylish</li>
-							<li>No Portable Charging</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+	 															<div class="col-md-3">
+	 																
+	 																<img src="ge5020/satchelboard.jpeg">
+	 															</div>
+	 															<div class="col-md-3">
+	 																
+	 																<img src="ge5020/satchelboard2.jpeg">
+	 															</div>
+	 															<div class="col-md-6">
+	 																<h4 class="thin"><strong class="semi">Product:</strong> 3-in-1 Product: A desk, chair, bag  (Convinenture)<br><br>
+	 																<strong class="semi">Stengths: </strong>Increased Productivity, Portable and Lightweight, Compact, Multipurpose kit, Carters to various lifestyle, Water Resistant SB EVA Material, Slots for cord management, Laptop ventilation holes<br><br>
+	 																<strong class="semi">Weaknesses: </strong> Size limitations: 17 in, Only support under 230 lbs, Not a reasonable price: $193, Not stylish, No Portable charging system 
 
 
-			<!-- key take aways / credits -->
-			<div class="row">
-				<div class="spacing"></div>
-				<div class="container">
-					<div class="col-sm-6">
-						<h2 class="uppercase ideation">Project<br>
-						Details</h2>
-						<p><strong>Date: </strong>Fall 2017 <br>
-							<strong>Contributors: </strong>Brenna Sorkin, John Buczek, Akhil Bagul, Aleyah Aragon, Benjamin Barber, Christopher Owen, Henry Desai and Oscar Chen <br>
-							<strong>Tags: </strong>Design Thinking, Leadership, Engineering, Interaction Design <br>
-							<strong>Client: </strong>Generate Labs</p>
-						</div>
-						<div class="col-sm-6">
-							<h2 class="uppercase ideation">Key<br>
-							Takeaways</h2>
-							<p>This project was an incredible opportunity for me to apply my design thinking skills to the field of engineering. I also was able to improve my leadership skills and get firsthand experience in project management.</p>
-						</div>
-					</div>	
-					<div class="spacing"></div>
-				</div>
 
-				<!-- footer -->
-				<div class="row" id="footer">
-					<div class="container">
-						<div class="col-sm-4">
-							<h4>hi</h4>
-							<img src="me.png">
-						</div>
-						<div class="col-sm-4">
-							<h4>about</h4>
-							<p>I'm a 3rd year student at Northeastern University studying human centered software and UX design. I built this website! <a href="references.html">(References)</a></p>
-							<p>
-								The website is completely keyboard navigable, images contain alt text, and all colors comply with <a href="https://www.w3.org/WAI/intro/wcag">508 accessibility recommendations.</a>
-							</p>
-							<p><i class="fa fa-copyright" aria-hidden="true"></i>BCS 2017 </p>
 
-						</div>
-						<div class="col-sm-4">
-							<h4>reach me</h4>
-							<p><a href="mailto:brenna.sorkin@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>brenna.sorkin@gmail.com</a></p>
-							<p><a href="mailto:sorkin.b@husky.neu.edu"><i class="fa fa-envelope" aria-hidden="true"></i>sorkin.b@husky.neu.edu</a></p>
-							<p><i class="fa fa-phone" aria-hidden="true"></i>617 543 0996</p>
-							<p><a href="https://www.linkedin.com/in/brennasorkin" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></p>
-						</div>
-					</div>
-				</div>
+</h4>
+	 															</div>
+	 															
 
-				<!-- javascript -->
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-				<script src="bootstrap.js"></script>
-			</body>
-			</html>
+	 														</div>
+
+	 						<div class="row top-marg">
+	 							<div class="col-md-3">
+	 									<img src="ge5020/songmics.png">
+	 								</div>
+	 								<div class="col-md-3">
+	 									<img src="ge5020/songmics2.png">
+	 								</div>
+
+	 								<div class="col-md-6">
+	 																<h4 class="thin"><strong class="semi">Product:</strong> Multifunctional Bamboo Laptop Desk<br><br>
+	 																<strong class="semi">Stengths: </strong>Adjustable angle, Additional storage available, Sturdy material, Sits above lap instead of directly on, Has a cup holder, Decent price (33$), Has fans to cool laptop<br><br>
+	 																<strong class="semi">Weaknesses: </strong> Heavy - 5.5 lbs, Clunky, Have to bring your own seating, Poorly constructed according to reviews, Legs are difficult to maneuver, Height is not adjustable</h4>
+	 															</div>
+	 						</div>	
+
+	 							 						<div class="row top-marg">
+	 							<div class="col-md-3">
+	 									<img src="ge5020/etable.jpeg">
+	 								</div>
+	 								<div class="col-md-3">
+	 									<img src="ge5020/etable2.jpeg">
+	 								</div>
+
+	 								<div class="col-md-6">
+	 																<h4 class="thin"><strong class="semi">Product:</strong> Folding adjustable lap desk with built-in 10,000mAh powerbank and LED light<br><br>
+	 																<strong class="semi">Stengths: </strong>Built-in 10,000mAh battery, Has an LED light, Can carry up to 25 pounds, Fits 17 inch laptops, Foldable legs,Can rest tablets and phones as well<br><br>
+	 																<strong class="semi">Weaknesses: </strong> Somewhat heavy at 4.8 pounds, Not very stable with flimsy legs, No locks for leg height position, Nothing to hold phone in place, Nothing stops tablets from falling over if the tablet is too vertical on the shelf</h4>
+	 															</div>
+	 						</div>								
+
+	 														
+	 							 						<div class="row top-marg">
+
+	 															<div class="col-md-6">
+	 																
+	 																<img src="ge5020/backpack_workstation.png">
+	 															</div>
+	 															<div class="col-md-6">
+	 																<h4 class="thin"><strong class="semi">US20100116860A1: Backpack Laptop Tray </strong><br><br>
+An enclosure having a front side, a back side, and at least one peripheral edge, the sides and edges together defining an internal volume, the front side including a laptop compartment flap selectively closable to seal a laptop compartment comprising at least a portion of the volume of the enclosure, the laptop compartment flap hinged across a horizontal fold line and pivotable between a closed and an open position, the laptop compartment flap including a stop means preventing the laptop compartment flap from extending past the open position.</h4>
+	 															</div>
+	 															
+
+	 														</div>
+	 						
+	 						<div class="row">
+	 							<div class="col-md-12">
+	 								<div class="spacing"></div>
+	 								<h3>Requirements and Specifications</h3>
+	 								
+	 								</div>
+	 							</div>
+
+	 							<div class="row top-marg">
+
+	 															<div class="col-md-12">
+	 																
+	 																<img src="ge5020/requirements_specs.png">
+	 															</div>
+	 															
+	 															
+
+	 														</div>
+
+						
+
+
+	 							<div class="row">
+	 								<div class="col-md-12">
+	 									<div class="spacing"></div>
+	 									<h3>Brainstorm and Sketching</h3>
+	 									
+	 								</div>
+	 							</div>
+
+	 							<div class="row top-marg">
+
+	 								<div class="col-md-12">
+	 									<img src="ge5020/semi_modular.png">
+	 								</div>
+	 								
+
+	 							</div>
+
+
+	 							<div class="row">
+	 								<div class="col-md-7">
+	 									<img src="ge5020/collapse.jpeg">
+	 								</div>
+	 								
+	 								<div class="col-md-5">
+	 									<img src="ge5020/cube.jpeg">
+	 								</div>
+
+	 									</div>
+
+
+
+
+
+	 									<div class="row top-marg">
+	 										<div class="col-md-12">
+	 											<div class="spacing"></div>
+	 											<h3>Decision Matrix</h3>
+	 											<h4 class="thin">After sketching, our next step was to create a decision matrix to narrow down the options</h4>
+	 												
+	 											</div>
+	 										</div>
+
+
+
+	 							<div class="row top-marg">
+
+	 								<div class="col-md-12">
+	 									<img src="ge5020/matrix_criteria.png">
+	 									<div class="spacing"></div>
+	 									<h4 class="thin">
+	 										We rated our requirements based on importances as either a 1, 3, or 7 and then did the same with how well each solution option fulfils the criteria. The scores are then multiplied by the weights and added to determine which one was the best fit.
+	 									</h4>
+	 								</div>
+	 							
+
+	 								</div>
+
+	 							<div class="row top-marg">
+
+	 								<div class="col-md-4">
+	 									<img src="ge5020/matrix1.png">
+	 								</div>
+	 								<div class="col-md-4">
+	 									<img src="ge5020/matrix2.png">
+	 								</div>
+	 								<div class="col-md-4">
+	 									<img src="ge5020/matrix3.png">
+	 								</div>
+
+
+	 							</div>
+
+
+	 									<div class="row top-marg">
+
+	 								<div class="col-md-12">
+	 									<div class="spacing"></div>
+	 									<h4 class="thin">
+	 										This was the midway point of the class, at which point we presented our work so far, ending in a Gantt Chart of our future work
+	 									</h4>
+
+	 									<img src="ge5020/gantt.png">
+	 								</div>
+	 								</div>
+
+
+
+	 								
+	 								
+
+
+
+	 										
+
+	 										
+
+	 													<div class="row top-marg">
+	 														<div class="col-md-12">
+	 															<div class="spacing"></div>
+	 															<h3>Makestorm</h3>
+	 															<h4 class="thin">Next we used cardboard (and a lot of tape!) to prototype our "pop up top" idea, which won our decision matrix.</h4>
+
+	 															</div>
+	 														</div>
+
+	 							<div class="row top-marg">
+
+	 								<div class="col-md-6">
+	 									<img src="ge5020/first_prototype.jpeg">
+	 								</div>
+	 								<div class="col-md-6">
+	 									<img src="ge5020/first_prototype2.jpeg">
+	 								</div>
+	 								
+
+
+	 							</div>
+
+	 								<div class="row top-marg">
+	 														<div class="col-md-12">
+	 															<div class="spacing"></div>
+	 															<h3>Final Prototype</h3>
+	 															<h4 class="thin">For our final protoype we opted to use balsa wood due to its lightweight nature, low cost, and high strength to weight ratio. We chose laser cutting as our manufacturing method because it is easily and accurately repeatable, reliable, and cheap (free in our case!)</h4>
+
+	 															</div>
+	 														</div>
+
+	 							<div class="row top-marg">
+
+	 								<div class="col-md-5">
+	 									<img src="ge5020/engineering_sketches.png">
+	 								</div>
+	 								<div class="col-md-3">
+	 									<img src="ge5020/lasercut_sketch.png">
+	 								</div>
+	 								<div class="col-md-4">
+	 									<img src="ge5020/laser_cut.png">
+	 								</div>
+
+
+	 							</div>
+
+	 							<div class="row top-marg">
+	 														<div class="col-md-12">
+	 															<div class="spacing"></div>
+	 														
+	 															<h4 class="thin">Above: sketches and Adobe Illustrator files for the laser cut of the final prototype. Below: Photographs of the finished piece and assembly process.</h4>
+
+	 															</div>
+	 														</div>
+
+
+	 								 							<div class="row top-marg">
+
+	 								<div class="col-md-6">
+	 									<img src="ge5020/teni.jpeg">
+	 								</div>
+	 								<div class="col-md-6">
+	 									<img src="ge5020/pieces.jpg">
+	 								</div>
+	 								
+
+
+	 							</div>
+
+
+	 								 							<div class="row top-marg">
+
+	 								<div class="col-md-6">
+	 									<img src="ge5020/pre_glue.jpeg">
+	 								</div>
+	 								<div class="col-md-6">
+	 									<img src="ge5020/pre_glue2.jpeg">
+	 								</div>
+	 								
+
+
+	 							</div>
+
+	 							<div class="row top-marg">
+
+	 								
+	 								<div class="col-md-12">
+	 									<video width="650" height="460" controls>
+	 				<source src="ge5020/final_prototype.mp4" type="video/mp4">
+	 					<source src="movie.ogg" type="video/ogg">
+	 						Your browser does not support the video tag.
+	 					</video>
+	 								</div>
+	 								
+
+
+	 							</div>
+
+
+	 							<div class="row top-marg">
+
+	 								<div class="col-md-4">
+	 									<img src="ge5020/finished_top.jpeg">
+	 								</div>
+	 								<div class="col-md-4">
+	 									<img src="ge5020/finished.jpeg">
+	 								</div>
+	 								<div class="col-md-4">
+	 									<img src="ge5020/underside.jpeg">
+	 								</div>
+
+
+	 							</div>
+
+								
+	 											
+
+
+	 																
+	 																		<div class="row top-marg">
+	 																			<div class="col-md-12">
+	 																				
+	 																				<h3>Key Takeaways</h3>
+	 																				<h4 class="thin">This project an interesting challenge for me because of the engineering focus. I learned a lot about the overall process of product development as well as laser cutting and a little bit of mechanical engineering. I also was able to work on my presentation and teamwork skills.</h4>
+	 																					<div class="spacing"></div>
+
+	 																				</div>
+	 																			</div>
+
+
+	 																			<div class="row">
+
+	 																				<div class="col-lg-12">
+	 																					<div class="spacing"></div>
+	 																					<h4>Project Details</h4>
+	 																					<div class="hline"></div>
+	 																					<h6 class="thin"><b class="semi">Date:</b> Fall 2017</h6>
+	 																					<h6 class="thin"><b class="semi">Contributors:</b> Brenna Sorkin, Teni Odumakinde, Daniel Castle</h6>
+	 																					<h6 class="thin"><b class="semi">Categories: </b>Engineering, product design</h6>
+
+	 																					<h6 class="thin"><b class="semi">Client:</b> Class, engineering product design methodology</h6>
+	 																					<div class="spacing"></div>
+	 																				</div>
+
+	 																			</div><! --/row -->
+	 																		</div><! --/container -->
+
+	 <!-- *****************************************************************************************************************
+   FOOTER
+   ***************************************************************************************************************** -->
+   <div id="footerwrap">
+   	<div class="container">
+   		<div class="row">
+   			<div class="col-lg-4">
+   				<h4>About</h4>
+   				<div class="hline-w"></div>
+   				<p>Brenna Sorkin built this website by modifying and combining a number of templates and learning HTML & CSS along the way!
+   					<a href="about.html">more about Brenna</a></p>
+   				</div>
+
+   				<div class="col-lg-4">
+   					<h4>Reach me at:</h4>
+   					<div class="hline-w"></div>
+   					<p>
+
+   						brenna.sorkin@gmail.com<br/>
+   						sorkin.b@husky.neu.edu<br/>
+   						617.543.0996<br/>
+   						<a href="http://www.linkedin.com/in/brennasorkin"><i class="fa fa-linkedin"></i></a>
+   					</p>
+   				</div>
+
+   			</div><! --/row -->
+   		</div><! --/container -->
+   	</div><! --/footerwrap -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina-1.1.0.js"></script>
+    <script src="assets/js/jquery.hoverdir.js"></script>
+    <script src="assets/js/jquery.hoverex.min.js"></script>
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="assets/js/jquery.isotope.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+
+    <script type="text/javascript">
+
+    	$(document).ready(function(){
+    		$(".owl-carousel").owlCarousel({
+    			loop:true,
+    			margin:10,
+    			nav:true,
+
+    		});
+    	});
+
+
+
+    </script>
+
+
+
+</body>
+</html>
