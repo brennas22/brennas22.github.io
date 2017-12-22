@@ -567,6 +567,8 @@ class MazeWorld extends World {
 
   }</pre>
 
+<h4 class="thin">Represents everything that happens on tick. Once Kruskal's algorithm has created a list of good edges (the final edges that will comprise the maze), on each tick one item from that list is added to a new list, which is what's drawn in order to animate each edge being "knocked down."</h4>
+
 <pre>
   // Advances any changes in the maze on tick
   // EFFECT: adds items to animateEdges, adds items to seen, adds items to
@@ -583,8 +585,11 @@ class MazeWorld extends World {
       if (this.player.equals(this.end)) {
         this.complete = true;
       }
-    }
+    } </pre>
 
+<h4 class="thin">This part occurs once the maze has been fully constructed and drawn. On each tick we check if the worklist still has items in it. If it does, the current cell is taken from the from of the list and evaluated. The key difference between breadth first and depth first search is whether the current cells neighbors are added to the beginning of the work list or to the end. </h4>
+
+<pre>
     if (mazeDrawn && search) {
       if (worklist.size() > 0) {
         Cell current = worklist.removeFromHead();
@@ -613,8 +618,11 @@ class MazeWorld extends World {
               else {
                 worklist.addAtTail(e.to);
               }
-            }
+            }</pre>
 
+            <h4 class="thin">A hashmap is populated where the key is the child and the item is its parent, which will ultimately be used to find the one path from the end back to the start. The current cell is also added the list of cells that have already been seen (to make sure the same cell is not evaluated more than once.)</h4>
+
+            <pre>
             if (!childParent.containsKey(e.to) || !childParent.containsKey(e.from)) {
               if (e.to.equals(current)) {
                 childParent.put(e.from, current);
@@ -631,6 +639,7 @@ class MazeWorld extends World {
     }
   } </pre>
 
+ <h4 class="thin">Solve maze does the exact same thing as what happens in on tick, except "silently." Aka it leaves no visual evidence of its search.</h4>
 
 <pre>
   // traverses the maze from start to finish
@@ -674,8 +683,11 @@ class MazeWorld extends World {
         noDrawSeen.add(current);
       }
     }
-  }
+  }</pre>
 
+ <h4 class="thin">The hashmap for children and their parents is used to find the path from end to finish by tracing back each parent to its child until we reach the very first cell. There will only be one path through.</h4>
+
+<pre>
   // find the path from end to start
   // EFFECT: edit list of cells that constitute path from end to start
   public void findPath() {
