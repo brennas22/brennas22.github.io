@@ -1,472 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+<html>
+<head>
+	<title>Brenna Sorkin Portfolio</title>
+	<script src="https://use.fontawesome.com/7c0217a7a4.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="logo.png">
 
-    <title>Brenna Sorkin</title>
+</head>
+<body>
+	<!-- nav -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="menu">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="" class="logo-link">
+					<img class="logo logo-view" src="logo2.svg">
+					<img class="logo logo-hide" src="logo_yellow.svg">
+				</a>	
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+				<!-- <a href="#"class="navbar-brand">Brenna Sorkin</a> -->
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a id="brand" href="#">Brenna Sorkin.</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="resume.html">Resume</a></li>
 
-    <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+					<li><div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Portfolio
+							<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li class="dropdown-header">featured projects</li>
+								<li><a href="generate_labs.html">Generate Labs</a></li>
+								<li><a href="popup_desk.html">Pop-Up Desk</a></li>
+								<li><a href="#">Java Maze</a></li>
+							</ul>
+						</div></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- landing page -->
+		<div class="row" id="landing">
+			<div class="col-sm-12" >
+				<!-- name tag -->
+				<div class="col-sm-6">	
+				</div>
+				<div class="col-sm-6">
+					<div class="row" id="white">
+						<div class="col-sm-7">
+							<h1>Brenna Sorkin</h1>
+						</div>
+						<div class="col-sm-5">
+							<p class="title-p uppercase">Interaction & UX designer<br>
+								& developer focused on <br>
+							healthcare & accessibility</p>
+						</div>
+					</div>
+				</div>
+				<!-- button -->
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4 text-center">
+					<a href="javascript:void(0);" class="btn btn-down scrolldown"><i class="fa fa-arrow-down fa-2x down-i" aria-hidden="true"></i></a>
 
+				</div>
+				<div class="col-sm-4"></div>
+			</div>
+		</div>
+		<!-- skills header -->
+		<div class="row section" id="skills">
+			<div class="col-md-1 col-sm-2" >
+				<h2>skills</h2>
+			</div>
+			<div class="col-md-9 col-sm-7" >
+				<p>My interdisciplinary major and <br>
+					variety of interests have allowed <br>
+				me to develop a wide range of skills</p>
+			</div>
+			<div class="col-md-2 col-sm-3 text-center" >
+				<a href="resume.html" class="btn btn-default">view resume</a>
+			</div>
+		</div>
+		<!-- skills -->
+		<div class="row skills">
+			<div class="col-md-3 col-sm-6">
+				<h1>proto<br>
+				typing</h1>
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+				<p>InVision<br>
+					Balsamiq<br>
+					Adobe XD<br>
+					Principle<br>
+				Sketch</p>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<h1>des<br>
+				ign</h1>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
+				<p>Adobe Illustrator<br>
+					Design Research<br>
+					Wireframing <br>
+					Usability Testing<br>
+				Affinity Diagramming</p>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<h1>progra<br>
+				mming</h1>
 
+				<p>WPF and Basic C#<br>
+					Java<br>
+					HTML<br>
+					CSS<br>
+				Arduino C</p>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<h1>3d mod<br>
+				elling</h1>
 
-   <script src="assets/js/modernizr.js"></script>
+				<p>Basic Solidworks<br>
+					Google SketchUp<br>
+					Creo Parametric <br>
+					Makerbot, Markforged<br>
+				GrabCAD Print</p>
+			</div>
+		</div>
+		<!-- featured projects header -->
+		<div class="row section" >
+			<div class="col-sm-3" >
+				<h2>featured projects</h2>
+			</div>
+			<div class="col-sm-7" >
+				<p>A variety of projects completed<br>
+					over the past year or so, encompassing<br>
+				work from a number of disciplines</p>
+			</div>
+			<div class="col-sm-2 text-center" >
 
+			</div>
+		</div>
+		<!-- labs -->
+		<div class="row background_image" id="labs">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<div class="mod">
+					<h1>Generate<br>
+					Labs</h1>
+					<p>Generate Labs is a program that I pitched and now am the director of. Generate is Northeastern’s student-led product development studio. </p>
+					<div class="text-center test">
+						<a href="generate_labs.html" class="btn btn-default test">read more</a>
+					</div>	
+				</div>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		<!-- pop up -->
+		<div class="row background_image" id="pop_up">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<div class="mod">
+					<h1>Pop-Up<br>
+					Desk</h1>
+					<p>This pop up desk was the final prototype that I worked on in a team of three as part of a class called Product Design Methods</p>
+					<div class="text-center">
+						<a href="popup_desk.html" class="btn btn-default">read more</a>
+					</div>	
+				</div>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		<!-- maze -->
+		<div class="row background_image" id="maze">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<div class="mod">
+					<h1>Java<br>
+					Maze</h1>
+					<p>This maze was the final assignment in the object oriented based java programming class I took this fall </p>
+					<div class="text-center">
+						<a href="" class="btn btn-default">read more</a>
+					</div>	
+				</div>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		
+		<!-- footer -->
+		<div class="row" id="footer">
+			<div class="container">
+				<div class="col-sm-4">
+					<h4>hi</h4>
+					<img src="me.png">
+				</div>
+				<div class="col-sm-4">
+					<h4>about</h4>
+					<p>I'm a 3rd year student at Northeastern University studying human centered software and UX design. I built this website! <a href="references.html">(References)</a></p>
+					<p>
+						The website is completely keyboard navigable, images contain alt text, and all colors comply with <a href="https://www.w3.org/WAI/intro/wcag">508 accessibility recommendations.</a>
+					</p>
+					<p><i class="fa fa-copyright" aria-hidden="true"></i>BCS 2017 </p>
 
-  </head>
-
-  <body>
-
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">BRENNA SORKIN.</a>
-        </div>
-        <div class="navbar-collapse collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">HOME</a></li>
-            <li><a href="about.html">RESUME</a></li>
-    
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">PORTFOLIO<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><h5 class="white">featured projects</h5></li>
-                
-                <li><a href="uncommonfoods.html">UX DESIGN</a></li>
-                 <li><a href="clip.html">UI DESIGN</a></li>
-                 <li><a href="generate.html">GRAPHIC DESIGN</a></li>
-                 <li><a href="sizeu.html">PRODUCT DESIGN</a></li>
-                 <li><a href="microinteractions.html">INTERACTION DESIGN</a></li>
-                
-                
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-
-
-  <!-- *****************************************************************************************************************
-   HEADERWRAP
-   ***************************************************************************************************************** -->
-  <div>  
-      <div class="container home hero">
-      <div class="row">
-      <div class="col-lg-12 full-back">
-          
-        <div class="overlay"></div>
-        <div class="herowrapper ">
-          <h1>Brenna Sorkin: <b class="rotate color">designer,developer,maker,entrepreneur,photographer</b></h1>
-        </div>
-        <a href="javascript:void(0);" class="scrolldown">
-          <h3>More about me</h3>
-          <div data-icon="&#xe017;" class="icon"></div>
-        </a>
-      
-              
-      </div>    
-      </div><!-- /row -->
-      </div> <!-- /container -->
-  </div>
-
-  <!-- Start BlockQuote -->
-  <div class="row">
-    <div class="col-lg-12 block_back">
-      <div class="blockquote main">
-        <blockquote>I am a <b>passionate, dedicated </b>and <b>high-achieving</b> student interested in working on projects that fall at the intersection of design-thinking, software, and healthcare.</blockquote>
-      </div>
-    </div>  
-  </div>
-  
-  <!-- End BlockQuote -->
-
-
-
-  
-  <!-- *****************************************************************************************************************
-   SERVICE LOGOS
-   ***************************************************************************************************************** -->
-   <div id="service">
-    <div class="container">
-      <div class="row centered">
-        <div class="col-md-4">
-          <i class="fa fa-pencil"></i>
-          <h4>Design</h4>
-          <h4 class="semi-thin">+ Adobe Illustrator <br><br>
-          + InVision, Balsamiq <br><br>
-          + Sketch, Principle <br><br>
-          + Adobe Experience Design <br><br>
-          + User testing<br><br>
-          + Wix, SquareSpace, WordPress</h4>
-          
-        </div>
-        <div class="col-md-4">
-          <i class="fa fa-code"></i>
-          <h4>Programming</h4>
-          <h4 class="semi-thin">+ WPF <br><br>
-          + Basic C#<br><br>
-          + Basic Java <br><br>
-          + Arduino C <br><br>
-          + Basic HTML and CSS <br><br>
-          + Github <br><br>
-          </h4>
-          
-        </div>
-        <div class="col-md-4">
-          <i class="fa fa-gears"></i>
-          <h4>3D Modeling</h4>
-          <h4 class="semi-thin">+ Basic Solidworks <br><br>
-          + Google SketchUp<br><br>
-          + Creo Parametric <br><br>
-          + Makerbot, Markforged <br><br>
-          + Fortus, Polyjet<br><br>
-          + GrabCAD Print<br><br>
-          </h4>
-          
-        </div>            
-      </div>
-      <div class="row centered"> 
-        <p><br/><a href="about.html" class="btn btn-theme">view resume</a></p>
-      </div>
-      
-      <a href="javascript:void(0);" class="scrolldown2">
-          <h3 class="seeprojects">FEATURED PROJECTS</h3>
-          <div data-icon="&#xe017;" class="icon"></div>
-        </a>
-    </div><! --/container -->
-        
-   </div><! --/service -->
-
-
-     
-
-   
-  <!-- *****************************************************************************************************************
-   PORTFOLIO SECTION
-   ***************************************************************************************************************** -->
-  
-
-<div id="div_element2" class="row">
-  <div class=wrapper2>
-    <div class="divimage"></div>
-  <div class=divtext3><h1><span>UI Design</span></h1>
-      <h5><span><strong>Clip</strong></span></h5>
-      <h5><span>Mobile and desktop site</span></h5>
-      <p><span>Fall 2016</span></p>
-      <p><a href="clip.html" class="btn btn-theme">read more</a></p>
-  </div>
-</div>
-</div>
-
-
-<div class="row">
-  <div class=wrapper2>
-    <div class="divimage2"></div>
-  
-  <div class=divtext3>
-      <h1><span>UX Design</span></h1>
-      <h5><span><strong>unCommon Foods</strong></span></h5>
-      <h5><span>Business plan, structures, and app</span></h5>
-      <p><span>Fall 2016</span></p>
-      <p><a href="uncommonfoods.html" class="btn btn-theme">read more</a></p>
-  </div>
-</div>
-</div>
-
-
-
-<div class="row">
-  <div class=wrapper2>
-    <div class="divimage4"></div>
-  
-  <div class=divtext3><h1><span>Product Design</span></h1>
-      <h5><span><strong class="semi">SizeU</strong></span></h5>
-      <h5><span>Minimum Viable Product - "looks like"</span></h5>
-      <p><span>Spring 2016</span></p>
-      <p><a href="sizeu.html" class="btn btn-theme">read more</a></p>
-  </div>
-</div>
-</div>
-
-<div class="row">
-  <div class="col-md-6 port">
-    <div class="imagebehind">
-
-      <img src="generatebusinesscards.png" alt="" />
-      
-      <div class="floattext">
-      <h1><span>Graphic Design</span></h1><br>
-      <h5><span><strong class="semi">Generate</strong></span></h5>
-      <h5><span>Logo design and corporate branding</span></h5>
-      <p><span>Spring 2016</span></p>
-      <p><a href="generate.html" class="btn btn-theme">read more</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6 port">
-    <div class="imagebehind">
-<div id="img_wrap" class="static">
-            <img id="animated" src="foodapp/foodsize.gif" alt="">
-            <img id="static" src="foodapp/microinteractionsstill.png" alt="">
-        </div>
-      <div class="floattext">
-        <h1><span>Interaction Design</span></h1><br>
-      
-      <h5><span>A case study in microinteractions</span></h5>
-      <p><span>Spring 2017</span></p>
-      <p><a href="microinteractions.html" class="btn btn-theme">read more</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--
-
-<div class="row">
-<div class="col-s-6 col-md-6 port">
-  <div class=wrapperhalf>
-    <div class="divimage3"></div>
-  
-  <div class=divtext3><h1><span>Graphic Design</span></h1>
-      <h5><span><strong class="semi">Generate</strong></span></h5>
-      <h5><span>Logo design and corporate branding</span></h5>
-      <p><span>Spring 2016</span></p>
-      <p><a href="generate.html" class="btn btn-theme">read more</a></p>
-  </div>
-</div>
-</div>
-
-<div class="col-s-6 col-md-6 port">
-  <div class=wrapperhalf>
-    <div class="divimage5">
-      <img src="foodapp/foodsize.gif">
-    </div>
-  
-  <div class=divtext3><h1><span>Interaction Design</span></h1>
-      
-      <h5><span>A case study in microinteractions</span></h5>
-      <p><span>Spring 2017</span></p>
-      <p><a href="generate.html" class="btn btn-theme">read more</a></p>
-  </div>
-</div>
-</div>
-</div>-->
-
-<!--
-<div class="row top-marg">
-  <div class="col-md-12">
-    <h3 class="centered">
-      Other works
-    </h3>
-  </div>
-</div>
-
-  <div class="row top-marg" >
-    <div class="col-md-4 col-xs-6 port">
-      <div class="portfolio-item graphic-design">
-          <div class="he-wrap tpl6">
-            <img src="foodapp/foodappfull.gif" alt="">
-            <div class="he-view">
-              <div class="bg a0" data-animate="fadeIn">
-                <h3 class="a1" data-animate="fadeInDown">A study in microinteractions</h3>
-                <a href="Fountaine.html" class="dmbutton a2" data-animate="fadeInUp">Read More</i></a>
-              </div>
-            </div>  
-          </div>
-       </div>
-    </div>
-    <div class="col-md-4 col-sm-6 port">
-       <div class="portfolio-item web-design">
-          <div class="he-wrap tpl6">
-            <img src="assets/portfolioimg/sketches2.jpg" alt="">
-            <div class="he-view">
-              <div class="bg a0" data-animate="fadeIn">
-                <h3 class="a1" data-animate="fadeInDown">Sketchbook pages</h3>
-                <a href="generate.html" class="dmbutton a2" data-animate="fadeInUp">Read More</i></a>
-              </div>
-            </div> 
-          </div>
-        </div>    
-    </div>
-    <div class="col-md-4 col-sm-6 port">
-       <div class="portfolio-item web-design">
-          <div class="he-wrap tpl6">
-            <img src="assets/portfolioimg/fineart2.jpg" alt="">
-            <div class="he-view">
-              <div class="bg a0" data-animate="fadeIn">
-                <h3 class="a1" data-animate="fadeInDown">fine art</h3>
-                <a href="generate.html" class="dmbutton a2" data-animate="fadeInUp">Read More</i></a>
-              </div>
-            </div> 
-          </div>
-        </div>    
-    </div>
-    
-
-  </div>-->
-
-
-  
+				</div>
+				<div class="col-sm-4">
+					<h4>reach me</h4>
+					<p><a href="mailto:brenna.sorkin@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>brenna.sorkin@gmail.com</a></p>
+					<p><a href="mailto:sorkin.b@husky.neu.edu"><i class="fa fa-envelope" aria-hidden="true"></i>sorkin.b@husky.neu.edu</a></p>
+					<p><i class="fa fa-phone" aria-hidden="true"></i>617 543 0996</p>
+					<p><a href="https://www.linkedin.com/in/brennasorkin" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></p>
+				</div>
+			</div>
+		</div>
 
 
 
+		<!-- javascript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="bootstrap.js"></script>
 
+		<script type="text/javascript">
+		//menu appear
+		(function($) {          
+			$(document).ready(function(){                    
+				$(window).scroll(function(){                          
+					if ($(this).scrollTop() > 535) {
+						$('#menu').fadeIn(500);
+					} else {
+						$('#menu').fadeOut(500);
+					}
+				});
+			});
+		})(jQuery);
 
-
-  
-  
-  <!-- *****************************************************************************************************************
-   FOOTER
-   ***************************************************************************************************************** -->
-   <div id="footerwrap">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <h4>About</h4>
-          <div class="hline-w"></div>
-          <p>Brenna Sorkin built this website by modifying and combining a number of templates and learning HTML & CSS along the way!
-          <a href="about.html">more about Brenna</a></p>
-        </div>
-        
-        <div class="col-lg-4">
-          <h4>Reach me at:</h4>
-          <div class="hline-w"></div>
-          <p>
-
-            brenna.sorkin@gmail.com<br/>
-            sorkin.b@husky.neu.edu<br/>
-            617.543.0996<br/>
-            <a href="http://www.linkedin.com/in/brennasorkin"><i class="fa fa-linkedin"></i></a>
-          </p>
-        </div>
-      
-      </div><! --/row -->
-    </div><! --/container -->
-   </div><! --/footerwrap -->
-   
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/retina-1.1.0.js"></script>
-  <script src="assets/js/jquery.hoverdir.js"></script>
-  <script src="assets/js/jquery.hoverex.min.js"></script>
-  <script src="assets/js/jquery.prettyPhoto.js"></script>
-    <script src="assets/js/jquery.isotope.min.js"></script>
-    
-
-
-      <script src="assets/js/custom.js"></script>
-
-    <script>
-// Portfolio
-(function($) {
-  "use strict";
-  var $container = $('.portfolio'),
-    $items = $container.find('.portfolio-item'),
-    portfolioLayout = 'fitRows';
-    
-    if( $container.hasClass('portfolio-centered') ) {
-      portfolioLayout = 'masonry';
-    }
-        
-    $container.isotope({
-      filter: '*',
-      animationEngine: 'best-available',
-      layoutMode: portfolioLayout,
-      animationOptions: {
-      duration: 750,
-      easing: 'linear',
-      queue: false
-    },
-    masonry: {
-    }
-    }, refreshWaypoints());
-    
-    function refreshWaypoints() {
-      setTimeout(function() {
-      }, 1000);   
-    }
-        
-    $('nav.portfolio-filter ul a').on('click', function() {
-        var selector = $(this).attr('data-filter');
-        $container.isotope({ filter: selector }, refreshWaypoints());
-        $('nav.portfolio-filter ul a').removeClass('active');
-        $(this).addClass('active');
-        return false;
-    });
-    
-    function getColumnNumber() { 
-      var winWidth = $(window).width(), 
-      columnNumber = 1;
-    
-      if (winWidth > 1200) {
-        columnNumber = 5;
-      } else if (winWidth > 950) {
-        columnNumber = 4;
-      } else if (winWidth > 600) {
-        columnNumber = 3;
-      } else if (winWidth > 400) {
-        columnNumber = 2;
-      } else if (winWidth > 250) {
-        columnNumber = 1;
-      }
-        return columnNumber;
-      }       
-      
-      function setColumns() {
-        var winWidth = $(window).width(), 
-        columnNumber = getColumnNumber(), 
-        itemWidth = Math.floor(winWidth / columnNumber);
-        
-        $container.find('.portfolio-item').each(function() { 
-          $(this).css( { 
-          width : itemWidth + 'px' 
-        });
-      });
-    }
-    
-    function setPortfolio() { 
-      setColumns();
-      $container.isotope('reLayout');
-    }
-      
-    $container.imagesLoaded(function () { 
-      setPortfolio();
-    });
-    
-    $(window).on('resize', function () { 
-    setPortfolio();          
-  });
-})(jQuery);
-</script>
-  </body>
+		// Scroll Down Link
+		$('.scrolldown').click(function() {
+			var targetOffset = $('#skills').offset().top-80;
+			$('html,body').animate({scrollTop: targetOffset}, 1000);
+		});
+	</script>	
+</body>
 </html>
