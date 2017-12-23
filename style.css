@@ -380,6 +380,9 @@ table th {
   outline: 2px dotted #105EB2;
 }
 
+.active-project {
+  background-color: #ffc200;
+}
 
 /*+---------------------------------------------------------+
   | LOGO                                                    |
