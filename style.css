@@ -251,9 +251,14 @@ table th {
 /*BRAND*/
 
 #brand {
+  color: white;
   font-weight: 800;
   text-transform: uppercase;
-   border: 2px solid #2c3e50;
+  border: 2px solid #2c3e50;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 8px;
+  margin-top: 3px;
 }
 
 #brand:hover,
@@ -326,9 +331,6 @@ table th {
   margin: 12px;
 }
 
-.logo-hide {
-  margin-bottom: 5px;
-}
 
 .logo-link {
   display: inline-block;
@@ -359,7 +361,7 @@ table th {
 
 .logo-link:hover .logo-hide,
 .logo-link:active .logo-hide{
-  display: block;
+  display: inline-block;
 }
 
 /*+---------------------------------------------------------+
@@ -664,6 +666,18 @@ table th {
   background-size: cover;
   margin-bottom: 30px;
   background-image: url(maze/maze_crop.png);
+}
+
+/*+---------------------------------------------------------+
+  | PHOTOGRAPHY                                             |
+  +---------------------------------------------------------+  */
+
+#photo {
+  height: 450px;
+  background-size: cover;
+  margin-bottom: 30px;
+  background-image: url(photos/colorful.jpg);
+
 }
 
 /*+---------------------------------------------------------+
