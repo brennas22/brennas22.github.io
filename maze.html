@@ -97,6 +97,37 @@
 				</div>
 			</div>		
 		</div>
+
+		<div class="row">
+				<div class="spacing"></div>
+				<div class="container">
+					<div class="col-md-2 col-sm-1"></div>
+					<div class="col-md-8 col-sm-10">
+						<video width="100%" title="Depth first traversal of maze" controls>
+							<source src="maze/depth_first.mov" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+							<div class="row">
+								<div class="col-md-2"></div>
+								<div class="col-md-8">
+									<div class="small-spacing"></div>
+									<p>In the code, this means that the worklist is a stack (last in, first out) where neighboring nodes are added to the front of the list.</p>
+									<pre>
+if (dfs) {
+	if (e.to.equals(current)) {
+		worklist.addAtHead(e.from);
+	} else {
+		worklist.addAtHead(e.to);
+	}
+}</pre>
+								</div>
+								<div class="col-md-2"></div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-1"></div>
+					</div>
+					<div class="spacing"></div>
+				</div>
 		
 
 	<!-- javascript -->
