@@ -677,7 +677,7 @@ table th {
   | PHOTOGRAPHY                                             |
   +---------------------------------------------------------+  */
 
-#photo {
+#photo_image {
   height: 450px;
   background-size: cover;
   margin-bottom: 30px;
