@@ -93,16 +93,18 @@
 			<div class="container">
 				<div class="col-sm-12">
 					<h3 class="uppercase thin-line">Depth First Search</h3>
-					<p>Depth-first search (DFS) is an algorithm for traversing or searching graph data structures. It starts at the root and explores as far as possible along each branch before backtracking.</p>
+					<p>Algorithm #1</p>
 				</div>
 			</div>		
 		</div>
 
 		<div class="row">
-				<div class="spacing"></div>
 				<div class="container">
+					<div class="small-spacing"></div>
 					<div class="col-md-2 col-sm-1"></div>
 					<div class="col-md-8 col-sm-10">
+						<p>Depth-first search (DFS) is an algorithm for traversing or searching graph data structures. It starts at the root and explores as far as possible along each branch before backtracking.</p>
+						<div class="spacing"></div>
 						<video width="100%" title="Depth first traversal of maze" controls>
 							<source src="maze/depth_first.mov" type="video/mp4">
 								Your browser does not support the video tag.
@@ -129,6 +131,150 @@ if (dfs) {
 					<div class="spacing"></div>
 				</div>
 		
+		<!-- BFS -->
+		<div class="row">
+			<div class="spacing"></div>
+			<div class="container">
+				<div class="col-sm-12">
+					<h3 class="uppercase thin-line">Breadth First Search</h3>
+					<p>Algorithm #2</p>
+				</div>
+			</div>		
+		</div>
+
+		<div class="row">
+				<div class="container">
+					<div class="small-spacing"></div>
+					<div class="col-md-2 col-sm-1"></div>
+					<div class="col-md-8 col-sm-10">
+						<p>Breadth-first search (BFS) is an algorithm for traversing or searching graph data structures. It starts at theroot and explores the neighbor nodes first, before the next level neighbors.</p>
+						<div class="spacing"></div>
+						<video width="100%" title="Depth first traversal of maze" controls>
+							<source src="maze/breadth_first.mov" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+							<div class="row">
+								<div class="col-md-2"></div>
+								<div class="col-md-8">
+									<div class="small-spacing"></div>
+									<p>In the code, this means that the worklist is a queue (first in, first out) where neighboring nodes are added to the end of the list.</p>
+									<pre>
+else {
+	if (e.to.equals(current)) {
+		worklist.addAtTail(e.from);
+	} else {
+		worklist.addAtTail(e.to);
+	}
+}</pre>
+								</div>
+								<div class="col-md-2"></div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-1"></div>
+					</div>
+					<div class="spacing"></div>
+				</div>
+
+		<!-- single player mode -->
+		<div class="row">
+			<div class="spacing"></div>
+			<div class="container">
+				<div class="col-sm-12">
+					<h3 class="uppercase thin-line">Player Modes</h3>
+				</div>
+			</div>		
+		</div>
+
+		<div class="row">
+				<div class="container">
+					<div class="small-spacing"></div>
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<div class="spacing"></div>
+						<div class="row">
+							<div class="col-md-6">
+								<video width="100%" title="Depth first traversal of maze" controls>
+									<source src="maze/player.mov" type="video/mp4">
+								Your browser does not support the video tag.
+								</video>
+								<p>Single player mode allows the user to navigate the maze using the arrow keys. </p>
+							</div>
+							<div class="col-md-6">
+								<video width="100%" title="Depth first traversal of maze" controls>
+									<source src="maze/2_player.mov" type="video/mp4">
+								Your browser does not support the video tag.
+								</video>
+								<p>2 player mode allows 2 users to navigate the maze, racing to opposite corners. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-1"></div>
+					</div>
+					<div class="spacing"></div>
+				</div>
+
+	<div class="row">
+		<div class="container">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<pre>
+  // Determines how to move the character in the maze given depending Key Presses
+  // EFFECT: moves the player, changes which cell it occupies
+  void movePlayer(String key) {
+    boolean canMoveUp = false;
+    boolean canMoveDown = false;
+    boolean canMoveRight = false;
+    boolean canMoveLeft = false;
+
+    if (this.player.equals(this.end)) {
+      this.complete = true;
+    }
+
+    for (Edge e : this.player.edges) {
+      Cell other;
+      if (e.to.equals(this.player)) {
+        other = e.from;
+      }
+      else {
+        other = e.to;
+      }
+      if (other.id == this.player.id - WIDTH) {
+        canMoveUp = true;
+      }
+      else if (other.id == this.player.id + WIDTH) {
+        canMoveDown = true;
+      }
+      else if (other.id == this.player.id + 1) {
+        canMoveRight = true;
+      }
+      else if (other.id == this.player.id - 1) {
+        canMoveLeft = true;
+      }
+    }
+    visited.add(player);
+
+    if (!path.contains(player)) {
+      score = score + 1;
+    }
+
+    if (key.equals("up") && canMoveUp) {
+      this.player = this.idMap.get(this.player.id - WIDTH);
+    }
+    if (key.equals("down") && canMoveDown) {
+      this.player = this.idMap.get(this.player.id + WIDTH);
+    }
+    if (key.equals("right") && canMoveRight) {
+      this.player = this.idMap.get(this.player.id + 1);
+    }
+    if (key.equals("left") && canMoveLeft) {
+      this.player = this.idMap.get(this.player.id - 1);
+    }
+  }
+</pre>
+			</div>
+			<div class="col-md2"></div>
+		</div>
+	</div>					
 
 	<!-- javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
