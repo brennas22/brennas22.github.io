@@ -175,7 +175,7 @@ else {
 					<div class="spacing"></div>
 				</div>
 
-		<!-- single player mode -->
+		<!-- player modes -->
 		<div class="row">
 			<div class="spacing"></div>
 			<div class="container">
@@ -228,8 +228,10 @@ else {
 
     if (this.player.equals(this.end)) {
       this.complete = true;
-    }
+    }</pre>
 
+<p>Checks each edge coming out of the cell the player is currently in and determines which way the player should be able to move</p>
+<pre>
     for (Edge e : this.player.edges) {
       Cell other;
       if (e.to.equals(this.player)) {
@@ -255,8 +257,9 @@ else {
 
     if (!path.contains(player)) {
       score = score + 1;
-    }
-
+    }</pre>
+    <p>Reassign the player to the cell in the direction the user moves</p>
+    <pre>
     if (key.equals("up") && canMoveUp) {
       this.player = this.idMap.get(this.player.id - WIDTH);
     }
@@ -274,7 +277,46 @@ else {
 			</div>
 			<div class="col-md2"></div>
 		</div>
-	</div>					
+	</div>		
+
+	<!-- bias -->
+		<div class="row">
+			<div class="spacing"></div>
+			<div class="container">
+				<div class="col-sm-12">
+					<h3 class="uppercase thin-line">Maze Bias</h3>
+				</div>
+			</div>		
+		</div>
+
+		<div class="row">
+				<div class="container">
+					<div class="small-spacing"></div>
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
+						<div class="spacing"></div>
+						<div class="row">
+							<div class="col-md-6">
+								<video width="100%" title="Depth first traversal of maze" controls>
+									<source src="maze/player.mov" type="video/mp4">
+								Your browser does not support the video tag.
+								</video>
+								<p>Single player mode allows the user to navigate the maze using the arrow keys. </p>
+							</div>
+							<div class="col-md-6">
+								<video width="100%" title="Depth first traversal of maze" controls>
+									<source src="maze/2_player.mov" type="video/mp4">
+								Your browser does not support the video tag.
+								</video>
+								<p>2 player mode allows 2 users to navigate the maze, racing to opposite corners. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-1"></div>
+					</div>
+					<div class="spacing"></div>
+				</div>
+
 
 	<!-- javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
