@@ -745,6 +745,8 @@ class MazeWorld extends World {
     }
   }</pre>
 
+<p>Cells are initialized with an ID value counting up from 100 by 1 and with an empty ArrayList of Edges. They are also added to a hashmap linking their ID and the cell.</p>
+
 <pre>
   // initializes Cells
   // EFFECT: Cells contains all Cells in the maze
@@ -759,7 +761,7 @@ class MazeWorld extends World {
       }
     }
   }</pre>
-
+<p>Each cell has up to 2 edges assigned to it. At most a cell has an edge pointing to the right and an edge pointing down if it is anywhere except the far right column or bottom row. Right column cells have an edge facing down and bottom row cells have an edge facing to the right. Edges are initialized with a random weight. </p>
 <pre>
   // initializes edges
   // EFFECT: edges contains all edges in the maze
@@ -804,7 +806,7 @@ class MazeWorld extends World {
       }
     }
   }</pre>
-
+<p>Kruskal's algorithm removes "bad" edges in order to create one path through the maze. The total number of good edges will be one less than the total number of cells. The edges are sorted from lowest weight to heighest weight and then the cells at the ends of each edge are examined. Any edges that would create a complete loop are discarded. </p>
   <pre>
   // makes random path
   // EFFECT: removes edges that create bad loops
@@ -829,7 +831,7 @@ class MazeWorld extends World {
     }
     edgesDone = true;
   }</pre>
-
+<p>The scene is rendered</p>
 <pre>
   // draw the scene
   public WorldScene makeScene() {
@@ -874,7 +876,7 @@ class MazeWorld extends World {
     }
     return this.background;
   }</pre>
-
+<p>Keys allow for different behaivor in the application</p>
 <pre>
   public void onKeyEvent(String key) {
     if (key.equals("v")) {
@@ -942,7 +944,7 @@ class MazeWorld extends World {
       movePlayer2(key);
     }
   }</pre>
-
+<p>Determines which way the user can move based on the edges extending from the cell the player currently occupies</p>
 <pre>
   // Determines how to move the character in the maze given depending Key Presses
   // EFFECT: moves the player, changes which cell it occupies
@@ -1056,7 +1058,7 @@ class MazeWorld extends World {
     this.start2 = this.cells.get(WIDTH - 1);
     this.player2 = this.start2;
   }</pre>
-
+<p>Reset resets the variables in the maze to create a new one. Start draws the maze and search begins traversing it </p>
 <pre>
   // reset the maze
   // Effect: Resets the maze entirely
@@ -1108,18 +1110,6 @@ class MazeWorld extends World {
   }
 }</pre>
 
-<pre>
-// a Utils class
-class Utils {
-  boolean hasItem(ArrayList< Integer > containsList, int number) {
-    for (int i = 0; i < containsList.size(); i++) {
-      if (containsList.get(i) == number) {
-        return true;
-      }
-    }
-    return false;
-  }
-}</pre>
 			</div>
 			<div class="col-md2"></div>
 		</div>
