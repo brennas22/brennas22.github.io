@@ -567,6 +567,37 @@ table th {
   border: 2px solid #2c3e50;
 }
 
+/*VIEW PROJECT*/
+
+.view-project {
+   border: 1px solid #2c3e50;
+   color: black;
+   padding: 5px 15px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+   /*border-radius: px;*/
+   text-transform: uppercase;
+}
+
+.view-project:hover {
+  /*background-color: #23d1df;*/
+   border: 1px solid #23d1df;
+  
+}
+
+.view-project:focus {
+   border: 1px dotted #105EB2;
+  outline: none;
+}
+
+.view-project:focus:hover,
+.view-project:hover:focus {
+   border: 1px solid #2c3e50;
+  background-color: white;
+  outline: none;
+  box-shadow: none;
+}
+
 /*+---------------------------------------------------------+
   | SKILLS                                                  |
   +---------------------------------------------------------+  */
