@@ -686,6 +686,22 @@ table th {
 }
 
 /*+---------------------------------------------------------+
+  | LILY - Alzheimers                                       |
+  +---------------------------------------------------------+  */
+
+#maze {
+  background-image: url(maze/maze_crop.png);
+
+}
+
+#lily_image {
+  height: 450px;
+  background-size: cover;
+  margin-bottom: 30px;
+  background-image: url(wellnesstechlab/lily_game.png);
+}
+
+/*+---------------------------------------------------------+
   | MODAL                                                   |
   +---------------------------------------------------------+  */
 
@@ -750,4 +766,6 @@ table th {
 #footer a:hover {
   color: #23D1DF;
 }
+
+
 
