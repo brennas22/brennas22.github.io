@@ -87,13 +87,13 @@
 				<div class="col-md-2"></div>
 			</div>
 		</div>
-		<!-- DFS -->
+		<!-- DFS & BFS -->
 		<div class="row">
 			<div class="spacing"></div>
 			<div class="container">
 				<div class="col-sm-12">
-					<h3 class="uppercase thin-line">Depth First Search</h3>
-					<p>Algorithm #1</p>
+					<h3 class="uppercase thin-line">Depth First & Breadth First Search</h3>
+					
 				</div>
 			</div>		
 		</div>
@@ -101,79 +101,62 @@
 		<div class="row">
 				<div class="container">
 					<div class="small-spacing"></div>
-					<div class="col-md-2 col-sm-1"></div>
-					<div class="col-md-8 col-sm-10">
-						<p>Depth-first search (DFS) is an algorithm for traversing or searching graph data structures. It starts at the root and explores as far as possible along each branch before backtracking.</p>
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10">
 						<div class="spacing"></div>
-						<video width="100%" title="Depth first traversal of maze" controls>
-							<source src="maze/depth_first.mov" type="video/mp4">
+						<div class="row">
+							<div class="col-md-6">
+								<video width="100%" title="Depth first traversal of maze" controls>
+									<source src="maze/depth_first.mov" type="video/mp4">
 								Your browser does not support the video tag.
-							</video>
-							<div class="row">
-								<div class="col-md-2"></div>
-								<div class="col-md-8">
-									<div class="small-spacing"></div>
-									<p>In the code, this means that the worklist is a stack (last in, first out) where neighboring nodes are added to the front of the list.</p>
-									<pre>
-if (dfs) {
-	if (e.to.equals(current)) {
-		worklist.addAtHead(e.from);
-	} else {
-		worklist.addAtHead(e.to);
-	}
-}</pre>
-								</div>
-								<div class="col-md-2"></div>
+								</video>
+								<p>Depth-first search (DFS) is an algorithm for traversing or searching graph data structures. It starts at the root and explores as far as possible along each branch before backtracking.</p>
+							</div>
+							<div class="col-md-6">
+								<video width="100%" title="Depth first traversal of maze" controls>
+									<source src="maze/breadth_first.mov" type="video/mp4">
+								Your browser does not support the video tag.
+								</video>
+								<p>Breadth-first search (BFS) is an algorithm for traversing or searching graph data structures. It starts at theroot and explores the neighbor nodes first, before the next level neighbors.</p>
 							</div>
 						</div>
-						<div class="col-md-2 col-sm-1"></div>
+					</div>
+					<div class="col-sm-1"></div>
 					</div>
 					<div class="spacing"></div>
 				</div>
+
+				<div class="row">
+		<div class="container">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<pre>
+// for each edge, if search is depth first add cell to the beginning of the list (a stack)
+// otherwise search is breadth first and cell is added to the end of the list (a queue)	
+ for (Edge e : current.edges) {
+    if (dfs) {
+      if (e.to.equals(current)) {
+        worklist.addAtHead(e.from);
+      }
+      else {
+       worklist.addAtHead(e.to);
+      }
+    }
+    else {
+      if (e.to.equals(current)) {
+        worklist.addAtTail(e.from);
+      }
+      else {
+        worklist.addAtTail(e.to);
+      }
+    }
+</pre>
+			</div>
+			<div class="col-md2"></div>
+		</div>
+	</div>	
+
 		
-		<!-- BFS -->
-		<div class="row">
-			<div class="spacing"></div>
-			<div class="container">
-				<div class="col-sm-12">
-					<h3 class="uppercase thin-line">Breadth First Search</h3>
-					<p>Algorithm #2</p>
-				</div>
-			</div>		
-		</div>
-
-		<div class="row">
-				<div class="container">
-					<div class="small-spacing"></div>
-					<div class="col-md-2 col-sm-1"></div>
-					<div class="col-md-8 col-sm-10">
-						<p>Breadth-first search (BFS) is an algorithm for traversing or searching graph data structures. It starts at theroot and explores the neighbor nodes first, before the next level neighbors.</p>
-						<div class="spacing"></div>
-						<video width="100%" title="Depth first traversal of maze" controls>
-							<source src="maze/breadth_first.mov" type="video/mp4">
-								Your browser does not support the video tag.
-							</video>
-							<div class="row">
-								<div class="col-md-2"></div>
-								<div class="col-md-8">
-									<div class="small-spacing"></div>
-									<p>In the code, this means that the worklist is a queue (first in, first out) where neighboring nodes are added to the end of the list.</p>
-									<pre>
-else {
-	if (e.to.equals(current)) {
-		worklist.addAtTail(e.from);
-	} else {
-		worklist.addAtTail(e.to);
-	}
-}</pre>
-								</div>
-								<div class="col-md-2"></div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-1"></div>
-					</div>
-					<div class="spacing"></div>
-				</div>
 
 		<!-- player modes -->
 		<div class="row">
@@ -298,17 +281,17 @@ else {
 						<div class="row">
 							<div class="col-md-6">
 								<video width="100%" title="Depth first traversal of maze" controls>
-									<source src="maze/player.mov" type="video/mp4">
+									<source src="maze/horizontal_bias.mov" type="video/mp4">
 								Your browser does not support the video tag.
 								</video>
-								<p>Single player mode allows the user to navigate the maze using the arrow keys. </p>
+								<p>Adding a horitzontal bias creates a maze more likely to have rows than columns.</p>
 							</div>
 							<div class="col-md-6">
 								<video width="100%" title="Depth first traversal of maze" controls>
-									<source src="maze/2_player.mov" type="video/mp4">
+									<source src="maze/vertical_bias.mov" type="video/mp4">
 								Your browser does not support the video tag.
 								</video>
-								<p>2 player mode allows 2 users to navigate the maze, racing to opposite corners. </p>
+								<p>Adding a vertical bias creates a maze more likely to have columns than rows. </p>
 							</div>
 						</div>
 					</div>
@@ -317,6 +300,856 @@ else {
 					<div class="spacing"></div>
 				</div>
 
+		<div class="row">
+		<div class="container">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<p>Assign a positive or negative bias based on a boolean flag</p>
+<pre>
+  // initializes edges
+  // EFFECT: edges contains all edges in the maze
+  void initEdges() {
+    int bias = 0;
+    if (horizontalBias) {
+      bias = 70;
+    }
+    else if (verticalBias) {
+      bias = -70;
+    }</pre>
+    <p>Cells are initialized with a weight on each edge, which is then used to determine which edges are kept in order to create one path through the maze. Typically the edge weight is random, but in the case of a bias the weight is artifically increased or lowered. </p>
+    <pre>
+    // look at each cell in the list of all cells in the world
+    for (Cell c : cells) {
+      int randomWeight;
+
+      // if this cell is in the bottom row, but its not the rightmost corner
+      if (c.y == HEIGHT - 1 && c.x != WIDTH - 1) {
+        // give it only right pointing edges
+        randomWeight = rand.nextInt(100) + 0;
+        Edge edgeRight = new Edge(c, this.idMap.get(c.id + 1), randomWeight);
+        edges.add(edgeRight);
+      }
+
+      // if this cell is in the right column, but not at the bottom
+      if (c.x == WIDTH - 1 && c.y != HEIGHT - 1) {
+        // give it only down pointing edges
+        randomWeight = rand.nextInt(100) + 0;
+        Edge edgeDown = new Edge(c, this.idMap.get(c.id + WIDTH), randomWeight);
+        edges.add(edgeDown);
+      }
+
+      // if this cell is not the rightmost bottom-most corner
+      if (c.x != WIDTH - 1 && c.y != HEIGHT - 1) {
+        // give it right pointing edges and down pointing edges
+        randomWeight = rand.nextInt(100) + bias;
+        Edge edgeD = new Edge(c, this.idMap.get(c.id + WIDTH), randomWeight);
+        // make a new random weight for this edge
+        randomWeight = rand.nextInt(100);
+        Edge edgeR = new Edge(c, this.idMap.get(c.id + 1), randomWeight);
+        edges.add(edgeD);
+        edges.add(edgeR);
+      }
+    }
+  }</pre>
+			</div>
+			<div class="col-md2"></div>
+		</div>
+	</div>	
+
+	<!-- bias -->
+		<div class="row">
+			<div class="spacing"></div>
+			<div class="container">
+				<div class="col-sm-12">
+					<h3 class="uppercase thin-line">Code</h3>
+					<div class="spacing"></div>
+				</div>
+			</div>		
+		</div>	
+
+				<div class="row">
+		<div class="container">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<pre>
+/* +---------------------------------------------------------------+
+ * +---------------------------------------------------------------+
+ * | HOW TO PLAY:                                                  |
+ * | maze is drawn on launch                                       |
+ * | press h or v to drawn a maze with horizontal or vertical bias |
+ * | press enter to go to player mode                              |
+ * | press b to see breadth first search                           |
+ * | press d to see depth first search                             |
+ * | press 2 to play 2 player - a new maze is drawn and each       |
+ * | player races to the opposite diagonal corner (p2 use ijkl)    |
+ * | press f to display the path the player has traversed          |
+ * +---------------------------------------------------------------+
+ * +---------------------------------------------------------------+
+ */
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import tester.*;
+import javalib.impworld.*;
+import java.awt.Color;
+import javalib.worldimages.*;
+import java.util.HashMap;
+import java.util.Random;</pre>
+
+<p>Represents each indvidual cell, which is comprised of its x and y position, as well as its ID number, the list of edges attached to it, and the cell that is its "leader" in the union span tree. Contains methods to find the leader of the entire span, as well as render methods for different types of cells.</p>
+
+<pre>
+//a class to represent Cells
+class Cell {
+  int x;
+  int y;
+  int id;
+  ArrayList< Edge > edges;
+  Cell leader;
+
+  Cell(int x, int y, int id, ArrayList<Edge> e) {
+    this.x = x;
+    this.y = y;
+    this.id = id;
+    this.edges = e;
+    this.leader = this;
+  }
+
+  // find the top most leader (representative) of this cell
+  Cell findLeader() {
+    if (this.leader.id == this.id) {
+      return this;
+    }
+    else {
+      return this.leader.findLeader();
+    }
+  }
+
+  // draw the center dot of the cells
+  void render(WorldScene bg) {
+    bg.placeImageXY(
+        new RectangleImage(MazeWorld.CELLSIZE, MazeWorld.CELLSIZE,
+         "outline", Color.black),
+        this.x * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2,
+        this.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2);
+
+  }
+
+  void renderExplore(WorldScene bg) {
+    bg.placeImageXY(
+        new RectangleImage(MazeWorld.CELLSIZE - 2,
+         MazeWorld.CELLSIZE - 2, "solid",
+            new Color(181, 119, 243)),
+        this.x * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2,
+        this.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2);
+  }
+
+  void renderEnd(WorldScene bg) {
+    bg.placeImageXY(
+        new RectangleImage(MazeWorld.CELLSIZE - 1, 
+        MazeWorld.CELLSIZE - 1, "solid", Color.green),
+        this.x * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2,
+        this.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2);
+  }
+
+  void renderStart(WorldScene bg) {
+    bg.placeImageXY(
+        new RectangleImage(MazeWorld.CELLSIZE - 1, 
+        MazeWorld.CELLSIZE - 1, "solid", Color.red),
+        this.x * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2,
+        this.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2);
+  }
+
+  void renderPath(WorldScene bg) {
+    bg.placeImageXY(
+        new RectangleImage(MazeWorld.CELLSIZE - 1, MazeWorld.CELLSIZE - 1, "solid",
+            new Color(24, 59, 129)),
+        this.x * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2,
+        this.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2);
+  }
+
+  void renderPlayer(WorldScene bg) {
+    bg.placeImageXY(
+        new RectangleImage(MazeWorld.CELLSIZE - 1, MazeWorld.CELLSIZE - 1, "solid",
+            new Color(107, 202, 226)),
+        this.x * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2,
+        this.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2);
+  }
+}
+</pre>
+
+<p>Represents each indvidual edge, which contains the cell it extends from and the one it goes to, as well as a weight. Contains methods to compare the weight of one cell to another and render methods.</p>
+
+<pre>
+// a class to represent edges
+class Edge implements Comparable< Edge > {
+  Cell from;
+  Cell to;
+  int weight;
+
+  Edge(Cell f, Cell t, int w) {
+    this.from = f;
+    this.to = t;
+    this.weight = w;
+  }
+
+  // compares the weight of this edge to that edge
+  public int compareTo(Edge e) {
+    int compareWeight = e.weight;
+    return this.weight - compareWeight;
+  }
+
+  // draw a line cell to cell
+  void render(WorldScene bg) {
+    int fromX = this.from.x * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2;
+    int toX = this.to.x * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2;
+    int fromY = this.from.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2;
+    int toY = this.to.y * MazeWorld.CELLSIZE + MazeWorld.CELLSIZE / 2;
+    int midpointX = (fromX + toX) / 2;
+    int midpointY = (fromY + toY) / 2;
+    Posn endPoint = new Posn(0, 0);
+
+    if (this.from.x != this.to.x) {
+      endPoint.x = 0;
+      endPoint.y = MazeWorld.CELLSIZE - 2;
+    }
+    else {
+      endPoint.x = MazeWorld.CELLSIZE - 2;
+      endPoint.y = 0;
+    }
+
+    WorldImage image = new LineImage(endPoint, Color.LIGHT_GRAY);
+    bg.placeImageXY(image, midpointX, midpointY);
+
+  }
+}</pre>
+
+<p>Represents everything that happens in the mazeworld</p>
+
+<pre>
+// a class to represent the maze in a world image
+class MazeWorld extends World {
+  // defines a width constant
+  final static int WIDTH = 30;
+  // defines a height constant
+  final static int HEIGHT = 20;
+  // defines a cell size constant to render
+  final static int CELLSIZE = 20;
+  // world scene
+  WorldScene background;
+  // represents a list of all edges in the world
+  ArrayList< Edge > edges = new ArrayList< Edge >();
+  // represents a list of all Cells in the world
+  ArrayList< Cell > cells = new ArrayList< Cell >();
+  // HashMap to represent ids and nodes
+  HashMap< Integer, Cell > idMap = new HashMap< Integer, Cell >();
+  // random object
+  Random rand = new Random();
+  // represents all good edges
+  ArrayList< Edge > goodEdges = new ArrayList< Edge >();
+  // is this depth first search?
+  boolean dfs = true;
+  // cells yet to be searched
+  Deque< Cell > worklist = new Deque< Cell >();
+  // cells already seen
+  ArrayList< Cell > seen = new ArrayList< Cell >();
+  // is the path complete?
+  Boolean complete = false;
+  // Represents the final cell in the maze
+  Cell end;
+  // Represents the starting cell in the maze
+  Cell start;
+  // a HashMap to represent the relationship between child and parent nodes
+  HashMap< Cell, Cell > childParent = new HashMap< Cell, Cell >();
+  // Represents the cells along the completed maze path
+  ArrayList< Cell > path = new ArrayList< Cell >();
+  // have the edges been initialized?
+  boolean edgesDone = false;
+  // Represents all good edges - for animation purposes
+  ArrayList< Edge > animateEdges = new ArrayList< Edge >();
+  // for the purpose of counting indices in on tick
+  int i = 0;
+  // has the maze been rendered?
+  boolean mazeDrawn = false;
+  // is there a vertical bias?
+  boolean verticalBias = false;
+  // is there a horizontal bias?
+  boolean horizontalBias = false;
+  // represents the player 2 starting point
+  Cell start2;
+  // is this a 2 player game?
+  boolean twoPlayer = false;
+  // represents the player 2 end point
+  Cell end2;
+  // can the player control traversal?
+  boolean playerControl = false;
+  // Represents the Cell that the player is currently on
+  Cell player;
+  // Represents the Cell that the second player is currently on
+  Cell player2;
+  // Represents the cells that the player has visited
+  ArrayList< Cell > visited = new ArrayList< Cell >();
+  // is the start method done drawing everything?
+  boolean search = false;
+  // should the search path be drawn?
+  boolean draw = false;
+  // count the number of incorrect moves
+  int score = 0;
+  // draw the path for each cell the player has visited?
+  boolean drawPath = true;
+
+  MazeWorld() {
+    initCells();
+    initEdges();
+    kruskal();
+
+    end = cells.get(cells.size() - 1);
+    // worklist starts with starting cell in it
+    start = cells.get(0);
+    worklist.addAtHead(start);
+    this.player = start;
+
+  }</pre>
+
+<p>Represents everything that happens on tick. Once Kruskal's algorithm has created a list of good edges (the final edges that will comprise the maze), on each tick one item from that list is added to a new list, which is what's drawn in order to animate each edge being "knocked down."</p>
+
+<pre>
+  // Advances any changes in the maze on tick
+  // EFFECT: adds items to animateEdges, adds items to seen, adds items to
+  // childParent
+  public void onTick() {
+    if (edgesDone) {
+      if (animateEdges.size() != goodEdges.size()) {
+        animateEdges.add(goodEdges.get(i));
+        i += 1;
+      }
+      else {
+        mazeDrawn = true;
+      }
+      if (this.player.equals(this.end)) {
+        this.complete = true;
+      }
+    } </pre>
+
+<p>This part occurs once the maze has been fully constructed and drawn. On each tick we check if the worklist still has items in it. If it does, the current cell is taken from the from of the list and evaluated. The key difference between breadth first and depth first search is whether the current cells neighbors are added to the beginning of the work list or to the end. </p>
+
+<pre>
+    if (mazeDrawn && search) {
+      if (worklist.size() > 0) {
+        Cell current = worklist.removeFromHead();
+        // if current cell is the last cell
+        if (current.equals(end)) {
+          seen.add(current);
+          // end the maze
+          complete = true;
+          // find the reverse path
+          findPath();
+        }
+        else if (!seen.contains(current) && !complete) {
+          for (Edge e : current.edges) {
+            if (dfs) {
+              if (e.to.equals(current)) {
+                worklist.addAtHead(e.from);
+              }
+              else {
+                worklist.addAtHead(e.to);
+              }
+            }
+            else {
+              if (e.to.equals(current)) {
+                worklist.addAtTail(e.from);
+              }
+              else {
+                worklist.addAtTail(e.to);
+              }
+            }</pre>
+
+            <p>A hashmap is populated where the key is the child and the item is its parent, which will ultimately be used to find the one path from the end back to the start. The current cell is also added the list of cells that have already been seen (to make sure the same cell is not evaluated more than once.)</p>
+
+            <pre>
+            if (!childParent.containsKey(e.to) || !childParent.containsKey(e.from)) {
+              if (e.to.equals(current)) {
+                childParent.put(e.from, current);
+              }
+              else {
+                childParent.put(e.to, current);
+              }
+            }
+
+          }
+          seen.add(current);
+        }
+      }
+    }
+  } </pre>
+
+ <p>Solve maze does the exact same thing as what happens in on tick, except "silently." Aka it leaves no visual evidence of its search.</p>
+
+<pre>
+  // traverses the maze from start to finish
+  // EFFECT: populate childParent
+  public void solveMaze() {
+    Deque< Cell > noDrawWorklist = new Deque< Cell >();
+    noDrawWorklist.addAtHead(start);
+    ArrayList< Cell > noDrawSeen = new ArrayList< Cell >();
+    boolean noDrawComplete = false;
+
+    while (noDrawWorklist.size() > 0) {
+      Cell current = noDrawWorklist.removeFromHead();
+      // if current cell is the last cell
+      if (current.equals(end)) {
+        noDrawSeen.add(current);
+        // end the maze
+        noDrawComplete = true;
+        // find the reverse path
+        findPath();
+      }
+      else if (!noDrawSeen.contains(current) && !noDrawComplete) {
+
+        for (Edge e : current.edges) {
+          if (e.to.equals(current)) {
+            noDrawWorklist.addAtHead(e.from);
+          }
+          else {
+            noDrawWorklist.addAtHead(e.to);
+          }
+
+          if (!childParent.containsKey(e.to) || !childParent.containsKey(e.from)) {
+            if (e.to.equals(current)) {
+              childParent.put(e.from, current);
+            }
+            else {
+              childParent.put(e.to, current);
+            }
+          }
+
+        }
+        noDrawSeen.add(current);
+      }
+    }
+  }</pre>
+
+ <p>The hashmap for children and their parents is used to find the path from end to finish by tracing back each parent to its child until we reach the very first cell. There will only be one path through.</p>
+
+<pre>
+  // find the path from end to start
+  // EFFECT: edit list of cells that constitute path from end to start
+  public void findPath() {
+    Cell current = end;
+    // while we haven't reached the beginning of the maze
+    while (!current.equals(start)) {
+      Cell next = childParent.get(current);
+      path.add(current);
+      current = next;
+    }
+  }</pre>
+
+<pre>
+  // initializes Cells
+  // EFFECT: Cells contains all Cells in the maze
+  void initCells() {
+    int idVal = 100;
+    for (int i = 0; i < HEIGHT; i += 1) {
+      for (int j = 0; j < WIDTH; j += 1) {
+        Cell newCell = new Cell(j, i, idVal, new ArrayList< Edge >());
+        cells.add(newCell);
+        idMap.put(idVal, newCell);
+        idVal = idVal + 1;
+      }
+    }
+  }</pre>
+
+<pre>
+  // initializes edges
+  // EFFECT: edges contains all edges in the maze
+  void initEdges() {
+    int bias = 0;
+    if (horizontalBias) {
+      bias = 70;
+    }
+    else if (verticalBias) {
+      bias = -70;
+    }
+    // look at each cell in the list of all cells in the world
+    for (Cell c : cells) {
+      int randomWeight;
+
+      // if this cell is in the bottom row, but its not the rightmost corner
+      if (c.y == HEIGHT - 1 && c.x != WIDTH - 1) {
+        // give it only right pointing edges
+        randomWeight = rand.nextInt(100) + 0;
+        Edge edgeRight = new Edge(c, this.idMap.get(c.id + 1), randomWeight);
+        edges.add(edgeRight);
+      }
+
+      // if this cell is in the right column, but not at the bottom
+      if (c.x == WIDTH - 1 && c.y != HEIGHT - 1) {
+        // give it only down pointing edges
+        randomWeight = rand.nextInt(100) + 0;
+        Edge edgeDown = new Edge(c, this.idMap.get(c.id + WIDTH), randomWeight);
+        edges.add(edgeDown);
+      }
+
+      // if this cell is not the rightmost bottom-most corner
+      if (c.x != WIDTH - 1 && c.y != HEIGHT - 1) {
+        // give it right pointing edges and down pointing edges
+        randomWeight = rand.nextInt(100) + bias;
+        Edge edgeD = new Edge(c, this.idMap.get(c.id + WIDTH), randomWeight);
+        // make a new random weight for this edge
+        randomWeight = rand.nextInt(100);
+        Edge edgeR = new Edge(c, this.idMap.get(c.id + 1), randomWeight);
+        edges.add(edgeD);
+        edges.add(edgeR);
+      }
+    }
+  }</pre>
+
+  <pre>
+  // makes random path
+  // EFFECT: removes edges that create bad loops
+  void kruskal() {
+    Collections.sort(edges);
+    int i = 0;
+    while (goodEdges.size() < cells.size() - 1) {
+      Edge currEdge = edges.get(i);
+      Cell fromLeader = currEdge.from.findLeader();
+      Cell toLeader = currEdge.to.findLeader();
+
+      // if they don't have the same leader
+      if (fromLeader.id != toLeader.id) {
+        // update the leader of the to link
+        currEdge.from.findLeader().leader = currEdge.to.findLeader();
+        // add this edge to good edges
+        goodEdges.add(currEdge);
+        currEdge.from.edges.add(currEdge);
+        currEdge.to.edges.add(currEdge);
+      }
+      i = i + 1;
+    }
+    edgesDone = true;
+  }</pre>
+
+<pre>
+  // draw the scene
+  public WorldScene makeScene() {
+    this.background = new WorldScene(WIDTH * CELLSIZE, HEIGHT * CELLSIZE);
+    this.background.placeImageXY(
+        new RectangleImage(WIDTH * CELLSIZE, 
+        HEIGHT * CELLSIZE, "solid", Color.LIGHT_GRAY),
+        WIDTH * CELLSIZE / 2, HEIGHT * CELLSIZE / 2);
+    for (Cell c : this.cells) {
+      c.render(this.background);
+    }
+    for (Edge e : this.animateEdges) {
+      e.render(this.background);
+    }
+    if (draw) {
+      for (Cell c : this.seen) {
+        c.renderExplore(this.background);
+      }
+    }
+    start.renderStart(this.background);
+    end.renderEnd(this.background);
+
+    if (this.complete) {
+      for (Cell c : this.path) {
+        c.renderPath(this.background);
+        start.renderPath(this.background);
+      }
+    }
+    if (twoPlayer) {
+      start2.renderStart(this.background);
+      end2.renderEnd(this.background);
+      this.player.renderPlayer(this.background);
+      this.player2.renderPlayer(this.background);
+    }
+    if (this.playerControl) {
+      if (this.drawPath) {
+        for (Cell c : this.visited) {
+          c.renderPath(this.background);
+        }
+      }
+      this.player.renderPlayer(this.background);
+    }
+    return this.background;
+  }</pre>
+
+<pre>
+  public void onKeyEvent(String key) {
+    if (key.equals("v")) {
+      reset();
+      this.verticalBias = true;
+
+      start();
+      search();
+    }
+    if (key.equals("h")) {
+      reset();
+      this.horizontalBias = true;
+
+      start();
+      search();
+    }
+
+    if (key.equals("r")) {
+      reset();
+      start();
+    }
+    if (key.equals("enter")) {
+      this.draw = false;
+      this.playerControl = true;
+      search();
+      solveMaze();
+      this.draw = true;
+    }
+    if (key.equals("2")) {
+      reset();
+      this.drawPath = false;
+      this.twoPlayer = true;
+      twoPlayer();
+      search();
+    }
+    if (key.equals("b")) {
+      this.draw = true;
+      this.search = true;
+      this.dfs = false;
+      search();
+    }
+
+    if (key.equals("d")) {
+      this.search = true;
+      this.dfs = true;
+      this.draw = true;
+      search();
+    }
+
+    if (key.equals("f")) {
+      if (drawPath) {
+        this.drawPath = false;
+      }
+      else {
+        this.drawPath = true;
+      }
+    }
+
+    if (playerControl) {
+      movePlayer(key);
+    }
+
+    if (twoPlayer) {
+      movePlayer(key);
+      movePlayer2(key);
+    }
+  }</pre>
+
+<pre>
+  // Determines how to move the character in the maze given depending Key Presses
+  // EFFECT: moves the player, changes which cell it occupies
+  void movePlayer(String key) {
+    boolean canMoveUp = false;
+    boolean canMoveDown = false;
+    boolean canMoveRight = false;
+    boolean canMoveLeft = false;
+
+    if (this.player.equals(this.end)) {
+      this.complete = true;
+    }
+
+    for (Edge e : this.player.edges) {
+      Cell other;
+      if (e.to.equals(this.player)) {
+        other = e.from;
+      }
+      else {
+        other = e.to;
+      }
+      if (other.id == this.player.id - WIDTH) {
+        canMoveUp = true;
+      }
+      else if (other.id == this.player.id + WIDTH) {
+        canMoveDown = true;
+      }
+      else if (other.id == this.player.id + 1) {
+        canMoveRight = true;
+      }
+      else if (other.id == this.player.id - 1) {
+        canMoveLeft = true;
+      }
+    }
+    visited.add(player);
+
+    if (!path.contains(player)) {
+      score = score + 1;
+    }
+
+    if (key.equals("up") && canMoveUp) {
+      this.player = this.idMap.get(this.player.id - WIDTH);
+    }
+    if (key.equals("down") && canMoveDown) {
+      this.player = this.idMap.get(this.player.id + WIDTH);
+    }
+    if (key.equals("right") && canMoveRight) {
+      this.player = this.idMap.get(this.player.id + 1);
+    }
+    if (key.equals("left") && canMoveLeft) {
+      this.player = this.idMap.get(this.player.id - 1);
+    }
+  }
+
+  // Determines how to move the character in the maze given depending Key Presses
+  // EFFECT: moves the player, changes which cell it occupies
+  void movePlayer2(String key) {
+    boolean canMoveUp = false;
+    boolean canMoveDown = false;
+    boolean canMoveRight = false;
+    boolean canMoveLeft = false;
+
+    for (Edge e : this.player2.edges) {
+      Cell other;
+      if (e.to.equals(this.player2)) {
+        other = e.from;
+      }
+      else {
+        other = e.to;
+      }
+      if (other.id == this.player2.id - WIDTH) {
+        canMoveUp = true;
+      }
+      else if (other.id == this.player2.id + WIDTH) {
+        canMoveDown = true;
+      }
+      else if (other.id == this.player2.id + 1) {
+        canMoveRight = true;
+      }
+      else if (other.id == this.player2.id - 1) {
+        canMoveLeft = true;
+      }
+    }
+    visited.add(player2);
+
+    if (!path.contains(player2)) {
+      score = score + 1;
+    }
+
+    if (key.equals("i") && canMoveUp) {
+      this.player2 = this.idMap.get(this.player2.id - WIDTH);
+    }
+    if (key.equals("k") && canMoveDown) {
+      this.player2 = this.idMap.get(this.player2.id + WIDTH);
+    }
+    if (key.equals("l") && canMoveRight) {
+      this.player2 = this.idMap.get(this.player2.id + 1);
+    }
+    if (key.equals("j") && canMoveLeft) {
+      this.player2 = this.idMap.get(this.player2.id - 1);
+    }
+  }
+  // allows two players to navigate the maze at the same time
+  // Effect: sets up the maze for two player racing
+  void twoPlayer() {
+    initCells();
+    initEdges();
+    kruskal();
+
+    this.end2 = this.cells.get(cells.size() - WIDTH);
+    this.start2 = this.cells.get(WIDTH - 1);
+    this.player2 = this.start2;
+  }</pre>
+
+<pre>
+  // reset the maze
+  // Effect: Resets the maze entirely
+  void reset() {
+    this.cells = new ArrayList< Cell >();
+    this.edges = new ArrayList< Edge >();
+    this.goodEdges = new ArrayList< Edge >();
+    this.animateEdges = new ArrayList< Edge >();
+    this.childParent = new HashMap< Cell, Cell >();
+    this.seen = new ArrayList< Cell >();
+    this.complete = false;
+    this.edgesDone = false;
+    this.idMap = new HashMap< Integer, Cell >();
+    this.worklist = new Deque< Cell >();
+    this.path = new ArrayList< Cell >();
+    this.i = 0;
+    this.mazeDrawn = false;
+    this.verticalBias = false;
+    this.horizontalBias = false;
+    this.twoPlayer = false;
+    this.playerControl = false;
+    this.search = false;
+    this.visited = new ArrayList< Cell >();
+    this.draw = false;
+    this.score = 0;
+  }
+
+  // initializes the starting conditions of the maze
+  // Effect: starts the maze
+  void start() {
+    initCells();
+    initEdges();
+    kruskal();
+    edgesDone = true;
+    if (playerControl) {
+      this.player = this.cells.get(0);
+    }
+  }
+
+  // begin searching through the maze
+  // EFFECT: start searching
+  void search() {
+    if (playerControl) {
+      this.player = this.cells.get(0);
+    }
+    end = cells.get(cells.size() - 1);
+    start = cells.get(0);
+    worklist.addAtHead(start);
+  }
+}</pre>
+
+<pre>
+// a Utils class
+class Utils {
+  boolean hasItem(ArrayList< Integer > containsList, int number) {
+    for (int i = 0; i < containsList.size(); i++) {
+      if (containsList.get(i) == number) {
+        return true;
+      }
+    }
+    return false;
+  }
+}</pre>
+			</div>
+			<div class="col-md2"></div>
+		</div>
+		<div class="spacing"></div>
+	</div>	
+	<!-- footer -->
+		<div class="row" id="footer">
+			<div class="container">
+				<div class="col-sm-4">
+					<h4>hi</h4>
+					<img src="me.png">
+				</div>
+				<div class="col-sm-4">
+					<h4>about</h4>
+					<p>I'm a 3rd year student at Northeastern University studying human centered software and UX design. I built this website! <a href="references.html">(References)</a></p>
+					<p>
+						The website is completely keyboard and screen reader navigable, and all colors comply with <a href="https://www.w3.org/WAI/intro/wcag">508 accessibility recommendations.</a>
+					</p>
+					<p><i class="fa fa-copyright" aria-hidden="true"></i>BCS 2017 </p>
+
+				</div>
+				<div class="col-sm-4">
+					<h4>reach me</h4>
+					<p><a href="mailto:brenna.sorkin@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>brenna.sorkin@gmail.com</a></p>
+					<p><a href="mailto:sorkin.b@husky.neu.edu"><i class="fa fa-envelope" aria-hidden="true"></i>sorkin.b@husky.neu.edu</a></p>
+					<p><i class="fa fa-phone" aria-hidden="true"></i>617 543 0996</p>
+					<p><a href="https://www.linkedin.com/in/brennasorkin" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></p>
+				</div>
+			</div>
+		</div>
 
 	<!-- javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
