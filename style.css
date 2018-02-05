@@ -621,7 +621,7 @@ table th {
 .skills h1 {
   margin-left: 20px;
   margin-right: 20px;
-  font-size: 5.5rem;
+  font-size: 3rem;
 
 }
 
@@ -729,8 +729,8 @@ table th {
   | LILY - Alzheimers                                       |
   +---------------------------------------------------------+  */
 
-#maze {
-  background-image: url(maze/maze_crop.png);
+#alz {
+  background-image: url(wellnesstechlab/lily/exergame_overview.png);
 
 }
 
@@ -748,7 +748,7 @@ table th {
 .mod {
   margin: auto;
   border-radius: 3px;
-  background-color: #EDEDEDCC;
+  background-color: #EDEDEDDD;
   padding: 5% 10%;
   height: 325px;
 }

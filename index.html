@@ -76,6 +76,27 @@
 				<div class="col-sm-4"></div>
 			</div>
 		</div>
+		<!-- about header -->
+		<div class="row section" id="about">
+			<div class="col-md-1 col-sm-2" >
+				<h2>about</h2>
+			</div>
+			<div class="col-md-9 col-sm-7" >
+				
+			</div>
+			<div class="col-md-2 col-sm-3 text-center" >
+				
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<p>Hello! I'm studying human centered software and UX design with a focus in healthcare and accessibility. I'm extremely passionate about healthcare, in particular patient experience. I'm most interested in long term patients who will always need to interact with the healthcare system and people with disabilities for whom assistive technologies can make everday tasks significantly easier. This website is completely keyboard and screen reader navigable, and all colors comply with 508 accessibility recommendations.</p>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
 		<!-- skills header -->
 		<div class="row section" id="skills">
 			<div class="col-md-1 col-sm-2" >
@@ -93,43 +114,44 @@
 		<!-- skills -->
 		<div class="row skills">
 			<div class="col-md-3 col-sm-6">
-				<h1>proto<br>
-				typing</h1>
+				<h1>prototyping</h1>
 
 				<p>InVision<br>
 					Balsamiq<br>
 					Adobe XD<br>
 					Principle<br>
-				Sketch</p>
+					Sketch <br>
+					Adobe Illustrator</p>
 			</div>
 			<div class="col-md-3 col-sm-6">
-				<h1>des<br>
-				ign</h1>
+				<h1>design</h1>
 
-				<p>Adobe Illustrator<br>
+				<p>
 					Design Research<br>
 					Wireframing <br>
 					Usability Testing<br>
-				Affinity Diagramming</p>
+					Experience Mapping <br>
+					Affinity Diagramming <br>
+					User Personas</p>
 			</div>
 			<div class="col-md-3 col-sm-6">
-				<h1>progra<br>
-				mming</h1>
+				<h1>programming</h1>
 
 				<p>WPF and Basic C#<br>
 					Java<br>
 					HTML<br>
 					CSS<br>
+					Basic C++ <br>
 				Arduino C</p>
 			</div>
 			<div class="col-md-3 col-sm-6">
-				<h1>3d mod<br>
-				elling</h1>
+				<h1>3d modelling</h1>
 
 				<p>Basic Solidworks<br>
 					Google SketchUp<br>
 					Creo Parametric <br>
-					Makerbot, Markforged<br>
+					Makerbot<br>
+					Markforged<br>
 				GrabCAD Print</p>
 			</div>
 		</div>
@@ -157,6 +179,20 @@
 					<p>Generate Labs is a program that I pitched and now am the director of. Generate is Northeastern’s student-led product development studio. </p>
 					<div class="text-center test">
 						<a href="generate_labs.html" class="btn btn-default test">read more</a>
+					</div>	
+				</div>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		<!-- exergame -->
+		<div class="row background_image" id="alz">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+				<div class="mod">
+					<h1>Exergame for Caregivers</h1>
+					<p>I worked with a PhD candidate on an exer-game (exercise game) intended for caregivers of patients living with Alzheimer's disease.</p>
+					<div class="text-center">
+						<a href="alzheimers_app.html" class="btn btn-default">read more</a>
 					</div>	
 				</div>
 			</div>
@@ -241,7 +277,7 @@
 
 		// Scroll Down Link
 		$('.scrolldown').click(function() {
-			var targetOffset = $('#skills').offset().top-80;
+			var targetOffset = $('#about').offset().top-80;
 			$('html,body').animate({scrollTop: targetOffset}, 1000);
 		});
 	</script>	
