@@ -649,6 +649,11 @@ table th {
   | LABS                                                    |
   +---------------------------------------------------------+  */
 
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
+
 #labs {
   background-image: url(labs/groupwork_crop.jpeg);
 }
