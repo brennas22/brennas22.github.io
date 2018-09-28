@@ -1,285 +1,208 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Brenna Sorkin Portfolio</title>
+	<title>
+		Brenna Sorkin
+	</title>
 	<script src="https://use.fontawesome.com/7c0217a7a4.js"></script>
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="logo.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
 </head>
 <body>
-	<!-- nav -->
-	<nav class="navbar navbar-inverse navbar-fixed-top" id="menu">
-		<div class="container">
-			<div class="navbar-header">
-				<a title="logo" href="index.html" class="logo-link">
-					<img class="logo logo-view" src="logo2.svg">
-					<img class="logo logo-hide" src="logo_yellow.svg">
-				</a>	
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a id="brand" href="index.html">Brenna Sorkin.</a>
-			</div>
-			<div class="collapse navbar-collapse" id="bs-nav-demo">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="resume.html">Resume</a></li>
 
-					<li><div class="dropdown">
-						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Portfolio
-							<span class="caret"></span></button>
-							<ul class="dropdown-menu">
-								<li class="dropdown-header">featured projects</li>
-								<li><a href="generate_labs.html">Generate Labs</a></li>
-								<li><a href="popup_desk.html">Pop-Up Desk</a></li>
-								<li><a href="maze.html">Java Maze</a></li>
-								<li><a href="alzheimers_app.html">Caregivers Exercise Game</a></li>
-								<li class="divider"></li>
-								<li class="dropdown-header">Other</li>
-								<li><a href="photography.html">Photo & Video</a></li>
-							</ul>
-						</div></li>
-					</ul>
+	<!-- hero -->
+	<div class="row" id="intro_hero">
+		<!-- nav -->
+		<nav class="navbar navbar-minimal " id="menu">
+			<div class="container">
+				<div class="col-md-12">
+					<a class="navbar-header" href="index.html" tabindex="1">
+		
+						
+						<div class="lobster" id="brand-minimal" tabindex="-1" >Brenna Sorkin.</div>
+					</a>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					<div class="collapse navbar-collapse" id="bs-nav-demo">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="sorkin_resume.pdf" target="_blank">Resume</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="about.html">about</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</nav>
-		<!-- landing page -->
-		<div class="row" id="landing">
-			<div class="col-sm-12" >
-				<!-- name tag -->
-				<div class="col-sm-6">	
-				</div>
-				<div class="col-sm-6">
-					<div class="row" id="white">
-						<div class="col-sm-7">
-							<h1>Brenna Sorkin</h1>
+	</div>
+
+	<!-- About me -->
+	<div class="spacing"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2 col-xs-0"></div>
+			<div class="col-sm-8 ">
+				<h3 class="lobster-large">Who am I?</h3>
+				<div class="small-spacing"></div>
+				<p>My name is Brenna Sorkin and I'm a senior at Northeastern University studying human centered software and UX design with a focus in healthcare and accessibility. I'm extremely passionate about healthcare, in particular patient experience, and I pride myself on making my designs visually and technically accessible. You can learn more about me <a class="underline-link" href="about.html">here.</a></p>
+				 <div class="spacing"></div>
+				<h3 class="lobster-large">What am I good at?</h3>
+				<div class="small-spacing"></div>
+				<p>
+				 My expertise lies in UX, including user testing, user research, and interaction and UI design. I am also studying computer science! I built this website, which is compliant with all accessibility recommendations for color contrast, as well as keyboard and screen reader navigable.</p>
+			</div>
+			<div class="col-sm-2 col-xs-0"></div>
+		</div>
+	</div>
+
+	<!-- Work parallax -->
+	<div class="large-spacing"></div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="parallax-window-screen" data-parallax="scroll" ></div>
+		</div>
+	</div>
+
+	<div class="large-spacing"></div>
+
+	<!-- Portfolio -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2 col-xs-0"></div>
+			<div class="col-sm-8 ">
+				<h2 class="center">Portfolio</h2>
+				<div class="spacing"></div>
+			
+			</div>
+			<div class="col-sm-2 col-xs-0"></div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<!-- row 1 -->
+		<div class="row">
+			<div class="col-sm-1 col-xs-0"></div>
+			<div class="col-sm-10 ">
+				<div class="spacing"></div>
+				<!-- portfolio grid -->
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="hvrbox" >
+							<a class="hover-link" href="caregivers.html">
+								<img src="portfolio-preview/caregiver.png" alt="Caregiver Exercise Game" class="hvrbox-layer_bottom">
+								<div class="hvrbox-layer_top">
+									<div class="hvrbox-text">Caregiver Exercise Game | UX</div>
+								</div>
+							</a>
 						</div>
-						<div class="col-sm-5">
-							<p class="title-p uppercase">Interaction & UX designer<br>
-								& developer focused on <br>
-							healthcare & accessibility</p>
+					</div>
+					<div class="col-sm-4">
+						<div class="hvrbox" >
+							<a class="hover-link" href="labs.html">
+								<img src="portfolio-preview/labs.png" alt="Generate Labs" class="hvrbox-layer_bottom">
+								<div class="hvrbox-layer_top">
+									<div class="hvrbox-text">Generate Labs | Project Management</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="hvrbox" >
+							<a class="hover-link" href="index.html">
+								<img src="portfolio-preview/react.png" alt="React Neuro" class="hvrbox-layer_bottom">
+								<div class="hvrbox-layer_top">
+									<div class="hvrbox-text">COMING SOON: React Neuro</div>
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
-				<!-- button -->
-				<div class="col-sm-4"></div>
-				<div class="col-sm-4 text-center">
-					<a href="javascript:void(0);" title="down button" class="btn btn-down scrolldown"><i class="fa fa-arrow-down fa-2x down-i" aria-hidden="true"></i></a>
-
+				<!-- row 2 -->
+				<div class="spacing"></div>
+				<div class="row">
+					
+					<div class="col-sm-4">
+						<div class="hvrbox" >
+							<a class="hover-link" href="#">
+								<img src="portfolio-preview/hospital.png" alt="Research into the hospital of the future" class="hvrbox-layer_bottom">
+								<div class="hvrbox-layer_top">
+									<div class="hvrbox-text">COMING SOON: Hospital 2.0</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="hvrbox" >
+							<a class="hover-link" href="#">
+								<img src="portfolio-preview/livedata.png" alt="Live Data" class="hvrbox-layer_bottom">
+								<div class="hvrbox-layer_top">
+									<div class="hvrbox-text">COMING SOON: LiveData</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="hvrbox" >
+							<a class="hover-link" href="#">
+								<img src="portfolio-preview/peds-game.png" alt="Game for long term pediatric patients" class="hvrbox-layer_bottom">
+								<div class="hvrbox-layer_top">
+									<div class="hvrbox-text">COMING SOON: Pediatric Education Game</div>
+								</div>
+							</a>
+						</div>
+						<div class="spacing"></div>
+					</div>
+						
 				</div>
-				<div class="col-sm-4"></div>
 			</div>
+			<div class="col-sm-1 col-xs-0"></div>
 		</div>
-		<!-- about header -->
-		<div class="row section" id="about">
-			<div class="col-md-1 col-sm-2" >
-				<h2>about</h2>
-			</div>
-			<div class="col-md-9 col-sm-7" >
-				
-			</div>
-			<div class="col-md-2 col-sm-3 text-center" >
-				
-			</div>
-		</div>
+	</div>
+
+	<div class="large-spacing"></div>
+	<!-- Footer -->
+	<div class="row footer-minimal">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
-					<p>Hello! I'm studying human centered software and UX design with a focus in healthcare and accessibility. I'm extremely passionate about healthcare, in particular patient experience. I'm most interested in long term patients who will always need to interact with the healthcare system and people with disabilities for whom assistive technologies can make everday tasks significantly easier. This website is completely keyboard and screen reader navigable, and all colors comply with 508 accessibility recommendations.</p>
-				</div>
-				<div class="col-md-2"></div>
+			<div class="col-md-4">
+				
+				
 			</div>
-		</div>
-		<!-- skills header -->
-		<div class="row section" id="skills">
-			<div class="col-md-1 col-sm-2" >
-				<h2>skills</h2>
-			</div>
-			<div class="col-md-9 col-sm-7" >
-				<p>My interdisciplinary major and <br>
-					variety of interests have allowed <br>
-				me to develop a wide range of skills</p>
-			</div>
-			<div class="col-md-2 col-sm-3 text-center" >
-				<a href="resume.html" class="btn btn-default">view resume</a>
-			</div>
-		</div>
-		<!-- skills -->
-		<div class="row skills">
-			<div class="col-md-3 col-sm-6">
-				<h1>prototyping</h1>
-
-				<p>InVision<br>
-					Balsamiq<br>
-					Adobe XD<br>
-					Principle<br>
-					Sketch <br>
-					Adobe Illustrator</p>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<h1>design</h1>
-
-				<p>
-					Design Research<br>
-					Wireframing <br>
-					Usability Testing<br>
-					Experience Mapping <br>
-					Affinity Diagramming <br>
-					User Personas</p>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<h1>programming</h1>
-
-				<p>WPF and Basic C#<br>
-					Java<br>
-					HTML<br>
-					CSS<br>
-					Basic C++ <br>
-				Arduino C</p>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<h1>3d modelling</h1>
-
-				<p>Basic Solidworks<br>
-					Google SketchUp<br>
-					Creo Parametric <br>
-					Makerbot<br>
-					Markforged<br>
-				GrabCAD Print</p>
-			</div>
-		</div>
-		<!-- featured projects header -->
-		<div class="row section" >
-			<div class="col-sm-3" >
-				<h2>featured projects</h2>
-			</div>
-			<div class="col-sm-7" >
-				<p>A variety of projects completed<br>
-					over the past year or so, encompassing<br>
-				work from a number of disciplines</p>
-			</div>
-			<div class="col-sm-2 text-center" >
-
-			</div>
-		</div>
-		<!-- labs -->
-		<div class="row background_image" id="labs">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-6">
-				<div class="mod">
-					<h1>Generate<br>
-					Labs</h1>
-					<p>Generate Labs is a program that I pitched and now am the director of. Generate is Northeastern’s student-led product development studio. </p>
-					<div class="text-center test">
-						<a href="generate_labs.html" class="btn btn-default test">read more</a>
-					</div>	
-				</div>
-			</div>
-			<div class="col-sm-3"></div>
-		</div>
-		<!-- exergame -->
-		<div class="row background_image" id="alz">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-6">
-				<div class="mod">
-					<h1>Exergame for Caregivers</h1>
-					<p>I worked with a PhD candidate on an exer-game (exercise game) intended for caregivers of patients living with Alzheimer's disease.</p>
-					<div class="text-center">
-						<a href="alzheimers_app.html" class="btn btn-default">read more</a>
-					</div>	
-				</div>
-			</div>
-			<div class="col-sm-3"></div>
-		</div>
-		<!-- pop up -->
-		<div class="row background_image" id="pop_up">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-6">
-				<div class="mod">
-					<h1>Pop-Up<br>
-					Desk</h1>
-					<p>This pop up desk was the final prototype that I worked on in a team of three as part of a class called Product Design Methods</p>
-					<div class="text-center">
-						<a href="popup_desk.html" class="btn btn-default">read more</a>
-					</div>	
-				</div>
-			</div>
-			<div class="col-sm-3"></div>
-		</div>
-		<!-- maze -->
-		<div class="row background_image" id="maze">
-			<div class="col-sm-3"></div>
-			<div class="col-sm-6">
-				<div class="mod">
-					<h1>Java<br>
-					Maze</h1>
-					<p>This maze was the final assignment in the object oriented based java programming class I took this fall </p>
-					<div class="text-center">
-						<a href="maze.html" class="btn btn-default">read more</a>
-					</div>	
-				</div>
-			</div>
-			<div class="col-sm-3"></div>
-		</div>
-		
-		<!-- footer -->
-		<div class="row" id="footer">
-			<div class="container">
-				<div class="col-sm-4">
-					<h4>hi</h4>
-					<img src="me.png">
-				</div>
-				<div class="col-sm-4">
-					<h4>about</h4>
-					<p>I'm a 3rd year student at Northeastern University studying human centered software and UX design. I built this website! <a href="references.html">(References)</a></p>
-					<p>
-						The website is completely keyboard and screen reader navigable, and all colors comply with <a href="https://www.w3.org/WAI/intro/wcag">508 accessibility recommendations.</a>
-					</p>
-					<p><i class="fa fa-copyright" aria-hidden="true"></i>BCS 2017 </p>
-
-				</div>
-				<div class="col-sm-4">
-					<h4>reach me</h4>
-					<p><a href="mailto:brenna.sorkin@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>brenna.sorkin@gmail.com</a></p>
+			
+			<div class="col-md-4">
+				<div class="center">
+				<h2 class="center">Get in touch:</h2>
+				<div class="small-spacing"></div>
+				<p><a href="mailto:brenna.sorkin@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>brenna.sorkin@gmail.com</a></p>
 					<p><a href="mailto:sorkin.b@husky.neu.edu"><i class="fa fa-envelope" aria-hidden="true"></i>sorkin.b@husky.neu.edu</a></p>
-					<p><i class="fa fa-phone" aria-hidden="true"></i>617 543 0996</p>
+					<p><i class="fa fa-phone" aria-hidden="true"></i>617-543-0996</p>
 					<p><a href="https://www.linkedin.com/in/brennasorkin" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></p>
+					<p><i class="fa fa-copyright" aria-hidden="true"></i>BCS 2018 </p>
 				</div>
+
+			</div>
+			<div class="col-md-4">
+				
 			</div>
 		</div>
+	</div>
 
+	
+	<!-- javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="bootstrap.js"></script>
+	<script src="parallax/parallax.js"></script>
 
+	<!-- parallax research -->
+	<script type="">
+		$('.parallax-window-screen').parallax({imageSrc: 'sketches/sketch1c.png'});
+	</script>
 
-		<!-- javascript -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="bootstrap.js"></script>
-
-		<script type="text/javascript">
-		//menu appear
-		(function($) {          
-			$(document).ready(function(){                    
-				$(window).scroll(function(){                          
-					if ($(this).scrollTop() > 535) {
-						$('#menu').fadeIn(500);
-					} else {
-						$('#menu').fadeOut(500);
-					}
-				});
-			});
-		})(jQuery);
-
-		// Scroll Down Link
-		$('.scrolldown').click(function() {
-			var targetOffset = $('#about').offset().top-80;
-			$('html,body').animate({scrollTop: targetOffset}, 1000);
-		});
-	</script>	
+	
 </body>
-</html>
+</html>	
