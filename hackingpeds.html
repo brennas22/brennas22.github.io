@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>
-		React Neuro - Brenna Sorkin
+		Hacking Pediatrics - Brenna Sorkin
 	</title>
 	<script src="https://use.fontawesome.com/7c0217a7a4.js"></script>
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
@@ -12,7 +12,7 @@
 </head>
 <body>
 	<!-- hero -->
-	<div class="row" id="react_hero">
+	<div class="row" id="hack_hero">
 		<!-- nav -->
 		<nav class="navbar navbar-minimal " id="menu">
 			<div class="container">
@@ -48,9 +48,9 @@
 		<div class="row">
 			<div class="col-sm-2 col-xs-0"></div>
 			<div class="col-sm-8">
-				<h2 class="center">React Neuro</h2>
+				<h2 class="center">Hacking Pediatrics - Allergy Food Challenge</h2>
 				<div class="small-spacing"></div>
-				<h4 class="center">A clinical data platform for detecting and tracking concussions with virtual reality</h4>
+				<h4 class="center">A voice skill to help families prepare for allergy testing</h4>
 			</div>
 			<div class="col-sm-2 col-xs-0"></div>
 		</div>
@@ -62,12 +62,12 @@
 			<div class="col-sm-5">
 				<h4><strong>Summary</strong></h4>
 				<div class="small-spacing"></div>
-				<p>Research shows that caregivers often suffer from poor health outcomes due to the amount of time they spend caring for their loved one. This project was the beginning stages of an application intended to improve their health outcomes. It is still in development and will be hopefully be used in research studies in the future.</p>
+				<p>The Innovation & Digital Health Accelerator at Boston Children's Hospital hosted a Voice.Health hackathon, where my team was tasked with developing a voice skills based off the prompt "prep for certain procedures (e.g. cast removal, etc.) with instructions and images"</p>
 				<div class="spacing"></div>
 			</div>
 			<div class="col-sm-5">
 				<h4><strong>What I did</strong></h4>
-				<p>Elizabeth Stowell is a PhD candidate in the Personal Health Informatics program at Northeastern University, and I consulted for her on this project. When I joined she had already done the background research and she asked me to help with the visual and interaction design of the game, which was determined to have a gardening theme.</p>
+				<p>My team and I developed an Alexa voice skill to help families prepare to return to Children's for allergy testing. Allergy testing is a laborious process with steps that need to be carefully followed, often months after the patient/family receive initial instructions from their care team.</p>
 			</div>
 			<div class="col-sm-1 col-xs-0"></div>
 		</div>
@@ -88,59 +88,125 @@
 		<div class="row">
 			<div class="col-sm-2 col-xs-0"></div>
 			<div class="col-sm-8 ">
-				<h3 class="center"><strong>User Research</strong></h3>
+				<h3 class="center"><strong>Discussion & Brainstorming</strong></h3>
 				<div class="spacing"></div>
-				<p>I began by reading Lily sent me to get acquainted with the material and exploring different types of exercise apps for inspiration. I mainly sought to find out how these apps encouraged activity and kept users engaged and coming back day after day.</p>
+				<p>The team began by brainstorming types of problems that could be relevant to voice assistant preparation. We settled on allergy food challenges due to allergy expertise in the group and the fact that food challenges are scheduled so far in advance and require very specific preparation.</p>
 			</div>
 			<div class="col-sm-2 col-xs-0"></div>
 		</div>
 	</div>
 
-	<!-- user personas -->
+	<!-- Brainstorming -->
 	<div class="spacing"></div>
 	<div class="row">
 		<div class="container">
 			<div class="col-sm-2"></div>
 			<div class="col-sm-8 ">
-				<div class="small-spacing"></div>
-				<img class="img-responsive" alt="sketch of user flows" src="react/users/flow.png">
-				<h4>Personas</h4>
-				<p>lorem ipsum</p>
 				<div class="row">
-					<div class="small-spacing"></div>
 					<div class="col-md-6">
-						<img class="img-responsive" alt="clinician user persona" src="react/users/clinician.png">
+						<img class="img-responsive" alt="clinician user persona" src="hackingpeds/allergyproblem.jpg">
 					</div>
 					<div class="col-md-6">
-						<img class="img-responsive" alt="non-clinical researcher user persona" src="react/users/non_clinical_research.png">
-					</div>
-					<div class="col-md-6">
-						<img class="img-responsive" alt="research assistant user persona" src="react/users/research_asst.png">
-					</div>
-					<div class="col-md-6">
-						<img class="img-responsive" alt="researcher user persona" src="react/users/researcher.png">
+						<img class="img-responsive" alt="non-clinical researcher user persona" src="hackingpeds/allergydetails.jpg">
 					</div>
 				</div>
+				<div class="small-spacing"></div>
+
+				<p>We listed the steps that have to be completed in order to have a successful food allergy challenge and fleshed out the problems that arise if patients / families prepare incorrectly. We then mapped out the timline from being seen at Children's the first time, through preparation for the allergy challenge, to arriving at Children's again.</p>
+				
 
 			</div>
 			<div class="col-sm-2"></div>
 		</div>
 	</div>
 
-	<!-- Brainstorming and Sketching -->
+	<!-- Script -->
 	<div class="spacing"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-2 col-xs-0"></div>
 			<div class="col-sm-8">
-				<h3 class="center"><strong>Sketches</strong></h3>
+				<h3 class="center"><strong>Script</strong></h3>
 				<div class="spacing"></div>
-				<p>Lily knew she wanted a garden theme for the game and what different sections were needed, but she wasn't sure about the navigation or how the game would work. From our conversations, I began building some basic navigation flows from each of the main menu sections.</p>
+				<p>Once we mapped out the specific steps of the process we began writing the script for how the user would interact with the Alexa device. We wanted to design an interaction that would take the burden of remembering preparation details off of caretakers, allowing them to focus on other aspects of their life. We envisioned this voice skill would take advantage of notifications, but since Amazon has put hold on their development, it could be part of the daily briefing instead.</p>
+		
+				<div class="small-spacing"></div>
+				<div class="row">
+					<div class="col-md-1 col-sm-0"></div>
+					<div class="col-md-5 col-sm-6">
+						<h4>Alexa</h4>
+						<div class="speech-bubble-left">(notification) Susie has a baked egg food challenge appointment scheduled for October 31, at 8 am in the Boston Children’s Hospital Allergy Clinic with Dr. Lee. Would like to confirm this appointment? </div>
+					</div>
+				</div>
+
+				<div class="small-spacing"></div>
+				<div class="row">
+					<div class="col-md-7 col-sm-6"></div>
+					<div class="col-md-4 col-sm-6">
+						<h4>Parent</h4>
+						<div class="speech-bubble-right">Yes</div>
+					</div>
+				</div>
+
+				<div class="small-spacing"></div>
+				<div class="row">
+					<div class="col-md-1 col-sm-0"></div>
+					<div class="col-md-5 col-sm-6">
+						<div class="speech-bubble-left">Ok, confirming that appointment for you.  </div>
+					</div>
+				</div>
+
 				<div class="spacing"></div>
-				<img class="img-responsive" alt="progress bar sketches" src="react/sketch.png">
+
+				<div class="row">
+					<div class="col-md-1 col-sm-0"></div>
+					<div class="col-md-5 col-sm-6">
+						<div class="speech-bubble-left">Also, Susie will need to stop taking her Claritin tomorrow. I’ll give you another reminder about this tomorrow. </div>
+					</div>
+				</div>
+
+				<div class="small-spacing"></div>
+				<div class="row">
+					<div class="col-md-7 col-sm-6"></div>
+					<div class="col-md-4 col-sm-6">
+						<div class="speech-bubble-right">Alexa, can you give me more details about the food challenge appointment?</div>
+					</div>
+				</div>
+
+				<div class="small-spacing"></div>
+				<div class="row">
+					<div class="col-md-1 col-sm-0"></div>
+					<div class="col-md-5 col-sm-6">
+						<div class="speech-bubble-left">Your visit will be conducted at Boston Children’s Hospital on Fegan 6 at 8 am. I sent this information to your email. <br><br> Susie will eat baked egg muffin in increments, and be observed for one hour after all increments have been eaten. <br><br> This visit can be 2-3 hours long. Your nurse will be closely monitoring for signs of an allergic reaction throughout.  </div>
+					</div>
+				</div>
+
+				<div class="small-spacing"></div>
+				<div class="row">
+					<div class="col-md-7 col-sm-6"></div>
+					<div class="col-md-4 col-sm-6">
+						<div class="speech-bubble-right">Can you send this information to my husband?</div>
+					</div>
+				</div>
+
+				<div class="small-spacing"></div>
+				<div class="row">
+					<div class="col-md-1 col-sm-0"></div>
+					<div class="col-md-5 col-sm-6">
+						<div class="speech-bubble-left">Yes, I sent the information to your husband.</div>
+					</div>
+				</div>
+
+				<div class="large-spacing"></div>
+				<p><a target="_blank" href="hackingpeds/script.pdf">Read the whole script.</a></p>
+
 			</div>
 			<div class="col-sm-2 col-xs-0"></div>
 		</div>
+		<div class="spacing"></div>
+
+	
+
 	</div>
 
 
@@ -160,107 +226,41 @@
 		<div class="row">
 			<div class="col-sm-2 col-xs-0"></div>
 			<div class="col-sm-8 ">
-				<h3 class="center"><strong>Iteration</strong></h3>
+				<h3 class="center"><strong>Video</strong></h3>
 				<div class="spacing"></div>
-				<p>Once there was a basic structure for the navigation I began designing what I'll call "medium fidelity" screens. I prefer to work in color even if the UI will be further developed in the future because it helps me visualize my work. For these screens though I was primarily focusing on the navigation, interaction, and UX. We opted for a simple game with a similar premise as Farmville, where users can grow their garden and upgrade it infinitely.</p>
+				<p>The deliverable for the hackathon was a short video showing how the voice skill would function. Using a combination of stock video and shots we filmed in the conference room I edited together the below video, attempting to capture an ideal scenario in which this voice skill could help families preparing for an allergy challenge.</p>
 				<div class="spacing"></div>
-				<div class="row">
-					<div class="col-md-7">
-						<img class="img-responsive" alt="test selection details" src="react/draft5/test_details.png">	
-							
-					</div>
-					<div class="col-md-5">
-						<div class="spacing"></div>
-						<h4>Select subject & test suite</h4>
-						<div class="small-spacing"></div>
-						<p>Users track their activity with a Fitbit, Apple Watch, or other wearable, and their steps and stairs are translated into coins. Inside the plant shop users can select plants that they've earned enough coins for, encouraging them to increase exercise for certain plants or save up.</p>
-					</div>
+
+				<!-- <video title="Allergy food challenge, Amazon Alexa skill" controls>
+						<source src="hackingpeds/team6.mov" type="video/mp4">
+						<source src="hackingpeds/team6.mp4" type="video/mp4">
+
+							Your browser does not support the video tag.
+				</video> -->
+
+				<div class="resp-container">
+				<iframe class="resp-iframe" src="https://www.youtube.com/embed/93QlOQ8fBX8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
-				<div class="spacing"></div>
-				<div class="row">
-					<div class="col-md-5">
-						<div class="spacing"></div>
-						<h4>Handle errors</h4>
-						<div class="small-spacing"></div>
-						<p>Once a user has selected a plant they can drag and drop it into any open plot in their garden. The garden canvas is effectively infinite and allows the user to build the garden however they want. Plants also "grow" when a user waters them.</p>
-					</div>
-					<div class="col-md-7">
-						<img class="img-responsive" alt="no headset connected error" src="react/draft5/no_headset.png">	
-					</div>
-				</div>
-				<div class="spacing"></div>
-				<div class="row">
-					<div class="col-md-7">
-						<img class="img-responsive" alt="search" src="react/draft5/search.gif">	
-					</div>
-					<div class="col-md-5">
-						<h4>Search</h4>
-						<div class="small-spacing"></div>
-						<p>Coins are earned through cardio, but water is earned through logging strength exercises. These exercises are input manually; the user first searches for the exercise they performed and then enters the number of minutes or reps they performed, and any notes.</p>
-					</div>
-				</div>
+			
+				
+
+				
 			</div>
 			<div class="col-sm-2 col-xs-0"></div>
 		</div>
+	<div class="large-spacing"></div>
+
 	</div>
 	<div class="large-spacing"></div>
 
-	<!-- Screens -->
-	<div class="spacing"></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-2 col-xs-0"></div>
-			<div class="col-sm-8 ">
-				<h3 class="center"><strong>Final Screens</strong></h3>
-				<div class="spacing"></div>
-				<p>Once there was a basic structure for the navigation I began designing what I'll call "medium fidelity" screens. I prefer to work in color even if the UI will be further developed in the future because it helps me visualize my work. For these screens though I was primarily focusing on the navigation, interaction, and UX. We opted for a simple game with a similar premise as Farmville, where users can grow their garden and upgrade it infinitely.</p>
-				<div class="spacing"></div>
-				<div class="row">
-					<div class="col-md-7">
-						<img class="img-responsive" alt="Initial navigation flows" src="react/draft5/test_details.png">	
-							
-					</div>
-					<div class="col-md-5">
-						<div class="spacing"></div>
-						<h4>Shop for plants with coins earned from exercise</h4>
-						<div class="small-spacing"></div>
-						<p>Users track their activity with a Fitbit, Apple Watch, or other wearable, and their steps and stairs are translated into coins. Inside the plant shop users can select plants that they've earned enough coins for, encouraging them to increase exercise for certain plants or save up.</p>
-					</div>
-				</div>
-				<div class="spacing"></div>
-				<div class="row">
-					<div class="col-md-5">
-						<div class="spacing"></div>
-						<h4>Place plants anywhere in the garden</h4>
-						<div class="small-spacing"></div>
-						<p>Once a user has selected a plant they can drag and drop it into any open plot in their garden. The garden canvas is effectively infinite and allows the user to build the garden however they want. Plants also "grow" when a user waters them.</p>
-					</div>
-					<div class="col-md-7">
-						<img class="img-responsive" alt="Initial navigation flows" src="react/draft5/no_headset.png">	
-					</div>
-				</div>
-				<div class="spacing"></div>
-				<div class="row">
-					<div class="col-md-7">
-						<img class="img-responsive" alt="Initial navigation flows" src="react/draft5/search.gif">	
-					</div>
-					<div class="col-md-5">
-						<h4>Earn water by logging strength exercises</h4>
-						<div class="small-spacing"></div>
-						<p>Coins are earned through cardio, but water is earned through logging strength exercises. These exercises are input manually; the user first searches for the exercise they performed and then enters the number of minutes or reps they performed, and any notes.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-2 col-xs-0"></div>
-		</div>
-	</div>
+	
 	<div class="large-spacing"></div>
 
 	<!-- VR parallax -->
 	<div class="large-spacing"></div>
 	<div class="row">
 		<div class="col-md-12">
-			<div class="parallax-window-garden" data-parallax="scroll" ></div>
+			<div class="parallax-window" data-parallax="scroll" ></div>
 		</div>
 	</div>
 
@@ -285,7 +285,7 @@
 			<div class="col-sm-5">
 				<h4><strong>What I learned</strong></h4>
 				<div class="small-spacing"></div>
-				<p>This project taught me a lot about navigation. It was interesting designing for a population that may or may not have technical literacy and it forced me to think about what is intuitive, instead of just what is typical.</p>
+				<p>This project was my first experience at a hackathon and designing a VUI. I really enjoyed working on a team (and learned a lot from working with people I'd just met) and it was interesting to design for voice interactions considering their conversationality, as opposed to in GUI where I'm considering efficency of interactions. </p>
 				<div class="spacing"></div>
 			</div>
 			<div class="col-sm-5">
@@ -294,9 +294,9 @@
 
 				<p>
 					<strong>Date: </strong>Fall 2018 <br>
-					<strong>Contributors: </strong>Innovation and Digital Health Accelerator Team<br>
-					<strong>Skills: </strong>Navigation Design, UX Design<br>
-					<strong>Client: </strong>Innovation and Digital Health Accelerator - Boston Children's Hospital
+					<strong>Contributors: </strong>Brenna Sorkin, Bill Cava, Julie Whitlow Yarahuan, Allison Scalia, Griffin Campbell<br>
+					<strong>Skills: </strong>Voice User Interface Design<br>
+					<strong>Client: </strong>Voice.Health & Hacking Pediatrics Hackathon
 				</p>
 			</div>
 			<div class="col-sm-1 col-xs-0"></div>
@@ -416,17 +416,17 @@
 
 	<!-- parallax research -->
 	<script type="">
-		$('.parallax-window-research').parallax({imageSrc: 'react/flow1.png'});
+		$('.parallax-window-research').parallax({imageSrc: 'hackingpeds/table-stuff.jpg'});
 	</script>
 
 	<!-- parallax garden -->
 	<script type="">
-		$('.parallax-window-garden').parallax({imageSrc: 'react/vr-couple-blue.png'});
+		$('.parallax-window').parallax({imageSrc: 'hackingpeds/team.png'});
 	</script>
 
 	<!-- parallax screens -->
 	<script type="">
-		$('.parallax-window-screen').parallax({imageSrc: 'react/home-blue.png'});
+		$('.parallax-window-screen').parallax({imageSrc: 'hackingpeds/overview-close.jpg'});
 	</script>
 </body>
 </html>	
