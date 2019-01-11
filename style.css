@@ -1092,6 +1092,22 @@ table th {
 }
 
 /*+---------------------------------------------------------+
+  | IS 4300                                           |
+  +---------------------------------------------------------+  */
+
+#photo_hero {
+  background-image: url(photos/hero.png);
+  height: 700px;
+  width: 101%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/*+---------------------------------------------------------+
   | HACK                                                    |
   +---------------------------------------------------------+  */
 
