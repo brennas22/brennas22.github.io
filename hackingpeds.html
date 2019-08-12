@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Hacking Pediatrics - Brenna Sorkin
+	</title>
+	<script src="https://use.fontawesome.com/7c0217a7a4.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="logo.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!-- hero -->
+	<div class="row" id="hack_hero">
+		<!-- nav -->
+		<nav class="navbar navbar-minimal " id="menu">
+			<div class="container">
+				<div class="col-md-12">
+					<a class="navbar-header" href="index.html" tabindex="1">
+		
+						
+						<div class="lobster" id="brand-minimal" tabindex="-1" >Brenna Sorkin.</div>
+					</a>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					<div class="collapse navbar-collapse" id="bs-nav-demo">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="sorkin_resume.pdf" target="_blank">Resume</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="about.html">about</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+
+	<!-- intro -->
+	<div class="spacing"></div>
+	<div class="container">
+		<!-- title and description -->
+		<div class="row">
+			<div class="col-sm-2 col-xs-0"></div>
+			<div class="col-sm-8">
+				<h2 class="center">Hacking Pediatrics - Allergy Food Challenge</h2>
+				<div class="small-spacing"></div>
+				<h4 class="center">A voice skill to help families prepare for allergy testing</h4>
+			</div>
+			<div class="col-sm-2 col-xs-0"></div>
+		</div>
+
+		<!-- summary and what I did -->
+		<div class="large-spacing"></div>
+		<div class="row">
+			<div class="col-sm-1 col-xs-0"></div>
+			<div class="col-sm-5">
+				<h4><strong>Summary</strong></h4>
+				<div class="small-spacing"></div>
+				<p>The Innovation & Digital Health Accelerator at Boston Children's Hospital hosted a Voice.Health hackathon, where my team was tasked with developing a voice skills based off the prompt "prep for certain procedures (e.g. cast removal, etc.) with instructions and images"</p>
+				<div class="spacing"></div>
+			</div>
+			<div class="col-sm-5">
+				<h4><strong>What I did</strong></h4>
+				<p>My team and I developed an Alexa voice skill to help families prepare to return to Children's for allergy testing. Allergy testing is a laborious process with steps that need to be carefully followed, often months after the patient/family receive initial instructions from their care team.</p>
+			</div>
+			<div class="col-sm-1 col-xs-0"></div>
+		</div>
+	</div>
+
+	<!-- Research parallax -->
+	<div class="spacing"></div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="parallax-window-research" data-parallax="scroll" ></div>
+		</div>
+	</div>
+			
+
+	<!-- Research -->
+	<div class="spacing"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2 col-xs-0"></div>
+			<div class="col-sm-8 ">
+				<h3 class="center"><strong>Discussion & Brainstorming</strong></h3>
+				<div class="spacing"></div>
+				<p>The team began by brainstorming types of problems that could be relevant to voice assistant preparation. We settled on allergy food challenges due to allergy expertise in the group and the fact that food challenges are scheduled so far in advance and require very specific preparation.</p>
+			</div>
+			<div class="col-sm-2 col-xs-0"></div>
+		</div>
+	</div>
+
+	<!-- Brainstorming -->
+	<div class="spacing"></div>
+	<div class="row">
+		<div class="container">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8 ">
+				<div class="row">
+					<div class="col-md-6">
+						<img class="img-responsive" alt="clinician user persona" src="hackingpeds/allergyproblem.jpg">
+					</div>
+					<div class="col-md-6">
+						<img class="img-responsive" alt="non-clinical researcher user persona" src="hackingpeds/allergydetails.jpg">
+					</div>
+				</div>
+				<div class="small-spacing"></div>
+
+				<p>We listed the steps that have to be completed in order to have a successful food allergy challenge and fleshed out the problems that arise if patients / families prepare incorrectly. We then mapped out the timline from being seen at Children's the first time, through preparation for the allergy challenge, to arriving at Children's again.</p>
+				
+
+			</div>
+			<div class="col-sm-2"></div>
+		</div>
+	</div>
+
+	<!-- Script -->
+	<div class="spacing"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2 col-xs-0"></div>
+			<div class="col-sm-8">
+				<h3 class="center"><strong>Script</strong></h3>
+				<div class="spacing"></div>
+				<p>Once we mapped out the specific steps of the process we began writing the script for how the user would interact with the Alexa device. We wanted to design an interaction that would take the burden of remembering preparation details off of caretakers, allowing them to focus on other aspects of their life. We envisioned this voice skill would take advantage of notifications, but since Amazon has put hold on their development, it could be part of the daily briefing instead.</p>
+		
+				<div class="small-spacing"></div>
+				<div class="row">
+					<div class="col-md-1 col-sm-0"></div>
+					<div class="col-md-5 col-sm-6">
+						<h4>Alexa</h4>
+						<div class="speech-bubble-left">(notification) Susie has a baked egg food challenge appointment scheduled for October 31, at 8 am in the Boston Children’s Hospital Allergy Clinic with Dr. Lee. Would like to confirm this appointment? </div>
+					</div>
+				</div>
+
+				<div class="small-spacing"></div>
+				<div class="row">
+					<div class="col-md-7 col-sm-6"></div>
+					<div class="col-md-4 col-sm-6">
+						<h4>Parent</h4>
+						<div class="speech-bubble-right">Yes</div>
+					</div>
+				</div>
+
+				<div class="small-spacing"></div>
+				<div class="row">
+					<div class="col-md-1 col-sm-0"></div>
+					<div class="col-md-5 col-sm-6">
+						<div class="speech-bubble-left">Ok, confirming that appointment for you.  </div>
+					</div>
+				</div>
+
+				<div class="spacing"></div>
+
+				<div class="row">
+					<div class="col-md-1 col-sm-0"></div>
+					<div class="col-md-5 col-sm-6">
+						<div class="speech-bubble-left">Also, Susie will need to stop taking her Claritin tomorrow. I’ll give you another reminder about this tomorrow. </div>
+					</div>
+				</div>
+
+				<div class="small-spacing"></div>
+				<div class="row">
+					<div class="col-md-7 col-sm-6"></div>
+					<div class="col-md-4 col-sm-6">
+						<div class="speech-bubble-right">Alexa, can you give me more details about the food challenge appointment?</div>
+					</div>
+				</div>
+
+				<div class="small-spacing"></div>
+				<div class="row">
+					<div class="col-md-1 col-sm-0"></div>
+					<div class="col-md-5 col-sm-6">
+						<div class="speech-bubble-left">Your visit will be conducted at Boston Children’s Hospital on Fegan 6 at 8 am. I sent this information to your email. <br><br> Susie will eat baked egg muffin in increments, and be observed for one hour after all increments have been eaten. <br><br> This visit can be 2-3 hours long. Your nurse will be closely monitoring for signs of an allergic reaction throughout.  </div>
+					</div>
+				</div>
+
+				<div class="small-spacing"></div>
+				<div class="row">
+					<div class="col-md-7 col-sm-6"></div>
+					<div class="col-md-4 col-sm-6">
+						<div class="speech-bubble-right">Can you send this information to my husband?</div>
+					</div>
+				</div>
+
+				<div class="small-spacing"></div>
+				<div class="row">
+					<div class="col-md-1 col-sm-0"></div>
+					<div class="col-md-5 col-sm-6">
+						<div class="speech-bubble-left">Yes, I sent the information to your husband.</div>
+					</div>
+				</div>
+
+				<div class="large-spacing"></div>
+				<p><a target="_blank" href="hackingpeds/script.pdf">Read the whole script.</a></p>
+
+			</div>
+			<div class="col-sm-2 col-xs-0"></div>
+		</div>
+		<div class="spacing"></div>
+
+	
+
+	</div>
+
+
+
+	<!-- Screens parallax -->
+	<div class="large-spacing"></div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="parallax-window-screen" data-parallax="scroll" ></div>
+		</div>
+	</div>
+	
+
+	<!-- Iteration -->
+	<div class="spacing"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2 col-xs-0"></div>
+			<div class="col-sm-8 ">
+				<h3 class="center"><strong>Video</strong></h3>
+				<div class="spacing"></div>
+				<p>The deliverable for the hackathon was a short video showing how the voice skill would function. Using a combination of stock video and shots we filmed in the conference room I edited together the below video, attempting to capture an ideal scenario in which this voice skill could help families preparing for an allergy challenge.</p>
+				<div class="spacing"></div>
+
+				<!-- <video title="Allergy food challenge, Amazon Alexa skill" controls>
+						<source src="hackingpeds/team6.mov" type="video/mp4">
+						<source src="hackingpeds/team6.mp4" type="video/mp4">
+
+							Your browser does not support the video tag.
+				</video> -->
+
+				<div class="resp-container">
+				<iframe class="resp-iframe" src="https://www.youtube.com/embed/93QlOQ8fBX8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			
+				
+
+				
+			</div>
+			<div class="col-sm-2 col-xs-0"></div>
+		</div>
+	<div class="large-spacing"></div>
+
+	</div>
+	<div class="large-spacing"></div>
+
+	
+	<div class="large-spacing"></div>
+
+	<!-- VR parallax -->
+	<div class="large-spacing"></div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="parallax-window" data-parallax="scroll" ></div>
+		</div>
+	</div>
+
+	<!-- findings -->
+	<div class="spacing"></div>
+	<div class="container">
+		<!-- title and description -->
+		<div class="row">
+			<div class="col-sm-2 col-xs-0"></div>
+			<div class="col-sm-8">
+				<h2 class="center">Takeaways</h2>
+				<div class="small-spacing"></div>
+				<!-- <h4 class="center">An exercise game to improve healthcare outcomes for caregivers of patients living with Alzheimer's disease.</h4> -->
+			</div>
+			<div class="col-sm-2 col-xs-0"></div>
+		</div>
+
+		<!-- Project details and takeaways -->
+		<div class="spacing"></div>
+		<div class="row">
+			<div class="col-sm-1 col-xs-0"></div>
+			<div class="col-sm-5">
+				<h4><strong>What I learned</strong></h4>
+				<div class="small-spacing"></div>
+				<p>This project was my first experience at a hackathon and designing a VUI. I really enjoyed working on a team (and learned a lot from working with people I'd just met) and it was interesting to design for voice interactions considering their conversationality, as opposed to in GUI where I'm considering efficency of interactions. </p>
+				<div class="spacing"></div>
+			</div>
+			<div class="col-sm-5">
+				<h4><strong>Project Details</strong></h4>
+				<div class="small-spacing"></div>
+
+				<p>
+					<strong>Date: </strong>Fall 2018 <br>
+					<strong>Contributors: </strong>Brenna Sorkin, Bill Cava, Julie Whitlow Yarahuan, Allison Scalia, Griffin Campbell<br>
+					<strong>Skills: </strong>Voice User Interface Design<br>
+					<strong>Client: </strong>Voice.Health & Hacking Pediatrics Hackathon
+				</p>
+			</div>
+			<div class="col-sm-1 col-xs-0"></div>
+		</div>
+	</div>
+	<div class="large-spacing"></div>
+
+	<!-- Pre Footer -->
+	<div class="row pre-footer">
+		<div class="container">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10">
+				<h4 class="center"><strong>Explore</strong></h4>
+				<div class="small-spacing"></div>
+
+				<div class="row">
+				<div class="small-spacing"></div>
+				<!-- <div class="col-sm-2"></div> -->
+					<div class="col-sm-3">
+						
+							<div class="hvrbox" >
+								<a class="hover-link" href="labs.html">
+									<img src="square-projects/generate.png" alt="Generate Labs" class="hvrbox-layer_bottom">
+									<div class="hvrbox-layer_top">
+										<div class="hvrbox-text">Generate Labs | Project Management</div>
+									</div>
+								</a>
+
+							</div>
+					</div>
+					<div class="col-sm-3">
+						
+							<div class="hvrbox" >
+								<a class="hover-link" href="caregivers.html">
+									<img src="square-projects/caregiver.png" alt="Caregivers" class="hvrbox-layer_bottom">
+									<div class="hvrbox-layer_top">
+										<div class="hvrbox-text">Caregiver Exercise Game | UX</div>
+									</div>
+								</a>
+
+							</div>
+					</div>
+					<div class="col-sm-3">
+						
+							<div class="hvrbox" >
+								<a class="hover-link" href="peds.html">
+									<img src="square-projects/peds-game.png" alt="Pediatric education game" class="hvrbox-layer_bottom">
+									<div class="hvrbox-layer_top">
+										<div class="hvrbox-text">Pediatric Education Game | UX Research</div>
+									</div>
+								</a>
+
+							</div>
+					</div>
+					
+					
+					<div class="col-sm-3">
+						
+							<div class="hvrbox" >
+								<a class="hover-link" href="index.html">
+									<img src="square-projects/home.png" alt="Home" class="hvrbox-layer_bottom">
+									<div class="hvrbox-layer_top">
+										<div class="hvrbox-text">Home</div>
+									</div>
+								</a>
+
+							</div>
+					</div>
+					
+				<!-- <div class="col-sm-2"></div> -->
+
+			</div>
+
+			<div class="col-sm-1"></div>
+
+		</div>
+	</div>
+				<div class="spacing"></div>
+
+</div>
+
+	<!-- Footer -->
+	<div class="row footer-minimal">
+		<div class="container">
+			<div class="col-md-4">
+				<h2 class="center">Hello!</h2>
+				<div class="small-spacing"></div>
+				<img src="headshot_crop.png">
+				
+			</div>
+			<div class="col-md-4">
+				<div class="center">
+				<h2 class="center">Who am I?</h2>
+				<div class="small-spacing"></div>
+				<p>I'm a senior at Northeastern University studying human centered software & UX design. I built this website! It is keyboard and screen reader navigable, and all colors meet accessibility recommendations. <a href="about.html">Read more about me!</a>
+				</p>
+				<p><i class="fa fa-copyright" aria-hidden="true"></i>BCS 2018 </p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="center">
+				<h2 class="center">Get in touch:</h2>
+				<div class="small-spacing"></div>
+				<p><a href="mailto:brenna.sorkin@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>brenna.sorkin@gmail.com</a></p>
+					<p><a href="mailto:sorkin.b@husky.neu.edu"><i class="fa fa-envelope" aria-hidden="true"></i>sorkin.b@husky.neu.edu</a></p>
+					<p><i class="fa fa-phone" aria-hidden="true"></i>617-543-0996</p>
+					<p><a href="https://www.linkedin.com/in/brennasorkin" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="bootstrap.js"></script>
+	<script src="parallax/parallax.js"></script>
+
+	<!-- parallax research -->
+	<script type="">
+		$('.parallax-window-research').parallax({imageSrc: 'hackingpeds/table-stuff.jpg'});
+	</script>
+
+	<!-- parallax garden -->
+	<script type="">
+		$('.parallax-window').parallax({imageSrc: 'hackingpeds/team.png'});
+	</script>
+
+	<!-- parallax screens -->
+	<script type="">
+		$('.parallax-window-screen').parallax({imageSrc: 'hackingpeds/overview-close.jpg'});
+	</script>
+</body>
+</html>	
