@@ -1,12 +1,20 @@
-.nav-item a{
-	color: purple;
+
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+.lobster {
+  font-family: 'Lobster', cursive;
 }
 
-.navbar-light {
-  background: pink;
+
+/*NAV*/
+.navbar {
+  background: transparent !important;
+  padding-top: 4%;
 }
 
 
+/*HERO IMAGES*/
 #intro_hero {
   background-image: url(intro-image.png);
   height: 700px;
