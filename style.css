@@ -2,3 +2,19 @@
 	color: purple;
 }
 
+.navbar-light {
+  background: pink;
+}
+
+
+#intro_hero {
+  background-image: url(intro-image.png);
+  height: 700px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
