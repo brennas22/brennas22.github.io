@@ -53,3 +53,9 @@ body {
 .right {
   justify-content: flex-end;
 }
+
+
+.parallax-window-screen {
+    min-height: 500px;
+    background: transparent;
+}
