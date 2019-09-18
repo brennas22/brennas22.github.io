@@ -20,6 +20,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+
+.bold {
+  font-weight: 900;
+}
+
+
 .center {
   text-align: center;
 }
@@ -114,15 +120,122 @@ i {
   
 }
 
+#caregivers_hero {
+  background-image: url(caregivers/hero.png);
+  height: 700px;
+  width: 101%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#labs_hero {
+  background-image: url(labs/hero.png);
+  height: 700px;
+  width: 101%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#peds_hero {
+  background-image: url(hackingpeds/hero.png);
+  height: 700px;
+  width: 101%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
 
 
 /*PARALLAX*/
 
-.parallax-window-screen {
+.parallax-index-screen {
     min-height: 600px;
     background: transparent;
 }
 
+.parallax-caregiver {
+    min-height: 600px;
+    background: transparent;
+}
+
+.parallax-sherman {
+    min-height: 600px;
+    background: transparent;
+}
+
+
+/*SPEECH BUBBLE*/
+.speech-bubble-left {
+  position: relative;
+  background: #AFD8FA;
+  border-radius: .4em;
+  padding: 15px;
+}
+
+.speech-bubble-left:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 24px solid transparent;
+  border-right-color: #AFD8FA;
+  border-left: 0;
+  margin-top: -24px;
+  margin-left: -24px;
+}
+
+.speech-bubble-right {
+  position: relative;
+  background: #277ABE;
+  border-radius: .4em;
+  padding: 15px;
+  color: white;
+}
+
+.speech-bubble-right:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 24px solid transparent;
+  border-left-color: #277ABE;
+  border-right: 0;
+  margin-top: -24px;
+  margin-right: -20px;
+}
+
+/*IFRAME*/
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    /*width: 100%;*/
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 
 /*+---------------------------------------------------------+
   | HOVER BOX                                            |
@@ -219,4 +332,93 @@ i {
 
 .footer-minimal p {
   margin: 10px;
+}
+
+/*+---------------------------------------------------------+
+  | PRE FOOTER                                              |
+  +---------------------------------------------------------+  */
+
+  .pre-footer {
+    /*font-family: Rubik, sans-serif;*/
+    background-color: #F5F5F5;
+    padding: 20px;
+    color: #2B2E2E;
+
+  }
+
+/*+---------------------------------------------------------+
+  | TABLE                                                   |
+  +---------------------------------------------------------+  */
+
+  table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/*from codepen: https://codepen.io/AllThingsSmitty/pen/MyqmdM */
+table tr {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+/**/
+
+table td, table th {
+/*    border: 1px solid #cccccc;
+    text-align: left;
+    padding: 8px;*/
+    padding: .625em;
+    /*padding: 15px;*/
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+/*from codepen*/
+@media screen and (max-width: 992px) {
+  .resize-table table {
+    border: 0;
+  }
+  .resize-table table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .resize-table table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  .resize-table table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .resize-table table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .resize-table table td:last-child {
+    border-bottom: 0;
+  }
 }
