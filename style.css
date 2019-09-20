@@ -168,6 +168,18 @@ i {
   
 }
 
+#gather_hero {
+  background-image: url(gatheringplate/hero.png);
+  height: 700px;
+  width: 101%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
 
 
 /*PARALLAX*/
