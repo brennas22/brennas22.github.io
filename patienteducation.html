@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="logo.png">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/044eeba5c1.js" crossorigin="anonymous"></script>
+
+  <title>Patient Education Game - Brenna Sorkin</title>
+</head>
+<body>
+  <div class="patient-ed-top nav-top">
+    <div class="container">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Brenna Sorkin</a>
+
+          <!-- collapsed nav bar hamburger button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- portion of the nav bar that collapses -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link "  href="about.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="projects.html">Selected Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " target="blank" href="https://www.instagram.com/bites_by_bren/">Bites By Bren</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+      <!-- main photo on homepage -->
+      <img src="patient-ed/hero@2x.png" class="headshot mx-auto d-block" alt="A computer showing a drawing of a girl on the swings.">
+
+    </div>
+  </div>
+
+  <!-- greeting -->
+  <div class="container up d-none d-sm-block">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <h1 class="text-center">Pediatric Education Game</h1>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+  </div>
+
+  <div class="container down">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <!-- introduction -->
+        <h2 class="d-block d-sm-none">Pediatric Education Game</h2>
+        <p class="">This is the research project I undertook to complete my honors in the College of Arts, Media, and Design at Northeastern. It is an exploration into pediatric patient experience in long term care and a proposed game solution that familiarizes children with their care in a comfortable and engaging way.</p>
+        
+
+        <h2>What I did</h2>
+        <p>I worked on this project alone with the support of my advisor, Janos Stone. I completed research, mapped user experience, wrote user stories, and made service blueprints, over the course of a semester. I would like to design and develop the details of the game in the future. The key question I aimed to address was "How might we improve comfort, compliance, and happiness for children whose treatment necessitates an extended stay in the hospital?"</p> 
+
+        <h5>1. Stakeholder & Experience Mapping</h5>
+
+        <p>I came into this project knowing I wanted to work on something related to pediatrics and hospitals, but wasn't exactly sure what. My preliminary research taught me that the average length of a pediatric hospital stay is 17.4 days and that the most common pediatric cancer diagnosis is Leukemia. I used that information as a jumping off point.</p>
+        <h5><em>Stakeholder Map</em></h5>
+        <p>I created a stakeholder map to understand the different actors and spaces at play in the situation. I also mapped their interactions (with each other and with places) and sought to understand what different stakeholders are thinking and feeling.</p>
+        <a href="" data-bs-toggle="modal" data-bs-target="#patientEducationStakeholderModal">
+          <img src="patient-ed/stakeholder.png"  class="img-fluid in-line mx-auto d-block" alt="Venn Diagram mapping showing the relationship between different people in the patient's life and what their motivations are." >  
+        </a>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="patientEducationStakeholderModal" tabindex="-1" role="dialog" aria-labelledby="patientEducationStakeholderModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="patientEducationStakeholderModalLabel">Stakeholder Map</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+              </div>
+              <div class="modal-body">
+                <img src="patient-ed/stakeholder.png"  class="img-fluid w-100 mx-auto d-block" alt="Venn Diagram mapping showing the relationship between different people in the patient's life and what their motivations are." >  
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end modal -->
+
+        <h5><em>Experience Map</em></h5>
+        <p>I then began intensive research into the treatment of Leukemia. I pin-pointed the different steps in the process, particularly focusing on those for which the child is present, and mapped them. The treatment of Leukemia happens over a period of many years, but it is relatively similar across different hospitals and cases.</p>
+
+        
+
+        <div id="patientEducationExperienceMapCarousel" class="carousel in-line carousel-dark slide" data-bs-ride="carousel" >
+          <ol class="carousel-indicators">
+            <li data-bs-target="#patientEducationExperienceMapCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#patientEducationExperienceMapCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#patientEducationExperienceMapCarousel" data-bs-slide-to="2"></li>
+
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <a href="" data-bs-target="#patientEducationExperienceMapSurveyCarousel" data-bs-slide-to="0" >
+                <img src="patient-ed/diagnosis.png"  class="img-fluid in-line mx-auto d-block" alt="Experience map showing the steps taken during the diagnosis phase of Leukemia treatment." >  
+              </a>
+
+            </div>
+            <div class="carousel-item">
+              <a href="" data-bs-target="#patientEducationExperienceMapSurveyCarousel" data-bs-slide-to="1" >
+
+                <img src="patient-ed/treatment.png" class="img-fluid in-line mx-auto d-block" alt="Experience map showing the steps taken during the active treatment phase of Leukemia treatment."> 
+              </a>
+
+
+            </div>
+            <div class="carousel-item">
+              <a href="" data-bs-target="#patientEducationExperienceMapSurveyCarousel" data-bs-slide-to="2" >
+
+                <img src="patient-ed/maintenance.png" class="img-fluid in-line mx-auto d-block" alt="Experience map showing the steps taken during the remission and maintenance phase of Leukemia treatment."> 
+              </a>
+
+            </div>
+
+
+          </div>
+          <a class="carousel-control-prev" href="#patientEducationExperienceMapCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#patientEducationExperienceMapCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div> 
+
+
+        
+
+        <h5>2. Solution Generation</h5>
+        <p>Ultimately, the solution that seemed best was a game that teaches pediatric patients about their care in a way that is understandable, accessible, and fun for them, by speaking to them in language and metaphors they can understand. I began to brainstorm a number of features that would make the game effective and interesting.</p>
+        <p>Some of the features include:
+          <ul>
+            <li>Avatars - Child has a custom avatar; care providers may have custom avatars</li>
+            <li>Class Participation - Teacher facilitates an activity that is then reflected in the game</li>
+            <li>Activated in Real Time - Game features are activated/unlocked based on events in the hospital</li>
+            <li>Measure of Energy Level - Game can be tailored to child’s daily energy level</li>
+          </ul></p>
+
+
+
+        <h5>3. Service Blueprint</h5>
+        <p>Once I had a rough item of how the game would work I began to map the different touch points. I considered where the user would interact and what the implications behind the scenes would be at every step.</p>
+        
+        <img src="patient-ed/service-sketch.png" class="img-fluid in-line mx-auto d-block" alt="Hand-drawn sketch of service map showing the different touchpoints of interacting with the game."> 
+        <img src="patient-ed/service.png" class="img-fluid in-line mx-auto d-block" alt="High fidelity version of service map showing the different touchpoints of interacting with the game."> 
+
+        
+        
+        <h2 class="down">What I Learned</h2>
+        <p>This project was interesting in that I was able to determine from zero what I wanted to work on and I learned a lot about doing good UX research and about not beginning to design until research has been fully analyzed. Some of the challenges I encountered included how to encourage playing the game (as opposed to iPhone games or xBox), how to best integrate with the child's classroom, how to configure the game for different situations (prognosis, religious background, etc.) </p>
+        
+        
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+
+
+
+    <!-- end container -->
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <p class="footer-links">
+            <a href="mailto:brenna.sorkin@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/brennasorkin" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="tel:6175430996"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/bites_by_bren/" target="blank"><i class="fab fa-instagram"></i></a>
+          </p>
+
+          <p><i class="fa fa-copyright" aria-hidden="true"></i>BCS 2020 </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
