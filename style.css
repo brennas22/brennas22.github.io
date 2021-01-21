@@ -15,6 +15,11 @@ h1 {
 	font-size: 6rem;
 }
 
+.recipe-title {
+	font-family: 'Lobster', serif;
+	font-size: 4rem;
+}
+
 h2 {
 	font-family: 'Lobster', serif;
 }
@@ -215,6 +220,10 @@ a:hover {
 	background-color: #DAD8F0;
 }
 
+.bites-by-bren-top {
+	background-color: #ABDED8;
+}
+
 /*IMAGES*/
 
 .in-line {
@@ -250,4 +259,8 @@ a:hover {
 
 #alwaysHungrySurveyCarousel {
 	padding: 0px 5%;
+}
+
+.equipment {
+	font-style: italic;
 }
