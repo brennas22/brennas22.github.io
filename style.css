@@ -64,7 +64,7 @@ a:hover {
 }
 
 .btn-primary {
-	background-color: #8B5913;
+	background-color: #14506A;
 	margin: 30px;
 	padding: 10px 25px;
 	border: none;
@@ -72,7 +72,7 @@ a:hover {
 
 .btn-primary:hover {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-	background-color: #392A15;
+	background-color: #073346;
 }
 
 
@@ -172,19 +172,19 @@ a:hover {
 /*FOOTER*/
 
 .footer {
-	background-color: #53422A;
-	color: white;
-	margin-top: 30px;
-	padding: 40px;
+	/*background-color: #53422A;*/
+	/*color: white;*/
+	/*margin-top: 30px;*/
+	/*padding: 40px;*/
 }
 
 
 .footer a {
-	color: white;
+	/*color: white;*/
 }
 
 .footer a:hover {
-	color: #FFECAA;
+	/*color: #FFECAA;*/
 }
 
 .footer-links {
