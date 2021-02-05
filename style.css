@@ -357,6 +357,10 @@ i {
 	display: inline-block;
 }
 
+.in-line {
+	display: inline-block;
+}
+
 .float-right {
 	display: inline-block;
 	margin-left: 15px;
