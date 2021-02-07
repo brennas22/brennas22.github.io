@@ -161,9 +161,9 @@ a:hover {
 
 
 .navbar .active {
-	/*border-bottom: 3px solid #FFF25C;*/
-	background: #FFF25C;
-	border-radius: 3px;
+	border-bottom: 3px solid #093548;
+/*	background: #FFF25C;
+	border-radius: 3px;*/
 }
 
 /*.nav-top {
