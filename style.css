@@ -397,3 +397,7 @@ i {
 .under-space {
 	padding-bottom: 50px;
 }
+
+.right {
+	text-align: right;
+}
