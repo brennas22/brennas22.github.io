@@ -161,10 +161,12 @@ a:hover {
 
 
 .navbar .active {
-	border-bottom: 3px solid #093548;
+	/*border-bottom: 3px solid #093548;*/
+	font-weight: bold;
 /*	background: #FFF25C;
 	border-radius: 3px;*/
 }
+
 
 /*.nav-top {
 	padding: 4%;
