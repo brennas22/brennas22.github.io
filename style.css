@@ -4,28 +4,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url("https://use.typekit.net/ckk4dbr.css");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*GENERAL*/
 
 
 
 
 body {
-  font-family: 'Rubik', sans-serif;
+  /*font-family: 'Rubik', sans-serif;*/
+  font-family: 'Work Sans', sans-serif;
   background-color: #FFFCF2;
 }
 
 h1 {
-	font-family: 'Lobster', serif;
-	font-size: 6rem;
+	/*font-family: 'Lobster', serif;*/
+	font-family: fatfrank,sans-serif;
+font-weight: 400;
+font-style: normal;
+	font-size: 4rem;
 }
 
 .recipe-title {
-	font-family: 'Lobster', serif;
+	/*font-family: 'Lobster', serif;*/
+	font-family: fatfrank,sans-serif;
+font-weight: 400;
+font-style: normal;
 	font-size: 4rem;
 }
 
 h2 {
-	font-family: 'Lobster', serif;
+	/*font-family: 'Lobster', serif;*/
+	font-family: fatfrank,sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 h5 {
@@ -42,8 +54,8 @@ a:hover {
 }
 
 .mobile-title {
-	font-size: 4rem;
-	padding-bottom: 20px;
+	font-size: 2rem;
+	/*padding-bottom: 20px;*/
 }
 
 .highlight {
@@ -56,11 +68,20 @@ a:hover {
 
 .wwwww {
 	font-weight: 800;
-	color: #124E6E
+	/*color: #124E6E*/
 }
 
 .lobster {
-	font-family: 'Lobster', serif;
+	/*font-family: 'Lobster', serif;*/
+	font-family: fatfrank,sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.fat-frank {
+	font-family: fatfrank,sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .up {
@@ -74,6 +95,10 @@ a:hover {
 
 .down {
 	margin-top: 30px;
+}
+
+.down-small {
+	margin-top: 15px;
 }
 
 .down-large {
@@ -126,14 +151,24 @@ a:hover {
 
 }
 
+.logo-mobile {
+	width: 150px;
+
+}
+
 .navbar {
-	padding: 4%;
+	/*padding: 4%;*/
+	padding-top: 2%;
+	padding-bottom: 6%;
 }
 
 
 
 .navbar-brand {
-	font-family: Lobster, serif;
+	/*font-family: Lobster, serif;*/
+	font-family: fatfrank,sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .ml-auto {
@@ -147,8 +182,12 @@ a:hover {
 .nav-link,
 .navbar-brand {
 	color: black !important;
-	padding: 10px 15px !important;
   	border-bottom: 3px solid transparent;
+
+}
+
+.nav-link {
+	margin: 10px 5px !important;
 
 }
 
@@ -185,11 +224,13 @@ a:hover {
 
 .what {
 	
-	font-family: 'Rubik', sans-serif;
+	/*font-family: 'Rubik', sans-serif;*/
+	font-family: 'Work Sans', sans-serif;
 }
 
 .skills {
-	font-family:  'Rubik', sans-serif;
+	/*font-family:  'Rubik', sans-serif;*/
+	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
 }
 
@@ -266,6 +307,10 @@ a:hover {
 	font-size: 1.5rem;
 }
 
+.footer-links a {
+	color: black;
+}
+
 i {
 	padding: 4px;
 }
@@ -298,6 +343,10 @@ i {
 
 .groceryoutpost-top {
 	background-color: #A2D8CD;
+}
+
+.occasion-cards-top {
+	background-color: #EDBF7A;
 }
 
 .photography-top {
