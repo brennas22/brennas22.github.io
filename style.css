@@ -62,7 +62,7 @@ a:hover {
 	/*border-bottom: 10px solid #FFF25C;*/
 	text-decoration: underline;
 	text-decoration-color: #FFF25C;
-	text-decoration-thickness: 20%;
+	text-decoration-thickness: 8px;
 	text-decoration-skip-ink: none;
 }
 
