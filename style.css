@@ -439,6 +439,14 @@ i {
 
 }
 
+.priority {
+	border: 3px solid black;
+}
+
+.border {
+	border: 1px solid black;
+}
+
 
 .stats .card-outline {
 	box-shadow: none;
