@@ -457,6 +457,15 @@ i {
 	margin-bottom: 15px;
 }
 
+.stats .card-solution {
+	background-color: #EDBF7A;
+	box-shadow: none;
+	padding: 20px 25px 15px 25px;
+	margin-top: 15px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
 .under-space {
 	padding-bottom: 50px;
 }
