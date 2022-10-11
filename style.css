@@ -133,6 +133,7 @@ font-style: normal;
 	border: none;
 }
 
+
 .btn-nav {
 	background-color: white;
 	/*margin: 30px;*/
@@ -149,6 +150,20 @@ font-style: normal;
 	border: 2px solid #124E6E;
 	color: #124E6E;
 }
+
+.input-btn {
+		background-color: #14506A;
+		color: white;
+		border: none;
+		padding:4px 8px;
+		border-radius: 4px;
+}
+
+.input-btn:hover {
+		/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);*/
+	background-color: #073346;
+}
+
 
 
 
