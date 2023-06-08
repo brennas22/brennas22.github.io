@@ -352,6 +352,10 @@ i {
 	background-color: #FFCE5C;
 }
 
+.photography-top {
+	background-color: #A4D8CD;
+}
+
 .voice-skill-top {
 	background-color: #CCEFB3;
 }
@@ -372,9 +376,9 @@ i {
 	background-color: #EDBF7A;
 }
 
-.photography-top {
+/*.photography-top {
 	background-color: #DAD8F0;
-}
+}*/
 
 .bites-by-bren-top {
 	background-color: #ABDED8;
