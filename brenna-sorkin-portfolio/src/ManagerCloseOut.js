@@ -124,7 +124,15 @@ I incorporated this feebdack, opting for a more vertical approach, but keeping t
             
         </div>
         
+        <p className='overline'>A new approach</p>
+        
+        <p>
+        At the beginning of this project, the brief was to simply to update the style of the screen to use the new POS 3.0 design system. However, I identified a number of paper cuts and greater problems and determined that this was an opportunity to improve the user experience beyond just the look and feel.
 
+This project also exposed the interdependencies between different experiences within the Toast ecosystem. While these features are owned by different teams, from the user perspective they are deeply interconnected. This project kicked off closer collaboration between teams whose work impacts the end of day experience, laying the groundwork for a more cohesive experience.
+
+
+        </p>
     </div>
      {/* Include Portfolio component but exclude this project */}
      <Portfolio exclude="/manager-close-out" />
