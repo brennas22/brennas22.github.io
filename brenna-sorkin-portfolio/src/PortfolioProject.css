@@ -26,13 +26,15 @@ body {
     font-style: normal;
     font-size: 1.2rem;
     margin-bottom: 0;
+    margin-top: 40px;
     
   }
 
-.portfolio-hero-image img {
+img {
   width: 100%;
   height: auto;
   display: block;
+  margin-bottom: 24px;
 }
 
 .case-study-content {
@@ -44,18 +46,31 @@ body {
     flex-direction: row; /* Align items horizontally */
     align-items: stretch; /* Stretch cards to the same height */
     justify-content: space-between; /* Distribute cards evenly */
-    gap: 16px; /* Add space between the cards */
+    gap: 12px; /* Add space between the cards */
     text-align: left; /* Align text to the left */
+    flex-wrap: wrap; /* Allow wrapping when cards exceed available space */
+    row-gap: 0;
 }
 
 .card {
     flex: 1; /* Allow cards to grow and fill available space */
+    min-width: 300px; /* Minimum width for each card */
+    max-width: calc(33% - 16px); /* Max width for three cards side by side */
     padding: 15px;
     background-color: white;
     border: 1px solid gray;
     border-radius: 8px;
     box-sizing: border-box; /* Include padding in the card width */
+    display: flex; /* Ensures content inside the card aligns consistently */
+    flex-direction: column; /* Stack content vertically within each card */
+    justify-content: center; /* Centers content vertically within the card */
 }
+
+.card span {
+    margin-bottom: 12px;
+}
+
+
 
 
 /* Mobile styles */
@@ -68,10 +83,12 @@ body {
 
     .card-row {
         flex-direction: column; /* Stack cards vertically */
-        gap: 0; /* Keep spacing between stacked cards */
+        gap: 0px; /* Keep spacing between stacked cards */
     }
 
     .card {
         width: 100%; /* Ensure cards take full width */
+        margin-bottom: 4px;
+        max-width: 100%;
     }
 }
