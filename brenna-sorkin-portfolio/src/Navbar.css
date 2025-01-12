@@ -1,0 +1,125 @@
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Vertically align items */
+    padding: 24px 240px;
+    background-color:  #A7D1E7;
+  }
+  
+  .navbar-logo img {
+    height: 48px; /* Logo size */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+    
+  }
+  
+  .navbar-links a:hover {
+    color: #093548;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger-menu {
+    display: none; /* Hide by default */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+  }
+  
+  /* Mobile-Only Styles */
+  @media (max-width: 1043px) {
+    .navbar {
+      padding: 16px 20px;
+      position: relative; /* Allow positioning of the drawer */
+    }
+  
+    .hamburger-menu {
+      display: flex; /* Show hamburger menu on mobile */
+    }
+  
+    .navbar-links {
+      display: flex; /* Flex container for links */
+      flex-direction: column; /* Stack links vertically */
+      gap: 10px;
+      position: fixed; /* Fix to the viewport */
+      top: 0;
+      right: -300px; /* Start off-screen */
+      width: 250px; /* Set drawer width */
+      height: 100%; /* Full height of the viewport */
+      background-color: #A7D1E7; /* Same background as navbar */
+      padding: 20px;
+      box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+      border-radius: 0;
+      transition: right 0.3s ease-in-out; /* Smooth slide-in effect */
+      z-index: 999; /* Above the overlay */
+    }
+  
+    .navbar-links.open {
+      right: 0; /* Slide in from the right */
+    }
+  
+    .navbar-links a {
+      font-size: 1.2rem;
+      color: #000;
+      text-align: left;
+    }
+  
+    .close-button {
+      background: none;
+      border: none;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #000;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1001; /* Ensure button is above everything else */
+    }
+  
+    .close-button:hover {
+      color: #093548; /* Change color on hover */
+    }
+  
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      z-index: 998; /* Below the drawer */
+      display: none; /* Initially hidden */
+    }
+  
+    .overlay.open {
+      display: block; /* Show overlay when menu is open */
+    }
+
+    
+  }
+  
+  /* Desktop Styles */
+@media (min-width: 1044px) {
+    .close-button {
+      display: none; /* Hide the close button on desktop */
+    }
+  }

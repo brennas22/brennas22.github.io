@@ -1,0 +1,46 @@
+/* General Styles */
+body {
+  margin-bottom: 48px;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #FFFCF2;
+}
+
+.hero-section {
+    text-align: center;
+     background-color: #A7D1E7; /* Light blue */
+     color: #333;
+     padding: 0 340px 40px 340px;
+}
+
+.hero-section h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-family: fatfrank,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.overline {
+    font-family: "mrs-eaves-roman-small-caps", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+  }
+
+
+
+.portfolio-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* Mobile styles */
+@media (max-width: 1043px) {
+  
+    .hero-section {
+        padding: 20px;
+    }
+}
