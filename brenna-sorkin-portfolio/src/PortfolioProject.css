@@ -25,9 +25,9 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 1.2rem;
+    margin-bottom: 0;
+    
   }
-
-
 
 .portfolio-hero-image img {
   width: 100%;
@@ -35,12 +35,43 @@ body {
   display: block;
 }
 
+.case-study-content {
+    padding: 24px 340px 40px 340px;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: stretch; /* Stretch cards to the same height */
+    justify-content: space-between; /* Distribute cards evenly */
+    gap: 16px; /* Add space between the cards */
+    text-align: left; /* Align text to the left */
+}
+
+.card {
+    flex: 1; /* Allow cards to grow and fill available space */
+    padding: 15px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding in the card width */
+}
 
 
 /* Mobile styles */
 @media (max-width: 1043px) {
   
-    .hero-section {
+    .hero-section,
+    .case-study-content {
         padding: 20px;
+    }
+
+    .card-row {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 0; /* Keep spacing between stacked cards */
+    }
+
+    .card {
+        width: 100%; /* Ensure cards take full width */
     }
 }
