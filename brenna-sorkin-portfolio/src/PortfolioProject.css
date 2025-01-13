@@ -70,7 +70,10 @@ img {
     margin-bottom: 12px;
 }
 
-
+.portfolio-pic img {
+    width: 500px;
+    object-fit: cover;
+}
 
 
 /* Mobile styles */

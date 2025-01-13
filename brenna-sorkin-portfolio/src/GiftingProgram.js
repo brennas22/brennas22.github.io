@@ -5,7 +5,7 @@ import Portfolio from './Portfolio';
 const ManagerCloseOut = () => {
   return (
     <div>
-        <div className="hero-section">
+        {/* <div className="hero-section">
             
              <img src="/gifting-program/hero.png" alt="Manager Close Out" />
             
@@ -13,15 +13,55 @@ const ManagerCloseOut = () => {
             <h1>
                 Leading <span className="highlight">Drizly's Gifting Program.</span>
             </h1>           
-        </div>
+        </div> */}
+
+        {/* <div className="container">
+                        <header className="hero">
+                          <div className="portfolio-pic">
+                          <img src="/gifting-program/hero.png" alt="Manager Close Out" />
+
+                          </div>
+                          <div className="intro">
+                            <p className="overline">If you only read this...</p>
+                            <h1>
+                            I led design on the initative to redo the end to end gifting experience at Drizly. This included the sender discovery and purchase execution 
+        all the way through the recipient receiving the gift. I coordinated with 4 consumer engineering squads, retailer operations, brand & marketing, 
+        and leadership to achieve overwhelmingly successful program enhancements.
+                            </h1>
+                            
+                          </div>
+                        </header>
+                      </div> */}
+
+<div className="container">
+                        <header className="hero">
+                          <div className="portfolio-pic">
+                          <img src="/gifting-program/hero.png" alt="Manager Close Out" />
+
+                          </div>
+                          <div className="intro">
+                            <p className="overline">If you only read this...</p>
+                            <h1>
+                I overhauled <span className="highlight">Drizly's Gifting Program.</span>
+            </h1>  
+            <p>
+        I led the initative to redo the end to end gifting experience at Drizly, including sender discovery and purchase execution 
+        all the way through the recipient receiving the gift. I worked across 4 engineering squads, retailer operations, brand & marketing, 
+        and leadership to achieve overwhelmingly successful program enhancements (2022).
+        </p>
+      
+
+                          </div>
+                        </header>
+                      </div>
    
     <div className="case-study-content">
-        <p className="overline">If you only read this...</p>
+        {/* <p className="overline">If you only read this...</p>
         <p>
         I led design on the initative to redo the end to end gifting experience at Drizly. This included the sender discovery and purchase execution 
         all the way through the recipient receiving the gift. I coordinated with 4 consumer engineering squads, retailer operations, brand & marketing, 
         and leadership to achieve overwhelmingly successful program enhancements.
-        </p>
+        </p> */}
 
         <p className="overline">Now, let's get into it!</p>
         <p>
@@ -195,7 +235,7 @@ This project also exposed the interdependencies between different experiences wi
 
     </div>
      {/* Include Portfolio component but exclude this project */}
-     <Portfolio exclude="/manager-close-out" />
+     <Portfolio exclude="/gifting-program" />
     </div>
   );
 };
