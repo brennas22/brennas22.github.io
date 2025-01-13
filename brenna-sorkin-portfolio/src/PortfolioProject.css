@@ -55,8 +55,8 @@ img {
 .card {
     flex: 1; /* Allow cards to grow and fill available space */
     min-width: 300px; /* Minimum width for each card */
-    max-width: calc(33% - 16px); /* Max width for three cards side by side */
-    padding: 15px;
+    max-width: calc(50% - 8px); /* Max width for three cards side by side */
+    padding: 16px 24px;
     background-color: white;
     border: 1px solid gray;
     border-radius: 8px;

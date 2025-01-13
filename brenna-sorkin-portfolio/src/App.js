@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './Navbar';
 import Portfolio from './Portfolio';
 import ManagerCloseOut from './ManagerCloseOut'; // Import individual project pages
+import GiftingProgram from './GiftingProgram'; // Import individual project pages
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -66,6 +67,7 @@ const App = () => {
           }
         />
         <Route path="/manager-close-out" element={<ManagerCloseOut />} />
+        <Route path="/gifting-program" element={<GiftingProgram />} />
       </Routes>
     </Router>
   );
