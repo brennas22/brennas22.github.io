@@ -44,7 +44,7 @@ const AboutMe = () => {
 
         <p>
         Outside of work, I spend a lot of time cooking and baking and purchasing too many condiments that all have to be refrigerated. I love making cakes, and bring them to
-        every social gathering. I also knit! I live in Cambridge, MA with my husband and absolute gremlin of a cat, Atticus.
+        every social gathering. I also knit and take film photos, and am basically a grandma in terms of hobbies. I live in Cambridge, MA with my husband and absolute gremlin of a cat, Atticus.
          </p>
        
 
