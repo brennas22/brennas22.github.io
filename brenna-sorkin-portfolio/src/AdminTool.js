@@ -2,42 +2,18 @@ import React from 'react';
 import './PortfolioProject.css'; // Different CSS for project pages
 import Portfolio from './Portfolio';
 
-const GiftingProgram = () => {
+const AdminTool = () => {
   return (
     <div>
-        {/* <div className="hero-section">
-             <img src="/gifting-program/hero.png" alt="Manager Close Out" />
-            <p className="overline">Built @ Drizly, 2022</p>
-            <h1>
-                Leading <span className="highlight">Drizly's Gifting Program.</span>
-            </h1>           
-        </div> */}
-
-        {/* <div className="container">
-                        <header className="hero">
-                          <div className="portfolio-pic">
-                          <img src="/gifting-program/hero.png" alt="Manager Close Out" />
-
-                          </div>
-                          <div className="intro">
-                            <p className="overline">If you only read this...</p>
-                            <h1>
-                            I led design on the initative to redo the end to end gifting experience at Drizly. This included the sender discovery and purchase execution 
-        all the way through the recipient receiving the gift. I coordinated with 4 consumer engineering squads, retailer operations, brand & marketing, 
-        and leadership to achieve overwhelmingly successful program enhancements.
-                            </h1>
-                            
-                          </div>
-                        </header>
-                      </div> */}
+       
 <div class="hero-section-wrapper">
   <div class="hero-section">
-    <img src="/gifting-program/hero.png" alt="Gifting Program" />
+    <img src="/admin-tool/hero.png" alt="Gifting Program" />
     <header>
       <div class="intro">
         <p class="overline">If you only read this...</p>
         <h1>
-          I overhauled <span class="highlight">Drizly's Gifting Program.</span>
+          I created a tool <span class="highlight">to refine AI outputs</span>
         </h1>
         <p>
           I led the initiative to redo the end-to-end gifting experience at Drizly, including sender discovery and
@@ -327,4 +303,4 @@ We conducted a number of user research studies to examine the sender & recipient
   );
 };
 
-export default GiftingProgram;
+export default AdminTool;
