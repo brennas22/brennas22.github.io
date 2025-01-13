@@ -5,7 +5,7 @@ import Portfolio from './Portfolio';
 const ManagerCloseOut = () => {
   return (
     <div>
-        <div className="hero-section">
+        {/* <div className="hero-section">
             
              <img src="/close-out/hero.png" alt="Manager Close Out" />
             
@@ -13,15 +13,32 @@ const ManagerCloseOut = () => {
             <h1>
                 Overhauling the <span className="highlight"> Manager "End of Day".</span>
             </h1>           
-        </div>
+        </div> */}
+
+<div class="hero-section-wrapper">
+  <div class="hero-section">
+    <img src="/close-out/hero.png" alt="Manager close out on POS" />
+    <header>
+      <div class="intro">
+        <p class="overline">If you only read this...</p>
+        <h1>
+          I revamped the<span class="highlight"> manager "end of day"</span> process at Toast
+        </h1>
+        <p>
+          I completely redesigned the close of day process for restaurant managers, making it easier for GMs to 
+          reconcile sales, count cash, review staff performance, and ensure checks are closed. This process ensures financial accuracy, 
+          identifies discrepancies, and prepares the restaurant for the next day. Streamlining it reduces stress, minimizes errors, and enhances overall operational efficiency.
+          (2023).
+        </p>
+      </div>
+    </header>
+  </div>
+</div>
    
     <div className="case-study-content">
-        <p className="overline">Why</p>
+        <p className="overline">Now, let's get into it!</p>
         <p>
              Toast decided to overhaul all of the point of sale (POS) experience to a new design system, known as POS 3.0, which I saw as an opportunity to improve the end of day experience for managers, which was particularly clunky and time consuming, resulting in users wasting time on unnecessary tasks and ultimately being confused.
-        </p>
-        <p>
-        The restaurant manager's end-of-day close-out process involves reconciling sales, counting cash, reviewing staff performance, ensuring checks are reconciled, and securing the premises. This process ensures financial accuracy, identifies discrepancies, and prepares the restaurant for the next day. Streamlining it reduces stress, minimizes errors, and enhances overall operational efficiency.
         </p>
         <p className='overline'>Goals & Challenges</p>
         <div className='card-row'>

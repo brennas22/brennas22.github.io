@@ -2,13 +2,11 @@ import React from 'react';
 import './PortfolioProject.css'; // Different CSS for project pages
 import Portfolio from './Portfolio';
 
-const ManagerCloseOut = () => {
+const GiftingProgram = () => {
   return (
     <div>
         {/* <div className="hero-section">
-            
              <img src="/gifting-program/hero.png" alt="Manager Close Out" />
-            
             <p className="overline">Built @ Drizly, 2022</p>
             <h1>
                 Leading <span className="highlight">Drizly's Gifting Program.</span>
@@ -32,29 +30,26 @@ const ManagerCloseOut = () => {
                           </div>
                         </header>
                       </div> */}
-
-<div className="container">
-                        <header className="hero">
-                          <div className="portfolio-pic">
-                          <img src="/gifting-program/hero.png" alt="Manager Close Out" />
-
-                          </div>
-                          <div className="intro">
-                            <p className="overline">If you only read this...</p>
-                            <h1>
-                I overhauled <span className="highlight">Drizly's Gifting Program.</span>
-            </h1>  
-            <p>
-        I led the initative to redo the end to end gifting experience at Drizly, including sender discovery and purchase execution 
-        all the way through the recipient receiving the gift. I worked across 4 engineering squads, retailer operations, brand & marketing, 
-        and leadership to achieve overwhelmingly successful program enhancements (2022).
+<div class="hero-section-wrapper">
+  <div class="hero-section">
+    <img src="/gifting-program/hero.png" alt="Gifting Program" />
+    <header>
+      <div class="intro">
+        <p class="overline">If you only read this...</p>
+        <h1>
+          I overhauled <span class="highlight">Drizly's Gifting Program.</span>
+        </h1>
+        <p>
+          I led the initiative to redo the end-to-end gifting experience at Drizly, including sender discovery and
+          purchase execution all the way through the recipient receiving the gift. I worked across 4 engineering squads,
+          retailer operations, brand & marketing, and leadership to achieve program enhancements (2022).
         </p>
-      
+      </div>
+    </header>
+  </div>
+</div>
 
-                          </div>
-                        </header>
-                      </div>
-   
+
     <div className="case-study-content">
         {/* <p className="overline">If you only read this...</p>
         <p>
@@ -212,10 +207,7 @@ We conducted a number of user research studies to examine the sender & recipient
             <span className="highlight">1%</span>
             Reduction in void rate resulting from the removal of surprise gifts (where the recipient might not be home)
             </p>
-            <p className='card'>
-            <span className="highlight">23%</span>
-            Higher conversion rate, turning recipient into shopper, if they received a card with their gift
-            </p>
+            
            
             
         </div>
@@ -224,14 +216,106 @@ We conducted a number of user research studies to examine the sender & recipient
         </p>
 
         
-        <p className='overline'>A new approach</p>
+       
+
+        <p className='overline'>Approach</p>
+        <p>
+        <span className="highlight">Help senders find the right product & store</span>
+        </p>
+        <p>
+        Prior to this work, shoppers in search of a gift had to browse the same way as non-gift shoppers: by slogging through literally 
+        thousands of available products. While we can debate the merits of this for any user, for gifters this was particularly a problem 
+        since they are not shopping for themselves and are often operating on only a limited idea of what their recipient would enjoy.
+        </p>
+        <p>
+        We created solutions for both shoppers who need just a little guidance and those who need complete hand-holding throughout the process. 
+        For independent shoppers, we needed to create a strong "gifting home" - a hub where they could go for gifting-specific products and 
+        guidance.
+        </p>
+        <img src="/gifting-program/new_gift_web.png" alt="Manager Close Out" />
+        <p>
+        We created a space on web and apps that felt differentiated from the regular, on-demand shopping experience, and we directed shoppers 
+        to it as soon as they indicated an interest in gifting (on web, this meant redirecting them from the address capture page).
+        </p>
+        <p>
+        Here, tailroed products are surfaced and organized by occasion, rather than product category, which research showed is how our gifters 
+        tend to think. If a user shops by occasion, the relevant card selection will carry through to checkout, maintaining a coherent thread 
+        throughout the experience.
+        </p>
+        <img src="/gifting-program/guided_quiz.gif" alt="Manager Close Out" />
+        <p>
+        For shoppers who needed more help finding a product, we designed a guided gift quiz, which allowed us to recommend specific products 
+        and gave us space to highlight some fun brand moments.
+        </p>
+        
+        <p className='overline'>Outcomes</p>
+        <div className='card-row'>
+            <p className='card'>
+             <span className="highlight">$4.72</span>
+             Average spend increase through gifting hub
+            </p>
+            <p className='card'>
+            <span className="highlight">4%</span>
+            Increase in conversion for gift senders
+            </p>
+            <p className='card'>
+            <span className="highlight">49%</span>
+            V1 guided gift quiz completion rate
+            </p>
+        </div>
+
+
+        <p className='overline'>Approach</p>
+        <p>
+        <span className="highlight">Revamp recipient experience</span>
+        </p>
+        <p>
+        While removing surprise gifting eliminated some issues with recipient not home, poor recipient experience was still contributing to 
+        dissatisfaction and unsuccessful gifts. A large part of the issue was due to communication of expectations, namely that recipients must be home at the time of delivery and that they will need to show ID.
+        </p>
+        <img src="/gifting-program/emails.png" alt="Manager Close Out" />
+        <p>
+        The easiest thing to tackle right off the bat was our transactional email communications - that is, non-marketing emails related 
+        to product actions.
+        </p>
+        <img src="/gifting-program/existing_recipient_web.png" alt="Manager Close Out" />
         
         <p>
-        At the beginning of this project, the brief was to simply to update the style of the screen to use the new POS 3.0 design system. However, I identified a number of paper cuts and greater problems and determined that this was an opportunity to improve the user experience beyond just the look and feel.
-
-This project also exposed the interdependencies between different experiences within the Toast ecosystem. While these features are owned by different teams, from the user perspective they are deeply interconnected. This project kicked off closer collaboration between teams whose work impacts the end of day experience, laying the groundwork for a more cohesive experience.
+        We transformed what was previously a single page form with no context into a clearly laid out experience with key information 
+        appropriately highlighted. We also brought in the digital card that the sender chooses to increase the personalized feel.
         </p>
-       
+        <img src="/gifting-program/recipient_experience.gif" alt="Manager Close Out" />
+        <p>
+        We also added functionality to allow gift recipients to change their address if the sender messed it up slightly. If the address is too
+         far away to be delivered by the same store we have to void it, but we if the address was close, just not quite right, it can be 
+         delivered by the same store. Each CX contact costs Drizly over $1, so being able to manually adjust
+          these addresses is a big win. (For context - a 5% reduction in contact rate saves Drizly nearly $10,000).
+        </p>
+
+        <p className='overline'>Outcomes</p>
+        <div className='card-row'>
+            <p className='card'>
+             <span className="highlight">68%</span>
+             Wrong address isues that can be resolved by the same store
+            </p>
+            <p className='card'>
+            <span className="highlight">23%</span>
+            Higher conversion rate, turning recipient into shopper, if they received a card with their gift
+            </p>
+        </div>
+
+        <p className='overline'>A new approach</p>
+
+        <p>
+        When this initiatve launched, there wasn't consensus across the funnel on the consumer side, let alone across the whole organization, 
+        which needed to work together to see gifting from 50,000 ft. By leading cross-discipline brainstorms and workshops, folks became aware 
+        of what was happening in other parts of the company and were able to coordinate with the relevant people to achieve symbiosis on
+         particular areas of the program.
+         </p>
+        <p>
+            By having design as the central voice in the initiative, I was able to keep a vision of the entire user flow from top to bottom and ensure that the shopper experience was coheisve across these many different facets.
+        </p>
+
 
     </div>
      {/* Include Portfolio component but exclude this project */}
@@ -240,4 +324,4 @@ This project also exposed the interdependencies between different experiences wi
   );
 };
 
-export default ManagerCloseOut;
+export default GiftingProgram;

@@ -5,12 +5,35 @@ body {
   background-color: #FFFCF2;
 }
 
-.hero-section {
-    text-align: center;
-     background-color: #A7D1E7; /* Light blue */
-     color: #333;
-     padding: 0 340px 40px 340px;
+
+
+.hero-section-wrapper {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    background-color: #A7D1E7; /* Light blue */
+    padding: 20px 20px; /* Add some padding for responsiveness */
+  }
+  
+  .hero-section {
+    display: flex; /* Enables Flexbox for image and text alignment */
+    flex-direction: row; /* Align image and text horizontally */
+    align-items: center; /* Vertically align text relative to the image */
+    justify-content: center; /* Ensure equal spacing horizontally */
+    gap: 40px; /* Space between the image and text */
+    max-width: 1200px; /* Restrict maximum width of the content */
+    width: 100%; /* Ensure the content spans the available width */
+  }
+  
+  .hero-section img {
+    max-width: 50%; /* Restrict the image to half the container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+.intro {
+    margin-bottom: 56px;
 }
+
 
 .hero-section h1 {
     font-size: 2rem;
@@ -27,8 +50,9 @@ body {
     font-size: 1.2rem;
     margin-bottom: 0;
     margin-top: 40px;
-    
   }
+
+  
 
 img {
   width: 100%;
@@ -94,4 +118,22 @@ img {
         margin-bottom: 4px;
         max-width: 100%;
     }
+
+    .hero-section {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero-section img {
+        max-width: 100%; /* Restrict image width to full width of the container */
+      }
+
+      .overline {
+        margin-top: 0px;
+      }
+
+
+.intro {
+    margin-bottom: 16px;
+}
 }
