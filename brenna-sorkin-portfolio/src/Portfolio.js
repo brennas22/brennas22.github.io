@@ -4,6 +4,13 @@ import './Portfolio.css';
 const Portfolio = ({ exclude }) => {
   const projects = [
     {
+        title: 'AI Admin Tool',
+        subtitle: 'Product Design @ Toast',
+        description: 'Designed a tool to allow finetuning of AI agents by non-engineers.',
+        image: '/admin-tool.png',
+        link: '/admin-tool',
+      },
+    {
       title: 'Manager Close Out',
       subtitle: 'Product Design @ Toast',
       description: 'Completely redesigned the end-of-day experience on Point of Sale devices.',
@@ -17,13 +24,7 @@ const Portfolio = ({ exclude }) => {
       image: '/gifting.png',
       link: '/gifting-program',
     },
-    {
-      title: 'AI Admin Tool',
-      subtitle: 'Product Design @ Toast',
-      description: 'Designed a tool to allow finetuning of AI agents by non-engineers.',
-      image: '/admin-tool.png',
-      link: '/admin-tool',
-    },
+   
   ];
 
   // Filter out the project to exclude

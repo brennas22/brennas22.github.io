@@ -13,12 +13,12 @@ const AdminTool = () => {
       <div class="intro">
         <p class="overline">If you only read this...</p>
         <h1>
-          I created a tool <span class="highlight">to refine AI outputs</span>
+          I created a tool <span class="highlight">to refine AI outputs</span> and I actively<span class="highlight"> contribute to Toast's codebase!</span>
         </h1>
         <p>
-          I led the initiative to redo the end-to-end gifting experience at Drizly, including sender discovery and
-          purchase execution all the way through the recipient receiving the gift. I worked across 4 engineering squads,
-          retailer operations, brand & marketing, and leadership to achieve program enhancements (2022).
+          While working on Toast's AI-powered assistant for restaurant operators ("Sous Chef"), it became apparent that there was a need
+          to refine the metadata that the AI was using to generate answers. I created a tool that allows non-technical team members to contribute
+          code that significantly impacts the performance of the asisstant (2024).
         </p>
       </div>
     </header>
@@ -27,166 +27,99 @@ const AdminTool = () => {
 
 
     <div className="case-study-content">
-        {/* <p className="overline">If you only read this...</p>
-        <p>
-        I led design on the initative to redo the end to end gifting experience at Drizly. This included the sender discovery and purchase execution 
-        all the way through the recipient receiving the gift. I coordinated with 4 consumer engineering squads, retailer operations, brand & marketing, 
-        and leadership to achieve overwhelmingly successful program enhancements.
-        </p> */}
 
         <p className="overline">Now, let's get into it!</p>
         <p>
-        In early 2022, gifting emerged as a top use case for Drizly's platform, but the existing experience created a lot of friction and did not surprise or delight customers because it was not differentiated from the core on-demand experience.    
+        In  2024, I was leading design on "Sous Chef," the first AI-powered assistant built for restaurant operators, which aims to help folks make better, more
+        informed decisions about their business. While we were able to improve the accuracy of the assistant (referring to the specific ability for the agent to
+        retrieve the correct data) we were struggling to design the outputs in a way that were most useful. I created an internal tool that allowed non-engineers to refine
+        the answers from the assistant, giving crucial time back to the engineering team and directly impacting the product experience.
         </p>
        
         <p className='overline'>Goals & Challenges</p>
         <div className='card-row'>
             <p className='card'>
-            Establish Drizly as the go-to platform for beverage & alcohol gifting by delivering a best-in-class gifting experience for senders + recipients.
+            Make the best use of the valuable and limited time of the Sous Chef team
             </p>
             <p className='card'>
-            Make Drizly a first choice for more shopping occasions; grow “non-core” (where core = 60-mins-or-less) orders to ⅓ of all gross bookings $.
+            Curate the output from the AI assistant to give users the best possible answers to their questions
             </p>
         </div>
        
         <p>
-        <span className="highlight">It is difficult to shop for someone else</span>
+        <span className="highlight">Refining outputs was extremely time intensive</span>
         </p>
         <p>
-        When sending a gift on Drizly, the gift sender had to select an item for their recipient, but they might not know what that person likes to drink, or they might only have a limited idea (e.g. "my friend loves whiskey, but I don't - what's the difference between bourbon and rye?").   
+            When we embarked on creating the admin tool, the previous process for improving an output was extremely manual, time consuming, and involved a lot of back and forth.
+            Essentially, when using Sous Chef, if I noticed an output that should be changed I had to use prompt engineering to get to the outcome I wanted (trial and error),
+            then send screenshots of every step to the team's tech lead, who would then do his own prompting to actually update the metadata in the codebase.
         </p>
-        <img src="/gifting-program/existinggift.gif" alt="Existing gifting flow" />
+        <img src="/admin-tool/annotated_brainstorm.png" alt="Existing gifting flow" />
         <p>
-        <span className="highlight">Friction during gift purchasing</span>
-        </p>
-        <p>
-        Once a sender has managed to pick out an item, there were a number of obstacles to actually completing the purchase. Sending a gift required knowing the recipient's exact address, email, and phone number. Oftentimes recipients weren't home to receive their gifts or didn't have ID; if they were able to get the delivery, it was often wrapped poorly.
-        </p>
-        <img src="/gifting-program/hierarchy_issues.png" alt="Existing gifting flow" />
-
-        <p>
-        <span className="highlight">Misalignment of teams and effort</span>
+        <span className="highlight">Knowledge was trapped in peoples' heads</span>
         </p>
         <p>
-        With the instructions from on high to completely burn down the gifting program and rebuild it, there was a scramble for teams from all across the organization to start new projects. These projects often were coordinated with one another through Product and business needs, but not through the lens of the user. Making improvements to the overall experience would require these teams to all work in sync to prioritize the user flow from top to bottom.
+            The Sous Chef team had a ton of subject matter expertise, but there was no way to get the information into the assistant. Often, crucial insights would be lost to 
+            random Slack threads or conversations, because there wasn't any way to actually incorporate them.
         </p>
-        <span className="highlight">Legal and regulatory constraints</span>
-        <p>
-        Drizly is a dual-sided marketplace which connects shoppers with local liquor stores. In the US, the three tier system means that a business must be one of supplier, distributor, OR, retailer, but never more than one. Drizly technically exists outside of this system, merely facilitating purchases, but not actually executing them. As such, Drizly cannot ever hold money and cannot select a store for a user to shop from - they must always make that choice themselves. As a result, there are interesting design constraints as far as how we can direct the user to make the ideal choice.
-        </p>
-
+       
         <p className='overline'>What I did</p>
         <p>
-        <span className="highlight">Achieved alignment</span>
+        <span className="highlight">Whiteboard session with AI foundations team</span>
         </p>
         <p>
-        With the instructions from on high to completely burn down the gifting program and rebuild it, there was a scramble for teams from all across the organization to start new projects. These projects often were coordinated with one another through Product and business needs, but not through the lens of the user. Making improvements to the overall experience would require these teams to all work in sync to prioritize the user flow from top to bottom.
-       </p>
-        <img src="/gifting-program/journey.png" alt="Manager Close Out" />
+            I worked with our AI foundations team to determine requirements and nice-to-haves for this tool, that would make it easy for me and other non-technical folks to use.
+        </p>
+        <img src="/admin-tool/brainstorm_sketch.png" alt="Manager Close Out" />
+        
+        
         <p>
-        I coordinated with our program manager to plan and lead a day-long onsite comprised of leadership from all over the org, including Product, Engineering, Retailer Operations, Brand, and others. We mapped the entire experience, layering in data and insights from everyone in the room, which helped us understand the gaps in the experience. This onsite laid the groundwork for all future gifting work and helped align high-level stakeholders. </p>
+        <span className="highlight">Draft solutions</span>
+        </p>
         <p>
-        <img src="/gifting-program/brainstorm.png" alt="Manager Close Out" />
-        <p>
+            I worked very closesly with engineering, designing this draft live while talking with them. This project moved extremely fast, and I was able to rely on front end 
+            engineers to make smart decisions about the UI.
+        </p>
 
-After leaders across Drizly had a shared understanding of the problems in the existing gifting experience, I facilitated 3 brainstorm sessions with people from across the entire organization. Where the onsite was comprised of members of leadership, these brainstorms served as a way for the boots-on-the-ground team members who deal with gifting every day to share their perspectives. The ideas generated in these brainstorms and the subsequent affinity mapping of opportunity areas became the concepts around which we prioritized and designed.
-        </p>
-        <span className="highlight">Prioritized opportunities</span>
-        </p>
+        <img src="/admin-tool/draft.png" alt="Manager Close Out" />
+        
         <p>
-        Though many opportunities were identified, we needed to make sure we weren't putting all our eggs in one basket or biting off more than we could chew. In order to actually make headway on improving gifting, we needed to prioritize. For my part, I see it as my role (roll*) to always be the voice of the user. I collaborated with my counterparts to understand the business and operations implications, but I always kept as my North Star the experience that the gift user would have throughout.
+        <span className="highlight">Actually use the tool</span>
         </p>
+       
+        <img src="/admin-tool/langfuse-trace.png" alt="Manager Close Out" />    
         <p>
-We conducted a number of user research studies to examine the sender & recipient experiences, learn from our customer service team in-depth, and even observe how users shop in store, not on Drizly. I conducted a competitor / comparator analysis to understand what features of our competitors were appealing and that we should consider adopting.
+            The team runs a weekly evaluation to determine the % of accuracy for Sous Chef. Within answers that are considered "correct" (they pull the right data), we determine
+            a subset of responses that fail in terms of formatting. Those responses then become the basis for the admin tool work.
         </p>
-        <div className='card-row'>
-            <p className='card'>
-            Streamline info entry
-            </p>
-            <p className='card'>
-            Digital occasion cards
-            </p>
-            <p className='card'>
-            Remove surprise gifts
-            </p>
-            <p className='card'>
-            Make email optional
-            </p>
-            <p className='card'>
-            Transform emails
-            </p>
-            <p className='card'>
-            Collect gifting intent
-            </p>
-            <p className='card'>
-            Recipient experience
-            </p>
-            <p className='card'>
-            Shop by gift occasion
-            </p>
-            <p className='card'>
-            Personalized gifting quiz
-            </p>
-            
-        </div>
 
-        <p className='overline'>Approach</p>
+        <img src="/admin-tool/final.png" alt="Manager Close Out" />  
+        <p>
+           Then, myself or other experts use the admin tool to adjust the metadata that Sous Chef uses when creating responses. We're able to add definitions or knowledge
+           to Sous Chef (basically tell it what it needs to know), as well as add instructions for formatting. For instance, Sous Chef often defaults to one dimension (sales),
+           when operators actually want multiple pieces of data in a table.
+        </p> 
+        <img src="/admin-tool/metadata.png" alt="Manager Close Out" />  
+        <p>
+           By adjusting the information passed to the LLM, we can craft responses that address the exact needs of our users. We also save a ton of time in cycles -- non-engineers
+           can now put up pull requests directly in Github, which are then approved by the team, putting metadata quickly back into the product.
+        </p> 
+        <img src="/admin-tool/output.png" alt="Manager Close Out" />    
 
 
-        <p>
-        <span className="highlight">Streamline gift checkout</span>
-        </p>
-        <p>
-        The foundational piece of the experience was the ability to actually checkout and send a gift succesfully. 
-        Digging into our data and user research revealed some key problems:
-        </p>
-        <div className='card-row'>
-            <p className='card'>
-             <span className="highlight">14%</span>
-            of gift senders entered their own email address
-            </p>
-            <p className='card'>
-            <span className="highlight">17%</span>
-            Drop off at gift details step of checkout
-            </p>
-            <p className='card'>
-            <span className="highlight">3x</span>
-            the contact rate is for gift vs non-gift orders
-            </p>
-           
-            
-        </div>
-        <p>
-        Shoppers were confusing their own information with the recipient's, partially due to poor hierarchy and layout and also partially because many gift senders do not know their friend's/family's email address - just their phone number.
-        </p>
-        <img src="/gifting-program/giftcheckout_loop.gif" alt="Manager Close Out" />
-        <p>
-        Where before, information was mixed together between sender and recipient without any clear deliniation or explanation of next steps, now it is separated into clear sections with copy reinforcing the process. We moved to a more "single page checkout" experience, which allows users to enter and review information all in one place.
-        </p>
-        <p>
-        On iOS, we kept a multi-step approach due to technical constraints, but we regrouped the information to allow for more 
-        concise navigation through the process.
-        </p>
-        <img src="/gifting-program/ios_final.png" alt="Manager Close Out" />
-        <p>
-            As part of streamlining the experience, we made recipient email address an optional field and also removed the option to make a gift a surprise,
-            thereby significantly reducing the chance of the recipient not being home to get their gift.
-        </p>
+       
 
         <p className='overline'>Outcomes</p>
         <div className='card-row'>
             <p className='card'>
-             <span className="highlight">10%</span>
-             Reduction in drop off at the gift details step
+             <span className="highlight">Daily!</span>
+             Non-engineers are making changes to the metadata for Sous Chef
             </p>
             <p className='card'>
-            <span className="highlight">1%</span>
-            Reduction in void rate resulting from the removal of surprise gifts (where the recipient might not be home)
+            <span className="highlight">100+</span>
+            PRs put up in the first few months
             </p>
-            <p className='card'>
-            <span className="highlight">$2.25 million</span>
-            Annualized gross bookings impact
-            </p>
+            
            
             
         </div>
@@ -196,92 +129,6 @@ We conducted a number of user research studies to examine the sender & recipient
 
         
        
-
-        <p className='overline'>Approach</p>
-        <p>
-        <span className="highlight">Help senders find the right product & store</span>
-        </p>
-        <p>
-        Prior to this work, shoppers in search of a gift had to browse the same way as non-gift shoppers: by slogging through literally 
-        thousands of available products. While we can debate the merits of this for any user, for gifters this was particularly a problem 
-        since they are not shopping for themselves and are often operating on only a limited idea of what their recipient would enjoy.
-        </p>
-        <p>
-        We created solutions for both shoppers who need just a little guidance and those who need complete hand-holding throughout the process. 
-        For independent shoppers, we needed to create a strong "gifting home" - a hub where they could go for gifting-specific products and 
-        guidance.
-        </p>
-        <img src="/gifting-program/new_gift_web.png" alt="Manager Close Out" />
-        <p>
-        We created a space on web and apps that felt differentiated from the regular, on-demand shopping experience, and we directed shoppers 
-        to it as soon as they indicated an interest in gifting (on web, this meant redirecting them from the address capture page).
-        </p>
-        <p>
-        Here, tailroed products are surfaced and organized by occasion, rather than product category, which research showed is how our gifters 
-        tend to think. If a user shops by occasion, the relevant card selection will carry through to checkout, maintaining a coherent thread 
-        throughout the experience.
-        </p>
-        <img src="/gifting-program/guided_quiz.gif" alt="Manager Close Out" />
-        <p>
-        For shoppers who needed more help finding a product, we designed a guided gift quiz, which allowed us to recommend specific products 
-        and gave us space to highlight some fun brand moments.
-        </p>
-        
-        <p className='overline'>Outcomes</p>
-        <div className='card-row'>
-            <p className='card'>
-             <span className="highlight">$4.72</span>
-             Average spend increase through gifting hub
-            </p>
-            <p className='card'>
-            <span className="highlight">4%</span>
-            Increase in conversion for gift senders
-            </p>
-            <p className='card'>
-            <span className="highlight">49%</span>
-            V1 guided gift quiz completion rate
-            </p>
-        </div>
-
-
-        <p className='overline'>Approach</p>
-        <p>
-        <span className="highlight">Revamp recipient experience</span>
-        </p>
-        <p>
-        While removing surprise gifting eliminated some issues with recipient not home, poor recipient experience was still contributing to 
-        dissatisfaction and unsuccessful gifts. A large part of the issue was due to communication of expectations, namely that recipients must be home at the time of delivery and that they will need to show ID.
-        </p>
-        <img src="/gifting-program/emails.png" alt="Manager Close Out" />
-        <p>
-        The easiest thing to tackle right off the bat was our transactional email communications - that is, non-marketing emails related 
-        to product actions.
-        </p>
-        <img src="/gifting-program/existing_recipient_web.png" alt="Manager Close Out" />
-        
-        <p>
-        We transformed what was previously a single page form with no context into a clearly laid out experience with key information 
-        appropriately highlighted. We also brought in the digital card that the sender chooses to increase the personalized feel.
-        </p>
-        <img src="/gifting-program/recipient_experience.gif" alt="Manager Close Out" />
-        <p>
-        We also added functionality to allow gift recipients to change their address if the sender messed it up slightly. If the address is too
-         far away to be delivered by the same store we have to void it, but we if the address was close, just not quite right, it can be 
-         delivered by the same store. Each CX contact costs Drizly over $1, so being able to manually adjust
-          these addresses is a big win. (For context - a 5% reduction in contact rate saves Drizly nearly $10,000).
-        </p>
-
-        <p className='overline'>Outcomes</p>
-        <div className='card-row'>
-            <p className='card'>
-             <span className="highlight">68%</span>
-             Wrong address isues that can be resolved by the same store
-            </p>
-            <p className='card'>
-            <span className="highlight">23%</span>
-            Higher conversion rate, turning recipient into shopper, if they received a card with their gift
-            </p>
-        </div>
 
         <p className='overline'>A new approach</p>
 
@@ -298,7 +145,7 @@ We conducted a number of user research studies to examine the sender & recipient
 
     </div>
      {/* Include Portfolio component but exclude this project */}
-     <Portfolio exclude="/gifting-program" />
+     <Portfolio exclude="/admin-tool" />
     </div>
   );
 };
