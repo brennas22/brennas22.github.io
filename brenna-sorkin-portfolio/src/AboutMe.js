@@ -26,7 +26,14 @@ const AboutMe = () => {
 
        
         <img src="/design_process.png" alt="Existing gifting flow" />
+        <p className='overline'>Oh, hello!</p>
         
+        <p>
+        I'm Brenna (she/her)! My degree is in computer science and design, and I see myself first and foremost as a problem solver. I believe strongly in getting feedback as early and as often
+        as possible and I'm always driving towards the best possible outcome for the user. I love complex problems with many moving parts, and I find that I'm best at strategic
+        systems thinking.
+        </p>
+
         <p>
         I have experience in prouct design, strategy, and research research, as well as pixel pushing and front end development (I built this website!). 
         My expertise in accessibility intersects with my love for design, as I am passionate about ensuring that all people have equal access to services and products.
