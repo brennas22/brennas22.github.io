@@ -16,14 +16,18 @@ const ManagerCloseOut = () => {
         </div>
    
     <div className="case-study-content">
-        <p className="overline">Why</p>
+        <p className="overline">If you only read this...</p>
+        <p>
+        I led design on the initative to redo the end to end gifting experience at Drizly. This included the sender discovery and purchase execution 
+        all the way through the recipient receiving the gift. I coordinated with 4 consumer engineering squads, retailer operations, brand & marketing, 
+        and leadership to achieve overwhelmingly successful program enhancements.
+        </p>
+
+        <p className="overline">Now, let's get into it!</p>
         <p>
         In early 2022, gifting emerged as a top use case for the platform, but the existing experience created a lot of friction and did not surprise or delight customers because it was not differentiated from the core on-demand experience.    
         </p>
-        <p>
-        I led design on the initative to redo the entire experience. This included the sender discovery and purchase execution 
-        all the way through the recipient receiving the gift. I coordinated with 4 consumer engineering squads, retailer operations, brand & marketing, and leadership to achieve overwhelmingly successful program enhancements.
-        </p>
+       
         <p className='overline'>Goals & Challenges</p>
         <div className='card-row'>
             <p className='card'>
@@ -152,37 +156,33 @@ We conducted a number of user research studies to examine the sender & recipient
         On iOS, we kept a multi-step approach due to technical constraints, but we regrouped the information to allow for more 
         concise navigation through the process.
         </p>
-
-
+        <img src="/gifting-program/ios_final.png" alt="Manager Close Out" />
+        <p>
+            As part of streamlining the experience, we made recipient email address an optional field and also removed the option to make a gift a surprise,
+            thereby significantly reducing the chance of the recipient not being home to get their gift.
+        </p>
 
         <p className='overline'>Outcomes</p>
         <div className='card-row'>
             <p className='card'>
-             <span className="highlight">26%</span>
-            reduction in time on task
+             <span className="highlight">10%</span>
+             Reduction in drop off at the gift details step
             </p>
             <p className='card'>
-            <span className="highlight">134%</span>
-            increase in auto-resolve usage
+            <span className="highlight">1%</span>
+            Reduction in void rate resulting from the removal of surprise gifts (where the recipient might not be home)
             </p>
             <p className='card'>
-            <span className="highlight">59%</span>
-            increase in deposit usage
+            <span className="highlight">23%</span>
+            Higher conversion rate, turning recipient into shopper, if they received a card with their gift
             </p>
-            <p className='card'>
-             <span className="highlight">9%</span>
-             Increase in rate of users clsoing the cash drawer
-            </p>
-            <p className='card'>
-            <span className="highlight">38%</span>
-            End day button usage (new feature!)
-            </p>
-            <p className='card'>
-            <span className="highlight">40%</span>
-            Decrease in related support tickets
-            </p>
+           
             
         </div>
+        <p>
+        By revamping the foundational checkout piece of the experience we were able to convert more users who were already quite far along in the funnel, but had been boucing due to friction.
+        </p>
+
         
         <p className='overline'>A new approach</p>
         
