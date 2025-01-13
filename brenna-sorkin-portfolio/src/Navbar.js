@@ -33,7 +33,7 @@ const Navbar = () => {
         <button className="close-button" onClick={() => setIsMenuOpen(false)}>
           &times;
         </button>
-        <a href="#about-me">About me</a>
+        <a href="/about-me">About me</a>
         <a
           href="/Brenna_Sorkin_Resume.pdf"
           rel="noopener noreferrer"

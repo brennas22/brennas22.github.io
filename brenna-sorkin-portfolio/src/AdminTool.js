@@ -87,10 +87,12 @@ const AdminTool = () => {
         <span className="highlight">Actually use the tool</span>
         </p>
        
-        <img src="/admin-tool/langfuse-trace.png" alt="Manager Close Out" />    
+        <img src="/admin-tool/langfuse-trace.png" alt="Manager Close Out" />  
+
         <p>
             The team runs a weekly evaluation to determine the % of accuracy for Sous Chef. Within answers that are considered "correct" (they pull the right data), we determine
-            a subset of responses that fail in terms of formatting. Those responses then become the basis for the admin tool work.
+            a subset of responses that fail in terms of formatting. We also collect feedback on a 1-5 scale from users within the app.
+             Those responses then become the basis for the admin tool work.
         </p>
 
         <img src="/admin-tool/final.png" alt="Manager Close Out" />  
@@ -123,9 +125,14 @@ const AdminTool = () => {
            
             
         </div>
+
+        <img src="/admin-tool/feedback.png" alt="Manager Close Out" />    
+
         <p>
-        By revamping the foundational checkout piece of the experience we were able to convert more users who were already quite far along in the funnel, but had been boucing due to friction.
-        </p>
+        We've been able to move significantly faster, and customers are noticing the difference! Our quality measures are steadily improving. Note: responses often move
+        from no data to mixed when they're not formatted right, and then from mixed to great when the admin tool is used.
+         </p>
+        <img src="/admin-tool/accuracy.png" alt="Manager Close Out" />    
 
         
        
@@ -133,14 +140,10 @@ const AdminTool = () => {
         <p className='overline'>A new approach</p>
 
         <p>
-        When this initiatve launched, there wasn't consensus across the funnel on the consumer side, let alone across the whole organization, 
-        which needed to work together to see gifting from 50,000 ft. By leading cross-discipline brainstorms and workshops, folks became aware 
-        of what was happening in other parts of the company and were able to coordinate with the relevant people to achieve symbiosis on
-         particular areas of the program.
+            This project marked a big shift in how we think about AI at Toast and how we plan to incorporate the subject matter expertise across Toast. The admin tool
+            made it possible for all types of folks to contribute to the output of Sous Chef and helps us move a lot faster.
          </p>
-        <p>
-            By having design as the central voice in the initiative, I was able to keep a vision of the entire user flow from top to bottom and ensure that the shopper experience was coheisve across these many different facets.
-        </p>
+       
 
 
     </div>
