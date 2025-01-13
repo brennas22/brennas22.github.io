@@ -65,7 +65,7 @@ const ManagerCloseOut = () => {
 
         <p className="overline">Now, let's get into it!</p>
         <p>
-        In early 2022, gifting emerged as a top use case for the platform, but the existing experience created a lot of friction and did not surprise or delight customers because it was not differentiated from the core on-demand experience.    
+        In early 2022, gifting emerged as a top use case for Drizly's platform, but the existing experience created a lot of friction and did not surprise or delight customers because it was not differentiated from the core on-demand experience.    
         </p>
        
         <p className='overline'>Goals & Challenges</p>
