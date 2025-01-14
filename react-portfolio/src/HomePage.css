@@ -10,7 +10,7 @@
 
 
 body {
-  margin: 0;
+  margin: 0 0 24px 0;
   font-family: 'Work Sans', sans-serif;
   background-color: #FFFCF2;
 }
@@ -37,12 +37,12 @@ body {
     padding: 24px 340px 40px 340px;
 }
 
-img {
+/* img {
     width: 100%;
     height: auto;
     display: block;
     margin-bottom: 24px;
-  }
+  } */
 
 .profile-pic img {
   border-radius: 50%;

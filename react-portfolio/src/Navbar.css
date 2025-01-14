@@ -3,12 +3,13 @@
     display: flex;
     justify-content: space-between; /* Space between logo and links */
     align-items: center; /* Vertically align items */
-    padding: 24px 240px;
+    padding: 24px 340px;
     background-color:  #A7D1E7;
   }
   
   .navbar-logo img {
     height: 48px; /* Logo size */
+    width: auto;
     transition: transform 0.3s ease-in-out;
   }
   
@@ -47,7 +48,7 @@
   /* Mobile-Only Styles */
   @media (max-width: 1043px) {
     .navbar {
-      padding: 16px 20px;
+      padding: 24px 32px ;
       position: relative; /* Allow positioning of the drawer */
     }
   

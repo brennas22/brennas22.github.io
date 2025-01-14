@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './Navbar';
-// import Portfolio from './Portfolio';
 // import ManagerCloseOut from './ManagerCloseOut'; // Import individual project pages
 // import GiftingProgram from './GiftingProgram'; // Import individual project pages
 // import AdminTool from './AdminTool'; // Import individual project pages

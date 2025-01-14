@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './HomePage.css'; // Import your CSS file
+import Portfolio from './Portfolio';
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -50,7 +52,7 @@ function App() {
                   , as a principal product designer leading design on AI (all things assistant, platform, and more).
                 </p>
               </section>
-              {/* <Portfolio /> */}
+              <Portfolio />
             </div>
   );
 }
