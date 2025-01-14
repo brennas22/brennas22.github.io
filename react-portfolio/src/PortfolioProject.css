@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+  margin-bottom: 48px;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #FFFCF2;
+}
+
+
+
+.hero-section-wrapper {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    background-color: #A7D1E7; /* Light blue */
+    padding: 20px 20px; /* Add some padding for responsiveness */
+  }
+  
+  .hero-section {
+    display: flex; /* Enables Flexbox for image and text alignment */
+    flex-direction: row; /* Align image and text horizontally */
+    align-items: center; /* Vertically align text relative to the image */
+    justify-content: center; /* Ensure equal spacing horizontally */
+    gap: 40px; /* Space between the image and text */
+    max-width: 1200px; /* Restrict maximum width of the content */
+    width: 100%; /* Ensure the content spans the available width */
+  }
+  
+  .hero-section img {
+    max-width: 50%; /* Restrict the image to half the container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+.intro {
+    margin-bottom: 56px;
+}
+
+
+.hero-section h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-family: fatfrank,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.overline {
+    font-family: "mrs-eaves-roman-small-caps", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
+
+  
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.case-study-content {
+    padding: 24px 340px 40px 340px;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: stretch; /* Stretch cards to the same height */
+    justify-content: space-between; /* Distribute cards evenly */
+    gap: 12px; /* Add space between the cards */
+    text-align: left; /* Align text to the left */
+    flex-wrap: wrap; /* Allow wrapping when cards exceed available space */
+    row-gap: 0;
+}
+
+.card {
+    flex: 1; /* Allow cards to grow and fill available space */
+    min-width: 300px; /* Minimum width for each card */
+    max-width: calc(50% - 8px); /* Max width for three cards side by side */
+    padding: 16px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding in the card width */
+    display: flex; /* Ensures content inside the card aligns consistently */
+    flex-direction: column; /* Stack content vertically within each card */
+    justify-content: center; /* Centers content vertically within the card */
+}
+
+.card span {
+    margin-bottom: 12px;
+}
+
+.portfolio-pic img {
+    width: 500px;
+    object-fit: cover;
+}
+
+
+/* Mobile styles */
+@media (max-width: 1043px) {
+  
+    .hero-section,
+    .case-study-content {
+        padding: 20px;
+    }
+
+    .card-row {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 0px; /* Keep spacing between stacked cards */
+    }
+
+    .card {
+        width: 100%; /* Ensure cards take full width */
+        margin-bottom: 4px;
+        max-width: 100%;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero-section img {
+        max-width: 100%; /* Restrict image width to full width of the container */
+      }
+
+      .overline {
+        margin-top: 0px;
+      }
+
+
+.intro {
+    margin-bottom: 16px;
+}
+}
