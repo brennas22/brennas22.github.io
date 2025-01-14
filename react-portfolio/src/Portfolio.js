@@ -1,5 +1,7 @@
 import React from 'react';
 import './Portfolio.css';
+import { Link } from 'react-router-dom';
+
 
 const Portfolio = ({ exclude }) => {
   const projects = [
@@ -43,9 +45,9 @@ const Portfolio = ({ exclude }) => {
             <h3>{project.title}</h3>
             <h4>{project.subtitle}</h4>
             <p>{project.description}</p>
-            <a href={project.link} className="read-more">
+            <Link to={project.link} className="read-more">
               Read More
-            </a>
+            </Link>
           </div>
         </div>
       ))}

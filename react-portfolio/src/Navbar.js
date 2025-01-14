@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const closeMobileMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
-      <a
-        href="/"
+      <Link 
+        to="/" 
         className="navbar-logo"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -17,7 +22,7 @@ const Navbar = () => {
           src={isHovered ? '/logo-who-hover.png' : '/logo-who.png'}
           alt="Brenna Sorkin Logo"
         />
-      </a>
+      </Link> 
       <div className="hamburger-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <div className="bar"></div>
         <div className="bar"></div>
@@ -33,14 +38,8 @@ const Navbar = () => {
         <button className="close-button" onClick={() => setIsMenuOpen(false)}>
           &times;
         </button>
-        <a href="/about-me">About me</a>
-        <a
-          href="/Brenna_Sorkin_Resume.pdf"
-          rel="noopener noreferrer"
-          target='_blank'
-        >
-          Resume
-        </a>
+        <Link to="/about-me" onClick={closeMobileMenu}>About me</Link>
+        <Link to="/Brenna_Sorkin_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</Link>
       </div>
     </nav>
   );
