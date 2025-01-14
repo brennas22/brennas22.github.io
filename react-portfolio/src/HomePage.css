@@ -33,9 +33,9 @@ body {
   text-align: left; /* Align text to the left */
 }
 
-.case-study-content {
+/* .case-study-content {
     padding: 24px 340px 40px 340px;
-}
+} */
 
 /* img {
     width: 100%;
@@ -124,9 +124,9 @@ font-style: normal;
     padding: 20px 0;
   }
 
-    .case-study-content {
+    /* .case-study-content {
         padding: 20px;
-    }
+    } */
 
   .profile-pic img {
     width: 200px; /* Adjust size for smaller screens */

@@ -54,7 +54,8 @@ body {
 
   
 
-img {
+.hero-section img,
+.case-study-content img {
   width: 100%;
   height: auto;
   display: block;
