@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 // import ManagerCloseOut from './ManagerCloseOut'; // Import individual project pages
 // import GiftingProgram from './GiftingProgram'; // Import individual project pages
 // import AdminTool from './AdminTool'; // Import individual project pages
-// import AboutMe from './AboutMe'; // Import individual project pages
+import AboutMe from './AboutMe'; // Import individual project pages
 import HomePage from './HomePage'; // Import individual project pages
 
 
@@ -21,10 +21,10 @@ function App() {
       <Routes>
         
         <Route index element={<HomePage />} /> {/* HomePage will be the default route */}
-        {/* <Route path="/manager-close-out" element={<ManagerCloseOut />} />
-        <Route path="/gifting-program" element={<GiftingProgram />} />
-        <Route path="/admin-tool" element={<AdminTool />} />
-        <Route path="/about-me" element={<AboutMe />} /> */}
+        {/* <Route path="/manager-close-out" element={<ManagerCloseOut />} /> */}
+        {/* <Route path="/gifting-program" element={<GiftingProgram />} /> */}
+        {/* <Route path="/admin-tool" element={<AdminTool />} /> */}
+        <Route path="/about-me" element={<AboutMe />} />
       </Routes>
     </Router>
   );

@@ -33,6 +33,16 @@ body {
   text-align: left; /* Align text to the left */
 }
 
+.case-study-content {
+    padding: 24px 340px 40px 340px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 24px;
+  }
 
 .profile-pic img {
   border-radius: 50%;
