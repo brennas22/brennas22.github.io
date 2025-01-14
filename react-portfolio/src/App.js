@@ -8,6 +8,7 @@ import AdminTool from './AdminTool'; // Import individual project pages
 import AboutMe from './AboutMe'; // Import individual project pages
 import HomePage from './HomePage'; // Import individual project pages
 import Layout from './Layout';
+import ScrollToTop from './ScrollToTop';
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,6 +18,7 @@ import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}> {/* Add the Layout route */}
           <Route index element={<HomePage />} /> 
