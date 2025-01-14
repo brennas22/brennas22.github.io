@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-// import Navbar from './Navbar';
+import Navbar from './Navbar';
 // import Portfolio from './Portfolio';
 // import ManagerCloseOut from './ManagerCloseOut'; // Import individual project pages
 // import GiftingProgram from './GiftingProgram'; // Import individual project pages
@@ -17,7 +17,9 @@ import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
+        
         <Route index element={<HomePage />} /> {/* HomePage will be the default route */}
         {/* <Route path="/manager-close-out" element={<ManagerCloseOut />} />
         <Route path="/gifting-program" element={<GiftingProgram />} />
