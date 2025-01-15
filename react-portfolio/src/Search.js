@@ -1,6 +1,7 @@
 import React from 'react';
 import './PortfolioProject.css'; // Different CSS for project pages
 import Portfolio from './Portfolio';
+import { Link } from 'react-router-dom';
 
 const Search = () => {
   return (
@@ -36,9 +37,10 @@ const Search = () => {
         vast number of stakeholders (every team! literally!), and user pain in change management they hadn't been able to get much traction. 
         I spearheaded digestible but still impactful changes to the search experience that significantly improved the findability of pages
         within Toast Web.
-
         </p>
        
+
+
         <p className='overline'>Goals & Challenges</p>
         <div className='card-row'>
             <p className='card'>
@@ -98,33 +100,45 @@ const Search = () => {
          <p>
         <span className="highlight">Toast had 2 painful change management experiences earlier in the year</span>
         </p>
+        <p>
+            In 2023 and 2024 Toast unfortunately had 2 instances of rollouts that were extremely painful for customers. The first was a
+            $0.99 fee that was attached to online orders automatically, and paid by the guest to Toast. Restaurants felt like Toast was grabbing
+            a piece of their pie and the fee was ultimately rolled back. The second was "POS 3.0", which was a full reskin of Toast's point of 
+            sale software. While there were key improvements (humble brag, check out <Link to="/manager-close-out" >Manager End of Day</Link> for
+            some of my own POS 3.0 work), users did not feel prepared for the change - especially because it was mainly messaged to owners
+            and the message never made its way down to servers on the floor, who rely primarily on muscle memory. Ultimately pepole did come 
+            to like the new experience, but adapting was extremely difficult.
+        </p>
 
         <p>
-        <span className="highlight">Multiple, conflicting experiences were all live at the same time</span>
+        <span className="highlight">There are a lot of conflicting priorities impacting the space</span>
         </p>
-        <img src="/search/global-nav.jpg" alt="Existing gifting flow" />
+        <p>
+            Quite literally <em>every single</em> team at Toast was a stakeholder for the operating system, and without clear guidelines
+            there was frequent jockeying for space. This created an experience for users where there were too many ways to get around
+            <em>and</em> advertisements and upsells were mixed into the experience (secretly!)
+        </p>
 
+        <p>
+           In the image below you can see a purple highlight on everything from the homepage that is navigation (takes the user somewhere else)
+           and in orange everything that is an upsell or ad (whether the user knows it or not)
+        </p>
+        <img src="/search/conflict.png" alt="Existing gifting flow" />
+            
         
        
         <p className='overline'>What I did</p>
         <p>
-        <span className="highlight">Algined with literally every team at Toast</span>
+        <span className="highlight">Introuced "The Donut" (aka drove alignment)</span>
         </p>
         <p>
-            I worked with our AI foundations team to determine requirements and nice-to-haves for this tool, that would make it easy for me and other non-technical folks to use.
-        </p>
-        <img src="/admin-tool/brainstorm_sketch.png" alt="Manager Close Out" />
-        
-        
-        <p>
-        <span className="highlight">The Donut</span>
-        </p>
-        <p>
-            I worked very closesly with engineering, designing this draft live while talking with them. This project moved extremely fast, and I was able to rely on front end 
-            engineers to make smart decisions about the UI.
-        </p>
+           To even begin overhauling the Toast Web back office, there needed to be alignment on the scope of the team and what we were trying
+           to tackle
+          </p>
 
-        <img src="/admin-tool/draft.png" alt="Manager Close Out" />
+        {/* <img src="/search/donut.png" alt="the areas encompassing the operating system" /> */}
+        <img src="/search/donut-approach.png" alt="the areas encompassing the operating system" />
+        
         
         <p>
         <span className="highlight">Actual search improvements</span>
@@ -191,7 +205,7 @@ const Search = () => {
 
     </div>
      {/* Include Portfolio component but exclude this project */}
-     <Portfolio exclude="/admin-tool" />
+     <Portfolio exclude="/search" />
     </div>
   );
 };
