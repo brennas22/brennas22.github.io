@@ -7,6 +7,7 @@ import GiftingProgram from './GiftingProgram'; // Import individual project page
 import AdminTool from './AdminTool'; // Import individual project pages
 import AboutMe from './AboutMe'; // Import individual project pages
 import HomePage from './HomePage'; // Import individual project pages
+import Search from './Search';
 import Layout from './Layout';
 import ScrollToTop from './ScrollToTop';
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/manager-close-out" element={<ManagerCloseOut />} />
           <Route path="/gifting-program" element={<GiftingProgram />} />
           <Route path="/admin-tool" element={<AdminTool />} />
+          <Route path="/search" element={<Search />} />
           <Route path="/about-me" element={<AboutMe />} />
         </Route>
       </Routes>

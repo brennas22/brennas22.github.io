@@ -12,6 +12,13 @@ const Portfolio = ({ exclude }) => {
         image: '/admin-tool.png',
         link: '/admin-tool',
       },
+      {
+        title: 'Search & "The Donut"',
+        subtitle: 'Product Design @ Toast',
+        description: "Revamped the search experience as part of the Toast Web Operating System.",
+        image: '/search.png',
+        link: '/search',
+      },
     {
       title: 'Manager Close Out',
       subtitle: 'Product Design @ Toast',
@@ -26,6 +33,7 @@ const Portfolio = ({ exclude }) => {
       image: '/gifting.png',
       link: '/gifting-program',
     },
+  
    
   ];
 
