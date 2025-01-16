@@ -133,72 +133,94 @@ const Search = () => {
         </p>
         <p>
            To even begin overhauling the Toast Web back office, there needed to be alignment on the scope of the team and what we were trying
-           to tackle
+           to tackle. I introduced the concept of the "donut", which is the outer ring ouf a webpage. The donut became the guiding framework
+           by which we started to tackle problems (and to understand which problems to leave to individual product teams).
           </p>
 
         {/* <img src="/search/donut.png" alt="the areas encompassing the operating system" /> */}
         <img src="/search/donut-approach.png" alt="the areas encompassing the operating system" />
-        
+
+       
         
         <p>
         <span className="highlight">Actual search improvements</span>
         </p>
-       
-        <img src="/admin-tool/langfuse-trace.png" alt="Manager Close Out" />  
 
         <p>
-            The team runs a weekly evaluation to determine the % of accuracy for Sous Chef. Within answers that are considered "correct" (they pull the right data), we determine
-            a subset of responses that fail in terms of formatting. We also collect feedback on a 1-5 scale from users within the app.
-             Those responses then become the basis for the admin tool work.
+            We had found that Toast's existing search was being used essentially as a last resort, and that trust in it was extremely low.
+            As a result, we added thousands of search terms and links that were previously resulting in dead ends. We also streamlined
+            the layout of the homepage to make the access points to search and navigation clearer, plus we introduced autocomplete to help users
+            get to the right pages faster.
         </p>
 
-        <img src="/admin-tool/final.png" alt="Manager Close Out" />  
+        <img src="/search/autocomplete.png" alt="Manager Close Out" />  
         <p>
-           Then, myself or other experts use the admin tool to adjust the metadata that Sous Chef uses when creating responses. We're able to add definitions or knowledge
-           to Sous Chef (basically tell it what it needs to know), as well as add instructions for formatting. For instance, Sous Chef often defaults to one dimension (sales),
-           when operators actually want multiple pieces of data in a table.
-        </p> 
-        <img src="/admin-tool/metadata.png" alt="Manager Close Out" />  
+          In the results, we created filters to allow users to search for only a certain type of result and, maybe most excitingly, we 
+          created "widgets" that allow users to take action directly in search. These widgets are designed to tackle activities that come up
+          often, but can be difficult to get to in a pinch.
+        </p>
         <p>
-           By adjusting the information passed to the LLM, we can craft responses that address the exact needs of our users. We also save a ton of time in cycles -- non-engineers
-           can now put up pull requests directly in Github, which are then approved by the team, putting metadata quickly back into the product.
-        </p> 
-        <img src="/admin-tool/output.png" alt="Manager Close Out" />    
-
-
+          For example, we now let users change the quantity of items or mark them in/out of stock just by searching for the item name. Other
+          widgets include employee details, qr code setup, active discounts, and more!
+        </p>
+        <img src="/search/search-widget.png" alt="Manager Close Out" />  
+          
        
+
+        <p>
+        <span className="highlight">Custom quick actions / pinned pages</span>
+        </p>
+        <p>
+          When we looked at the core jobs to be done (JTBD) across the system, we saw that they are a lot more complex than when the site was
+          originally designed, and although they largely can be separated into front of house, back of house, and back office tasks, 
+          there are a huge number of tasks to do, and on top of that, every restaurant has different aspects they prioritize
+          (visual by Maggie Price).
+        </p>
+        
+        <img src="/search/jtbd.png" alt="the areas encompassing the operating system" />
+        
+
+        <p>
+          This led to the creation of "custom pins". We already had the concept of quick actions - a section on the homepage
+          with a few preset links to the most visited pages - and it was shown to be the most used form of navigation (over 50% of page
+          views in Toast Web are to a single report). However, we noticed that restaurants often have a few key tasks that are crucial to
+          them, so we introduced a feature to allow them to easily pin those pages and access them any time. This feature is still in beta
+          as of late 2024, but user testing and early rollout have shown strong signals!
+        </p>
+
+        <img src="/search/pin.png" alt="the areas encompassing the operating system" />
+
+
 
         <p className='overline'>Outcomes</p>
         <div className='card-row'>
             <p className='card'>
-             <span className="highlight">Daily!</span>
-             Non-engineers are making changes to the metadata for Sous Chef
+             <span className="highlight">12%</span>
+             Increase in search per user rate
             </p>
             <p className='card'>
-            <span className="highlight">100+</span>
-            PRs put up in the first few months
+            <span className="highlight">Basically 0%</span>
+            Rate of dead end searches 
             </p>
-            
-           
-            
+            <p className='card'>
+            <span className="highlight">19%</span>
+            Improvement in position of clicked result 
+            </p>    
         </div>
-
-        <img src="/admin-tool/feedback.png" alt="Manager Close Out" />    
-
+   
         <p>
-        We've been able to move significantly faster, and customers are noticing the difference! Our quality measures are steadily improving. Note: responses often move
-        from no data to mixed when they're not formatted right, and then from mixed to great when the admin tool is used.
-         </p>
-        <img src="/admin-tool/accuracy.png" alt="Manager Close Out" />    
-
+          We've been able to successfully drive more traffic to search and, crucially, users who are searching are more successfully finding
+          what they need. We also minimized the pain of change by only changing exactly what we needed to test, and not making any additional
+          changes without extremely strong evidence.
+        </p>
         
        
 
         <p className='overline'>A new approach</p>
 
         <p>
-            This project marked a big shift in how we think about AI at Toast and how we plan to incorporate the subject matter expertise across Toast. The admin tool
-            made it possible for all types of folks to contribute to the output of Sous Chef and helps us move a lot faster.
+            This project kicked off a whole new wave of work on the operating system "donut," and paved the way for running more, small
+            experiments that improve the user experience, without sending our customers spiraling due to needing to adapt to the changes.
          </p>
        
 
