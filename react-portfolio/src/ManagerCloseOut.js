@@ -1,6 +1,6 @@
 import React from 'react';
 import './PortfolioProject.css'; // Different CSS for project pages
-import Portfolio from './Portfolio';
+import MorePortfolio from './MorePortfolio';
 
 const ManagerCloseOut = () => {
   return (
@@ -152,7 +152,7 @@ This project also exposed the interdependencies between different experiences wi
 
     </div>
      {/* Include Portfolio component but exclude this project */}
-     <Portfolio exclude="/manager-close-out" />
+     <MorePortfolio exclude="/manager-close-out" />
     </div>
   );
 };

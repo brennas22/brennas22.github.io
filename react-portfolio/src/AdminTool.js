@@ -1,6 +1,6 @@
 import React from 'react';
 import './PortfolioProject.css'; // Different CSS for project pages
-import Portfolio from './Portfolio';
+import MorePortfolio from './MorePortfolio';
 
 const AdminTool = () => {
   return (
@@ -148,7 +148,7 @@ const AdminTool = () => {
 
     </div>
      {/* Include Portfolio component but exclude this project */}
-     <Portfolio exclude="/admin-tool" />
+     <MorePortfolio exclude="/admin-tool" />
     </div>
   );
 };

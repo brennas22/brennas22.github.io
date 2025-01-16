@@ -3,14 +3,14 @@ import './Portfolio.css';
 import { Link } from 'react-router-dom';
 import projects from './Projects'; // import the projects data
 
-const Portfolio = ({ exclude }) => {
+const MorePortfolio = ({ exclude }) => {
   // Filter out the project to exclude
   const filteredProjects = exclude
     ? projects.filter((project) => project.link !== exclude)
     : projects;
 
   return (
-    <div className="portfolio-container">
+    <div className="more-portfolio-container">
       {filteredProjects.map((project, index) => (
         <div className="portfolio-card" key={index}>
           <div className="portfolio-image">
@@ -30,4 +30,4 @@ const Portfolio = ({ exclude }) => {
   );
 };
 
-export default Portfolio;
+export default MorePortfolio;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './PortfolioProject.css'; // Different CSS for project pages
-import Portfolio from './Portfolio';
+import MorePortfolio from './MorePortfolio';
 import { Link } from 'react-router-dom';
 
 const Search = () => {
@@ -227,7 +227,7 @@ const Search = () => {
 
     </div>
      {/* Include Portfolio component but exclude this project */}
-     <Portfolio exclude="/search" />
+     <MorePortfolio exclude="/search" />
     </div>
   );
 };

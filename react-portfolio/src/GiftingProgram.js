@@ -1,6 +1,6 @@
 import React from 'react';
 import './PortfolioProject.css'; // Different CSS for project pages
-import Portfolio from './Portfolio';
+import MorePortfolio from './MorePortfolio';
 
 const GiftingProgram = () => {
   return (
@@ -322,7 +322,7 @@ We conducted a number of user research studies to examine the sender & recipient
 
     </div>
      {/* Include Portfolio component but exclude this project */}
-     <Portfolio exclude="/gifting-program" />
+     <MorePortfolio exclude="/gifting-program" />
     </div>
   );
 };
