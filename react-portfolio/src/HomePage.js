@@ -43,7 +43,7 @@ function App() {
                 <p className="overline">Get to know me</p>
                 <p>
                   I believe that designers are primarily problem solvers & storytellers. It's my job to show people things they can't unsee and to fight for the user at every turn. I'm
-                  particulary interested in hospitality-based projects.
+                  particularly interested in hospitality, 0-1 projects, and work that allows me to look at entire systems.
                 </p>
                 <p>
                   <strong>
