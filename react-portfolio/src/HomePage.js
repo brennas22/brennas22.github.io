@@ -42,14 +42,18 @@ function App() {
               <section className="about">
                 <p className="overline">Get to know me</p>
                 <p>
-                  I believe that designers are primarily problem solvers & storytellers. It's my job to show people things they can't unsee and to fight for the user at every turn. I'm
+                I'm a full stack designer (I write code too!) working across iOS, Android, and web. 
+                </p>
+                <p>
+                  I believe that designers are primarily problem solvers & storytellers, and that good design helps people make better decisions. 
+                  I see it as my job to show people things they can't unsee. I'm
                   particularly interested in hospitality, 0-1 projects, and work that allows me to look at entire systems.
                 </p>
                 <p>
                   <strong>
                     Currently designing @ <a href="https://toast.com" target="_blank" rel="noopener noreferrer">Toast</a>
                   </strong>
-                  , as a principal product designer leading design on AI (all things assistant, platform, and more).
+                  , as a principal product designer leading design on AI experiences and strategy (all things assistant, platform, and more).
                 </p>
               </section>
               <Portfolio />
