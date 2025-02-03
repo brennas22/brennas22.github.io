@@ -118,7 +118,7 @@ I incorporated this feebdack, opting for a more vertical approach, but keeping t
              <span className="highlight">26%</span>
             reduction in time on task
             </p>
-            <p className='card'>
+            {/* <p className='card'>
             <span className="highlight">134%</span>
             increase in auto-resolve usage
             </p>
@@ -133,12 +133,20 @@ I incorporated this feebdack, opting for a more vertical approach, but keeping t
             <p className='card'>
             <span className="highlight">38%</span>
             End day button usage (new feature!)
-            </p>
+            </p> */}
             <p className='card'>
-            <span className="highlight">40%</span>
+            <span className="highlight">45%</span>
             Decrease in related support tickets
             </p>
-            
+            <p className='card'>
+            <span className="highlight">$600,000</span>
+            Associated cost savings from support ticket reduction
+            </p>
+            {/* <p className='card'>
+            <span className="highlight">9 million</span>
+            Fewer shifts requiring manager updates
+            </p> */}
+
         </div>
         
         <p className='overline'>A new approach</p>
