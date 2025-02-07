@@ -53,7 +53,7 @@ const ManagerCloseOut = () => {
         <span className="highlight">It was unclear what was required vs optional</span>
         </p>
         <p>
-            The existing experience used yellow andred and warning icons, making the user feel like they'd done something wrong even when they'd just opened the page for the first time.    
+            The existing experience used yellow and red and warning icons, making the user feel like they'd done something wrong even when they'd just opened the page for the first time.    
         </p>
         <img src="/close-out/existing.png" alt="Manager Close Out" />
         <p>

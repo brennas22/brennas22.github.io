@@ -1,27 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './Navbar';
-import ManagerCloseOut from './ManagerCloseOut'; // Import individual project pages
-import GiftingProgram from './GiftingProgram'; // Import individual project pages
-import AdminTool from './AdminTool'; // Import individual project pages
-import AboutMe from './AboutMe'; // Import individual project pages
-import HomePage from './HomePage'; // Import individual project pages
+import ManagerCloseOut from './ManagerCloseOut';
+import GiftingProgram from './GiftingProgram';
+import AdminTool from './AdminTool';
+import AboutMe from './AboutMe';
+import HomePage from './HomePage';
 import Search from './Search';
 import Layout from './Layout';
 import ScrollToTop from './ScrollToTop';
-
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Layout />}> {/* Add the Layout route */}
+        <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} /> 
           <Route path="/manager-close-out" element={<ManagerCloseOut />} />
           <Route path="/gifting-program" element={<GiftingProgram />} />
@@ -35,5 +30,3 @@ function App() {
 }
 
 export default App;
-
-
