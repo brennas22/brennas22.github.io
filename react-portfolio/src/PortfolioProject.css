@@ -103,6 +103,47 @@ strong {
     object-fit: cover;
 }
 
+.case-study-content blockquote {
+    border-left: 4px solid #A7D1E7;
+    margin: 32px 0;
+    padding: 16px 24px;
+    background-color: white;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+}
+
+.case-study-content blockquote p {
+    margin: 0 0 8px 0;
+}
+
+.case-study-content blockquote cite {
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+.case-study-content blockquote cite a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.side-by-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    max-height: 500px;
+}
+
+.side-by-side img {
+    height: 100%;
+    max-height: 500px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 0;
+    flex-shrink: 1;
+    min-width: 0;
+}
 
 /* Mobile styles */
 @media (max-width: 1043px) {
@@ -139,5 +180,16 @@ strong {
 
 .intro {
     margin-bottom: 16px;
+}
+
+.side-by-side {
+    flex-direction: column;
+    max-height: none;
+}
+
+.side-by-side img {
+    width: 100%;
+    height: auto;
+    max-height: none;
 }
 }

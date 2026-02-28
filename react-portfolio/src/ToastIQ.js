@@ -144,13 +144,18 @@ const ToastIQ = () => {
         <ul>
           <li>The core chat interaction model</li>
           <li>Entry points in Toast Web (left nav) and Toast Now (dedicated tab)</li>
-          <li>Loading states, renaming from Sous Chef → Toast IQ, and onboarding splash</li>
-          <li>Legal disclosures and GA announcement moment</li>
+          <li>Loading states, renaming from Sous Chef → Toast IQ, legal disclosures, and onboarding splash</li>
           <li>Error handling and graceful degradation for permission-gated data</li>
         </ul>
         <p>
           The goal: make Toast IQ feel like a native part of Toast's operating system.
         </p>
+
+        <div className="side-by-side">
+          <img src="/toastiq/web-q-and-a.gif" alt="Toast IQ Q&A interaction" />
+          <img src="/toastiq/chat-tn.gif" alt="Toast IQ on Toast Now" />
+         
+        </div>
 
         <p>
           <span className="highlight">2. Built the "For You" personalized insights system</span>
@@ -163,10 +168,9 @@ const ToastIQ = () => {
         </p>
         <ul>
           <li>Surfaces the top 14 high-priority metrics (Sales, Labor, Menu, Employee Performance)</li>
-          <li>Personalizes content based on role, behavior, and engagement</li>
+         
           <li>Introduces suggested follow-ups to create habit loops</li>
           <li>Connects to Toast Now notifications to drive re-engagement</li>
-          <li>Leverages early memory patterns for deeper personalization</li>
         </ul>
         <p>
           My role included:
@@ -174,12 +178,13 @@ const ToastIQ = () => {
         <ul>
           <li>Designing the feed hierarchy and visual system</li>
           <li>Defining suggested follow-up patterns</li>
-          <li>Creating editorial + system-generated content guardrails</li>
           <li>Establishing interaction patterns for metric exploration</li>
         </ul>
         <p>
           This transformed IQ from "Ask anything" to "Here's what matters."
         </p>
+
+        <img src="/toastiq/for-you-feed.png" alt="Toast IQ For You personalized insights feed" />
 
         <p>
           <span className="highlight">3. Designed the first-generation Actions platform</span>
@@ -204,22 +209,24 @@ const ToastIQ = () => {
           <li>Action confirmation UX (review → commit model)</li>
           <li>Respecting existing publishing paradigms</li>
           <li>Permission-aware behavior</li>
-          <li>Error states for partial data access</li>
           <li>Clear distinction between suggestion and execution</li>
         </ul>
         <p>
-          This work established trust — the foundation required for future automation.
+          This work established trust (and laid the groundwork required for future automation.)
         </p>
+
+        <div className="side-by-side">
+          <img src="/toastiq/86-mobile.gif" alt="86ing an item on mobile" />
+          <img src="/toastiq/price-update-web.gif" alt="Updating menu prices on web" />
+        </div>
 
         <p>
           <span className="highlight">4. Designed Ridealong (contextual assistant on Web)</span>
         </p>
         <p>
-          Beyond modal chat, we built Ridealong — an in-context assistant embedded across Toast Web pages.
+          Beyond modal chat, we built "ridealong mode", an in-context assistant embedded across Toast Web pages.
         </p>
-        <p>
-          For GA, this required:
-        </p>
+      
         <ul>
           <li>Context-aware starter prompts ("minis")</li>
           <li>Guardrails for how many prompts per page</li>
@@ -228,37 +235,38 @@ const ToastIQ = () => {
           <li>Instrumentation for engagement and downstream action tracking</li>
         </ul>
         <p>
-          Ridealong shifted IQ from a destination to a companion.
+           Ridealong shifted IQ from a destination to a companion because it allowed us to embed the assistant in the
+            user's workflow, rather than requiring them to navigate to a new page. We were able to surface specific insights 
+            and actions based on the user's current context, which helped them learn how to use the assistant.
         </p>
+
+        <img src="/toastiq/ridealong.gif" alt="Toast IQ Ridealong contextual assistant" />
 
         <p>
           <span className="highlight">5. Built the GA permissioning and rollout system</span>
         </p>
+
         <p>
-          Going GA meant precision.
-        </p>
-        <p>
-          We defined:
+          Our initial rollout was limited to a particular type of restaurant, so we needed to design a permissioning and rollout system that would allow us to show the assistant to the right audience. This included:
         </p>
         <ul>
           <li>Which users see Toast IQ (key permissions required)</li>
           <li>SMB vs MM/ENT segmentation rules</li>
           <li>Enterprise "Request Access" workflow</li>
-          <li>Kill-switch and logging strategies</li>
-          <li>Clear error messaging when users lack access</li>
         </ul>
         <p>
           I worked closely with product and engineering to design experience tiers:
         </p>
         <ul>
           <li>Full Experience</li>
-          <li>Lite Experience</li>
-          <li>No Experience</li>
+          <li>Lite Experience (access but no permissions)</li>
+          <li>No Experience (MM/ENT only)</li>
         </ul>
         <p>
           This ensured we launched safely, confidently, and without surprise exposure.
         </p>
 
+        <img src="/toastiq/no-access.png" alt="Toast IQ no access experience" />
 
         <p className='overline'>Outcomes</p>
         <div className='card-row'>
@@ -280,16 +288,23 @@ const ToastIQ = () => {
           Since GA, Toast IQ has become a meaningful product surface across Toast Web and Toast Now. Over half of restaurants have tried the assistant, and engagement continues to grow as proactive insights and contextual experiences deepen usage.
         </p>
         <p>
-          Most importantly, the core system we built now supports scalable expansion — including advanced agents and automations.
-        </p>
+          Most importantly, the core system we built now supports scalable expansion, as Toast IQ has become <em>the</em> foundational part of Toast's AI strategy, 
+          and we are now able to build on it to create more 
+          advanced agents and automations.</p>
 
+        <blockquote>
+          <p>
+            "[Toast's CEO] (along with probably the entirety of Toast's workforce) knows Toast IQ is the future of the company. Luckily, restaurants like it. Already, over half of Toast restaurants have used Toast IQ, collectively sending over a million queries. For now, he said, Toast IQ acts as a smart assistant. (He also called it a 'copilot.') But it'll soon evolve into an automation tool that taps a fleet of agents — AI that performs specific tasks — to run a restaurant."
+          </p>
+          <cite>— <a href="https://www.expedite.news/p/toast-has-big-plans-for-ai" target="_blank" rel="noopener noreferrer">Kristen Hawley, Expedite</a></cite>
+        </blockquote>
 
         <p className='overline'>A new approach</p>
         <p>
-          Shipping Toast IQ to GA changed how we design AI at Toast.
+          Shipping Toast IQ to GA laid the foundation for how we design AI at Toast.
         </p>
         <p>
-          Instead of treating AI as a feature, we treated it as a system:
+          Rather than treating AI as a feature, we treated it as the actual system:
         </p>
         <ul>
           <li>Proactive, not just reactive</li>
@@ -298,12 +313,8 @@ const ToastIQ = () => {
           <li>Composable</li>
           <li>Embedded across surfaces</li>
         </ul>
-        <p>
-          This work reinforced something I now believe strongly:
-        </p>
-        <p>
-          <em>If you're designing AI, you're designing operating systems — whether you realize it or not.</em>
-        </p>
+        
+        
 
     </div>
      {/* Include Portfolio component but exclude this project */}

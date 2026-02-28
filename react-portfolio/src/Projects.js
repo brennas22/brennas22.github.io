@@ -28,13 +28,13 @@ const Projects = [
       image: '/manager-close-out.png',
       link: '/manager-close-out',
     },
-    {
-      title: 'Gifting Program',
-      subtitle: 'Product Design @ Drizly',
-      description: "Led design on Drizly's gifting program ($2 million impact).",
-      image: '/gifting.png',
-      link: '/gifting-program',
-    },
+    // {
+    //   title: 'Gifting Program',
+    //   subtitle: 'Product Design @ Drizly',
+    //   description: "Led design on Drizly's gifting program ($2 million impact).",
+    //   image: '/gifting.png',
+    //   link: '/gifting-program',
+    // },
   ];
   
   export default Projects;
