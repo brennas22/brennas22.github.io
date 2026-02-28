@@ -8,6 +8,7 @@ import AdminTool from './AdminTool';
 import AboutMe from './AboutMe';
 import HomePage from './HomePage';
 import Search from './Search';
+import ToastIQ from './ToastIQ';
 import Layout from './Layout';
 import ScrollToTop from './ScrollToTop';
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/gifting-program" element={<GiftingProgram />} />
           <Route path="/admin-tool" element={<AdminTool />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/toast-iq" element={<ToastIQ />} />
           <Route path="/about-me" element={<AboutMe />} />
         </Route>
       </Routes>

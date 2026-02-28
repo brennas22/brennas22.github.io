@@ -1,6 +1,13 @@
 // projects.js
 const Projects = [
     {
+      title: 'Toast IQ',
+      subtitle: 'Product Design @ Toast',
+      description: 'Built the core system behind Toast IQ — bringing an AI assistant from 0 → GA across 40,000+ restaurant locations.',
+      image: '/toastiq.png',
+      link: '/toast-iq',
+    },
+    {
       title: 'AI Admin Tool',
       subtitle: 'Product Design @ Toast',
       description: 'Designed a tool to allow finetuning of AI agents by non-engineers.',

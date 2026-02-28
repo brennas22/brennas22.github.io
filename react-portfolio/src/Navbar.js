@@ -39,7 +39,7 @@ const Navbar = () => {
           &times;
         </button>
         <Link to="/about-me" onClick={closeMobileMenu}>About me</Link>
-        <Link to="/Brenna_Sorkin_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</Link>
+        <a href={`${process.env.PUBLIC_URL}/Brenna_Sorkin_Resume.pdf`} target="_blank" rel="noopener noreferrer">Resume</a>
       </div>
     </nav>
   );

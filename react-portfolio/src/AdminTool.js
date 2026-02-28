@@ -16,7 +16,7 @@ const AdminTool = () => {
           I created a tool <span class="highlight">to refine AI outputs</span> and I actively<span class="highlight"> contribute to Toast's codebase!</span>
         </h1>
         <p>
-          While working on Toast's AI-powered assistant for restaurant operators ("Sous Chef"), it became apparent that there was a need
+          While working on Toast's AI-powered assistant for restaurant operators ("Toast IQ"), it became apparent that there was a need
           to refine the metadata that the AI was using to generate answers. I created a tool that allows non-technical team members to contribute
           code that significantly impacts the performance of the asisstant (2024).
         </p>
@@ -30,7 +30,7 @@ const AdminTool = () => {
 
         <p className="overline">Now, let's get into it!</p>
         <p>
-        In  2024, I was leading design on "Sous Chef," the first AI-powered assistant built for restaurant operators, which aims to help folks make better, more
+        In 2024, I was leading design on Toast IQ (formerly known as "Sous Chef"), the first AI-powered assistant built for restaurant operators, which aims to help folks make better, more
         informed decisions about their business. While we were able to improve the accuracy of the assistant (referring to the specific ability for the agent to
         retrieve the correct data) we were struggling to design the outputs in a way that were most useful. I created an internal tool that allowed non-engineers to refine
         the answers from the assistant, giving crucial time back to the engineering team and directly impacting the product experience.
@@ -39,7 +39,7 @@ const AdminTool = () => {
         <p className='overline'>Goals & Challenges</p>
         <div className='card-row'>
             <p className='card'>
-            Make the best use of the valuable and limited time of the Sous Chef team
+            Make the best use of the valuable and limited time of the Toast IQ team
             </p>
             <p className='card'>
             Curate the output from the AI assistant to give users the best possible answers to their questions
@@ -51,7 +51,7 @@ const AdminTool = () => {
         </p>
         <p>
             When we embarked on creating the admin tool, the previous process for improving an output was extremely manual, time consuming, and involved a lot of back and forth.
-            Essentially, when using Sous Chef, if I noticed an output that should be changed I had to use prompt engineering to get to the outcome I wanted (trial and error),
+            Essentially, when using Toast IQ, if I noticed an output that should be changed I had to use prompt engineering to get to the outcome I wanted (trial and error),
             then send screenshots of every step to the team's tech lead, who would then do his own prompting to actually update the metadata in the codebase.
         </p>
         <img src="/admin-tool/annotated_brainstorm.png" alt="Existing gifting flow" />
@@ -59,7 +59,7 @@ const AdminTool = () => {
         <span className="highlight">Knowledge was trapped in peoples' heads</span>
         </p>
         <p>
-            The Sous Chef team had a ton of subject matter expertise, but there was no way to get the information into the assistant. Often, crucial insights would be lost to 
+            The Toast IQ team had a ton of subject matter expertise, but there was no way to get the information into the assistant. Often, crucial insights would be lost to 
             random Slack threads or conversations, because there wasn't any way to actually incorporate them.
         </p>
        
@@ -90,15 +90,15 @@ const AdminTool = () => {
         <img src="/admin-tool/langfuse-trace.png" alt="Manager Close Out" />  
 
         <p>
-            The team runs a weekly evaluation to determine the % of accuracy for Sous Chef. Within answers that are considered "correct" (they pull the right data), we determine
+            The team runs a weekly evaluation to determine the % of accuracy for Toast IQ. Within answers that are considered "correct" (they pull the right data), we determine
             a subset of responses that fail in terms of formatting. We also collect feedback on a 1-5 scale from users within the app.
              Those responses then become the basis for the admin tool work.
         </p>
 
         <img src="/admin-tool/final.png" alt="Manager Close Out" />  
         <p>
-           Then, myself or other experts use the admin tool to adjust the metadata that Sous Chef uses when creating responses. We're able to add definitions or knowledge
-           to Sous Chef (basically tell it what it needs to know), as well as add instructions for formatting. For instance, Sous Chef often defaults to one dimension (sales),
+           Then, myself or other experts use the admin tool to adjust the metadata that Toast IQ uses when creating responses. We're able to add definitions or knowledge
+           to Toast IQ (basically tell it what it needs to know), as well as add instructions for formatting. For instance, Toast IQ often defaults to one dimension (sales),
            when operators actually want multiple pieces of data in a table.
         </p> 
         <img src="/admin-tool/metadata.png" alt="Manager Close Out" />  
@@ -115,7 +115,7 @@ const AdminTool = () => {
         <div className='card-row'>
             <p className='card'>
              <span className="highlight">Daily!</span>
-             Non-engineers are making changes to the metadata for Sous Chef
+             Non-engineers are making changes to the metadata for Toast IQ
             </p>
             <p className='card'>
             <span className="highlight">100+</span>
@@ -141,7 +141,7 @@ const AdminTool = () => {
 
         <p>
             This project marked a big shift in how we think about AI at Toast and how we plan to incorporate the subject matter expertise across Toast. The admin tool
-            made it possible for all types of folks to contribute to the output of Sous Chef and helps us move a lot faster.
+            made it possible for all types of folks to contribute to the output of Toast IQ and helps us move a lot faster.
          </p>
        
 
