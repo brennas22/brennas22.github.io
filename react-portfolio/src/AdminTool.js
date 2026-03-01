@@ -108,8 +108,11 @@ const AdminTool = () => {
         </p> 
         <img src="/admin-tool/output.png" alt="Manager Close Out" />    
 
-
+        <p>
+          I've authored many pull requests through the admin tool, and the team was able to move significantly faster as a result.
+        </p>  
        
+        <img src="/admin-tool/github.png" alt="Pull requests authored by Brenna in GitHub" />
 
         <p className='overline'>Outcomes</p>
         <div className='card-row'>
