@@ -77,7 +77,7 @@ const AdminTool = () => {
         <span className="highlight">Draft solutions</span>
         </p>
         <p>
-            I worked very closesly with engineering, designing this draft live while talking with them. This project moved extremely fast, and I was able to rely on front end 
+            I worked very closely with engineering, designing this draft live while talking with them. This project moved extremely fast, and I was able to rely on front end 
             engineers to make smart decisions about the UI.
         </p>
 
