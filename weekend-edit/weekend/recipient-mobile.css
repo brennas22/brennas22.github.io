@@ -1,0 +1,152 @@
+/* Phone-only layout. Keep the desktop microsite's type, colors, and composition. */
+.recipient-view *, .recipient-view *::before,.recipient-view *::after{box-sizing:border-box}
+.recipient-view #app{overflow-x:clip}
+.recipient-view .world>*{min-width:0}
+.recipient-view .recipient-trip-tabs{padding:8px 14px;gap:2px}
+.recipient-view .recipient-trip-tabs button{min-height:36px;font-size:12px}
+.recipient-view .direction-refine-strip{padding:13px 20px 0}
+.recipient-view .direction-refine-row{align-items:center;gap:15px;text-align:left}
+.recipient-view .direction-refine-row>span{display:block;font-size:12px;line-height:1.5;flex:1;text-align:left}
+.recipient-view .direction-refine-row .icon{display:inline-block;margin-right:4px;width:14px;height:14px}
+.recipient-view .direction-refine-row>button{font-size:12px;min-height:36px;padding:7px 0}
+.recipient-view .world-refine-options{text-align:left;padding-top:14px;margin-top:9px}
+.recipient-view .world-refine-options>div{justify-content:start;gap:8px}
+.recipient-view .world-refine-options button{min-height:40px;font-size:12px;padding:9px 12px}
+.recipient-view .world-refine-options button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.recipient-view .world-hero{padding:19px 20px 27px}
+.recipient-hero-meta{display:flex;justify-content:space-between;gap:7px 15px;flex-wrap:wrap;font-size:11px;line-height:1.4;color:var(--ink);opacity:.8}
+.recipient-hero-meta>span:last-child{white-space:nowrap}
+.recipient-view .world .world-title{font-size:43px;line-height:1.04;letter-spacing:-1.6px;margin:18px 0 24px;text-wrap:balance}
+.recipient-view .world.nashville .world-title{font-size:60px;line-height:.9;letter-spacing:-1px;text-wrap:initial}
+.recipient-view .world.charleston .world-title{font-size:45px;line-height:1.08;letter-spacing:-1.5px}
+.recipient-view .world.charleston .world-title em{font-size:1em}
+.recipient-view .world .hero-main-photo{height:230px!important;width:100%;margin:0}
+.recipient-view .world.hudson .hero-main-photo{height:255px!important;margin:0 12px;width:calc(100% - 24px)}
+.recipient-view .world.charleston .hero-main-photo{height:230px!important;margin:0 4px;width:calc(100% - 8px)}
+.recipient-view .world .hero-composition{gap:23px}
+.recipient-view .world .hero-side{padding:0}
+.recipient-view .hero-side .kicker{font-size:10px;letter-spacing:1.1px}
+.recipient-view .hero-side .description{font-size:15px;line-height:1.55}
+.recipient-view .hero-facts{display:grid;grid-template-columns:1fr;gap:10px;padding-top:15px;font-size:12px}
+.recipient-view .hero-date-link{text-align:left;justify-self:start;font-size:13px;min-height:30px}
+.recipient-view .recipient-dates{padding:29px 20px 2px}
+.recipient-view .recipient-dates .date-heading{display:flex;align-items:center;gap:15px;margin-bottom:17px}
+.recipient-view .recipient-dates .kicker{font-size:10px;letter-spacing:1px}
+.recipient-view .recipient-dates .date-heading h2{font-size:28px;line-height:1.1;letter-spacing:-.7px;margin:7px 0 0;max-width:240px}
+.recipient-view .nashville .recipient-dates .date-heading h2{font-size:35px}
+.recipient-view .recipient-dates .date-heading>.subtle-btn{white-space:nowrap;flex:none;font-size:12px;min-height:40px}
+.recipient-date-list{display:grid;gap:9px}
+.recipient-date-row{display:flex;align-items:center;gap:12px;padding:15px 13px;min-height:78px;width:100%;min-width:0;border:1px solid var(--line);border-radius:12px;text-align:left;color:var(--ink);background:transparent}
+.recipient-date-row[aria-pressed=true]{background:color-mix(in srgb,var(--ink) 7%,var(--bg));border:1.5px solid var(--ink);padding:14.5px 12.5px}
+.recipient-date-indicator{flex:0 0 19px;width:19px;height:19px;border:1px solid currentColor;border-radius:50%;display:grid;place-items:center;opacity:.55}
+.recipient-date-row[aria-pressed=true] .recipient-date-indicator{background:var(--ink);color:var(--bg);border-color:var(--ink);opacity:1}
+.recipient-date-indicator .icon{width:13px;height:13px;stroke-width:2.2}
+.recipient-date-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:5px}
+.recipient-date-copy strong{font-family:'DM Sans',Arial,sans-serif;font-size:16px;font-weight:600;line-height:1.3;letter-spacing:-.4px;overflow-wrap:anywhere}
+.recipient-date-copy small{font-size:11px;opacity:.75;line-height:1.3}
+.recipient-date-price{flex:none;display:flex;flex-direction:column;gap:5px;text-align:right}
+.recipient-date-price b{font-size:17px;font-weight:650;line-height:1.2}
+.recipient-date-price small{font-size:10px;opacity:.75}
+.recipient-view .date-model-note{font-size:11px;line-height:1.5;margin-top:12px;opacity:.75}
+.recipient-view .content-wrap{padding:34px 20px}
+.recipient-view .section-heading{display:block;margin-bottom:21px}
+.recipient-view .section-heading .kicker{font-size:10px;letter-spacing:1px;margin-bottom:9px}
+.recipient-view .section-heading h2{font-size:30px;line-height:1.13;letter-spacing:-.8px;max-width:100%}
+.recipient-view .nashville .section-heading h2{font-size:39px;line-height:1.03}
+.recipient-view .stay-grid{display:block}
+.recipient-view .stay-photo{height:225px}
+.recipient-view .hudson .stay-photo{border-radius:110px 110px 0 0}
+.recipient-view .charleston .stay-photo{border-width:7px}
+.recipient-view .stay-caption{gap:10px;flex-wrap:wrap;padding:12px 0;font-size:12px;line-height:1.5}
+.recipient-view .rating-link{font-size:11px;min-height:24px}
+.recipient-view .stay-story{padding:16px 0 0}
+.recipient-view .stay-story>.kicker{font-size:10px;letter-spacing:1px}
+.recipient-view .stay-story h3{font-size:25px;line-height:1.15;margin:10px 0;letter-spacing:-.4px}
+.recipient-view .nashville .stay-story h3{font-size:32px}
+.recipient-view .stay-story .listing-beds{font-size:12px;margin-bottom:15px}
+.recipient-view .stay-story>p{font-size:14px;line-height:1.6;margin:13px 0 18px}
+.recipient-view .stay-amenities{gap:7px;margin-bottom:21px}
+.recipient-view .stay-amenities span{font-size:10px;padding:7px 8px;border-radius:5px}
+.recipient-view .stay-actions{gap:12px;justify-content:space-between;align-items:center}
+.recipient-view .stay-actions .outline-btn{font-size:12px;padding:11px 13px;min-height:42px}
+.recipient-view .stay-actions .browse-stays-link{font-size:12px;white-space:normal;min-height:42px;display:flex;align-items:center}
+.recipient-view .round-save{width:36px;height:36px;top:12px;right:12px}
+.recipient-view .photo-count{font-size:11px;bottom:12px;right:12px;padding:8px 11px}
+.recipient-view .between-note{font-size:27px;line-height:1.2;padding:35px 0 0}
+.recipient-view .experience-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:29px}
+.recipient-view .experience-grid .experience{width:100%;margin:0;min-width:0}
+.recipient-view .experience .exp-img{height:215px}
+.recipient-view .hudson .experience .exp-img{border-radius:90px 90px 0 0}
+.recipient-view .experience h3{font-size:24px;line-height:1.16;margin:13px 0 9px}
+.recipient-view .experience p{font-size:14px;line-height:1.55}
+.recipient-view .activity-kind{font-size:10px;max-width:calc(100% - 30px);padding:7px 9px}
+.recipient-view .activity-host{font-size:11px;gap:7px;margin-top:12px}
+.recipient-view .experience .exp-meta{font-size:10px;line-height:1.6}
+.recipient-view .activity-actions{margin-top:15px;gap:18px}
+.recipient-view .activity-actions .outline-btn{min-height:40px;font-size:12px;padding:10px 19px}
+.recipient-view .activity-save,.recipient-view .activity-source{font-size:12px;line-height:1.5}
+.recipient-view .feed-section{margin-top:36px;padding-top:28px}
+.recipient-view .feed-heading{display:flex;gap:16px;align-items:start}
+.recipient-view .feed-connect{font-size:11px;padding:10px 13px;min-height:38px}
+.recipient-view .playful-feed.inspiration-feed{margin-left:-10px;margin-right:-20px;padding:22px 20px 28px 10px;gap:21px}
+.recipient-view .playful-feed .feed-card.social-post{width:min(76vw,285px);flex-basis:min(76vw,285px)}
+.recipient-view .playful-feed .feed-card:nth-child(3n+2){width:min(79vw,295px);flex-basis:min(79vw,295px);margin-top:17px}
+.recipient-view .playful-feed .feed-card:nth-child(3n){width:min(73vw,275px);flex-basis:min(73vw,275px);margin-top:8px}
+.recipient-view .feed-footer{gap:12px;flex-wrap:wrap;padding-top:6px}
+.recipient-view .feed-page{min-height:34px;padding:8px 10px}
+.recipient-view .schedule{margin-top:35px;padding-top:29px}
+.recipient-view .schedule h2{font-size:30px;line-height:1.14;margin-bottom:14px}
+.recipient-view .schedule>div>.kicker{font-size:10px;letter-spacing:1px}
+.recipient-view .schedule>div>p{font-size:14px;line-height:1.6;margin-bottom:17px}
+.recipient-view .schedule .outline-btn{font-size:12px;min-height:42px}
+.recipient-view .days{margin-top:25px}
+.recipient-view .schedule .day{display:block;padding:20px 0}
+.recipient-view .day>b{display:block;font-size:10px;letter-spacing:1px;margin-bottom:8px}
+.recipient-view .day strong{font-size:22px;line-height:1.18;margin-bottom:8px}
+.recipient-view .day p{font-size:14px;line-height:1.6}
+.recipient-view .plan-concert{padding:16px;margin-top:16px;border-left-width:3px}
+.recipient-view .concert-eyebrow{font-size:10px}
+.recipient-view .plan-concert h4{font-size:27px;margin:9px 0}
+.recipient-view .concert-venue,.recipient-view .plan-concert p{font-size:13px}
+.recipient-view .concert-actions{gap:13px}
+.recipient-view .concert-actions a,.recipient-view .concert-actions button{font-size:12px}
+.recipient-view .plan-concert small,.recipient-view .concert-note{font-size:11px;line-height:1.5}
+.recipient-view .budget-band{padding:30px 20px}
+.recipient-view .budget-band h2{font-size:29px;line-height:1.15}
+.recipient-view .budget-band p{font-size:12px;line-height:1.6}
+.recipient-view .budget-total{gap:17px;align-items:center;margin-top:24px;flex-wrap:wrap}
+.recipient-view .big-price{font-size:52px;letter-spacing:-2px}
+.recipient-view .big-price small{font-size:10px;line-height:1.5;margin-top:8px}
+.recipient-view .budget-total .outline-btn{font-size:12px;padding:11px 14px}
+.recipient-view .reactions{padding:32px 20px}
+.recipient-view .reactions h2{font-size:30px;line-height:1.15;margin:12px 0}
+.recipient-view .reactions p{font-size:14px;line-height:1.6}
+.recipient-view .reactions .outline-btn{font-size:13px;margin-top:18px}
+.recipient-view .notes{margin-top:22px}
+.recipient-view .comment-form{gap:9px;align-items:center}
+.recipient-view .comment-form input{min-width:0;font-size:14px;padding:14px 0}
+.recipient-view .comment-form button{font-size:12px;line-height:1.3;white-space:nowrap;min-height:44px}
+.recipient-view .next-worlds{padding:0 20px 28px}
+.recipient-view .next-worlds>p{font-size:24px;line-height:1.2;margin-bottom:18px}
+.recipient-view .next-worlds>div{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.recipient-view .next-worlds button{font-size:11px;min-height:42px;padding:10px 8px}
+.recipient-view .footer{padding:22px 20px;flex-wrap:wrap;font-size:10px;gap:10px}
+.recipient-view .site-credit{font-size:10px;line-height:1.5;padding:0 20px 20px}
+.recipient-view .listing-gallery{height:205px}
+.recipient-view .listing-thumbs{gap:7px;overflow-x:auto;margin-bottom:18px}
+.recipient-view .listing-thumbs button{width:70px;height:52px;flex:none}
+.recipient-view .listing-summary{gap:12px}
+.recipient-view .listing-summary h3{font-size:17px}
+.recipient-view .listing-rating{font-size:15px}
+.recipient-view .listing-host{font-size:13px;gap:10px;flex-wrap:wrap}
+.recipient-view .listing-amenities{font-size:12px;gap:14px 10px}
+.recipient-view .listing-booking{padding-top:18px}
+.recipient-view .listing-cta{min-height:44px}
+.recipient-view .stay-option-photo{height:200px}
+.recipient-view .stay-option-body{padding:17px}
+.recipient-view .stay-option h3{font-size:18px}
+.recipient-view .custom-date-fields{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+.recipient-view .custom-date-fields input{width:100%;min-width:0;padding:12px 6px;font-size:13px}
+.recipient-view .recipient-action-dock{padding-left:15px;padding-right:15px;gap:10px}
+.recipient-view .recipient-dock-primary{font-size:12px;min-width:0}
+@media(max-width:350px){.recipient-view .world.charleston .world-title{font-size:40px}.recipient-view .world.nashville .world-title{font-size:54px}.recipient-view .world .world-title{font-size:39px}.recipient-view .stay-actions{align-items:start;gap:9px}.recipient-view .stay-actions>*{flex:1}.recipient-date-row{gap:9px;padding-left:11px;padding-right:11px}.recipient-date-copy strong{font-size:15px}.recipient-view .recipient-dock-icon{min-width:38px}.recipient-view .recipient-action-dock{gap:7px;padding-left:12px;padding-right:12px}.recipient-view .recipient-dock-icon span{font-size:9px}}
