@@ -58,7 +58,7 @@ function buildContribution(note,link){
 function showContributionConflict(){
  if(!contributionConflict)return;
  const item=contributionConflict,t=trips.find(x=>x.id===item.trip);
- dialog('Love the find. It’s in Brooklyn.',`<div class="contribution-conflict-tag">Brooklyn, NY · Outside our Hudson Valley plans</div>${contributionSource(item)}<p class="contribution-conflict-explanation">Our cabin is in ${esc(selectedListing(t).location)}. This would turn a night out into a city outing, with more time getting there and back.</p><div class="contribution-conflict-choices"><button data-contribution-resolve="outing"><b>Make room for it</b><span>See what a Brooklyn outing would change.</span></button><button data-contribution-resolve="closer"><b>Find something closer</b><span>Keep the intimate-venue feeling near our cabin.</span></button><button data-contribution-resolve="save"><b>Just save it</b><span>Keep the find. Leave our plan as it is.</span></button></div><p class="contribution-conflict-kept">Our cabin and dates stay the same, either way.</p>`);
+ dialog('Love the find. It’s in Brooklyn.',`<div class="contribution-conflict-tag">Brooklyn, NY · Outside our Hudson Valley plans</div>${contributionSource(item)}<p class="contribution-conflict-explanation">Our cabin is in ${esc(selectedListing(t).location)}. This would turn a night out into a city outing, with more time getting there and back.</p><div class="contribution-conflict-choices"><button data-contribution-resolve="outing"><b>Make room for it</b><span>See what a Brooklyn outing would change.</span></button><button data-contribution-resolve="closer"><b>Find something closer</b><span>Keep the intimate-venue feeling near our cabin.</span></button><button data-contribution-resolve="save"><b>Just save it</b><span>Keep the find. Leave our plan as it is.</span></button><button class="contribution-new-direction" data-contribution-resolve="brooklyn"><b>Explore a Brooklyn weekend ↗</b><span>Add another direction around your find.</span></button></div>`);
 }
 function showBrooklynOuting(){
  if(!contributionConflict)return;
@@ -75,6 +75,7 @@ function showCloserContribution(){
 }
 function resolveContribution(choice){
  if(!contributionConflict)return;
+ if(choice==='brooklyn'){createBrooklynDirection();return}
  if(choice==='back'){showContributionConflict();return}
  if(choice==='outing'){showBrooklynOuting();return}
  if(choice==='closer'){findCloserContribution();return}
@@ -128,3 +129,19 @@ window.addEventListener('storage',event=>{if(event.key===CONTRIBUTION_KEY){const
 function resetSharedComments(){window.resetTripPrototype()}
 
 document.addEventListener('focusin',event=>{if(event.target.id==='contribution-link')fillContributionLink(event.target)});
+
+const BROOKLYN_IDEA_KEY='weekend-brooklyn-idea';
+const brooklynTrip={id:'brooklyn',short:'Brooklyn',place:'Brooklyn, New York',title:'A little Brooklyn.<br>A whole new possibility.'};
+function brooklynIdea(){try{return JSON.parse(localStorage.getItem(BROOKLYN_IDEA_KEY)||'null')}catch{return null}}
+function createBrooklynDirection(){
+ if(!contributionConflict)return;
+ const item=contributionConflict;
+ localStorage.setItem(BROOKLYN_IDEA_KEY,JSON.stringify({url:item.url,sourceTitle:item.sourceTitle,note:item.note,author:'Leah'}));
+ contributionConflict=null;contributionProposal=null;close();go('brooklyn');
+ if(window.parent!==window)window.parent.postMessage({type:'weekend-direction-added'},location.origin);
+}
+function brooklynDirectionCard(){return brooklynIdea()?`<aside class="brooklyn-direction-card"><span>ANOTHER POSSIBILITY · ADDED BY LEAH</span><h2>A little Brooklyn.<br>A whole new possibility.</h2><p>A city weekend around The Bell House.</p><button class="outline-btn" data-page="brooklyn">Explore Brooklyn ↗</button></aside>`:''}
+function brooklynDirectionPage(){
+ const item=brooklynIdea();
+ return `<div class="brooklyn-direction">${header()}${recipientNavigation()}<section class="brooklyn-direction-body"><span class="kicker">ANOTHER DIRECTION · FROM ${isRecipientView()?'YOUR':'LEAH’S'} FIND</span><h1>A little Brooklyn.<br><em>A whole new<br>possibility.</em></h1><p class="brooklyn-direction-intro">What if we made a city weekend of it?</p><article class="brooklyn-find"><span class="kicker">THE FIND THAT STARTED IT</span><h2>${esc(item.sourceTitle)}</h2><p>${esc(item.note)}</p><a href="${esc(cleanContributionLink(item.url))}" target="_blank" rel="noopener">Explore the venue ↗</a></article><section class="brooklyn-loose-plan"><span class="kicker">A FEW THINGS TO BUILD AROUND</span><div><b>Make a neighborhood of it.</b><p>Find a home base in Brooklyn, with room for all eight.</p></div><div><b>Leave the afternoon open.</b><p>A long lunch, a little wandering, and time to get ready together.</p></div><div><b>A night at The Bell House?</b><p>Check the lineup for our dates, then build the evening around a show everyone’s into.</p></div></section><p class="brooklyn-open-details">Dates, a stay, and show tickets are still to explore.</p><section class="brooklyn-thoughts"><h2>Can you see us here?</h2>${comments(brooklynTrip)}<button class="outline-btn" data-action="comments">Add a thought</button></section><button class="subtle-btn" data-page="hudson">Back to the cabin idea</button></section>${footer()}</div>${isRecipientView()?'<nav class="recipient-action-dock"><button data-action="comments" class="recipient-dock-icon">'+icon('comment')+'<span>Comments</span></button><button class="recipient-dock-primary" data-page="home">All our ideas</button></nav>':''}`;
+}
