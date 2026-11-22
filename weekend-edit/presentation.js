@@ -413,6 +413,27 @@
     const prefix=Math.abs(Number(start[3])-Number(start[1]));
     return {prefix,length:element.getTotalLength()-prefix-Math.abs(tail-last[4])};
   }
+  // Locate the marker coarsely, then refine only around the closest interval.
+  // Avoid thousands of synchronous SVG geometry queries before the first frame.
+  function closestThreadFraction(path,d,point){
+    path.setAttribute('d',d);
+    const geometry=threadCore(d,path);
+    let best=0,distance=Infinity;
+    const measure=fraction=>{
+      const p=path.getPointAtLength(geometry.prefix+geometry.length*fraction);
+      const delta=(p.x-point.x)**2+(p.y-point.y)**2;
+      if(delta<distance){distance=delta;best=fraction}
+    };
+    const samples=96;
+    for(let i=0;i<=samples;i++)measure(i/samples);
+    let radius=1/samples;
+    for(const divisions of [24,12]){
+      const low=Math.max(0,best-radius),high=Math.min(1,best+radius);
+      for(let i=0;i<=divisions;i++)measure(low+(high-low)*i/divisions);
+      radius=(high-low)/divisions;
+    }
+    return best;
+  }
   function animateClarity(previous,reveal=false) {
     deck.classList.toggle('pitch-clarity-tracing',reveal);
     const svg=deck.querySelector('.pitch-thread'),path=svg.querySelector('[data-thread-path]'),highlight=svg.querySelector('.pitch-clarity-highlight'),maze=svg.querySelector('.pitch-maze-threads');
@@ -430,11 +451,7 @@
     const clamp=n=>Math.max(0,Math.min(1,n));
     const ease=n=>{const t=clamp(n);return t*t*(3-2*t);};
     const core=d=>d.replace(/^M[^C]+/,'M-30 155 ').replace(/H[^H]*$/,'');
-    const nearest=(d,point)=>{
-      path.setAttribute('d',d);const geometry=threadCore(d,path);let fraction=0,best=Infinity;
-      for(let i=0;i<=600;i++){const p=path.getPointAtLength(geometry.prefix+geometry.length*i/600),distance=(p.x-point.x)**2+(p.y-point.y)**2;if(distance<best){best=distance;fraction=i/600;}}
-      return fraction;
-    };
+    const nearest=(d,point)=>closestThreadFraction(path,d,point);
     const originFraction=nearest(from,origin),endFraction=nearest(threadStart,{x:500,y:148});
     const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const duration=reveal?2600:2300;
@@ -583,32 +600,19 @@
     if(count(to)<count(from)) to=padEnd(to,count(from));
     const startNumbers = from.match(/-?\d+(?:\.\d+)?/g).map(Number);
     const endNumbers = to.match(/-?\d+(?:\.\d+)?/g).map(Number);
-    function nearestFraction(d, point) {
-      path.setAttribute('d',d);
-      const coreGeometry=threadCore(d,path);
-      const coreLength = coreGeometry.length;
-      let best = 0, distance = Infinity;
-      const samples=route==='intro-accessibility'?80:1400;
-      const measure=fraction=>{
-        const candidate=path.getPointAtLength(coreGeometry.prefix+coreLength*fraction);
-        const delta=(candidate.x-point.x)**2+(candidate.y-point.y)**2;
-        if(delta<distance){distance=delta;best=fraction;}
-      };
-      for(let i=0;i<=samples;i++)measure(i/samples);
-      if(route==='intro-accessibility'){
-        const low=Math.max(0,best-1/samples),high=Math.min(1,best+1/samples);
-        for(let i=0;i<=60;i++)measure(low+(high-low)*i/60);
-      }
-      return best;
-    }
+    const nearestFraction=(d,point)=>closestThreadFraction(path,d,point);
     const fromFraction = nearestFraction(from,{x:previous?.x ?? 500,y:previous?.y ?? 148});
     const toFraction = nearestFraction(to,route==='intro-process'?{x:650,y:210}:route==='intro-brain'?{x:540,y:145}:route==='intro-history'?{x:580,y:129}:route==='intro-accessibility'?{x:440,y:165}:route==='intro-approach'?{x:230,y:228}:{x:500,y:148});
+    let processGeometry;
     const processPoint = (d,position) => {
-      const curves=[...d.matchAll(/C([^CH]+)/g)].map(match=>match[1].trim().split(/\s+/).map(Number));
+      if(processGeometry?.d!==d){
+        const curves=[...d.matchAll(/C([^CH]+)/g)].map(match=>match[1].trim().split(/\s+/).map(Number));
+        processGeometry={d,curves,x:Number(d.match(/^M[^H]+H(-?[\d.]+)/)[1]),y:Number(d.match(/^M-?[\d.]+\s+(-?[\d.]+)/)[1])};
+      }
+      const {curves}=processGeometry;
       const index=Math.min(curves.length-1,Math.floor(position));
       const t=position>=curves.length?1:position-index;
-      const origin=d.match(/^M[^H]+H(-?[\d.]+)/);
-      const start=index?curves[index-1].slice(4):[Number(origin[1]),Number(d.match(/^M-?[\d.]+\s+(-?[\d.]+)/)[1])];
+      const start=index?curves[index-1].slice(4):[processGeometry.x,processGeometry.y];
       const c=curves[index],u=1-t;
       return {x:u*u*u*start[0]+3*u*u*t*c[0]+3*u*t*t*c[2]+t*t*t*c[4],y:u*u*u*start[1]+3*u*u*t*c[1]+3*u*t*t*c[3]+t*t*t*c[5]};
     };
