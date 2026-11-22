@@ -1,0 +1,24 @@
+Brand assets retrieved from official websites, 2026-11-22.
+Mindtrip inline header wordmark: https://mindtrip.ai/
+layla: https://layla.ai/theme/layla/app-icon-180.png?v=2026-10
+guidegeek: https://guidegeek.com/favicon-180.png
+wanderlog: https://wanderlog.com/images/webclip.png
+wonderplan: https://wonderplan.ai/apple-touch-icon.png
+vacay: https://cdn.prod.website-files.com/6241fae88cb0b11a61c12ba5/6465479a8d72994ce6b4a3fb_cover%20copy%20(2).png
+
+Product references:
+https://mindtrip.ai/
+https://layla.ai/
+https://guidegeek.com/
+https://wanderlog.com/
+https://wonderplan.ai/
+https://www.usevacay.com/
+
+Fora: https://www.foratravel.com/ — human advisors supported by an AI-enabled platform.
+Layla and Wanderlog shown as names; official icon requests were unavailable.
+
+General AI added: https://chatgpt.com/ https://claude.ai/ https://www.perplexity.ai/
+Grouping is an editorial presentation of overlapping strengths, not an exclusive feature taxonomy.
+
+kimkim human-expertise reference: https://www.kimkim.com/become-a-local-specialist
+Removed editorial descriptor under Fora; brand shown by name only.

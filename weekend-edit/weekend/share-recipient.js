@@ -68,7 +68,7 @@ function recipientNavigation(){
 function recipientActions(){
   if(!new URLSearchParams(location.search).has('recipient'))return '';
   const home=state.page==='home',picked=state.picks.includes(state.page),count=state.kept.length+state.picks.length;
-  return `<nav class="recipient-action-dock" aria-label="Shared trip actions"><button data-action="saved" class="recipient-dock-icon">${icon('heart')}<span>Keepers${count?' · '+count:''}</span></button><button data-action="comments" class="recipient-dock-icon" aria-label="Read comments and add a note">${icon('comment')}<span>Comments</span></button>${home?'':`<button data-action="edit" class="recipient-dock-icon">${icon('spark')}<span>Suggest</span></button>`}<button class="recipient-dock-primary" ${home?'data-action="compare"':`data-pick="${state.page}" aria-pressed="${picked}"`}>${home?'Compare ideas':picked?'On my shortlist':'I’m into this'}</button></nav>`;
+  return `<nav class="recipient-action-dock" aria-label="Shared trip actions"><button data-action="saved" class="recipient-dock-icon">${icon('heart')}<span>Keepers${count?' · '+count:''}</span></button><button data-action="comments" class="recipient-dock-icon" aria-label="Read comments and add a note">${icon('comment')}<span>Comments</span></button>${home?'':`<button data-action="edit" class="recipient-dock-icon">${airbnbImagineMark()}<span>Suggest</span></button>`}<button class="recipient-dock-primary" ${home?'data-action="compare"':`data-pick="${state.page}" aria-pressed="${picked}"`}>${home?'Compare ideas':picked?'On my shortlist':'I’m into this'}</button></nav>`;
 }
 
 function openTripComments(){

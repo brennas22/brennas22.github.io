@@ -43,3 +43,10 @@ body{display:block;background:white;min-height:100vh;overflow-x:hidden}.device.w
 
 /* Float below the referenced phrase, above modal clipping and other content. */
 .prompt-popover[popover]{position:fixed;inset:auto;margin:0;color:#222;overscroll-behavior:contain}.prompt-popover[popover]::backdrop{background:transparent;pointer-events:none}
+
+.prompt-composer{padding-bottom:45px}
+.prompt-composer .interactive-idea{min-height:100px}
+.prompt-mic{position:absolute;right:12px;bottom:10px;width:34px;height:34px;padding:7px;display:grid;place-items:center;border:0;border-radius:50%;background:#f7f7f7;color:#222;cursor:pointer}
+.prompt-mic svg{width:21px;height:21px}
+.prompt-mic:hover{background:#eee}
+.prompt-mic:focus-visible{outline:2px solid #222;outline-offset:2px}

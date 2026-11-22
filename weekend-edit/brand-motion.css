@@ -1,0 +1,20 @@
+.airbnb-thinking-mark{display:inline-block;width:24px;height:27px;flex:none;overflow:visible;vertical-align:middle;color:#ff385c}
+.airbnb-thinking-mark path{stroke-linecap:round;stroke-linejoin:round;stroke-width:3.7}
+.belo-outline,.belo-imagine-loop{stroke:currentColor}
+.airbnb-thinking-mark .belo-light-trail{stroke:#ff9bb0;stroke-width:5.6;stroke-dasharray:14 86;opacity:.55;animation:belo-orbit 4.2s linear infinite}
+.airbnb-thinking-mark .belo-light{stroke:#fff9ed;stroke-width:3;stroke-dasharray:6 94;filter:drop-shadow(0 0 2px #ff6d8e);animation:belo-orbit 4.2s linear infinite}
+.belo-imagine-loop{animation:belo-imagine 5.6s cubic-bezier(.45,0,.3,1) infinite}
+@keyframes belo-orbit{from{stroke-dashoffset:0}to{stroke-dashoffset:-100}}
+@keyframes belo-imagine{
+  0%,18%,100%{d:path('M40 61 C34 53 28 46 30 38 C32 28 48 28 50 38 C52 46 46 53 40 61 C40 61 40 61 40 61 Z')}
+  43%,65%{d:path('M40 59 C37 46 37 46 25 43 C37 40 37 40 40 27 C43 40 43 40 55 43 C43 46 43 46 40 59 Z')}
+}
+.thinking-working .airbnb-thinking-mark{width:24px;height:27px;margin-right:3px}
+.airbnb-bridge .edit-build-bar .airbnb-thinking-mark{width:18px;height:20px}
+.edit-stream-heading .airbnb-thinking-mark{width:26px;height:29px;margin:0 2px 0 0}
+@media(prefers-reduced-motion:reduce){.airbnb-thinking-mark .belo-light,.airbnb-thinking-mark .belo-light-trail{display:none}.airbnb-thinking-mark .belo-imagine-loop{animation:none}}
+
+/* Action marks inherit each weekend’s palette and stay still until generation. */
+.icon.belo-action-mark{display:inline-block;flex:none;width:22px;height:24px;vertical-align:middle;overflow:visible;color:inherit}
+.belo-action-mark path{stroke:currentColor;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.build-card-editor .icon.belo-action-mark,.direction-refine-row .icon.belo-action-mark{width:17px;height:19px}

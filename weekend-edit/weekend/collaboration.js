@@ -23,7 +23,7 @@ function cleanContributionLink(value){try{const u=new URL(value);if(!['https:','
 function contributionSource(item){const url=cleanContributionLink(item.url);return url?`<a class="contribution-source" href="${esc(url)}" target="_blank" rel="noopener"><span>↗</span><div><small>${item.resolution==='closer'?(isRecipientView()?'INSPIRED BY YOUR FIND':'INSPIRED BY LEAH’S FIND'):(isRecipientView()?'YOUR FIND':'LEAH’S FIND')}</small><b>${esc(item.sourceTitle||new URL(url).hostname)}</b><span>${esc(new URL(url).hostname.replace(/^www\./,''))}</span></div></a>`:''}
 function openCollaborativeSuggestion(prompt=''){
  const t=current();
- dialog('Bring a little of your world.',`<div class="contribution-person"><span>L</span><div><b>Your find</b><small>Adding to our ${t.id==='hudson'?'cabin':esc(t.short)} idea</small></div></div><form id="contribution-form"><label for="contribution-link">A place, a post, something you found</label><div class="contribution-paste-field"><input id="contribution-link" name="link" type="url" placeholder="Paste a link…" required autocomplete="off"></div><div id="contribution-pasted-preview"></div><label for="contribution-note">What do you love about it?</label><textarea id="contribution-note" name="note" maxlength="400" placeholder="Why do you think we’d love this?" required>${esc(prompt)}</textarea><p class="contribution-input-error" role="alert"></p><button class="solid-btn full" type="submit">${icon('spark')} Fit this into our weekend</button></form>`);
+ dialog('Bring a little of your world.',`<div class="contribution-person"><span>L</span><div><b>Your find</b><small>Adding to our ${t.id==='hudson'?'cabin':esc(t.short)} idea</small></div></div><form id="contribution-form"><label for="contribution-link">A place, a post, something you found</label><div class="contribution-paste-field"><input id="contribution-link" name="link" type="url" placeholder="Paste a link…" required autocomplete="off"></div><div id="contribution-pasted-preview"></div><label for="contribution-note">What do you love about it?</label><textarea id="contribution-note" name="note" maxlength="400" placeholder="Why do you think we’d love this?" required>${esc(prompt)}</textarea><p class="contribution-input-error" role="alert"></p><button class="solid-btn full" type="submit">${airbnbImagineMark()} Fit this into our weekend</button></form>`);
 }
 function contributionVenueTitle(url){const host=new URL(url).hostname.replace(/^www\./,'');return host==='thebellhouseny.com'?'The Bell House':host==='townecrier.com'?'Towne Crier Café':host==='theavalonlounge.com'?'The Avalon Lounge':host}
 function fillContributionLink(input){if(input.value.trim())return;input.value=current().id==='hudson'?'https://www.thebellhouseny.com/':socialSources[current().id].post;previewPastedContribution()}
@@ -47,11 +47,11 @@ function buildContribution(note,link){
  cancelContributionBuild();contributionProposal=proposal;
  if(proposal.trip==='hudson'&&new URL(proposal.url).hostname.replace(/^www\./,'')==='thebellhouseny.com'){
   contributionConflict={...proposal};
-  dialog('Let’s take a look.',`<div class="contribution-building" role="status" aria-live="polite"><span class="contribution-spark">${icon('spark')}</span><h3>Getting to know your find.</h3>${contributionSource(proposal)}<div class="contribution-build-steps"><p class="arrived">✓ Looking at the place you shared</p><p data-contribution-step="1">Seeing how it fits around our cabin</p></div></div>`);
+  dialog('Let’s take a look.',`<div class="contribution-building" role="status" aria-live="polite"><span class="contribution-spark">${airbnbImagineMark()}</span><h3>Getting to know your find.</h3>${contributionSource(proposal)}<div class="contribution-build-steps"><p class="arrived">✓ Looking at the place you shared</p><p data-contribution-step="1">Seeing how it fits around our cabin</p></div></div>`);
   contributionBuildTimers.push(setTimeout(()=>document.querySelector('[data-contribution-step="1"]')?.classList.add('arrived'),650));
   contributionBuildTimers.push(setTimeout(()=>showContributionConflict(),1600));return;
  }
- dialog('Let’s try that.',`<div class="contribution-building" role="status" aria-live="polite"><span class="contribution-spark">${icon('spark')}</span><h3>Making room for your find.</h3>${contributionSource(proposal)}<div class="contribution-build-steps"><p class="arrived">✓ Keeping our stay and dates</p><p data-contribution-step="1">Fitting your find around our stay</p><p data-contribution-step="2">Leaving our slow mornings open</p></div></div>`);
+ dialog('Let’s try that.',`<div class="contribution-building" role="status" aria-live="polite"><span class="contribution-spark">${airbnbImagineMark()}</span><h3>Making room for your find.</h3>${contributionSource(proposal)}<div class="contribution-build-steps"><p class="arrived">✓ Keeping our stay and dates</p><p data-contribution-step="1">Fitting your find around our stay</p><p data-contribution-step="2">Leaving our slow mornings open</p></div></div>`);
  [650,1350].forEach((delay,i)=>contributionBuildTimers.push(setTimeout(()=>document.querySelector(`[data-contribution-step="${i+1}"]`)?.classList.add('arrived'),delay)));
  contributionBuildTimers.push(setTimeout(()=>finishContribution(),2200));
 }
@@ -66,7 +66,7 @@ function showBrooklynOuting(){
 }
 function findCloserContribution(){
  if(!contributionConflict)return;
- dialog('Keep the feeling. Stay closer.',`<div class="contribution-building" role="status" aria-live="polite"><span class="contribution-spark">${icon('spark')}</span><h3>A small stage. A good night out.</h3><p>Looking around the Hudson Valley for the feeling you loved.</p></div>`);
+ dialog('Keep the feeling. Stay closer.',`<div class="contribution-building" role="status" aria-live="polite"><span class="contribution-spark">${airbnbImagineMark()}</span><h3>A small stage. A good night out.</h3><p>Looking around the Hudson Valley for the feeling you loved.</p></div>`);
  contributionBuildTimers.push(setTimeout(()=>showCloserContribution(),1200));
 }
 function showCloserContribution(){
@@ -103,10 +103,10 @@ function contributionBanner(t){
  const item=latestGroupContribution(t.id);if(!item||!isRecipientView())return '';
  return `<div class="contribution-added-bar"><span>✓ ${item.savedOnly?'Saved your find for later.':'Added your find to our plan.'}</span><button class="subtle-btn" data-contribution-undo="${esc(item.id)}">Undo</button>${window.parent!==window?'<button class="subtle-btn contribution-desktop-return" data-contribution-return>Back to the shared trip</button>':''}</div>`;
 }
-function contributionEntry(t){if(!isRecipientView()||latestGroupContribution(t.id))return '';return `<aside class="contribution-entry"><div><span class="kicker">It’s our weekend, after all.</span><p>What would make this feel more like us?</p></div><button data-contribution-start>${icon('spark')} ${t.id==='hudson'?'Bring a spot from your saves.':'Add something you found.'}</button></aside>`}
+function contributionEntry(t){if(!isRecipientView()||latestGroupContribution(t.id))return '';return `<aside class="contribution-entry"><div><span class="kicker">It’s our weekend, after all.</span><p>What would make this feel more like us?</p></div><button data-contribution-start>${airbnbImagineMark()} ${t.id==='hudson'?'Bring a spot from your saves.':'Add something you found.'}</button></aside>`}
 function contributionOverview(){return ''}
 function contributionDaySource(t,index,nights){const item=activeGroupContribution(t);return item&&index===(nights>1?1:0)?contributionSource(item)+contributionBudgetNote(t):''}
-function contributionDayCredit(t,index,nights){const item=activeGroupContribution(t);return item&&index===(nights>1?1:0)?`<span class="contribution-day-credit">${icon('spark')} ${isRecipientView()?'Your find, in the plan':'Added by Leah'}</span>`:''}
+function contributionDayCredit(t,index,nights){const item=activeGroupContribution(t);return item&&index===(nights>1?1:0)?`<span class="contribution-day-credit">${airbnbImagineMark()} ${isRecipientView()?'Your find, in the plan':'Added by Leah'}</span>`:''}
 function reloadSharedPlanner(){try{const latest=JSON.parse(localStorage.getItem('weekend-edit-v2')||'{}');for(const key of ['picks','kept','comments','changes','dates','stays','buildPreferences'])if(latest[key])state[key]=latest[key]}catch{}}
 function reviewGroupContribution(id){const item=groupContributions().find(x=>x.id===id);if(!item)return;reloadSharedPlanner();state.page=item.trip;history.replaceState(null,'','#'+item.trip);render();scrollToContribution('comments',item.id)}
 document.addEventListener('click',event=>{
@@ -125,20 +125,6 @@ document.addEventListener('input',event=>{if(event.target.id==='contribution-lin
 
 window.addEventListener('storage',event=>{if(event.key===CONTRIBUTION_KEY){const y=window.scrollY;render();window.scrollTo(0,y)}});
 
-function resetSharedComments(){
- reloadSharedPlanner();cancelContributionBuild();contributionProposal=null;contributionConflict=null;
- for(const trip of Object.keys(state.comments)){
-  const links=(state.comments[trip]||[]).filter(note=>typeof note==='string'&&note.startsWith('Instagram: '));
-  if(links.length)state.comments[trip]=links;else delete state.comments[trip];
- }
- persist();saveGroupContributions([]);localStorage.setItem('weekend-comments-reset',String(Date.now()));close();render();
- if(window.parent!==window)window.parent.postMessage({type:'weekend-comments-reset'},location.origin);
- else{document.querySelector('.recipient-exit')?.click();toast('Comments reset. Ready for another run.');}
-}
-document.addEventListener('keydown',event=>{
- if(event.code!=='KeyR'||!event.altKey||!event.shiftKey||event.metaKey||event.ctrlKey||event.target?.closest?.('input,textarea,[contenteditable="true"]'))return;
- event.preventDefault();event.stopImmediatePropagation();resetSharedComments();
-},true);
-window.addEventListener('storage',event=>{if(event.key==='weekend-comments-reset'){reloadSharedPlanner();cancelContributionBuild();contributionProposal=null;contributionConflict=null;close();render();}});
+function resetSharedComments(){window.resetTripPrototype()}
 
 document.addEventListener('focusin',event=>{if(event.target.id==='contribution-link')fillContributionLink(event.target)});

@@ -1,0 +1,14 @@
+Tool logo assets
+
+figma.svg: https://unpkg.com/@lobehub/icons-static-svg@1.104.0/icons/figma-color.svg
+chatgpt.svg: https://unpkg.com/@lobehub/icons-static-svg@1.104.0/icons/openai.svg
+replit.svg: https://unpkg.com/@lobehub/icons-static-svg@1.104.0/icons/replit-color.svg
+lovable.svg: https://unpkg.com/@lobehub/icons-static-svg@1.104.0/icons/lovable-color.svg
+v0.svg: https://unpkg.com/@lobehub/icons-static-svg@1.104.0/icons/v0.svg
+claude.svg: https://unpkg.com/@lobehub/icons-static-svg@1.104.0/icons/claude-color.svg
+figma-make.png: https://dezigma.com/files/seo/figma-make-logo.png
+
+Figma Make source page: https://dezigma.com/en/logos/figma-make/ (source: https://www.figma.com/make/)
+Lobe Icons: https://github.com/lobehub/lobe-icons — MIT license. Brand marks belong to their respective owners.
+
+perplexity.svg: https://unpkg.com/@lobehub/icons-static-svg@1.104.0/icons/perplexity.svg
