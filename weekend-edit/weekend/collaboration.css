@@ -19,3 +19,10 @@
 .brooklyn-open-details{font-size:13px;opacity:.7}.brooklyn-thoughts{margin:45px 0}
 .brooklyn-direction-card{padding:35px;margin:35px 6%;border:1px solid #34244844;border-radius:20px;text-align:left;background:#f8f3e5;color:#342448}.brooklyn-direction-card>span{font-size:10px;letter-spacing:1px}.brooklyn-direction-card h2{font:400 32px/1.15 'Fraunces',Georgia,serif;margin:15px 0}.brooklyn-direction-card p{font-size:14px}
 .recipient-view .brooklyn-direction-body{padding:30px 22px 95px}.recipient-view .brooklyn-direction h1{font-size:44px}.recipient-view .brooklyn-direction-intro{font-size:17px}.recipient-view .brooklyn-find{padding:22px}.recipient-view .brooklyn-direction .airbnb-bridge{display:none}
+
+/* A quiet cue at the destination, without the expanding halo. */
+.contribution-focus{animation:contribution-arrival .45s ease-out}
+.contribution-note.contribution-focus{outline:none}
+@keyframes contribution-arrival{from{opacity:.65}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.contribution-focus{animation:none}}
+

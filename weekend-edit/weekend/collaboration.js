@@ -8,14 +8,24 @@ function contributionCost(t){return activeGroupContribution(t)?.delta||0}
 function contributionPlan(t,index,nights){const item=activeGroupContribution(t);return item&&index===(nights>1?1:0)?[esc(isRecipientView()?item.planTitle.replace(/Leah found/g,'You found').replace(/Leah’s find/g,'your find'):item.planTitle),esc(isRecipientView()?item.planDescription.replace(/the place Leah shared/g,'the place you shared'):item.planDescription)]:null}
 function cancelContributionBuild(){contributionBuildTimers.forEach(clearTimeout);contributionBuildTimers=[]}
 function contributionNoteCards(t){return groupContributions().filter(x=>x.trip===t.id).map(x=>`<article class="note-card contribution-note" data-contribution-comment="${esc(x.id)}"><div class="contribution-comment-author"><span>L</span><b>${isRecipientView()&&x.author==='Leah'?'You':esc(x.author)}</b><small>${x.savedOnly?'Saved for later':x.resolution==='closer'?'Found a closer fit':'Added a find'}</small></div><p>${esc(x.note)}</p>${contributionSource(x)}${x.originalFind?`<p class="contribution-original-find">Inspired by <a href="${esc(cleanContributionLink(x.originalFind.url)||'#')}" target="_blank" rel="noopener">${esc(x.originalFind.title)}</a>. Kept the night-out feeling, stayed in the Hudson Valley.</p>`:''}<div class="contribution-comment-actions">${x.savedOnly?'':`<button class="subtle-btn" data-contribution-show-plan>See it in our plan</button>`}${!isRecipientView()?'<button class="subtle-btn" data-contribution-reply>Reply</button>':''}</div></article>`).join('')}
-function scrollToContribution(where='plan',id){
+function scrollToContribution(where='plan',id,reveal=false){
  requestAnimationFrame(()=>requestAnimationFrame(()=>{
   const target=where==='comments'?Array.from(document.querySelectorAll('[data-contribution-comment]')).find(x=>x.dataset.contributionComment===id)||document.querySelector('#comments'):document.querySelector('.contribution-day');
-  if(!target)return;
+  if(!target){if(reveal)document.querySelector('#app').style.opacity='';return;}
   const tabs=document.querySelector(isRecipientView()?'.recipient-trip-tabs':'.world-nav');
   const offset=tabs&&window.getComputedStyle(tabs).position==='sticky'?tabs.getBoundingClientRect().height:0;
   const reduced=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-  window.scrollTo({top:Math.max(0,target.getBoundingClientRect().top+window.scrollY-offset-18),behavior:reduced?'instant':'smooth'});
+  const top=Math.max(0,target.getBoundingClientRect().top+window.scrollY-offset-24);
+  const nearby=Math.abs(top-window.scrollY)<window.innerHeight*.65;
+  // Long automatic moves land directly; avoid racing through the entire itinerary.
+  window.scrollTo({top,behavior:!reveal&&!reduced&&nearby?'smooth':'instant'});
+  if(reveal){
+   const app=document.querySelector('#app');
+   requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    app.style.transition=reduced?'none':'opacity .24s ease';app.style.opacity='1';
+    setTimeout(()=>{app.style.transition='';app.style.opacity=''},260);
+   }));
+  }
   target.classList.add('contribution-focus');setTimeout(()=>target.classList.remove('contribution-focus'),2200);
  }));
 }
@@ -90,8 +100,12 @@ function contributionBudgetNote(t){const item=activeGroupContribution(t);return 
 function finishContribution(){
  if(!contributionProposal)return;
  const item={...contributionProposal,status:'shared'};contributionProposal=null;
- saveGroupContributions([...groupContributions().filter(x=>x.id!==item.id),item]);close();render();
- scrollToContribution(item.savedOnly?'comments':'plan',item.id);
+ saveGroupContributions([...groupContributions().filter(x=>x.id!==item.id),item]);
+ if(isRecipientView()){
+  // Reveal the destination directly, rather than flying through the page.
+  const app=document.querySelector('#app');app.style.transition='none';app.style.opacity='0';
+  render();close();scrollToContribution(item.savedOnly?'comments':'plan',item.id,true);
+ }else{close();render();scrollToContribution(item.savedOnly?'comments':'plan',item.id)}
  if(window.parent!==window)window.parent.postMessage({type:'weekend-contribution-shared',id:item.id},location.origin);
 }
 function undoOwnContribution(id){
@@ -124,7 +138,7 @@ document.addEventListener('submit',event=>{if(event.target.id!=='contribution-fo
 
 document.addEventListener('input',event=>{if(event.target.id==='contribution-link')previewPastedContribution()});
 
-window.addEventListener('storage',event=>{if(event.key===CONTRIBUTION_KEY){const y=window.scrollY;render();window.scrollTo(0,y)}});
+window.addEventListener('storage',event=>{if(event.key===CONTRIBUTION_KEY){const y=window.scrollY;render();window.scrollTo({top:y,behavior:'instant'})}});
 
 function resetSharedComments(){window.resetTripPrototype()}
 

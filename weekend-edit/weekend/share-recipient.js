@@ -35,11 +35,16 @@ function openRecipientStory(snapshot){
   const preview=stage.querySelector('.message-link'),airbnbApp=stage.querySelector('.recipient-airbnb-app'),messages=stage.querySelector('.recipient-messages'),frame=stage.querySelector('iframe');
   let sharedContributionId=null;
   const invite=stage.querySelector('.recipient-invitation'),joinButton=stage.querySelector('.recipient-join-trip');
-  const exit=()=>{stage.remove();window.removeEventListener('message',directionMessage);window.removeEventListener('message',onContributionMessage);reloadSharedPlanner();render();if(sharedContributionId)reviewGroupContribution(sharedContributionId);app.inert=false;document.body.style.overflow=oldOverflow;document.removeEventListener('keydown',keyHandler,true);document.querySelector('[data-action="share"]')?.focus()};
+  const exit=()=>{
+    stage.remove();window.removeEventListener('message',directionMessage);window.removeEventListener('message',onContributionMessage);
+    app.inert=false;document.body.style.overflow=oldOverflow;document.removeEventListener('keydown',keyHandler,true);
+    if(sharedContributionId)reviewGroupContribution(sharedContributionId);
+    else{reloadSharedPlanner();render();document.querySelector('[data-action="share"]')?.focus({preventScroll:true})}
+  };
   const onContributionMessage=event=>{
     if(event.origin!==location.origin||event.source!==frame.contentWindow||!['weekend-contribution-shared','weekend-contribution-return','weekend-contribution-undone','weekend-comments-reset'].includes(event.data?.type))return;
     if(event.data.type==='weekend-comments-reset'){sharedContributionId=null;exit();toast('Comments reset. Ready for another run.');return}
-    if(event.data.type==='weekend-contribution-undone'){if(sharedContributionId===event.data.id){sharedContributionId=null;stage.querySelector('.recipient-return-organizer')?.remove();stage.querySelector('.message-contribution-response')?.remove();stage.querySelector('.recipient-narrative h1').textContent='Keep exploring together.';stage.querySelector('.recipient-narrative>span').textContent='Our plan has room for another find.'}return}
+    if(event.data.type==='weekend-contribution-undone'){if(sharedContributionId===event.data.id){sharedContributionId=null;stage.querySelector('.recipient-return-organizer')?.remove();stage.querySelector('.message-contribution-response')?.remove();stage.querySelector('.recipient-narrative h1').textContent='Keep exploring together.';}return}
     const item=groupContributions().find(x=>x.id===event.data.id);if(!item)return;
     sharedContributionId=item.id;if(event.data.type==='weekend-contribution-return'){exit();return}
     stage.querySelector('.recipient-narrative>p').textContent='A LITTLE OF EVERYONE, IN THE PLAN';
